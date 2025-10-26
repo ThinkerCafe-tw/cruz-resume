@@ -775,6 +775,151 @@
             display: block;
         }
 
+        /* Skills Section - Layered Architecture */
+        .skills-philosophy {
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-primary);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .skills-philosophy::before {
+            content: '💡';
+            position: absolute;
+            top: -20px;
+            left: 30px;
+            background: var(--bg-primary);
+            padding: 0 15px;
+            font-size: 2rem;
+        }
+
+        .skills-philosophy h3 {
+            color: var(--accent-primary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .skills-philosophy p {
+            color: var(--text-secondary);
+            line-height: 2;
+            font-size: 1.1rem;
+        }
+
+        .skills-layers {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .skill-layer {
+            position: relative;
+            padding-left: 60px;
+            border-left: 4px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .skill-layer:hover {
+            border-left-color: var(--accent-primary);
+        }
+
+        .skill-layer::before {
+            content: attr(data-level);
+            position: absolute;
+            left: -25px;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            background: var(--accent-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: var(--bg-primary);
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .layer-header {
+            margin-bottom: 20px;
+        }
+
+        .layer-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 5px;
+        }
+
+        .layer-description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            font-style: italic;
+        }
+
+        .layer-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .category-block {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .category-block:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.15);
+        }
+
+        .category-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent-primary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .category-name::before {
+            content: '▸';
+            font-size: 1.2rem;
+        }
+
+        .category-items {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .skill-item {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            padding-left: 15px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .skill-item::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+
+        .skill-item:hover {
+            color: var(--text-primary);
+            padding-left: 20px;
+        }
+
         /* Mobile Responsive */
         @media (max-width: 768px) {
             .theme-toggle {
@@ -827,6 +972,30 @@
             
             .cta {
                 padding: 50px 30px;
+            }
+
+            .skill-layer {
+                padding-left: 40px;
+            }
+
+            .skill-layer::before {
+                left: -20px;
+                width: 40px;
+                height: 40px;
+                font-size: 1.1rem;
+            }
+
+            .layer-categories {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-philosophy {
+                padding: 20px;
+            }
+
+            .skills-philosophy::before {
+                font-size: 1.5rem;
+                top: -15px;
             }
         }
     </style>
@@ -1531,16 +1700,60 @@ ${logText}
                 if (t.skills) {
                     document.querySelector('#skills .section-title').textContent = t.skills.title;
                     const skillsContainer = document.getElementById('skills-container');
-                    skillsContainer.innerHTML = t.skills.categories.map(cat => `
-                        <div class="skill-category" style="margin-bottom: 20px;">
-                            <h3 style="color: var(--primary); margin-bottom: 10px;">${cat.category}</h3>
-                            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-                                ${cat.items.map(item => `
-                                    <span class="project-tag">${item}</span>
+
+                    // Build philosophy section
+                    let philosophyHTML = '';
+                    if (t.skills.philosophy) {
+                        philosophyHTML = `
+                            <div class="skills-philosophy">
+                                <h3>${t.skills.philosophy.title}</h3>
+                                <p>${t.skills.philosophy.content}</p>
+                            </div>
+                        `;
+                    }
+
+                    // Build layers (if new structure exists)
+                    let layersHTML = '';
+                    if (t.skills.layers) {
+                        layersHTML = `
+                            <div class="skills-layers">
+                                ${t.skills.layers.map(layer => `
+                                    <div class="skill-layer" data-level="${layer.level}">
+                                        <div class="layer-header">
+                                            <div class="layer-name">${layer.name}</div>
+                                            <div class="layer-description">${layer.description}</div>
+                                        </div>
+                                        <div class="layer-categories">
+                                            ${layer.categories.map(cat => `
+                                                <div class="category-block">
+                                                    <div class="category-name">${cat.name}</div>
+                                                    <div class="category-items">
+                                                        ${cat.items.map(item => `
+                                                            <div class="skill-item">${item}</div>
+                                                        `).join('')}
+                                                    </div>
+                                                </div>
+                                            `).join('')}
+                                        </div>
+                                    </div>
                                 `).join('')}
                             </div>
-                        </div>
-                    `).join('');
+                        `;
+                    } else if (t.skills.categories) {
+                        // Fallback to old structure
+                        layersHTML = t.skills.categories.map(cat => `
+                            <div class="skill-category" style="margin-bottom: 20px;">
+                                <h3 style="color: var(--primary); margin-bottom: 10px;">${cat.category}</h3>
+                                <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                                    ${cat.items.map(item => `
+                                        <span class="project-tag">${item}</span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        `).join('');
+                    }
+
+                    skillsContainer.innerHTML = philosophyHTML + layersHTML;
                     logToPanel('✓ Skills section updated', 'success');
                 } else {
                     logToPanel('⚠ Skills section skipped (optional)', 'warning');
