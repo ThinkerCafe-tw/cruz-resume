@@ -721,11 +721,43 @@
             font-weight: 600;
             font-size: 1rem;
             transition: var(--transition);
+            margin-right: 10px;
         }
 
         .close-error-panel:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+        }
+
+        .copy-error-button {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+            padding: 12px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .copy-error-button:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+
+        .copy-error-button.copied {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            border-color: var(--accent-primary);
+        }
+
+        .error-panel-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         #errorOverlay {
@@ -807,7 +839,10 @@
         <div class="error-content" id="errorContent">
             <!-- Error logs will be added here -->
         </div>
-        <button class="close-error-panel" onclick="closeErrorPanel()">Close</button>
+        <div class="error-panel-buttons">
+            <button class="copy-error-button" onclick="copyErrorLogs()">📋 Copy Logs</button>
+            <button class="close-error-panel" onclick="closeErrorPanel()">Close</button>
+        </div>
     </div>
 
     <div class="progress-bar" id="progressBar"></div>
@@ -1177,6 +1212,60 @@
         function closeErrorPanel() {
             document.getElementById('errorOverlay').classList.remove('show');
             document.getElementById('errorPanel').classList.remove('show');
+        }
+
+        function copyErrorLogs() {
+            // Get all log text
+            const logText = errorLogs.map(log =>
+                `[${log.timestamp}] ${log.type.toUpperCase()}: ${log.message}`
+            ).join('\n');
+
+            // Create summary
+            const summary = `
+=== Cruz Resume Error Report ===
+Generated: ${new Date().toLocaleString()}
+URL: ${window.location.href}
+User Agent: ${navigator.userAgent}
+
+=== Error Logs ===
+${logText}
+
+=== End Report ===
+            `.trim();
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(summary).then(() => {
+                const btn = document.querySelector('.copy-error-button');
+                const originalText = btn.textContent;
+                btn.textContent = '✅ Copied!';
+                btn.classList.add('copied');
+
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                // Fallback for older browsers
+                const textArea = document.createElement('textarea');
+                textArea.value = summary;
+                textArea.style.position = 'fixed';
+                textArea.style.left = '-999999px';
+                document.body.appendChild(textArea);
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    const btn = document.querySelector('.copy-error-button');
+                    btn.textContent = '✅ Copied!';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = '📋 Copy Logs';
+                        btn.classList.remove('copied');
+                    }, 2000);
+                } catch (e) {
+                    alert('Failed to copy. Please select and copy manually.');
+                }
+                document.body.removeChild(textArea);
+            });
         }
 
         function logToPanel(message, type = 'info') {

@@ -225,6 +225,103 @@
           ]
         }
       ]
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "items": [
+        {
+          "title": "ThinkerCafe Education Platform",
+          "tags": [
+            "AI Education",
+            "System Design"
+          ],
+          "points": [
+            "Comprehensive AI curriculum (Personal OS, 5+ course series)",
+            "Serving non-technical professionals entering AI era",
+            "Built complete ecosystem from content to delivery",
+            "Emphasis on practical, implementable systems"
+          ]
+        },
+        {
+          "title": "LINE Bot Automation Systems",
+          "tags": [
+            "Enterprise",
+            "Automation"
+          ],
+          "points": [
+            "Booking system for physical therapy clinic",
+            "70% reduction in booking process time",
+            "Google Calendar integration",
+            "Improved customer satisfaction scores"
+          ]
+        },
+        {
+          "title": "Thinker Kit",
+          "tags": [
+            "Productivity",
+            "AI Agent"
+          ],
+          "points": [
+            "Personal AI enhancement system",
+            "Integrated memory, prompt library, productivity tools",
+            "Daily insights and goal tracking",
+            "Gamified engagement system"
+          ]
+        },
+        {
+          "title": "ThreadsBot",
+          "tags": [
+            "Social Media",
+            "AI Agent"
+          ],
+          "points": [
+            "AI-powered social media automation",
+            "3x increase in engagement rate",
+            "80% reduction in operation time",
+            "Automatic content analysis and scheduling"
+          ]
+        },
+        {
+          "title": "Ryan OS & Mary OS",
+          "tags": [
+            "Family Tech",
+            "System"
+          ],
+          "points": [
+            "AI-driven family management systems",
+            "Education tracking (Ryan OS)",
+            "Elder care coordination (Mary OS)",
+            "Data-driven family decisions"
+          ]
+        },
+        {
+          "title": "300+ Team Operations",
+          "tags": [
+            "Leadership",
+            "Scale"
+          ],
+          "points": [
+            "International team across Philippines",
+            "24/7 operations coordination",
+            "Data-driven KPI systems",
+            "40% cost reduction through automation"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's Build Something Together",
+      "subtitle": "Currently seeking opportunities to work with enterprise clients on AI implementation, digital transformation, and solution architecture.",
+      "location": "Remote-friendly · Taipei/Taichung/Tainan · 70-100K TWD/month",
+      "buttons": [
+        "Get in Touch",
+        "Visit ThinkerCafe",
+        "LinkedIn Profile"
+      ]
+    },
+    "footer": {
+      "built": "Built with intention · Designed to inspire · Updated January 2025",
+      "quote": "When technology returns to humanity, intelligence finds its warmth"
     }
   },
   "zh-TW": {
@@ -453,6 +550,103 @@
           ]
         }
       ]
+    },
+    "projects": {
+      "title": "專案作品",
+      "items": [
+        {
+          "title": "ThinkerCafe 教育平台",
+          "tags": [
+            "AI 教育",
+            "系統設計"
+          ],
+          "points": [
+            "完整 AI 課程體系（Personal OS、5+ 系列課程）",
+            "服務進入 AI 時代的非技術專業人士",
+            "建立從內容到交付的完整生態系統",
+            "強調實用、可實施的系統"
+          ]
+        },
+        {
+          "title": "LINE Bot 自動化系統",
+          "tags": [
+            "企業應用",
+            "自動化"
+          ],
+          "points": [
+            "物理治療診所預約系統",
+            "預約流程時間減少 70%",
+            "Google Calendar 整合",
+            "客戶滿意度提升"
+          ]
+        },
+        {
+          "title": "Thinker Kit",
+          "tags": [
+            "生產力",
+            "AI Agent"
+          ],
+          "points": [
+            "個人 AI 增強系統",
+            "整合記憶、提示詞庫、生產力工具",
+            "每日洞察與目標追蹤",
+            "遊戲化參與系統"
+          ]
+        },
+        {
+          "title": "ThreadsBot",
+          "tags": [
+            "社群媒體",
+            "AI Agent"
+          ],
+          "points": [
+            "AI 驅動的社群媒體自動化",
+            "參與度提升 3 倍",
+            "營運時間減少 80%",
+            "自動內容分析與排程"
+          ]
+        },
+        {
+          "title": "Ryan OS & Mary OS",
+          "tags": [
+            "家庭科技",
+            "系統"
+          ],
+          "points": [
+            "AI 驅動的家庭管理系統",
+            "教育追蹤（Ryan OS）",
+            "長者照護協調（Mary OS）",
+            "數據驅動的家庭決策"
+          ]
+        },
+        {
+          "title": "300+ 人團隊營運",
+          "tags": [
+            "領導力",
+            "規模化"
+          ],
+          "points": [
+            "菲律賓跨國團隊",
+            "24/7 營運協調",
+            "數據驅動的 KPI 系統",
+            "透過自動化降低 40% 成本"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "讓我們一起打造些什麼",
+      "subtitle": "目前尋求與企業客戶合作 AI 實作、數位轉型和解決方案架構的機會。",
+      "location": "遠端友善 · 台北/台中/台南 · 70-100K TWD/月",
+      "buttons": [
+        "聯繫我",
+        "訪問 ThinkerCafe",
+        "LinkedIn 檔案"
+      ]
+    },
+    "footer": {
+      "built": "用心打造 · 啟發設計 · 更新於 2025 年 1 月",
+      "quote": "當科技回歸人性，智慧找到溫度"
     }
   },
   "ja": {
@@ -681,6 +875,103 @@
           ]
         }
       ]
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "items": [
+        {
+          "title": "ThinkerCafe Education Platform",
+          "tags": [
+            "AI Education",
+            "System Design"
+          ],
+          "points": [
+            "Comprehensive AI curriculum (Personal OS, 5+ course series)",
+            "Serving non-technical professionals entering AI era",
+            "Built complete ecosystem from content to delivery",
+            "Emphasis on practical, implementable systems"
+          ]
+        },
+        {
+          "title": "LINE Bot Automation Systems",
+          "tags": [
+            "Enterprise",
+            "Automation"
+          ],
+          "points": [
+            "Booking system for physical therapy clinic",
+            "70% reduction in booking process time",
+            "Google Calendar integration",
+            "Improved customer satisfaction scores"
+          ]
+        },
+        {
+          "title": "Thinker Kit",
+          "tags": [
+            "Productivity",
+            "AI Agent"
+          ],
+          "points": [
+            "Personal AI enhancement system",
+            "Integrated memory, prompt library, productivity tools",
+            "Daily insights and goal tracking",
+            "Gamified engagement system"
+          ]
+        },
+        {
+          "title": "ThreadsBot",
+          "tags": [
+            "Social Media",
+            "AI Agent"
+          ],
+          "points": [
+            "AI-powered social media automation",
+            "3x increase in engagement rate",
+            "80% reduction in operation time",
+            "Automatic content analysis and scheduling"
+          ]
+        },
+        {
+          "title": "Ryan OS & Mary OS",
+          "tags": [
+            "Family Tech",
+            "System"
+          ],
+          "points": [
+            "AI-driven family management systems",
+            "Education tracking (Ryan OS)",
+            "Elder care coordination (Mary OS)",
+            "Data-driven family decisions"
+          ]
+        },
+        {
+          "title": "300+ Team Operations",
+          "tags": [
+            "Leadership",
+            "Scale"
+          ],
+          "points": [
+            "International team across Philippines",
+            "24/7 operations coordination",
+            "Data-driven KPI systems",
+            "40% cost reduction through automation"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's Build Something Together",
+      "subtitle": "Currently seeking opportunities to work with enterprise clients on AI implementation, digital transformation, and solution architecture.",
+      "location": "Remote-friendly · Taipei/Taichung/Tainan · 70-100K TWD/month",
+      "buttons": [
+        "Get in Touch",
+        "Visit ThinkerCafe",
+        "LinkedIn Profile"
+      ]
+    },
+    "footer": {
+      "built": "Built with intention · Designed to inspire · Updated January 2025",
+      "quote": "When technology returns to humanity, intelligence finds its warmth"
     }
   },
   "ko": {
@@ -909,6 +1200,103 @@
           ]
         }
       ]
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "items": [
+        {
+          "title": "ThinkerCafe Education Platform",
+          "tags": [
+            "AI Education",
+            "System Design"
+          ],
+          "points": [
+            "Comprehensive AI curriculum (Personal OS, 5+ course series)",
+            "Serving non-technical professionals entering AI era",
+            "Built complete ecosystem from content to delivery",
+            "Emphasis on practical, implementable systems"
+          ]
+        },
+        {
+          "title": "LINE Bot Automation Systems",
+          "tags": [
+            "Enterprise",
+            "Automation"
+          ],
+          "points": [
+            "Booking system for physical therapy clinic",
+            "70% reduction in booking process time",
+            "Google Calendar integration",
+            "Improved customer satisfaction scores"
+          ]
+        },
+        {
+          "title": "Thinker Kit",
+          "tags": [
+            "Productivity",
+            "AI Agent"
+          ],
+          "points": [
+            "Personal AI enhancement system",
+            "Integrated memory, prompt library, productivity tools",
+            "Daily insights and goal tracking",
+            "Gamified engagement system"
+          ]
+        },
+        {
+          "title": "ThreadsBot",
+          "tags": [
+            "Social Media",
+            "AI Agent"
+          ],
+          "points": [
+            "AI-powered social media automation",
+            "3x increase in engagement rate",
+            "80% reduction in operation time",
+            "Automatic content analysis and scheduling"
+          ]
+        },
+        {
+          "title": "Ryan OS & Mary OS",
+          "tags": [
+            "Family Tech",
+            "System"
+          ],
+          "points": [
+            "AI-driven family management systems",
+            "Education tracking (Ryan OS)",
+            "Elder care coordination (Mary OS)",
+            "Data-driven family decisions"
+          ]
+        },
+        {
+          "title": "300+ Team Operations",
+          "tags": [
+            "Leadership",
+            "Scale"
+          ],
+          "points": [
+            "International team across Philippines",
+            "24/7 operations coordination",
+            "Data-driven KPI systems",
+            "40% cost reduction through automation"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's Build Something Together",
+      "subtitle": "Currently seeking opportunities to work with enterprise clients on AI implementation, digital transformation, and solution architecture.",
+      "location": "Remote-friendly · Taipei/Taichung/Tainan · 70-100K TWD/month",
+      "buttons": [
+        "Get in Touch",
+        "Visit ThinkerCafe",
+        "LinkedIn Profile"
+      ]
+    },
+    "footer": {
+      "built": "Built with intention · Designed to inspire · Updated January 2025",
+      "quote": "When technology returns to humanity, intelligence finds its warmth"
     }
   },
   "ar": {
@@ -1137,6 +1525,103 @@
           ]
         }
       ]
+    },
+    "projects": {
+      "title": "Featured Projects",
+      "items": [
+        {
+          "title": "ThinkerCafe Education Platform",
+          "tags": [
+            "AI Education",
+            "System Design"
+          ],
+          "points": [
+            "Comprehensive AI curriculum (Personal OS, 5+ course series)",
+            "Serving non-technical professionals entering AI era",
+            "Built complete ecosystem from content to delivery",
+            "Emphasis on practical, implementable systems"
+          ]
+        },
+        {
+          "title": "LINE Bot Automation Systems",
+          "tags": [
+            "Enterprise",
+            "Automation"
+          ],
+          "points": [
+            "Booking system for physical therapy clinic",
+            "70% reduction in booking process time",
+            "Google Calendar integration",
+            "Improved customer satisfaction scores"
+          ]
+        },
+        {
+          "title": "Thinker Kit",
+          "tags": [
+            "Productivity",
+            "AI Agent"
+          ],
+          "points": [
+            "Personal AI enhancement system",
+            "Integrated memory, prompt library, productivity tools",
+            "Daily insights and goal tracking",
+            "Gamified engagement system"
+          ]
+        },
+        {
+          "title": "ThreadsBot",
+          "tags": [
+            "Social Media",
+            "AI Agent"
+          ],
+          "points": [
+            "AI-powered social media automation",
+            "3x increase in engagement rate",
+            "80% reduction in operation time",
+            "Automatic content analysis and scheduling"
+          ]
+        },
+        {
+          "title": "Ryan OS & Mary OS",
+          "tags": [
+            "Family Tech",
+            "System"
+          ],
+          "points": [
+            "AI-driven family management systems",
+            "Education tracking (Ryan OS)",
+            "Elder care coordination (Mary OS)",
+            "Data-driven family decisions"
+          ]
+        },
+        {
+          "title": "300+ Team Operations",
+          "tags": [
+            "Leadership",
+            "Scale"
+          ],
+          "points": [
+            "International team across Philippines",
+            "24/7 operations coordination",
+            "Data-driven KPI systems",
+            "40% cost reduction through automation"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Let's Build Something Together",
+      "subtitle": "Currently seeking opportunities to work with enterprise clients on AI implementation, digital transformation, and solution architecture.",
+      "location": "Remote-friendly · Taipei/Taichung/Tainan · 70-100K TWD/month",
+      "buttons": [
+        "Get in Touch",
+        "Visit ThinkerCafe",
+        "LinkedIn Profile"
+      ]
+    },
+    "footer": {
+      "built": "Built with intention · Designed to inspire · Updated January 2025",
+      "quote": "When technology returns to humanity, intelligence finds its warmth"
     }
   }
 }
