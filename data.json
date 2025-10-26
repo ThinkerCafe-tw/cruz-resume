@@ -4,14 +4,22 @@
       "name": "Cruz Tang",
       "tagline": "AI-Native Leader & System Architect",
       "subtitle": "Transforming enterprises through AI implementation · From managing 300+ international teams to building AI-first solutions",
-      "stats": ["Years Experience", "Team Managed", "Companies Founded", "Problems Solved"]
+      "stats": [
+        "Years Experience",
+        "Team Managed",
+        "Companies Founded",
+        "Problems Solved"
+      ]
     },
     "nav": {
       "about": "About",
       "experience": "Experience",
       "expertise": "Expertise",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Contact",
+      "education": "Education",
+      "teaching": "Teaching",
+      "skills": "Skills"
     },
     "about": {
       "title": "About Me",
@@ -87,21 +95,160 @@
           ]
         }
       ]
+    },
+    "education": {
+      "title": "Education",
+      "schools": [
+        {
+          "school": "National Taipei University of Business",
+          "degree": "Master of Science",
+          "major": "Data & Decision Sciences",
+          "date": "June 2013",
+          "location": "Taipei, Taiwan",
+          "coursework": [
+            "Multi-criteria Decision-making",
+            "Business Intelligence",
+            "Algorithms"
+          ]
+        },
+        {
+          "school": "Shih Shin University",
+          "degree": "Bachelor of Business Administration",
+          "major": "Finance",
+          "date": "June 2011",
+          "location": "Taipei, Taiwan",
+          "coursework": [
+            "Statistics",
+            "Financial Management",
+            "Accounting",
+            "Economics"
+          ]
+        }
+      ]
+    },
+    "teaching": {
+      "title": "Teaching & Speaking",
+      "lectures": [
+        {
+          "title": "Text Mining in Practice with R",
+          "organization": "Institute for Information Industry",
+          "type": "Workshop"
+        },
+        {
+          "title": "Data Visualization with R",
+          "organization": "Taipei Computer Association, Fubon Financial",
+          "type": "Training"
+        },
+        {
+          "title": "Data Object, Object-oriented Programming and Coding Skills",
+          "organization": "2013 R Taiwan Conference",
+          "type": "Conference Talk"
+        },
+        {
+          "title": "Mining Facebook for Knowing a Person You Fancy",
+          "organization": "OpenFoundry",
+          "type": "Talk"
+        },
+        {
+          "title": "Data Mining for Finance with R: Machine Data Analytics",
+          "organization": "Taiwan Academy of Banking and Finance",
+          "type": "Course"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "categories": [
+        {
+          "category": "Cloud Platform",
+          "items": [
+            "AWS EC2",
+            "Google Compute Engine"
+          ]
+        },
+        {
+          "category": "Programming",
+          "items": [
+            "Python",
+            "R",
+            "PHP",
+            "Android"
+          ]
+        },
+        {
+          "category": "Database",
+          "items": [
+            "MySQL",
+            "MSSQL",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "Version Control",
+          "items": [
+            "GitHub",
+            "GitLab"
+          ]
+        },
+        {
+          "category": "Project Management",
+          "items": [
+            "JIRA",
+            "Scrum",
+            "Kanban"
+          ]
+        },
+        {
+          "category": "Data Science",
+          "items": [
+            "Data Processing",
+            "Regression Models",
+            "Decision Trees",
+            "Neural Network",
+            "Clustering",
+            "Visualization",
+            "Text Mining",
+            "Semantic Analysis",
+            "Regular Expression"
+          ]
+        },
+        {
+          "category": "Tools & Frameworks",
+          "items": [
+            "LaTeX",
+            "Markdown",
+            "Shiny",
+            "RESTful API",
+            "n8n",
+            "Claude API",
+            "OpenAI API",
+            "LINE Bot"
+          ]
+        }
+      ]
     }
   },
   "zh-TW": {
     "hero": {
-      "name": "唐聖捷 Cruz Tang",
+      "name": "湯明軒 Cruz Tang",
       "tagline": "AI 原生領導者與系統架構師",
       "subtitle": "透過 AI 實作轉型企業 · 從管理 300+ 國際團隊到打造 AI 優先解決方案",
-      "stats": ["年經驗", "管理團隊", "創立公司", "解決問題"]
+      "stats": [
+        "年經驗",
+        "管理團隊",
+        "創立公司",
+        "解決問題"
+      ]
     },
     "nav": {
       "about": "關於我",
       "experience": "工作經歷",
       "expertise": "核心專長",
       "projects": "專案作品",
-      "contact": "聯絡方式"
+      "contact": "聯絡方式",
+      "education": "教育背景",
+      "teaching": "教學經歷",
+      "skills": "技術能力"
     },
     "about": {
       "title": "關於我",
@@ -177,6 +324,137 @@
           ]
         }
       ]
+    },
+    "education": {
+      "title": "教育背景",
+      "schools": [
+        {
+          "school": "國立臺北商業大學",
+          "degree": "碩士",
+          "major": "資料與決策科學系",
+          "date": "2013年6月",
+          "location": "台北，台灣",
+          "coursework": [
+            "多準則決策",
+            "商業智慧",
+            "演算法"
+          ]
+        },
+        {
+          "school": "世新大學",
+          "degree": "學士",
+          "major": "財務金融學系",
+          "date": "2011年6月",
+          "location": "台北，台灣",
+          "coursework": [
+            "統計學",
+            "財務管理",
+            "會計學",
+            "經濟學"
+          ]
+        }
+      ]
+    },
+    "teaching": {
+      "title": "教學與演講",
+      "lectures": [
+        {
+          "title": "R 語言文字探勘實戰",
+          "organization": "資策會",
+          "type": "工作坊"
+        },
+        {
+          "title": "R 語言資料視覺化",
+          "organization": "台北市電腦公會、富邦金控",
+          "type": "企業培訓"
+        },
+        {
+          "title": "資料物件、物件導向程式設計與編碼技巧",
+          "organization": "2013 R Taiwan 研討會",
+          "type": "研討會演講"
+        },
+        {
+          "title": "用 Facebook 探勘了解你喜歡的人",
+          "organization": "OpenFoundry",
+          "type": "技術分享"
+        },
+        {
+          "title": "金融資料探勘：機器資料分析",
+          "organization": "台灣金融研訓院",
+          "type": "課程"
+        }
+      ]
+    },
+    "skills": {
+      "title": "技術能力",
+      "categories": [
+        {
+          "category": "雲端平台",
+          "items": [
+            "AWS EC2",
+            "Google Compute Engine"
+          ]
+        },
+        {
+          "category": "程式語言",
+          "items": [
+            "Python",
+            "R",
+            "PHP",
+            "Android"
+          ]
+        },
+        {
+          "category": "資料庫",
+          "items": [
+            "MySQL",
+            "MSSQL",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "版本控制",
+          "items": [
+            "GitHub",
+            "GitLab"
+          ]
+        },
+        {
+          "category": "專案管理",
+          "items": [
+            "JIRA",
+            "Scrum",
+            "Kanban"
+          ]
+        },
+        {
+          "category": "資料科學",
+          "items": [
+            "資料處理",
+            "迴歸模型",
+            "決策樹",
+            "類神經網路",
+            "分群",
+            "視覺化",
+            "文字探勘",
+            "語意分析",
+            "正規表達式"
+          ]
+        },
+        {
+          "category": "工具與框架",
+          "items": [
+            "LaTeX",
+            "Markdown",
+            "Shiny",
+            "RESTful API",
+            "n8n",
+            "Claude API",
+            "OpenAI API",
+            "LINE Bot"
+          ]
+        }
+      ]
     }
   },
   "ja": {
@@ -184,14 +462,22 @@
       "name": "Cruz Tang",
       "tagline": "AIネイティブリーダー＆システムアーキテクト",
       "subtitle": "AI実装による企業変革 · 300+名の国際チーム管理からAIファーストソリューション構築まで",
-      "stats": ["年の経験", "管理チーム", "創業企業", "解決問題"]
+      "stats": [
+        "年の経験",
+        "管理チーム",
+        "創業企業",
+        "解決問題"
+      ]
     },
     "nav": {
       "about": "プロフィール",
       "experience": "職務経歴",
       "expertise": "専門分野",
       "projects": "プロジェクト",
-      "contact": "お問い合わせ"
+      "contact": "お問い合わせ",
+      "education": "学歴",
+      "teaching": "講演活動",
+      "skills": "技術スキル"
     },
     "about": {
       "title": "プロフィール",
@@ -267,6 +553,137 @@
           ]
         }
       ]
+    },
+    "education": {
+      "title": "学歴",
+      "schools": [
+        {
+          "school": "国立台北商業大学",
+          "degree": "修士",
+          "major": "データ・意思決定科学専攻",
+          "date": "2013年6月",
+          "location": "台北、台湾",
+          "coursework": [
+            "多基準意思決定",
+            "ビジネスインテリジェンス",
+            "アルゴリズム"
+          ]
+        },
+        {
+          "school": "世新大学",
+          "degree": "学士",
+          "major": "財務金融学専攻",
+          "date": "2011年6月",
+          "location": "台北、台湾",
+          "coursework": [
+            "統計学",
+            "財務管理",
+            "会計学",
+            "経済学"
+          ]
+        }
+      ]
+    },
+    "teaching": {
+      "title": "講演・教育活動",
+      "lectures": [
+        {
+          "title": "Rによる実践的テキストマイニング",
+          "organization": "資策会",
+          "type": "ワークショップ"
+        },
+        {
+          "title": "Rによるデータビジュアライゼーション",
+          "organization": "台北市コンピュータ協会、富邦金融",
+          "type": "企業研修"
+        },
+        {
+          "title": "データオブジェクト、オブジェクト指向プログラミングとコーディングスキル",
+          "organization": "2013 R Taiwan カンファレンス",
+          "type": "カンファレンス発表"
+        },
+        {
+          "title": "Facebookマイニングで好きな人を理解する",
+          "organization": "OpenFoundry",
+          "type": "技術講演"
+        },
+        {
+          "title": "Rによる金融データマイニング：機械データ分析",
+          "organization": "台湾金融研訓院",
+          "type": "コース"
+        }
+      ]
+    },
+    "skills": {
+      "title": "技術スキル",
+      "categories": [
+        {
+          "category": "クラウドプラットフォーム",
+          "items": [
+            "AWS EC2",
+            "Google Compute Engine"
+          ]
+        },
+        {
+          "category": "プログラミング言語",
+          "items": [
+            "Python",
+            "R",
+            "PHP",
+            "Android"
+          ]
+        },
+        {
+          "category": "データベース",
+          "items": [
+            "MySQL",
+            "MSSQL",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "バージョン管理",
+          "items": [
+            "GitHub",
+            "GitLab"
+          ]
+        },
+        {
+          "category": "プロジェクト管理",
+          "items": [
+            "JIRA",
+            "Scrum",
+            "Kanban"
+          ]
+        },
+        {
+          "category": "データサイエンス",
+          "items": [
+            "データ処理",
+            "回帰モデル",
+            "決定木",
+            "ニューラルネットワーク",
+            "クラスタリング",
+            "可視化",
+            "テキストマイニング",
+            "意味解析",
+            "正規表現"
+          ]
+        },
+        {
+          "category": "ツール・フレームワーク",
+          "items": [
+            "LaTeX",
+            "Markdown",
+            "Shiny",
+            "RESTful API",
+            "n8n",
+            "Claude API",
+            "OpenAI API",
+            "LINE Bot"
+          ]
+        }
+      ]
     }
   },
   "ko": {
@@ -274,14 +691,22 @@
       "name": "Cruz Tang",
       "tagline": "AI 네이티브 리더 & 시스템 아키텍트",
       "subtitle": "AI 구현을 통한 기업 혁신 · 300+ 국제 팀 관리부터 AI 우선 솔루션 구축까지",
-      "stats": ["년 경험", "관리 팀", "설립 기업", "해결 문제"]
+      "stats": [
+        "년 경험",
+        "관리 팀",
+        "설립 기업",
+        "해결 문제"
+      ]
     },
     "nav": {
       "about": "소개",
       "experience": "경력",
       "expertise": "전문분야",
       "projects": "프로젝트",
-      "contact": "연락처"
+      "contact": "연락처",
+      "education": "학력",
+      "teaching": "강연 활동",
+      "skills": "기술 역량"
     },
     "about": {
       "title": "소개",
@@ -357,6 +782,137 @@
           ]
         }
       ]
+    },
+    "education": {
+      "title": "학력",
+      "schools": [
+        {
+          "school": "국립 타이베이 상업대학교",
+          "degree": "석사",
+          "major": "데이터 및 의사결정 과학",
+          "date": "2013년 6월",
+          "location": "타이베이, 대만",
+          "coursework": [
+            "다기준 의사결정",
+            "비즈니스 인텔리전스",
+            "알고리즘"
+          ]
+        },
+        {
+          "school": "스신 대학교",
+          "degree": "학사",
+          "major": "재무금융학",
+          "date": "2011년 6월",
+          "location": "타이베이, 대만",
+          "coursework": [
+            "통계학",
+            "재무관리",
+            "회계학",
+            "경제학"
+          ]
+        }
+      ]
+    },
+    "teaching": {
+      "title": "강연 및 교육",
+      "lectures": [
+        {
+          "title": "R을 활용한 실전 텍스트 마이닝",
+          "organization": "자책회",
+          "type": "워크숍"
+        },
+        {
+          "title": "R을 활용한 데이터 시각화",
+          "organization": "타이베이 컴퓨터 협회, 푸방 금융",
+          "type": "기업 교육"
+        },
+        {
+          "title": "데이터 객체, 객체지향 프로그래밍 및 코딩 기술",
+          "organization": "2013 R Taiwan 컨퍼런스",
+          "type": "컨퍼런스 발표"
+        },
+        {
+          "title": "Facebook 마이닝으로 좋아하는 사람 이해하기",
+          "organization": "OpenFoundry",
+          "type": "기술 발표"
+        },
+        {
+          "title": "R을 활용한 금융 데이터 마이닝: 머신 데이터 분석",
+          "organization": "대만 금융연수원",
+          "type": "강좌"
+        }
+      ]
+    },
+    "skills": {
+      "title": "기술 역량",
+      "categories": [
+        {
+          "category": "클라우드 플랫폼",
+          "items": [
+            "AWS EC2",
+            "Google Compute Engine"
+          ]
+        },
+        {
+          "category": "프로그래밍 언어",
+          "items": [
+            "Python",
+            "R",
+            "PHP",
+            "Android"
+          ]
+        },
+        {
+          "category": "데이터베이스",
+          "items": [
+            "MySQL",
+            "MSSQL",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "버전 관리",
+          "items": [
+            "GitHub",
+            "GitLab"
+          ]
+        },
+        {
+          "category": "프로젝트 관리",
+          "items": [
+            "JIRA",
+            "Scrum",
+            "Kanban"
+          ]
+        },
+        {
+          "category": "데이터 과학",
+          "items": [
+            "데이터 처리",
+            "회귀 모델",
+            "의사결정 트리",
+            "신경망",
+            "클러스터링",
+            "시각화",
+            "텍스트 마이닝",
+            "의미 분석",
+            "정규 표현식"
+          ]
+        },
+        {
+          "category": "도구 및 프레임워크",
+          "items": [
+            "LaTeX",
+            "Markdown",
+            "Shiny",
+            "RESTful API",
+            "n8n",
+            "Claude API",
+            "OpenAI API",
+            "LINE Bot"
+          ]
+        }
+      ]
     }
   },
   "ar": {
@@ -364,14 +920,22 @@
       "name": "كروز تانج",
       "tagline": "قائد مبني على الذكاء الاصطناعي ومهندس أنظمة",
       "subtitle": "تحويل المؤسسات من خلال تطبيق الذكاء الاصطناعي · من إدارة 300+ فريق دولي إلى بناء حلول الذكاء الاصطناعي الأولى",
-      "stats": ["سنوات الخبرة", "الفريق المُدار", "الشركات المؤسسة", "المشاكل المحلولة"]
+      "stats": [
+        "سنوات الخبرة",
+        "الفريق المُدار",
+        "الشركات المؤسسة",
+        "المشاكل المحلولة"
+      ]
     },
     "nav": {
       "about": "نبذة عني",
       "experience": "الخبرة",
       "expertise": "المهارات",
       "projects": "المشاريع",
-      "contact": "اتصل بي"
+      "contact": "اتصل بي",
+      "education": "التعليم",
+      "teaching": "التدريس",
+      "skills": "المهارات"
     },
     "about": {
       "title": "نبذة عني",
@@ -444,6 +1008,137 @@
             "تصميم سير عمل جمع البيانات وهندسة ETL",
             "تطبيق الأساليب الإحصائية للتحليل ودعم اتخاذ القرار",
             "التحليل الدلالي للنظام الغذائي لمرضى الأمراض: بناء معجم المشاعر، تطوير نموذج التسجيل، إعداد تقارير تلقائية لأفضل 5 أطعمة موصى بها/يجب تجنبها لكل مرض"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "التعليم",
+      "schools": [
+        {
+          "school": "جامعة تايبيه الوطنية للأعمال",
+          "degree": "ماجستير العلوم",
+          "major": "علوم البيانات واتخاذ القرار",
+          "date": "يونيو 2013",
+          "location": "تايبيه، تايوان",
+          "coursework": [
+            "اتخاذ القرار متعدد المعايير",
+            "ذكاء الأعمال",
+            "الخوارزميات"
+          ]
+        },
+        {
+          "school": "جامعة شيه شين",
+          "degree": "بكالوريوس إدارة الأعمال",
+          "major": "المالية",
+          "date": "يونيو 2011",
+          "location": "تايبيه، تايوان",
+          "coursework": [
+            "الإحصاء",
+            "الإدارة المالية",
+            "المحاسبة",
+            "الاقتصاد"
+          ]
+        }
+      ]
+    },
+    "teaching": {
+      "title": "التدريس والمحاضرات",
+      "lectures": [
+        {
+          "title": "التنقيب عن النصوص باستخدام R",
+          "organization": "معهد صناعة المعلومات",
+          "type": "ورشة عمل"
+        },
+        {
+          "title": "تصور البيانات باستخدام R",
+          "organization": "جمعية الكمبيوتر في تايبيه، فوبون المالية",
+          "type": "تدريب مؤسسي"
+        },
+        {
+          "title": "كائنات البيانات والبرمجة الكائنية ومهارات الترميز",
+          "organization": "مؤتمر R Taiwan 2013",
+          "type": "عرض تقديمي"
+        },
+        {
+          "title": "التنقيب في Facebook لمعرفة الشخص الذي تحبه",
+          "organization": "OpenFoundry",
+          "type": "محاضرة تقنية"
+        },
+        {
+          "title": "التنقيب في البيانات المالية باستخدام R",
+          "organization": "أكاديمية تايوان للخدمات المصرفية والمالية",
+          "type": "دورة"
+        }
+      ]
+    },
+    "skills": {
+      "title": "المهارات التقنية",
+      "categories": [
+        {
+          "category": "منصات السحابة",
+          "items": [
+            "AWS EC2",
+            "Google Compute Engine"
+          ]
+        },
+        {
+          "category": "لغات البرمجة",
+          "items": [
+            "Python",
+            "R",
+            "PHP",
+            "Android"
+          ]
+        },
+        {
+          "category": "قواعد البيانات",
+          "items": [
+            "MySQL",
+            "MSSQL",
+            "MongoDB"
+          ]
+        },
+        {
+          "category": "إدارة الإصدارات",
+          "items": [
+            "GitHub",
+            "GitLab"
+          ]
+        },
+        {
+          "category": "إدارة المشاريع",
+          "items": [
+            "JIRA",
+            "Scrum",
+            "Kanban"
+          ]
+        },
+        {
+          "category": "علم البيانات",
+          "items": [
+            "معالجة البيانات",
+            "نماذج الانحدار",
+            "أشجار القرار",
+            "الشبكات العصبية",
+            "التجميع",
+            "التصور",
+            "التنقيب عن النصوص",
+            "التحليل الدلالي",
+            "التعبيرات النمطية"
+          ]
+        },
+        {
+          "category": "الأدوات والأطر",
+          "items": [
+            "LaTeX",
+            "Markdown",
+            "Shiny",
+            "RESTful API",
+            "n8n",
+            "Claude API",
+            "OpenAI API",
+            "LINE Bot"
           ]
         }
       ]
