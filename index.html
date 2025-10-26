@@ -1061,8 +1061,17 @@
         // Load translations from JSON file
         async function loadTranslations() {
             try {
+                console.log('🔄 Starting to load translations...');
                 const response = await fetch('data.json');
+                console.log('✅ Fetch response status:', response.status, response.statusText);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
                 const data = await response.json();
+                console.log('✅ JSON parsed successfully');
+                console.log('📦 Available language keys:', Object.keys(data));
 
                 // Map language codes (JSON uses zh-TW, HTML uses zh)
                 translations = {
@@ -1073,54 +1082,76 @@
                     ar: { dir: 'rtl', ...data.ar }
                 };
 
+                console.log('✅ Translations object created');
+                console.log('📝 Sample zh structure:', Object.keys(translations.zh));
+
                 // Initialize with default language after data is loaded
                 changeLanguage('zh');
 
-                console.log('Translations loaded successfully');
+                console.log('✅ Translations loaded successfully');
             } catch (error) {
-                console.error('Error loading translations:', error);
-                alert('Error loading language data. Please refresh the page.');
+                console.error('❌ Error loading translations:', error);
+                console.error('❌ Error stack:', error.stack);
+                alert('Error loading language data. Please refresh the page.\n\nCheck browser console for details.');
             }
         }
 
         
         // Language switching
         function changeLanguage(lang) {
-            currentLang = lang;
-            const t = translations[lang];
-            
-            // Set text direction
-            document.body.setAttribute('dir', t.dir);
-            
-            // Update language selector
-            const langFlags = {
-                zh: '🇹🇼 中文',
-                en: '🇺🇸 English',
-                ja: '🇯🇵 日本語',
-                ko: '🇰🇷 한국어',
-                ar: '🇸🇦 العربية'
-            };
-            document.getElementById('currentLang').textContent = langFlags[lang];
-            
-            // Update active state
-            document.querySelectorAll('.lang-menu button').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.getAttribute('data-lang') === lang) {
-                    btn.classList.add('active');
+            try {
+                console.log('🌍 Changing language to:', lang);
+                currentLang = lang;
+                const t = translations[lang];
+
+                if (!t) {
+                    throw new Error(`Language "${lang}" not found in translations`);
                 }
-            });
-            
-            // Update content
-            updateContent(t);
-            
-            // Close menu
-            document.getElementById('langMenu').classList.remove('show');
-            document.querySelector('.lang-toggle').classList.remove('open');
+
+                console.log('📝 Translation data structure:', Object.keys(t));
+
+                // Set text direction
+                document.body.setAttribute('dir', t.dir);
+
+                // Update language selector
+                const langFlags = {
+                    zh: '🇹🇼 中文',
+                    en: '🇺🇸 English',
+                    ja: '🇯🇵 日本語',
+                    ko: '🇰🇷 한국어',
+                    ar: '🇸🇦 العربية'
+                };
+                document.getElementById('currentLang').textContent = langFlags[lang];
+
+                // Update active state
+                document.querySelectorAll('.lang-menu button').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.getAttribute('data-lang') === lang) {
+                        btn.classList.add('active');
+                    }
+                });
+
+                // Update content
+                console.log('🔄 Updating content...');
+                updateContent(t);
+                console.log('✅ Content updated successfully');
+
+                // Close menu
+                document.getElementById('langMenu').classList.remove('show');
+                document.querySelector('.lang-toggle').classList.remove('open');
+            } catch (error) {
+                console.error('❌ Error in changeLanguage:', error);
+                console.error('❌ Error stack:', error.stack);
+                throw error;
+            }
         }
         
         function updateContent(t) {
-            // Hero
-            document.querySelector('.hero h1').textContent = t.hero.name;
+            try {
+                console.log('📄 Starting updateContent...');
+                // Hero
+                console.log('  → Updating hero section...');
+                document.querySelector('.hero h1').textContent = t.hero.name;
             document.querySelector('.hero .tagline').textContent = t.hero.tagline;
             document.querySelector('.hero .subtitle').textContent = t.hero.subtitle;
             
@@ -1224,9 +1255,18 @@
             ctaButtons[2].innerHTML = '💼 ' + t.cta.buttons[2];
             
             // Footer
-            const footerPs = document.querySelectorAll('footer p');
-            footerPs[0].textContent = t.footer.built;
-            footerPs[1].textContent = '"' + t.footer.quote + '"';
+                console.log('  → Updating footer...');
+                const footerPs = document.querySelectorAll('footer p');
+                footerPs[0].textContent = t.footer.built;
+                footerPs[1].textContent = '"' + t.footer.quote + '"';
+
+                console.log('✅ updateContent completed successfully');
+            } catch (error) {
+                console.error('❌ Error in updateContent:', error);
+                console.error('❌ Error occurred at section:', error.message);
+                console.error('❌ Error stack:', error.stack);
+                throw error;
+            }
         }
         
         function toggleLangMenu() {
