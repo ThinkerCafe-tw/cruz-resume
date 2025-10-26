@@ -922,53 +922,6 @@
             </div>
         </section>
 
-        <section id="expertise">
-            <h2 class="section-title">Core Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>🎯 Operations Leadership</h3>
-                    <p>
-                        Proven track record managing 300+ international team members. Expert in building data-driven workflows, KPI systems, and process optimization. Comfortable leading cross-functional teams across multiple time zones.
-                    </p>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>🤖 AI Implementation</h3>
-                    <p>
-                        Hands-on experience with Claude API, OpenAI, LINE Bot development, and AI agent design. Specializing in rapid POC validation and translating AI capabilities into business value.
-                    </p>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>⚡ Enterprise Automation</h3>
-                    <p>
-                        Building automation systems that work. RPA, web scraping, workflow design, and process optimization. Focus on sustainable, maintainable solutions that scale.
-                    </p>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>🎓 Technical Training</h3>
-                    <p>
-                        10+ years teaching at 資策會, 文化大學, 金融研訓院. Expert at translating complex technical concepts into actionable knowledge for non-technical audiences.
-                    </p>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>🔧 Tech Stack</h3>
-                    <p>
-                        Python, R, JavaScript · Claude Code, OpenAI API · LINE Messaging API · Selenium, Puppeteer · Google Cloud, AWS · Docker, Git · Flask, FastAPI
-                    </p>
-                </div>
-                
-                <div class="skill-card">
-                    <h3>🏆 Recognition</h3>
-                    <p>
-                        iPAS AI Application Specialist Exam Committee Member (工研院) · Former Director, Chinese R Software Association · R Taiwan 2013 Conference Organizer · Hackathon Awards
-                    </p>
-                </div>
-            </div>
-        </section>
-        
         <section id="projects">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
@@ -1192,17 +1145,7 @@
                     ul.innerHTML = job.points.map(p => `<li>${p}</li>`).join('');
                 }
             });
-            
-            // Expertise
-            document.querySelector('#expertise .section-title').textContent = t.expertise.title;
-            const skillCards = document.querySelectorAll('.skill-card');
-            t.expertise.skills.forEach((skill, i) => {
-                if (skillCards[i]) {
-                    skillCards[i].querySelector('h3').textContent = skill.icon + ' ' + skill.title;
-                    skillCards[i].querySelector('p').textContent = skill.desc;
-                }
-            });
-            
+
             // Projects
             document.querySelector('#projects .section-title').textContent = t.projects.title;
             const projectCards = document.querySelectorAll('.project-card');
