@@ -900,7 +900,28 @@
                 </div>
             </div>
         </section>
-        
+
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline" id="education-timeline">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <section id="teaching">
+            <h2 class="section-title">Teaching & Speaking</h2>
+            <div class="skill-grid" id="teaching-grid">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div id="skills-container">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
         <section id="expertise">
             <h2 class="section-title">Core Expertise</h2>
             <div class="skills-grid">
@@ -1197,6 +1218,58 @@
                 }
             });
             
+            // Education
+            if (t.education) {
+                document.querySelector('#education .section-title').textContent = t.education.title;
+                const eduTimeline = document.getElementById('education-timeline');
+                eduTimeline.innerHTML = t.education.schools.map(school => `
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <div class="timeline-title">${school.degree} - ${school.major}</div>
+                                <div class="timeline-company">${school.school}</div>
+                            </div>
+                            <div class="timeline-date">${school.date}</div>
+                        </div>
+                        <div class="timeline-content">
+                            <p><strong>${school.location}</strong></p>
+                            ${school.coursework && school.coursework.length > 0 ? `
+                                <p style="margin-top: 10px;">Relevant Coursework: ${school.coursework.join(', ')}</p>
+                            ` : ''}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Teaching
+            if (t.teaching) {
+                document.querySelector('#teaching .section-title').textContent = t.teaching.title;
+                const teachingGrid = document.getElementById('teaching-grid');
+                teachingGrid.innerHTML = t.teaching.lectures.map(lecture => `
+                    <div class="skill-card">
+                        <h3>${lecture.title}</h3>
+                        <p><strong>${lecture.organization}</strong></p>
+                        <p style="opacity: 0.7; font-size: 0.9em;">${lecture.type}</p>
+                    </div>
+                `).join('');
+            }
+
+            // Skills
+            if (t.skills) {
+                document.querySelector('#skills .section-title').textContent = t.skills.title;
+                const skillsContainer = document.getElementById('skills-container');
+                skillsContainer.innerHTML = t.skills.categories.map(cat => `
+                    <div class="skill-category" style="margin-bottom: 20px;">
+                        <h3 style="color: var(--primary); margin-bottom: 10px;">${cat.category}</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                            ${cat.items.map(item => `
+                                <span class="project-tag">${item}</span>
+                            `).join('')}
+                        </div>
+                    </div>
+                `).join('');
+            }
+
             // CTA
             document.querySelector('.cta h2').textContent = t.cta.title;
             const ctaPs = document.querySelectorAll('.cta p');
