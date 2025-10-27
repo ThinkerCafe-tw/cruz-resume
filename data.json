@@ -14,6 +14,7 @@
     "nav": {
       "about": "About",
       "experience": "Experience",
+      "featured": "Portfolio",
       "projects": "Projects",
       "contact": "Contact",
       "education": "Education",
@@ -92,6 +93,66 @@
             "Applied statistical methods for analysis and decision support",
             "Disease Patient Dietary Semantic Analysis: built sentiment lexicon, developed scoring model, automated top 5 food recommendations per disease"
           ]
+        }
+      ]
+    },
+    "featured": {
+      "title": "Featured Portfolio",
+      "subtitle": "Showcasing AI-native development & rapid delivery",
+      "projects": [
+        {
+          "name": "LINE Bot Booking System",
+          "emoji": "🤖",
+          "tagline": "48-hour delivery clinic appointment management system",
+          "highlight": "48-hour delivery | Fully automated workflow | 95%+ customer satisfaction",
+          "description": "Built a complete LINE Bot-based booking system for a physical therapy clinic, reducing booking time by 70% and dramatically improving customer satisfaction. Integrated with Google Calendar for real-time availability.",
+          "tech": [
+            "Claude Code",
+            "Supabase",
+            "Python",
+            "LINE Bot API",
+            "Google Calendar API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/linebot-booking-system",
+            "demo": ""
+          }
+        },
+        {
+          "name": "ThreadsBot Automation",
+          "emoji": "⚙️",
+          "tagline": "AI-driven social media automation system",
+          "highlight": "Multi-agent collaboration | 300% posting frequency increase",
+          "description": "Developed an intelligent social media automation system using multiple AI agents working together. Achieved 3x increase in engagement rate and 80% reduction in manual operation time through automatic content analysis and scheduling.",
+          "tech": [
+            "Claude API",
+            "MCP",
+            "Python",
+            "n8n",
+            "OpenAI API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/threadsbot",
+            "demo": ""
+          }
+        },
+        {
+          "name": "Personal OS Course",
+          "emoji": "📚",
+          "tagline": "Personal operating system course for the AI era",
+          "highlight": "100% student success rate | Practice-oriented",
+          "description": "Designed and delivered a comprehensive course series helping non-technical professionals build their own AI-powered personal operating systems. Students learn to leverage AI tools like Claude Code and MCP to automate workflows and enhance productivity.",
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Supabase",
+            "Notion API",
+            "Apps Script"
+          ],
+          "links": {
+            "github": "",
+            "demo": "https://thinkercafe.tw/personal-os"
+          }
         }
       ]
     },
@@ -427,6 +488,7 @@
     "nav": {
       "about": "關於我",
       "experience": "工作經歷",
+      "featured": "作品集",
       "projects": "專案作品",
       "contact": "聯絡方式",
       "education": "教育背景",
@@ -505,6 +567,66 @@
             "運用統計方法進行數據分析並支援決策",
             "疾病患者飲食語意分析：建立情緒詞庫、開發評分模型、自動報告各疾病建議/避免前五名飲食"
           ]
+        }
+      ]
+    },
+    "featured": {
+      "title": "精選作品集",
+      "subtitle": "展現 AI-Native 開發與快速交付能力",
+      "projects": [
+        {
+          "name": "LINE Bot 預約系統",
+          "emoji": "🤖",
+          "tagline": "48 小時交付的診所預約管理系統",
+          "highlight": "48 小時交付 | 全自動化流程 | 客戶滿意度 95%+",
+          "description": "為復健診所打造完整的 LINE Bot 預約系統，將預約流程時間縮短 70%，大幅提升客戶滿意度。整合 Google Calendar 實現即時可用時段查詢。",
+          "tech": [
+            "Claude Code",
+            "Supabase",
+            "Python",
+            "LINE Bot API",
+            "Google Calendar API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/linebot-booking-system",
+            "demo": ""
+          }
+        },
+        {
+          "name": "ThreadsBot 自動化",
+          "emoji": "⚙️",
+          "tagline": "AI 驅動的社群自動化系統",
+          "highlight": "多 Agent 協作 | 發文頻率提升 300%",
+          "description": "開發智慧型社群媒體自動化系統，運用多個 AI Agent 協同工作。達成 3 倍互動率提升，並將人工操作時間減少 80%，透過自動內容分析與排程優化社群經營。",
+          "tech": [
+            "Claude API",
+            "MCP",
+            "Python",
+            "n8n",
+            "OpenAI API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/threadsbot",
+            "demo": ""
+          }
+        },
+        {
+          "name": "Personal OS 課程",
+          "emoji": "📚",
+          "tagline": "AI 時代的個人作業系統課程",
+          "highlight": "100% 學員成功建立 AI 系統 | 實戰導向",
+          "description": "設計並教授完整課程系列，協助非技術背景專業人士建立自己的 AI 驅動個人作業系統。學員學習運用 Claude Code、MCP 等 AI 工具自動化工作流程並提升生產力。",
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Supabase",
+            "Notion API",
+            "Apps Script"
+          ],
+          "links": {
+            "github": "",
+            "demo": "https://thinkercafe.tw/personal-os"
+          }
         }
       ]
     },
@@ -840,6 +962,7 @@
     "nav": {
       "about": "プロフィール",
       "experience": "職務経歴",
+      "featured": "Portfolio",
       "projects": "プロジェクト",
       "contact": "お問い合わせ",
       "education": "学歴",
@@ -918,6 +1041,66 @@
             "統計手法を適用して分析と意思決定をサポート",
             "疾患患者食事意味分析：感情辞書構築、スコアリングモデル開発、疾患別推奨/避けるべき食品トップ5の自動報告"
           ]
+        }
+      ]
+    },
+    "featured": {
+      "title": "Featured Portfolio",
+      "subtitle": "Showcasing AI-native development & rapid delivery",
+      "projects": [
+        {
+          "name": "LINE Bot Booking System",
+          "emoji": "🤖",
+          "tagline": "48-hour delivery clinic appointment management system",
+          "highlight": "48-hour delivery | Fully automated workflow | 95%+ customer satisfaction",
+          "description": "Built a complete LINE Bot-based booking system for a physical therapy clinic, reducing booking time by 70% and dramatically improving customer satisfaction. Integrated with Google Calendar for real-time availability.",
+          "tech": [
+            "Claude Code",
+            "Supabase",
+            "Python",
+            "LINE Bot API",
+            "Google Calendar API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/linebot-booking-system",
+            "demo": ""
+          }
+        },
+        {
+          "name": "ThreadsBot Automation",
+          "emoji": "⚙️",
+          "tagline": "AI-driven social media automation system",
+          "highlight": "Multi-agent collaboration | 300% posting frequency increase",
+          "description": "Developed an intelligent social media automation system using multiple AI agents working together. Achieved 3x increase in engagement rate and 80% reduction in manual operation time through automatic content analysis and scheduling.",
+          "tech": [
+            "Claude API",
+            "MCP",
+            "Python",
+            "n8n",
+            "OpenAI API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/threadsbot",
+            "demo": ""
+          }
+        },
+        {
+          "name": "Personal OS Course",
+          "emoji": "📚",
+          "tagline": "Personal operating system course for the AI era",
+          "highlight": "100% student success rate | Practice-oriented",
+          "description": "Designed and delivered a comprehensive course series helping non-technical professionals build their own AI-powered personal operating systems. Students learn to leverage AI tools like Claude Code and MCP to automate workflows and enhance productivity.",
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Supabase",
+            "Notion API",
+            "Apps Script"
+          ],
+          "links": {
+            "github": "",
+            "demo": "https://thinkercafe.tw/personal-os"
+          }
         }
       ]
     },
@@ -1253,6 +1436,7 @@
     "nav": {
       "about": "소개",
       "experience": "경력",
+      "featured": "Portfolio",
       "projects": "프로젝트",
       "contact": "연락처",
       "education": "학력",
@@ -1331,6 +1515,66 @@
             "통계 방법을 적용하여 분석 및 의사결정 지원",
             "질병 환자 식이 의미 분석: 감정 사전 구축, 스코어링 모델 개발, 질병별 추천/회피 상위 5개 식품 자동 보고"
           ]
+        }
+      ]
+    },
+    "featured": {
+      "title": "Featured Portfolio",
+      "subtitle": "Showcasing AI-native development & rapid delivery",
+      "projects": [
+        {
+          "name": "LINE Bot Booking System",
+          "emoji": "🤖",
+          "tagline": "48-hour delivery clinic appointment management system",
+          "highlight": "48-hour delivery | Fully automated workflow | 95%+ customer satisfaction",
+          "description": "Built a complete LINE Bot-based booking system for a physical therapy clinic, reducing booking time by 70% and dramatically improving customer satisfaction. Integrated with Google Calendar for real-time availability.",
+          "tech": [
+            "Claude Code",
+            "Supabase",
+            "Python",
+            "LINE Bot API",
+            "Google Calendar API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/linebot-booking-system",
+            "demo": ""
+          }
+        },
+        {
+          "name": "ThreadsBot Automation",
+          "emoji": "⚙️",
+          "tagline": "AI-driven social media automation system",
+          "highlight": "Multi-agent collaboration | 300% posting frequency increase",
+          "description": "Developed an intelligent social media automation system using multiple AI agents working together. Achieved 3x increase in engagement rate and 80% reduction in manual operation time through automatic content analysis and scheduling.",
+          "tech": [
+            "Claude API",
+            "MCP",
+            "Python",
+            "n8n",
+            "OpenAI API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/threadsbot",
+            "demo": ""
+          }
+        },
+        {
+          "name": "Personal OS Course",
+          "emoji": "📚",
+          "tagline": "Personal operating system course for the AI era",
+          "highlight": "100% student success rate | Practice-oriented",
+          "description": "Designed and delivered a comprehensive course series helping non-technical professionals build their own AI-powered personal operating systems. Students learn to leverage AI tools like Claude Code and MCP to automate workflows and enhance productivity.",
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Supabase",
+            "Notion API",
+            "Apps Script"
+          ],
+          "links": {
+            "github": "",
+            "demo": "https://thinkercafe.tw/personal-os"
+          }
         }
       ]
     },
@@ -1666,6 +1910,7 @@
     "nav": {
       "about": "نبذة عني",
       "experience": "الخبرة",
+      "featured": "Portfolio",
       "projects": "المشاريع",
       "contact": "اتصل بي",
       "education": "التعليم",
@@ -1744,6 +1989,66 @@
             "تطبيق الأساليب الإحصائية للتحليل ودعم اتخاذ القرار",
             "التحليل الدلالي للنظام الغذائي لمرضى الأمراض: بناء معجم المشاعر، تطوير نموذج التسجيل، إعداد تقارير تلقائية لأفضل 5 أطعمة موصى بها/يجب تجنبها لكل مرض"
           ]
+        }
+      ]
+    },
+    "featured": {
+      "title": "Featured Portfolio",
+      "subtitle": "Showcasing AI-native development & rapid delivery",
+      "projects": [
+        {
+          "name": "LINE Bot Booking System",
+          "emoji": "🤖",
+          "tagline": "48-hour delivery clinic appointment management system",
+          "highlight": "48-hour delivery | Fully automated workflow | 95%+ customer satisfaction",
+          "description": "Built a complete LINE Bot-based booking system for a physical therapy clinic, reducing booking time by 70% and dramatically improving customer satisfaction. Integrated with Google Calendar for real-time availability.",
+          "tech": [
+            "Claude Code",
+            "Supabase",
+            "Python",
+            "LINE Bot API",
+            "Google Calendar API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/linebot-booking-system",
+            "demo": ""
+          }
+        },
+        {
+          "name": "ThreadsBot Automation",
+          "emoji": "⚙️",
+          "tagline": "AI-driven social media automation system",
+          "highlight": "Multi-agent collaboration | 300% posting frequency increase",
+          "description": "Developed an intelligent social media automation system using multiple AI agents working together. Achieved 3x increase in engagement rate and 80% reduction in manual operation time through automatic content analysis and scheduling.",
+          "tech": [
+            "Claude API",
+            "MCP",
+            "Python",
+            "n8n",
+            "OpenAI API"
+          ],
+          "links": {
+            "github": "https://github.com/thinkercafe-tw/threadsbot",
+            "demo": ""
+          }
+        },
+        {
+          "name": "Personal OS Course",
+          "emoji": "📚",
+          "tagline": "Personal operating system course for the AI era",
+          "highlight": "100% student success rate | Practice-oriented",
+          "description": "Designed and delivered a comprehensive course series helping non-technical professionals build their own AI-powered personal operating systems. Students learn to leverage AI tools like Claude Code and MCP to automate workflows and enhance productivity.",
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Supabase",
+            "Notion API",
+            "Apps Script"
+          ],
+          "links": {
+            "github": "",
+            "demo": "https://thinkercafe.tw/personal-os"
+          }
         }
       ]
     },

@@ -540,7 +540,137 @@
             left: 0;
             color: var(--accent-primary);
         }
-        
+
+        /* Featured Portfolio Grid */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
+        }
+
+        .featured-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            border: 2px solid var(--border-color);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.2);
+        }
+
+        .featured-emoji {
+            font-size: 4rem;
+            text-align: center;
+            padding: 30px 20px 10px;
+            background: var(--bg-accent);
+        }
+
+        .featured-content {
+            padding: 25px 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .featured-tagline {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .featured-highlight {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 136, 255, 0.1) 100%);
+            border-left: 3px solid var(--accent-primary);
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: var(--accent-primary);
+            border-radius: 5px;
+        }
+
+        .featured-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .featured-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--bg-primary);
+            border: 1px solid var(--accent-primary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tech-tag:hover {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            transform: scale(1.05);
+        }
+
+        .featured-links {
+            display: flex;
+            gap: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .featured-link {
+            flex: 1;
+            text-align: center;
+            padding: 10px 20px;
+            background: var(--bg-accent);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .featured-link:hover {
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            border-color: transparent;
+        }
+
+        .featured-link.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .featured-link.disabled:hover {
+            background: var(--bg-accent);
+            color: var(--text-secondary);
+            transform: none;
+        }
+
         /* CTA Section */
         .cta {
             text-align: center;
@@ -906,18 +1036,22 @@
             padding-left: 15px;
             position: relative;
             transition: var(--transition);
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 5px 5px 5px 15px;
         }
 
         .skill-item::before {
             content: '•';
             position: absolute;
-            left: 0;
+            left: 5px;
             color: var(--accent-primary);
         }
 
         .skill-item:hover {
             color: var(--text-primary);
             padding-left: 20px;
+            background: rgba(0, 255, 136, 0.1);
         }
 
         /* Mobile Responsive */
@@ -1213,6 +1347,14 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2 class="section-title">Featured Portfolio</h2>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-secondary); margin-bottom: 50px; font-size: 1.1rem;"></p>
+            <div class="featured-grid" id="featured-grid">
+                <!-- Populated by JS -->
             </div>
         </section>
 
@@ -1654,6 +1796,34 @@ ${logText}
                 });
                 logToPanel('✓ Projects section updated', 'success');
 
+                // Featured Portfolio section
+                if (t.featured) {
+                    document.querySelector('#featured .section-title').textContent = t.featured.title;
+                    document.querySelector('#featured .section-subtitle').textContent = t.featured.subtitle;
+                    const featuredGrid = document.getElementById('featured-grid');
+                    featuredGrid.innerHTML = t.featured.projects.map(project => `
+                        <div class="featured-card">
+                            <div class="featured-emoji">${project.emoji}</div>
+                            <div class="featured-content">
+                                <div class="featured-name">${project.name}</div>
+                                <div class="featured-tagline">${project.tagline}</div>
+                                <div class="featured-highlight">💡 ${project.highlight}</div>
+                                <div class="featured-description">${project.description}</div>
+                                <div class="featured-tech">
+                                    ${project.tech.map(tech => `<span class="tech-tag" onclick="scrollToSkills('${tech}')">${tech}</span>`).join('')}
+                                </div>
+                                <div class="featured-links">
+                                    ${project.links.github ? `<a href="${project.links.github}" target="_blank" class="featured-link">GitHub ↗</a>` : '<span class="featured-link disabled">GitHub</span>'}
+                                    ${project.links.demo ? `<a href="${project.links.demo}" target="_blank" class="featured-link">Demo ↗</a>` : '<span class="featured-link disabled">Demo</span>'}
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                    logToPanel('✓ Featured portfolio section updated', 'success');
+                } else {
+                    logToPanel('⚠ Featured section skipped (optional)', 'warning');
+                }
+
                 // Education section
                 if (t.education) {
                 document.querySelector('#education .section-title').textContent = t.education.title;
@@ -1729,7 +1899,9 @@ ${logText}
                                                     <div class="category-name">${cat.name}</div>
                                                     <div class="category-items">
                                                         ${cat.items.map(item => `
-                                                            <div class="skill-item">${item}</div>
+                                                            <div class="skill-item" onclick="scrollToRelatedProjects('${item.replace(/'/g, "\\'")}')">
+                                                                ${item}
+                                                            </div>
                                                         `).join('')}
                                                     </div>
                                                 </div>
@@ -1784,7 +1956,89 @@ ${logText}
                 throw error;
             }
         }
-        
+
+        // Scroll to skills section and highlight matching tech
+        function scrollToSkills(tech) {
+            const skillsSection = document.getElementById('skills');
+            skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Highlight matching skill items
+            setTimeout(() => {
+                const skillItems = document.querySelectorAll('.skill-item, .tech-tag');
+                skillItems.forEach(item => {
+                    if (item.textContent.toLowerCase().includes(tech.toLowerCase()) ||
+                        tech.toLowerCase().includes(item.textContent.toLowerCase().split(' ')[0])) {
+                        item.style.backgroundColor = 'var(--accent-primary)';
+                        item.style.color = 'var(--bg-primary)';
+                        item.style.transform = 'scale(1.1)';
+
+                        // Remove highlight after 2 seconds
+                        setTimeout(() => {
+                            item.style.backgroundColor = '';
+                            item.style.color = '';
+                            item.style.transform = '';
+                        }, 2000);
+                    }
+                });
+            }, 500);
+        }
+
+        // Scroll to projects/featured section and highlight related items
+        function scrollToRelatedProjects(skill) {
+            const featuredSection = document.getElementById('featured');
+            if (featuredSection) {
+                featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            // Highlight related projects after scroll
+            setTimeout(() => {
+                const techTags = document.querySelectorAll('.tech-tag');
+                const featuredCards = document.querySelectorAll('.featured-card, .project-card');
+
+                // Reset all cards
+                featuredCards.forEach(card => {
+                    card.style.opacity = '0.4';
+                    card.style.transform = '';
+                });
+
+                // Highlight matching cards
+                techTags.forEach(tag => {
+                    const tagText = tag.textContent.trim();
+                    const skillText = skill.trim();
+
+                    if (tagText.toLowerCase().includes(skillText.toLowerCase()) ||
+                        skillText.toLowerCase().includes(tagText.toLowerCase().split(' ')[0]) ||
+                        tagText.toLowerCase().split(' ')[0] === skillText.toLowerCase().split(' ')[0]) {
+
+                        // Highlight the tag
+                        tag.style.backgroundColor = 'var(--accent-primary)';
+                        tag.style.color = 'var(--bg-primary)';
+                        tag.style.transform = 'scale(1.1)';
+
+                        // Highlight parent card
+                        let card = tag.closest('.featured-card, .project-card');
+                        if (card) {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1.02)';
+                        }
+                    }
+                });
+
+                // Remove highlights after 3 seconds
+                setTimeout(() => {
+                    techTags.forEach(tag => {
+                        tag.style.backgroundColor = '';
+                        tag.style.color = '';
+                        tag.style.transform = '';
+                    });
+                    featuredCards.forEach(card => {
+                        card.style.opacity = '';
+                        card.style.transform = '';
+                    });
+                }, 3000);
+            }, 600);
+        }
+
         function toggleLangMenu() {
             const menu = document.getElementById('langMenu');
             const toggle = document.querySelector('.lang-toggle');
