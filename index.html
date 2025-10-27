@@ -1900,7 +1900,16 @@
             'flipflop-travel',
             'italian_brainrot'
         ];
-        
+
+        const FEATURED_PROJECT_DESCRIPTIONS = {
+            'thinker-kit': '個人 AI 增強系統 - 整合多種 AI 工具提升個人生產力與創造力',
+            'paomateng': '跑馬燈訊息系統 - 動態滾動訊息展示平台，支援即時更新與多螢幕同步',
+            'thinker-news': 'AI 驅動的新聞聚合平台 - 智能篩選與摘要新聞內容，打造個人化資訊流',
+            'pt-liff-app': 'LINE 物理治療預約系統 - 整合 LIFF 技術的復健管理與預約平台',
+            'flipflop-travel': '智能旅遊規劃系統 - AI 輔助行程規劃，提供個性化旅遊建議',
+            'italian_brainrot': '義大利語學習實驗 - 創新語言學習方法的探索性專案'
+        };
+
         const EXCLUDED_REPOS = [];
         
         const LANGUAGE_COLORS = {
@@ -2005,17 +2014,20 @@
         function createPortfolioCard(repo) {
             const card = document.createElement('div');
             card.className = 'portfolio-card';
-            
+
             const isFeatured = FEATURED_PROJECTS.includes(repo.name);
             const emoji = getEmojiForRepo(repo);
             const languageColor = LANGUAGE_COLORS[repo.language] || '#888';
-            
+
+            // Use custom description for featured projects, fallback to GitHub description
+            const description = FEATURED_PROJECT_DESCRIPTIONS[repo.name] || repo.description || '';
+
             card.innerHTML = `
                 ${isFeatured ? '<div class="featured-badge">精選</div>' : ''}
                 <div class="portfolio-header">
                     <div class="portfolio-emoji">${emoji}</div>
                     <h3 class="portfolio-name">${repo.name}</h3>
-                    ${repo.description ? `<p class="portfolio-description">${repo.description}</p>` : ''}
+                    ${description ? `<p class="portfolio-description">${description}</p>` : ''}
                 </div>
                 <div class="portfolio-content">
                     <div class="portfolio-stats">
