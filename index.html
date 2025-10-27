@@ -1940,16 +1940,19 @@
             const filtered = repos.filter(repo => {
                 if (repo.fork) return false;
                 if (EXCLUDED_REPOS.includes(repo.name)) return false;
-                
+
+                // Always include featured projects
+                if (FEATURED_PROJECTS.includes(repo.name)) return true;
+
                 // Include if has 'portfolio' topic
                 if (repo.topics && repo.topics.includes('portfolio')) return true;
-                
+
                 // Or has stars and recently updated
                 const hasStars = repo.stargazers_count >= 1;
                 const sixMonthsAgo = new Date();
                 sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
                 const recentlyUpdated = new Date(repo.updated_at) > sixMonthsAgo;
-                
+
                 return hasStars && recentlyUpdated;
             });
             
