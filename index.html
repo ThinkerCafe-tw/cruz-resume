@@ -541,14 +541,66 @@
             color: var(--accent-primary);
         }
 
-        /* Featured Portfolio Grid */
-        .featured-grid {
+        /* Portfolio Grid */
+        .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 35px;
         }
 
-        .featured-card {
+        /* Loading & Error States */
+        .portfolio-loading {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--text-secondary);
+        }
+
+        .spinner {
+            border: 4px solid var(--border-color);
+            border-top: 4px solid var(--accent-primary);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 25px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .portfolio-error {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .portfolio-error p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .retry-btn {
+            padding: 12px 30px;
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .retry-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 255, 136, 0.3);
+        }
+
+        /* Portfolio Card */
+        .portfolio-card {
+            position: relative;
             background: var(--bg-secondary);
             border-radius: 20px;
             border: 2px solid var(--border-color);
@@ -557,6 +609,160 @@
             display: flex;
             flex-direction: column;
         }
+
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.2);
+        }
+
+        /* Featured Badge */
+        .featured-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            z-index: 10;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .portfolio-header {
+            padding: 30px 30px 20px;
+            background: var(--bg-accent);
+        }
+
+        .portfolio-emoji {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .portfolio-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .portfolio-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .portfolio-content {
+            padding: 25px 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .portfolio-stats {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .portfolio-stats span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .language-tag {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: var(--bg-accent);
+            border-radius: 12px;
+        }
+
+        .language-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .portfolio-topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .topic-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        .topic-tag:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+
+        .portfolio-links {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .btn-github,
+        .btn-demo {
+            flex: 1;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn-github {
+            background: var(--bg-accent);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+        }
+
+        .btn-github:hover {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            border-color: var(--accent-primary);
+        }
+
+        .btn-demo {
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+        }
+
+        .btn-demo:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .portfolio-updated {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            opacity: 0.7;
+            margin-top: auto;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
 
         .featured-card:hover {
             transform: translateY(-8px);
@@ -1285,7 +1491,7 @@
                 padding: 10px 20px;
             }
 
-            .featured-grid {
+            .portfolio-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1583,11 +1789,25 @@
             </div>
         </section>
 
-        <section id="featured">
-            <h2 class="section-title">Featured Portfolio</h2>
-            <p class="section-subtitle" style="text-align: center; color: var(--text-secondary); margin-bottom: 50px; font-size: 1.1rem;"></p>
-            <div class="featured-grid" id="featured-grid">
-                <!-- Populated by JS -->
+        <section id="portfolio">
+            <h2 class="section-title">作品集 / Portfolio</h2>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-secondary); margin-bottom: 30px; font-size: 1.1rem;">展現 AI-Native 開發與快速交付能力</p>
+
+            <!-- Loading Animation -->
+            <div id="portfolio-loading" class="portfolio-loading">
+                <div class="spinner"></div>
+                <p>正在從 GitHub 載入專案...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="portfolio-error" class="portfolio-error" style="display: none;">
+                <p>⚠️ 無法載入專案，請稍後再試</p>
+                <button onclick="initPortfolio()" class="retry-btn">重試</button>
+            </div>
+
+            <!-- Portfolio Container -->
+            <div class="portfolio-grid" id="portfolio-container" style="display: none;">
+                <!-- Populated by JavaScript from GitHub API -->
             </div>
         </section>
 
@@ -1633,106 +1853,6 @@
             </div>
         </section>
 
-        <section id="projects">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>ThinkerCafe Education Platform</h3>
-                        <span class="project-tag">AI Education</span>
-                        <span class="project-tag">System Design</span>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>Comprehensive AI curriculum (Personal OS, 5+ course series)</li>
-                            <li>Serving non-technical professionals entering AI era</li>
-                            <li>Built complete ecosystem from content to delivery</li>
-                            <li>Emphasis on practical, implementable systems</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>LINE Bot Automation Systems</h3>
-                        <span class="project-tag">Enterprise</span>
-                        <span class="project-tag">Automation</span>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>Booking system for physical therapy clinic</li>
-                            <li>70% reduction in booking process time</li>
-                            <li>Google Calendar integration</li>
-                            <li>Improved customer satisfaction scores</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Thinker Kit</h3>
-                        <span class="project-tag">Productivity</span>
-                        <span class="project-tag">AI Agent</span>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>Personal AI enhancement system</li>
-                            <li>Integrated memory, prompt library, productivity tools</li>
-                            <li>Daily insights and goal tracking</li>
-                            <li>Gamified engagement system</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>ThreadsBot</h3>
-                        <span class="project-tag">Social Media</span>
-                        <span class="project-tag">AI Agent</span>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>AI-powered social media automation</li>
-                            <li>3x increase in engagement rate</li>
-                            <li>80% reduction in operation time</li>
-                            <li>Automatic content analysis and scheduling</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Ryan OS & Mary OS</h3>
-                        <span class="project-tag">Family Tech</span>
-                        <span class="project-tag">System</span>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>AI-driven family management systems</li>
-                            <li>Education tracking (Ryan OS)</li>
-                            <li>Elder care coordination (Mary OS)</li>
-                            <li>Data-driven family decisions</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>300+ Team Operations</h3>
-                        <span class="project-tag">Leadership</span>
-                        <span class="project-tag">Scale</span>
-                    </div>
-                    <div class="project-content">
-                        <ul>
-                            <li>International team across Philippines</li>
-                            <li>24/7 operations coordination</li>
-                            <li>Data-driven KPI systems</li>
-                            <li>40% cost reduction through automation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
         
         <section id="cta">
             <div class="cta">
@@ -1765,6 +1885,231 @@
     </footer>
     
     <script>
+
+        // ========================================
+        // GitHub Portfolio Integration
+        // ========================================
+
+        const GITHUB_USERNAME = 'thinkercafe-tw';
+        
+        const FEATURED_PROJECTS = [
+            'linebot-booking-system',
+            'threadsbot',
+            'personal-os'
+        ];
+        
+        const EXCLUDED_REPOS = [];
+        
+        const LANGUAGE_COLORS = {
+            'Python': '#3572A5',
+            'JavaScript': '#f1e05a',
+            'TypeScript': '#2b7489',
+            'HTML': '#e34c26',
+            'CSS': '#563d7c',
+            'Shell': '#89e051',
+            'Jupyter Notebook': '#DA5B0B',
+            'R': '#198CE7',
+            'Go': '#00ADD8',
+            'Ruby': '#701516',
+            'PHP': '#4F5D95',
+            'Java': '#b07219'
+        };
+
+        // Fetch GitHub repositories
+        async function fetchGitHubProjects() {
+            const url = `https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`;
+            
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`GitHub API returned ${response.status}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Failed to fetch GitHub projects:', error);
+                throw error;
+            }
+        }
+
+        // Filter and sort repositories
+        function filterAndSortRepos(repos) {
+            // Filter
+            const filtered = repos.filter(repo => {
+                if (repo.fork) return false;
+                if (EXCLUDED_REPOS.includes(repo.name)) return false;
+                
+                // Include if has 'portfolio' topic
+                if (repo.topics && repo.topics.includes('portfolio')) return true;
+                
+                // Or has stars and recently updated
+                const hasStars = repo.stargazers_count >= 1;
+                const sixMonthsAgo = new Date();
+                sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+                const recentlyUpdated = new Date(repo.updated_at) > sixMonthsAgo;
+                
+                return hasStars && recentlyUpdated;
+            });
+            
+            // Sort: featured first, then by stars
+            return filtered.sort((a, b) => {
+                const aIndex = FEATURED_PROJECTS.indexOf(a.name);
+                const bIndex = FEATURED_PROJECTS.indexOf(b.name);
+                
+                if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
+                if (aIndex !== -1) return -1;
+                if (bIndex !== -1) return 1;
+                
+                return b.stargazers_count - a.stargazers_count;
+            });
+        }
+
+        // Get emoji for repository
+        function getEmojiForRepo(repo) {
+            const name = repo.name.toLowerCase();
+            const topics = (repo.topics || []).join(' ').toLowerCase();
+            const desc = (repo.description || '').toLowerCase();
+            const combined = name + ' ' + topics + ' ' + desc;
+            
+            if (combined.includes('bot') || combined.includes('line')) return '🤖';
+            if (combined.includes('web') || combined.includes('site')) return '🌐';
+            if (combined.includes('api')) return '🔌';
+            if (combined.includes('automation') || combined.includes('auto')) return '⚙️';
+            if (combined.includes('ai') || combined.includes('ml')) return '🧠';
+            if (combined.includes('data')) return '📊';
+            if (combined.includes('course') || combined.includes('learn')) return '📚';
+            if (combined.includes('game')) return '🎮';
+            if (combined.includes('mobile')) return '📱';
+            return '🚀';
+        }
+
+        // Format date to localized string
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const diffTime = Math.abs(now - date);
+            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+            
+            if (diffDays < 7) return `${diffDays} 天前`;
+            if (diffDays < 30) return `${Math.floor(diffDays / 7)} 週前`;
+            if (diffDays < 365) return `${Math.floor(diffDays / 30)} 個月前`;
+            return date.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long' });
+        }
+
+        // Create portfolio card
+        function createPortfolioCard(repo) {
+            const card = document.createElement('div');
+            card.className = 'portfolio-card';
+            
+            const isFeatured = FEATURED_PROJECTS.includes(repo.name);
+            const emoji = getEmojiForRepo(repo);
+            const languageColor = LANGUAGE_COLORS[repo.language] || '#888';
+            
+            card.innerHTML = `
+                ${isFeatured ? '<div class="featured-badge">精選</div>' : ''}
+                <div class="portfolio-header">
+                    <div class="portfolio-emoji">${emoji}</div>
+                    <h3 class="portfolio-name">${repo.name}</h3>
+                    ${repo.description ? `<p class="portfolio-description">${repo.description}</p>` : ''}
+                </div>
+                <div class="portfolio-content">
+                    <div class="portfolio-stats">
+                        <span>⭐ ${repo.stargazers_count}</span>
+                        <span>🍴 ${repo.forks_count}</span>
+                        ${repo.language ? `
+                            <span class="language-tag">
+                                <span class="language-dot" style="background: ${languageColor}"></span>
+                                ${repo.language}
+                            </span>
+                        ` : ''}
+                    </div>
+                    ${repo.topics && repo.topics.length > 0 ? `
+                        <div class="portfolio-topics">
+                            ${repo.topics.slice(0, 5).map(topic => 
+                                `<span class="topic-tag">#${topic}</span>`
+                            ).join('')}
+                        </div>
+                    ` : ''}
+                    <div class="portfolio-links">
+                        <a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="btn-github">
+                            GitHub ↗
+                        </a>
+                        ${repo.homepage ? `
+                            <a href="${repo.homepage}" target="_blank" rel="noopener noreferrer" class="btn-demo">
+                                Demo ↗
+                            </a>
+                        ` : ''}
+                    </div>
+                    <div class="portfolio-updated">更新於 ${formatDate(repo.updated_at)}</div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        // Render projects to container
+        function renderPortfolio(repos) {
+            const container = document.getElementById('portfolio-container');
+            container.innerHTML = '';
+            
+            if (repos.length === 0) {
+                container.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 60px 20px;">目前沒有符合條件的專案</p>';
+            } else {
+                repos.forEach(repo => {
+                    const card = createPortfolioCard(repo);
+                    container.appendChild(card);
+                });
+            }
+        }
+
+        // Show loading state
+        function showPortfolioLoading() {
+            document.getElementById('portfolio-loading').style.display = 'block';
+            document.getElementById('portfolio-error').style.display = 'none';
+            document.getElementById('portfolio-container').style.display = 'none';
+        }
+
+        // Show error state
+        function showPortfolioError() {
+            document.getElementById('portfolio-loading').style.display = 'none';
+            document.getElementById('portfolio-error').style.display = 'block';
+            document.getElementById('portfolio-container').style.display = 'none';
+        }
+
+        // Show content state
+        function showPortfolioContent() {
+            document.getElementById('portfolio-loading').style.display = 'none';
+            document.getElementById('portfolio-error').style.display = 'none';
+            document.getElementById('portfolio-container').style.display = 'grid';
+        }
+
+        // Initialize portfolio (called on page load and retry button)
+        async function initPortfolio() {
+            showPortfolioLoading();
+            
+            try {
+                const repos = await fetchGitHubProjects();
+                const filtered = filterAndSortRepos(repos);
+                renderPortfolio(filtered);
+                showPortfolioContent();
+                
+                console.log(`✅ Loaded ${filtered.length} projects from GitHub API`);
+            } catch (error) {
+                console.error('❌ Failed to initialize portfolio:', error);
+                showPortfolioError();
+            }
+        }
+
+        // Auto-initialize portfolio when page loads
+        window.addEventListener('load', () => {
+            // Small delay to ensure DOM is ready
+            setTimeout(initPortfolio, 500);
+        });
+
+        // ========================================
+        // End GitHub Portfolio Integration
+        // ========================================
+
+
         // Frontend Error Display System
         const errorLogs = [];
         let hasError = false;
@@ -2074,34 +2419,6 @@ ${logText}
                     }
                 });
                 logToPanel('✓ Projects section updated', 'success');
-
-                // Featured Portfolio section
-                if (t.featured) {
-                    document.querySelector('#featured .section-title').textContent = t.featured.title;
-                    document.querySelector('#featured .section-subtitle').textContent = t.featured.subtitle;
-                    const featuredGrid = document.getElementById('featured-grid');
-                    featuredGrid.innerHTML = t.featured.projects.map(project => `
-                        <div class="featured-card">
-                            <div class="featured-emoji">${project.emoji}</div>
-                            <div class="featured-content">
-                                <div class="featured-name">${project.name}</div>
-                                <div class="featured-tagline">${project.tagline}</div>
-                                <div class="featured-highlight">💡 ${project.highlight}</div>
-                                <div class="featured-description">${project.description}</div>
-                                <div class="featured-tech">
-                                    ${project.tech.map(tech => `<span class="tech-tag" onclick="scrollToSkills('${tech}')">${tech}</span>`).join('')}
-                                </div>
-                                <div class="featured-links">
-                                    ${project.links.github ? `<a href="${project.links.github}" target="_blank" class="featured-link">GitHub ↗</a>` : '<span class="featured-link disabled">GitHub</span>'}
-                                    ${project.links.demo ? `<a href="${project.links.demo}" target="_blank" class="featured-link">Demo ↗</a>` : '<span class="featured-link disabled">Demo</span>'}
-                                </div>
-                            </div>
-                        </div>
-                    `).join('');
-                    logToPanel('✓ Featured portfolio section updated', 'success');
-                } else {
-                    logToPanel('⚠ Featured section skipped (optional)', 'warning');
-                }
 
                 // Education section
                 if (t.education) {

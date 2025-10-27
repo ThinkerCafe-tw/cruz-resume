@@ -19,7 +19,8 @@
       "contact": "Contact",
       "education": "Education",
       "teaching": "Teaching",
-      "skills": "Skills"
+      "skills": "Skills",
+      "portfolio": "Portfolio"
     },
     "about": {
       "title": "About Me",
@@ -537,7 +538,8 @@
       "contact": "聯絡方式",
       "education": "教育背景",
       "teaching": "教學經歷",
-      "skills": "技術能力"
+      "skills": "技術能力",
+      "portfolio": "作品集"
     },
     "about": {
       "title": "關於我",
@@ -1041,7 +1043,8 @@
       "contact": "お問い合わせ",
       "education": "学歴",
       "teaching": "講演活動",
-      "skills": "技術スキル"
+      "skills": "技術スキル",
+      "portfolio": "Portfolio"
     },
     "about": {
       "title": "プロフィール",
@@ -1559,7 +1562,8 @@
       "contact": "연락처",
       "education": "학력",
       "teaching": "강연 활동",
-      "skills": "기술 역량"
+      "skills": "기술 역량",
+      "portfolio": "Portfolio"
     },
     "about": {
       "title": "소개",
@@ -2077,7 +2081,8 @@
       "contact": "اتصل بي",
       "education": "التعليم",
       "teaching": "التدريس",
-      "skills": "المهارات"
+      "skills": "المهارات",
+      "portfolio": "Portfolio"
     },
     "about": {
       "title": "نبذة عني",
