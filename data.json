@@ -37,6 +37,16 @@
             "Designed comprehensive AI curriculum (Personal OS, AI Communication, Visual/System Hacker series)",
             "Built LINE Bot, automation systems, and AI-powered productivity tools",
             "Delivering enterprise consulting on AI implementation and workflow optimization"
+          ],
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Claude API",
+            "Python",
+            "LINE Bot",
+            "n8n",
+            "Supabase",
+            "Notion API"
           ]
         },
         {
@@ -48,6 +58,12 @@
             "Overseas assignments: Dubai Business Bay (4 months), Philippines Clark (1.5 years), Makati/BGC (1 year)",
             "Enhanced data-driven decision-making using Python and Telegram Bot API",
             "Managed all operations except finance and retail, reported directly to Chairman"
+          ],
+          "tech": [
+            "Python",
+            "Telegram Bot API",
+            "MySQL",
+            "Data Analysis"
           ]
         },
         {
@@ -59,6 +75,12 @@
             "Implemented Scrum development and testing environments",
             "Developed operational anomaly reporting system with JIRA automation",
             "Resolved iOS certificate and IP blocking issues"
+          ],
+          "tech": [
+            "Scrum",
+            "JIRA",
+            "iOS",
+            "Git"
           ]
         },
         {
@@ -70,6 +92,14 @@
             "Established complete environment: Linux, Python, Docker, Jupyter, RStudio",
             "Predicted player churn and implemented retention strategies",
             "Detected arbitrage players and compiled quarterly reports"
+          ],
+          "tech": [
+            "Python",
+            "Docker",
+            "Jupyter",
+            "RStudio",
+            "Linux",
+            "Machine Learning"
           ]
         },
         {
@@ -82,6 +112,13 @@
             "Chunghwa Telecom: big data Hadoop consulting",
             "E.SUN Bank: cross-device member attribution",
             "ITRI College: talent assessment & job data analysis"
+          ],
+          "tech": [
+            "Big Data",
+            "Hadoop",
+            "Python",
+            "R",
+            "Data Analysis"
           ]
         },
         {
@@ -92,6 +129,13 @@
             "Designed data collection workflows and ETL engineering",
             "Applied statistical methods for analysis and decision support",
             "Disease Patient Dietary Semantic Analysis: built sentiment lexicon, developed scoring model, automated top 5 food recommendations per disease"
+          ],
+          "tech": [
+            "Python",
+            "ETL",
+            "Statistical Analysis",
+            "NLP",
+            "Sentiment Analysis"
           ]
         }
       ]
@@ -511,6 +555,16 @@
             "設計完整 AI 課程（Personal OS、AI 溝通術、視覺/系統駭客系列）",
             "建立 LINE Bot、自動化系統與 AI 生產力工具",
             "提供企業 AI 實作與工作流優化顧問服務"
+          ],
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Claude API",
+            "Python",
+            "LINE Bot",
+            "n8n",
+            "Supabase",
+            "Notion API"
           ]
         },
         {
@@ -522,6 +576,12 @@
             "海外派駐：杜拜 Business Bay（4個月）、菲律賓克拉克（1.5年）、馬卡地/BGC（1年）",
             "運用 Python 和 Telegram Bot API 強化數據驅動決策",
             "管理除財務與零售外的所有營運，直接向董事長報告"
+          ],
+          "tech": [
+            "Python",
+            "Telegram Bot API",
+            "MySQL",
+            "數據分析"
           ]
         },
         {
@@ -556,6 +616,13 @@
             "中華電信：提供大數據 Hadoop 叢集顧問及維運",
             "玉山銀行：實作跨裝置會員歸戶機制",
             "工研院產業學院：產業人才能力鑑定及國際企業職缺資料分析"
+          ],
+          "tech": [
+            "Big Data",
+            "Hadoop",
+            "Python",
+            "R",
+            "數據分析"
           ]
         },
         {
@@ -566,6 +633,13 @@
             "設計資料收集流程與 ETL 工程",
             "運用統計方法進行數據分析並支援決策",
             "疾病患者飲食語意分析：建立情緒詞庫、開發評分模型、自動報告各疾病建議/避免前五名飲食"
+          ],
+          "tech": [
+            "Python",
+            "ETL",
+            "統計分析",
+            "NLP",
+            "語意分析"
           ]
         }
       ]
@@ -985,6 +1059,16 @@
             "包括的なAIカリキュラムを設計（Personal OS、AIコミュニケーション、ビジュアル/システムハッカーシリーズ）",
             "LINE Bot、自動化システム、AI搭載生産性ツールを構築",
             "AI実装とワークフロー最適化に関する企業コンサルティングを提供"
+          ],
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Claude API",
+            "Python",
+            "LINE Bot",
+            "n8n",
+            "Supabase",
+            "Notion API"
           ]
         },
         {
@@ -996,6 +1080,12 @@
             "海外赴任：ドバイBusiness Bay（4ヶ月）、フィリピンClark（1.5年）、Makati/BGC（1年）",
             "PythonとTelegram Bot APIを使用してデータ駆動型意思決定を強化",
             "財務と小売を除く全オペレーションを管理、会長に直接報告"
+          ],
+          "tech": [
+            "Python",
+            "Telegram Bot API",
+            "MySQL",
+            "Data Analysis"
           ]
         },
         {
@@ -1007,6 +1097,12 @@
             "Scrum開発とテスト環境を実装",
             "JIRA自動化による運用異常報告システムを開発",
             "iOS証明書とIPブロッキング問題を解決"
+          ],
+          "tech": [
+            "Scrum",
+            "JIRA",
+            "iOS",
+            "Git"
           ]
         },
         {
@@ -1018,6 +1114,14 @@
             "完全な環境を1ヶ月で確立：Linux、Python、Docker、Jupyter、RStudio",
             "プレイヤーの離脱を予測し、定着戦略を実装",
             "アービトラージプレイヤーを検出し、四半期報告書を作成"
+          ],
+          "tech": [
+            "Python",
+            "Docker",
+            "Jupyter",
+            "RStudio",
+            "Linux",
+            "Machine Learning"
           ]
         },
         {
@@ -1030,6 +1134,13 @@
             "中華電信：ビッグデータHadoopコンサルティング",
             "E.SUN銀行：クロスデバイス会員アトリビューション",
             "ITRI College：人材評価と国際企業求人データ分析"
+          ],
+          "tech": [
+            "Big Data",
+            "Hadoop",
+            "Python",
+            "R",
+            "Data Analysis"
           ]
         },
         {
@@ -1040,6 +1151,13 @@
             "データ収集ワークフローとETLエンジニアリングを設計",
             "統計手法を適用して分析と意思決定をサポート",
             "疾患患者食事意味分析：感情辞書構築、スコアリングモデル開発、疾患別推奨/避けるべき食品トップ5の自動報告"
+          ],
+          "tech": [
+            "Python",
+            "ETL",
+            "Statistical Analysis",
+            "NLP",
+            "Sentiment Analysis"
           ]
         }
       ]
@@ -1459,6 +1577,16 @@
             "종합 AI 커리큘럼 설계 (Personal OS, AI 커뮤니케이션, 비주얼/시스템 해커 시리즈)",
             "LINE Bot, 자동화 시스템, AI 기반 생산성 도구 구축",
             "AI 구현 및 워크플로우 최적화에 대한 기업 컨설팅 제공"
+          ],
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Claude API",
+            "Python",
+            "LINE Bot",
+            "n8n",
+            "Supabase",
+            "Notion API"
           ]
         },
         {
@@ -1470,6 +1598,12 @@
             "해외 파견: 두바이 Business Bay (4개월), 필리핀 Clark (1.5년), Makati/BGC (1년)",
             "Python 및 Telegram Bot API를 사용하여 데이터 기반 의사결정 강화",
             "재무 및 소매를 제외한 모든 운영 관리, 회장에게 직접 보고"
+          ],
+          "tech": [
+            "Python",
+            "Telegram Bot API",
+            "MySQL",
+            "Data Analysis"
           ]
         },
         {
@@ -1481,6 +1615,12 @@
             "Scrum 개발 및 테스트 환경 구축",
             "JIRA 자동화를 통한 운영 이상 보고 시스템 개발",
             "iOS 인증서 및 IP 차단 문제 해결"
+          ],
+          "tech": [
+            "Scrum",
+            "JIRA",
+            "iOS",
+            "Git"
           ]
         },
         {
@@ -1492,6 +1632,14 @@
             "완전한 환경을 1개월 내 구축: Linux, Python, Docker, Jupyter, RStudio",
             "플레이어 이탈 예측 및 유지 전략 구현",
             "차익거래 플레이어 탐지 및 분기별 보고서 작성"
+          ],
+          "tech": [
+            "Python",
+            "Docker",
+            "Jupyter",
+            "RStudio",
+            "Linux",
+            "Machine Learning"
           ]
         },
         {
@@ -1504,6 +1652,13 @@
             "중화전신: 빅데이터 Hadoop 컨설팅",
             "E.SUN 은행: 크로스 디바이스 회원 귀속",
             "ITRI College: 인재 평가 및 국제 기업 채용 데이터 분석"
+          ],
+          "tech": [
+            "Big Data",
+            "Hadoop",
+            "Python",
+            "R",
+            "Data Analysis"
           ]
         },
         {
@@ -1514,6 +1669,13 @@
             "데이터 수집 워크플로우 및 ETL 엔지니어링 설계",
             "통계 방법을 적용하여 분석 및 의사결정 지원",
             "질병 환자 식이 의미 분석: 감정 사전 구축, 스코어링 모델 개발, 질병별 추천/회피 상위 5개 식품 자동 보고"
+          ],
+          "tech": [
+            "Python",
+            "ETL",
+            "Statistical Analysis",
+            "NLP",
+            "Sentiment Analysis"
           ]
         }
       ]
@@ -1933,6 +2095,16 @@
             "تصميم منهج شامل للذكاء الاصطناعي (نظام OS الشخصي، تواصل الذكاء الاصطناعي، سلسلة الهاكر البصري/النظامي)",
             "بناء LINE Bot وأنظمة الأتمتة وأدوات الإنتاجية المدعومة بالذكاء الاصطناعي",
             "تقديم استشارات مؤسسية حول تطبيق الذكاء الاصطناعي وتحسين سير العمل"
+          ],
+          "tech": [
+            "Claude Code",
+            "MCP",
+            "Claude API",
+            "Python",
+            "LINE Bot",
+            "n8n",
+            "Supabase",
+            "Notion API"
           ]
         },
         {
@@ -1944,6 +2116,12 @@
             "مهام خارجية: دبي بزنس باي (4 أشهر)، الفلبين كلارك (1.5 سنة)، ماكاتي/BGC (سنة واحدة)",
             "تعزيز اتخاذ القرارات المستندة إلى البيانات باستخدام Python وTelegram Bot API",
             "إدارة جميع العمليات باستثناء المالية والتجزئة، التقارير مباشرة إلى الرئيس"
+          ],
+          "tech": [
+            "Python",
+            "Telegram Bot API",
+            "MySQL",
+            "Data Analysis"
           ]
         },
         {
@@ -1955,6 +2133,12 @@
             "تنفيذ Scrum وبيئات الاختبار",
             "تطوير نظام الإبلاغ عن الحالات الشاذة التشغيلية مع أتمتة JIRA",
             "حل مشاكل شهادة iOS وحظر IP"
+          ],
+          "tech": [
+            "Scrum",
+            "JIRA",
+            "iOS",
+            "Git"
           ]
         },
         {
@@ -1966,6 +2150,14 @@
             "إنشاء بيئة كاملة في شهر واحد: Linux، Python، Docker، Jupyter، RStudio",
             "التنبؤ بتوقف اللاعبين وتنفيذ استراتيجيات الاحتفاظ",
             "اكتشاف لاعبي المراجحة وإعداد التقارير الفصلية"
+          ],
+          "tech": [
+            "Python",
+            "Docker",
+            "Jupyter",
+            "RStudio",
+            "Linux",
+            "Machine Learning"
           ]
         },
         {
@@ -1978,6 +2170,13 @@
             "Chunghwa Telecom: استشارات Hadoop للبيانات الضخمة",
             "بنك E.SUN: إسناد الأعضاء عبر الأجهزة",
             "ITRI College: تقييم المواهب وتحليل بيانات وظائف الشركات الدولية"
+          ],
+          "tech": [
+            "Big Data",
+            "Hadoop",
+            "Python",
+            "R",
+            "Data Analysis"
           ]
         },
         {
@@ -1988,6 +2187,13 @@
             "تصميم سير عمل جمع البيانات وهندسة ETL",
             "تطبيق الأساليب الإحصائية للتحليل ودعم اتخاذ القرار",
             "التحليل الدلالي للنظام الغذائي لمرضى الأمراض: بناء معجم المشاعر، تطوير نموذج التسجيل، إعداد تقارير تلقائية لأفضل 5 أطعمة موصى بها/يجب تجنبها لكل مرض"
+          ],
+          "tech": [
+            "Python",
+            "ETL",
+            "Statistical Analysis",
+            "NLP",
+            "Sentiment Analysis"
           ]
         }
       ]

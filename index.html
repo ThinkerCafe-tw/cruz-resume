@@ -2024,6 +2024,31 @@ ${logText}
                         timelineItems[i].querySelector('.timeline-date').textContent = job.date;
                         const ul = timelineItems[i].querySelector('ul');
                         ul.innerHTML = job.points.map(p => `<li>${p}</li>`).join('');
+
+                        // Add tech tags if available
+                        const contentDiv = timelineItems[i].querySelector('.timeline-content');
+                        let existingTechDiv = contentDiv.querySelector('.experience-tech');
+
+                        if (job.tech && job.tech.length > 0) {
+                            const techHTML = `
+                                <div class="experience-tech" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px;">
+                                    <span style="color: var(--text-secondary); font-size: 0.9rem;">🛠️</span>
+                                    ${job.tech.map(tech => `
+                                        <span class="tech-tag" onclick="scrollToSkills('${tech.replace(/'/g, "\\'")}')">
+                                            ${tech}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            `;
+
+                            if (existingTechDiv) {
+                                existingTechDiv.outerHTML = techHTML;
+                            } else {
+                                contentDiv.insertAdjacentHTML('beforeend', techHTML);
+                            }
+                        } else if (existingTechDiv) {
+                            existingTechDiv.remove();
+                        }
                     }
                 });
                 logToPanel('✓ Experience section updated', 'success');
