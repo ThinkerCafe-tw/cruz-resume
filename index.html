@@ -1232,52 +1232,57 @@
         @media (max-width: 768px) {
             /* Skills Galaxy Mobile Adjustments */
             #skills-galaxy {
-                height: 600px;
+                height: 500px;
                 max-width: 100%;
+                overflow: hidden;
+                padding: 20px;
             }
 
             .circle-core {
-                width: 180px;
-                height: 180px;
+                width: 140px;
+                height: 140px;
             }
 
             .circle-middle {
-                width: 320px;
-                height: 320px;
+                width: 240px;
+                height: 240px;
             }
 
             .circle-outer {
-                width: 500px;
-                height: 500px;
+                width: 340px;
+                height: 340px;
             }
 
             .galaxy-center {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5rem;
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
             }
 
             .skill-node {
-                padding: 8px 12px;
-                font-size: 0.75rem;
+                padding: 6px 10px;
+                font-size: 0.7rem;
             }
 
             .skill-node.core {
-                font-size: 0.85rem;
+                font-size: 0.8rem;
             }
 
             .skill-node.outer {
-                font-size: 0.7rem;
+                font-size: 0.65rem;
+                padding: 5px 8px;
             }
 
             .view-toggle {
                 flex-direction: column;
                 align-items: stretch;
                 padding: 0 20px;
+                gap: 10px;
             }
 
             .toggle-btn {
                 width: 100%;
+                padding: 10px 20px;
             }
 
             .featured-grid {
@@ -2280,13 +2285,23 @@ ${logText}
                 listView.classList.remove('active');
                 visualView.classList.add('active');
 
-                // Generate visual view if not already done
-                if (!visualView.dataset.generated) {
-                    generateSkillsGalaxy();
-                    visualView.dataset.generated = 'true';
-                }
+                // Always regenerate on switch to ensure responsive sizing
+                generateSkillsGalaxy();
+                visualView.dataset.generated = 'true';
             }
         }
+
+        // Regenerate galaxy on window resize (debounced)
+        let resizeTimeout;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                const visualView = document.getElementById('skills-visual-view');
+                if (visualView && visualView.classList.contains('active')) {
+                    generateSkillsGalaxy();
+                }
+            }, 300);
+        });
 
         // Generate concentric circle visualization
         function generateSkillsGalaxy() {
@@ -2321,6 +2336,9 @@ ${logText}
                 galaxy.appendChild(circleEl);
             });
 
+            // Detect mobile for responsive radii
+            const isMobile = window.innerWidth <= 768;
+
             // Position skills in circles
             const positionSkills = (skills, radius, className) => {
                 const angleStep = (2 * Math.PI) / skills.length;
@@ -2332,7 +2350,7 @@ ${logText}
                     const node = document.createElement('div');
                     node.className = `skill-node ${className}`;
                     node.textContent = skill;
-                    node.style.left = `calc(50% + ${x}px - ${node.offsetWidth / 2}px)`;
+                    node.style.left = `calc(50% + ${x}px)`;
                     node.style.top = `calc(50% + ${y}px)`;
                     node.style.transform = 'translate(-50%, -50%)';
                     node.onclick = () => scrollToRelatedProjects(skill);
@@ -2341,11 +2359,19 @@ ${logText}
                 });
             };
 
-            // Position skills at different radii
+            // Position skills at different radii (responsive)
             setTimeout(() => {
-                positionSkills(coreSkills, 120, 'core');
-                positionSkills(middleSkills, 225, 'middle');
-                positionSkills(outerSkills, 350, 'outer');
+                if (isMobile) {
+                    // Mobile: smaller radii to fit screen
+                    positionSkills(coreSkills, 70, 'core');
+                    positionSkills(middleSkills, 120, 'middle');
+                    positionSkills(outerSkills, 170, 'outer');
+                } else {
+                    // Desktop: original radii
+                    positionSkills(coreSkills, 120, 'core');
+                    positionSkills(middleSkills, 225, 'middle');
+                    positionSkills(outerSkills, 350, 'outer');
+                }
             }, 100);
         }
 
