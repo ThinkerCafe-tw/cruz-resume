@@ -1,0 +1,452 @@
+{
+  "en": {
+    "hero": {
+      "name": "Cruz Tang",
+      "tagline": "AI-Native Leader & System Architect",
+      "subtitle": "Transforming enterprises through AI implementation · From managing 300+ international teams to building AI-first solutions",
+      "stats": ["Years Experience", "Team Managed", "Companies Founded", "Problems Solved"]
+    },
+    "nav": {
+      "about": "About",
+      "experience": "Experience",
+      "expertise": "Expertise",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "about": {
+      "title": "About Me",
+      "content": "I bridge the gap between large-scale operations and cutting-edge AI implementation. After managing <strong>300+ team members</strong> at Topvan Group across China, Philippines, Malaysia, and Vietnam, I founded <strong>ThinkerCafe</strong> to democratize AI education and enterprise automation.<br><br>My unique background combines <strong>international team leadership</strong>, <strong>technical depth in AI/data science</strong>, and <strong>10+ years of teaching experience</strong>. I don't just implement AI solutions—I build systems that empower people to work smarter.<br><br>Currently seeking opportunities to bring this combined expertise to enterprise AI consulting and digital transformation projects."
+    },
+    "experience": {
+      "title": "Career Journey",
+      "jobs": [
+        {
+          "title": "CEO & Founder",
+          "company": "ThinkerCafe",
+          "date": "2023 - Present",
+          "points": [
+            "Leading distributed team across Taiwan and US developing AI education and automation products",
+            "Designed comprehensive AI curriculum (Personal OS, AI Communication, Visual/System Hacker series)",
+            "Built LINE Bot, automation systems, and AI-powered productivity tools",
+            "Delivering enterprise consulting on AI implementation and workflow optimization"
+          ]
+        },
+        {
+          "title": "Operations Manager",
+          "company": "Topvan Group",
+          "date": "Nov 2020 - Dec 2023 · 3 yrs 2 mos",
+          "points": [
+            "Directly led team of 10-12 people, indirectly managed <strong>300+ members</strong> from China, Philippines, Malaysia, and Vietnam",
+            "Overseas assignments: Dubai Business Bay (4 months), Philippines Clark (1.5 years), Makati/BGC (1 year)",
+            "Enhanced data-driven decision-making using Python and Telegram Bot API",
+            "Managed all operations except finance and retail, reported directly to Chairman"
+          ]
+        },
+        {
+          "title": "R&D Manager",
+          "company": "ICS GAME",
+          "date": "Jul 2019 - Nov 2019 · 5 mos",
+          "points": [
+            "Team rebuilding: addressed 50%+ turnover, recruited new talent",
+            "Implemented Scrum development and testing environments",
+            "Developed operational anomaly reporting system with JIRA automation",
+            "Resolved iOS certificate and IP blocking issues"
+          ]
+        },
+        {
+          "title": "Data Science Lead",
+          "company": "ICS GAME",
+          "date": "Jun 2018 - Jun 2019 · 1 yr 1 mo",
+          "points": [
+            "Built data science department from scratch",
+            "Established complete environment: Linux, Python, Docker, Jupyter, RStudio",
+            "Predicted player churn and implemented retention strategies",
+            "Detected arbitrage players and compiled quarterly reports"
+          ]
+        },
+        {
+          "title": "Founder",
+          "company": "Thinker Data Corporation",
+          "date": "Sep 2016 - Jun 2018 · 1 yr 10 mos",
+          "points": [
+            "Project-based consultancy with assembled teams",
+            "Vidol (SET TV): web series recommendation system",
+            "Chunghwa Telecom: big data Hadoop consulting",
+            "E.SUN Bank: cross-device member attribution",
+            "ITRI College: talent assessment & job data analysis"
+          ]
+        },
+        {
+          "title": "Big Data R&D Engineer",
+          "company": "Coretronic",
+          "date": "Jul 2014 - Nov 2015 · 1 yr 5 mos",
+          "points": [
+            "Designed data collection workflows and ETL engineering",
+            "Applied statistical methods for analysis and decision support",
+            "Disease Patient Dietary Semantic Analysis: built sentiment lexicon, developed scoring model, automated top 5 food recommendations per disease"
+          ]
+        }
+      ]
+    }
+  },
+  "zh-TW": {
+    "hero": {
+      "name": "湯明軒 Cruz Tang",
+      "tagline": "AI 原生領導者與系統架構師",
+      "subtitle": "透過 AI 實作轉型企業 · 從管理 300+ 國際團隊到打造 AI 優先解決方案",
+      "stats": ["年經驗", "管理團隊", "創立公司", "解決問題"]
+    },
+    "nav": {
+      "about": "關於我",
+      "experience": "工作經歷",
+      "expertise": "核心專長",
+      "projects": "專案作品",
+      "contact": "聯絡方式"
+    },
+    "about": {
+      "title": "關於我",
+      "content": "我連結大規模營運與尖端 AI 實作。在 Topvan 集團管理來自中國、菲律賓、馬來西亞、越南的 <strong>300+ 團隊成員</strong>後，我創立 <strong>ThinkerCafe</strong> 以普及 AI 教育與企業自動化。<br><br>我的獨特背景結合了<strong>國際團隊領導</strong>、<strong>AI/資料科學技術深度</strong>、以及 <strong>10+ 年教學經驗</strong>。我不只實作 AI 解決方案—我建立賦能人們更聰明工作的系統。<br><br>目前尋求將這些綜合專業帶入企業 AI 顧問與數位轉型專案的機會。"
+    },
+    "experience": {
+      "title": "職涯歷程",
+      "jobs": [
+        {
+          "title": "執行長暨創辦人",
+          "company": "ThinkerCafe 思考者咖啡",
+          "date": "2023 - 現在",
+          "points": [
+            "領導台美分散式團隊開發 AI 教育與自動化產品",
+            "設計完整 AI 課程（Personal OS、AI 溝通術、視覺/系統駭客系列）",
+            "建立 LINE Bot、自動化系統與 AI 生產力工具",
+            "提供企業 AI 實作與工作流優化顧問服務"
+          ]
+        },
+        {
+          "title": "運營經理",
+          "company": "Topvan Group 拓凡集團",
+          "date": "2020年11月 - 2023年12月 · 3年2個月",
+          "points": [
+            "直接領導 10-12 人團隊，間接管理來自中國、菲律賓、馬來西亞、越南的 <strong>300+ 成員</strong>",
+            "海外派駐：杜拜 Business Bay（4個月）、菲律賓克拉克（1.5年）、馬卡地/BGC（1年）",
+            "運用 Python 和 Telegram Bot API 強化數據驅動決策",
+            "管理除財務與零售外的所有營運，直接向董事長報告"
+          ]
+        },
+        {
+          "title": "研發部門經理",
+          "company": "ICS GAME",
+          "date": "2019年7月 - 2019年11月 · 5個月",
+          "points": [
+            "團隊重建：面對 50%+ 員工流失，招募新人才並改革績效評估",
+            "實施 Scrum 開發流程與內外部測試環境",
+            "開發營運異常通報系統，利用 JIRA 自動化流程",
+            "解決 iOS 憑證問題及自製應用的 IP 封鎖問題"
+          ]
+        },
+        {
+          "title": "資料科學部門主管",
+          "company": "ICS GAME",
+          "date": "2018年6月 - 2019年6月 · 1年1個月",
+          "points": [
+            "從無到有建立資料科學部門",
+            "一個月內建立完整環境：Linux、Python、Docker、Jupyter、RStudio",
+            "預測玩家流失並實施挽留策略",
+            "偵測套利玩家並編制季度營運報告"
+          ]
+        },
+        {
+          "title": "創辦人",
+          "company": "Thinker Data Corporation 析客數據",
+          "date": "2016年9月 - 2018年6月 · 1年10個月",
+          "points": [
+            "根據專案需求組建兼職團隊的接案公司",
+            "三立電視 Vidol：開發網劇推薦系統",
+            "中華電信：提供大數據 Hadoop 叢集顧問及維運",
+            "玉山銀行：實作跨裝置會員歸戶機制",
+            "工研院產業學院：產業人才能力鑑定及國際企業職缺資料分析"
+          ]
+        },
+        {
+          "title": "巨量資料技術研發工程師",
+          "company": "Coretronic 中強光電",
+          "date": "2014年7月 - 2015年11月 · 1年5個月",
+          "points": [
+            "設計資料收集流程與 ETL 工程",
+            "運用統計方法進行數據分析並支援決策",
+            "疾病患者飲食語意分析：建立情緒詞庫、開發評分模型、自動報告各疾病建議/避免前五名飲食"
+          ]
+        }
+      ]
+    }
+  },
+  "ja": {
+    "hero": {
+      "name": "Cruz Tang",
+      "tagline": "AIネイティブリーダー＆システムアーキテクト",
+      "subtitle": "AI実装による企業変革 · 300+名の国際チーム管理からAIファーストソリューション構築まで",
+      "stats": ["年の経験", "管理チーム", "創業企業", "解決問題"]
+    },
+    "nav": {
+      "about": "プロフィール",
+      "experience": "職務経歴",
+      "expertise": "専門分野",
+      "projects": "プロジェクト",
+      "contact": "お問い合わせ"
+    },
+    "about": {
+      "title": "プロフィール",
+      "content": "私は大規模オペレーションと最先端AI実装の橋渡しをします。Topvan Groupで中国、フィリピン、マレーシア、ベトナムの<strong>300+名のチームメンバー</strong>を管理した後、<strong>ThinkerCafe</strong>を設立しAI教育と企業自動化の民主化に取り組んでいます。<br><br>私のユニークな経歴は、<strong>国際チームリーダーシップ</strong>、<strong>AI/データサイエンスの技術的深さ</strong>、そして<strong>10年以上の教育経験</strong>を組み合わせています。単なるAIソリューションの実装ではなく、人々がよりスマートに働けるシステムを構築します。<br><br>現在、この総合的な専門知識を企業AIコンサルティングとデジタルトランスフォーメーションプロジェクトに活かす機会を求めています。"
+    },
+    "experience": {
+      "title": "職務経歴",
+      "jobs": [
+        {
+          "title": "CEO兼創業者",
+          "company": "ThinkerCafe",
+          "date": "2023 - 現在",
+          "points": [
+            "台湾と米国にまたがる分散チームを率いてAI教育・自動化製品を開発",
+            "包括的なAIカリキュラムを設計（Personal OS、AIコミュニケーション、ビジュアル/システムハッカーシリーズ）",
+            "LINE Bot、自動化システム、AI搭載生産性ツールを構築",
+            "AI実装とワークフロー最適化に関する企業コンサルティングを提供"
+          ]
+        },
+        {
+          "title": "オペレーションマネージャー",
+          "company": "Topvan Group",
+          "date": "2020年11月 - 2023年12月 · 3年2ヶ月",
+          "points": [
+            "10-12名のチームを直接指揮、中国、フィリピン、マレーシア、ベトナムの<strong>300+名</strong>を間接管理",
+            "海外赴任：ドバイBusiness Bay（4ヶ月）、フィリピンClark（1.5年）、Makati/BGC（1年）",
+            "PythonとTelegram Bot APIを使用してデータ駆動型意思決定を強化",
+            "財務と小売を除く全オペレーションを管理、会長に直接報告"
+          ]
+        },
+        {
+          "title": "R&Dマネージャー",
+          "company": "ICS GAME",
+          "date": "2019年7月 - 2019年11月 · 5ヶ月",
+          "points": [
+            "チーム再構築：50%以上の離職率に対処、新人材採用",
+            "Scrum開発とテスト環境を実装",
+            "JIRA自動化による運用異常報告システムを開発",
+            "iOS証明書とIPブロッキング問題を解決"
+          ]
+        },
+        {
+          "title": "データサイエンスリード",
+          "company": "ICS GAME",
+          "date": "2018年6月 - 2019年6月 · 1年1ヶ月",
+          "points": [
+            "ゼロからデータサイエンス部門を構築",
+            "完全な環境を1ヶ月で確立：Linux、Python、Docker、Jupyter、RStudio",
+            "プレイヤーの離脱を予測し、定着戦略を実装",
+            "アービトラージプレイヤーを検出し、四半期報告書を作成"
+          ]
+        },
+        {
+          "title": "創業者",
+          "company": "Thinker Data Corporation",
+          "date": "2016年9月 - 2018年6月 · 1年10ヶ月",
+          "points": [
+            "プロジェクトベースのコンサルティングでチームを編成",
+            "Vidol（SET TV）：ウェブシリーズ推薦システム",
+            "中華電信：ビッグデータHadoopコンサルティング",
+            "E.SUN銀行：クロスデバイス会員アトリビューション",
+            "ITRI College：人材評価と国際企業求人データ分析"
+          ]
+        },
+        {
+          "title": "ビッグデータR&Dエンジニア",
+          "company": "Coretronic",
+          "date": "2014年7月 - 2015年11月 · 1年5ヶ月",
+          "points": [
+            "データ収集ワークフローとETLエンジニアリングを設計",
+            "統計手法を適用して分析と意思決定をサポート",
+            "疾患患者食事意味分析：感情辞書構築、スコアリングモデル開発、疾患別推奨/避けるべき食品トップ5の自動報告"
+          ]
+        }
+      ]
+    }
+  },
+  "ko": {
+    "hero": {
+      "name": "Cruz Tang",
+      "tagline": "AI 네이티브 리더 & 시스템 아키텍트",
+      "subtitle": "AI 구현을 통한 기업 혁신 · 300+ 국제 팀 관리부터 AI 우선 솔루션 구축까지",
+      "stats": ["년 경험", "관리 팀", "설립 기업", "해결 문제"]
+    },
+    "nav": {
+      "about": "소개",
+      "experience": "경력",
+      "expertise": "전문분야",
+      "projects": "프로젝트",
+      "contact": "연락처"
+    },
+    "about": {
+      "title": "소개",
+      "content": "저는 대규모 운영과 최첨단 AI 구현의 가교 역할을 합니다. Topvan Group에서 중국, 필리핀, 말레이시아, 베트남의 <strong>300+ 팀원</strong>을 관리한 후, AI 교육과 기업 자동화를 민주화하기 위해 <strong>ThinkerCafe</strong>를 설립했습니다.<br><br>저의 독특한 배경은 <strong>국제 팀 리더십</strong>, <strong>AI/데이터 과학 기술 깊이</strong>, 그리고 <strong>10년 이상의 강의 경험</strong>을 결합합니다. 단순히 AI 솔루션을 구현하는 것이 아니라 사람들이 더 스마트하게 일할 수 있도록 시스템을 구축합니다.<br><br>현재 이러한 종합적인 전문성을 기업 AI 컨설팅 및 디지털 전환 프로젝트에 적용할 기회를 찾고 있습니다."
+    },
+    "experience": {
+      "title": "경력",
+      "jobs": [
+        {
+          "title": "CEO 겸 창업자",
+          "company": "ThinkerCafe",
+          "date": "2023 - 현재",
+          "points": [
+            "대만과 미국에 걸친 분산 팀을 이끌며 AI 교육 및 자동화 제품 개발",
+            "종합 AI 커리큘럼 설계 (Personal OS, AI 커뮤니케이션, 비주얼/시스템 해커 시리즈)",
+            "LINE Bot, 자동화 시스템, AI 기반 생산성 도구 구축",
+            "AI 구현 및 워크플로우 최적화에 대한 기업 컨설팅 제공"
+          ]
+        },
+        {
+          "title": "운영 관리자",
+          "company": "Topvan Group",
+          "date": "2020년 11월 - 2023년 12월 · 3년 2개월",
+          "points": [
+            "10-12명 팀 직접 리드, 중국, 필리핀, 말레이시아, 베트남의 <strong>300+ 멤버</strong> 간접 관리",
+            "해외 파견: 두바이 Business Bay (4개월), 필리핀 Clark (1.5년), Makati/BGC (1년)",
+            "Python 및 Telegram Bot API를 사용하여 데이터 기반 의사결정 강화",
+            "재무 및 소매를 제외한 모든 운영 관리, 회장에게 직접 보고"
+          ]
+        },
+        {
+          "title": "R&D 매니저",
+          "company": "ICS GAME",
+          "date": "2019년 7월 - 2019년 11월 · 5개월",
+          "points": [
+            "팀 재건: 50% 이상의 이직률 해결, 신규 인재 채용",
+            "Scrum 개발 및 테스트 환경 구축",
+            "JIRA 자동화를 통한 운영 이상 보고 시스템 개발",
+            "iOS 인증서 및 IP 차단 문제 해결"
+          ]
+        },
+        {
+          "title": "데이터 사이언스 리드",
+          "company": "ICS GAME",
+          "date": "2018년 6월 - 2019년 6월 · 1년 1개월",
+          "points": [
+            "제로부터 데이터 사이언스 부서 구축",
+            "완전한 환경을 1개월 내 구축: Linux, Python, Docker, Jupyter, RStudio",
+            "플레이어 이탈 예측 및 유지 전략 구현",
+            "차익거래 플레이어 탐지 및 분기별 보고서 작성"
+          ]
+        },
+        {
+          "title": "창업자",
+          "company": "Thinker Data Corporation",
+          "date": "2016년 9월 - 2018년 6월 · 1년 10개월",
+          "points": [
+            "프로젝트 기반 컨설팅으로 팀 구성",
+            "Vidol (SET TV): 웹 시리즈 추천 시스템",
+            "중화전신: 빅데이터 Hadoop 컨설팅",
+            "E.SUN 은행: 크로스 디바이스 회원 귀속",
+            "ITRI College: 인재 평가 및 국제 기업 채용 데이터 분석"
+          ]
+        },
+        {
+          "title": "빅데이터 R&D 엔지니어",
+          "company": "Coretronic",
+          "date": "2014년 7월 - 2015년 11월 · 1년 5개월",
+          "points": [
+            "데이터 수집 워크플로우 및 ETL 엔지니어링 설계",
+            "통계 방법을 적용하여 분석 및 의사결정 지원",
+            "질병 환자 식이 의미 분석: 감정 사전 구축, 스코어링 모델 개발, 질병별 추천/회피 상위 5개 식품 자동 보고"
+          ]
+        }
+      ]
+    }
+  },
+  "ar": {
+    "hero": {
+      "name": "كروز تانج",
+      "tagline": "قائد مبني على الذكاء الاصطناعي ومهندس أنظمة",
+      "subtitle": "تحويل المؤسسات من خلال تطبيق الذكاء الاصطناعي · من إدارة 300+ فريق دولي إلى بناء حلول الذكاء الاصطناعي الأولى",
+      "stats": ["سنوات الخبرة", "الفريق المُدار", "الشركات المؤسسة", "المشاكل المحلولة"]
+    },
+    "nav": {
+      "about": "نبذة عني",
+      "experience": "الخبرة",
+      "expertise": "المهارات",
+      "projects": "المشاريع",
+      "contact": "اتصل بي"
+    },
+    "about": {
+      "title": "نبذة عني",
+      "content": "أربط بين العمليات واسعة النطاق وتطبيق الذكاء الاصطناعي المتطور. بعد إدارة <strong>300+ عضو فريق</strong> في Topvan Group عبر الصين والفلبين وماليزيا وفيتنام، أسست <strong>ThinkerCafe</strong> لإضفاء الطابع الديمقراطي على تعليم الذكاء الاصطناعي والأتمتة المؤسسية.<br><br>تجمع خلفيتي الفريدة بين <strong>القيادة الدولية للفرق</strong> و<strong>العمق التقني في الذكاء الاصطناعي/علوم البيانات</strong> و<strong>خبرة تدريس تزيد عن 10 سنوات</strong>. لا أقوم فقط بتنفيذ حلول الذكاء الاصطناعي - بل أبني أنظمة تمكن الناس من العمل بذكاء أكبر.<br><br>أبحث حاليًا عن فرص لجلب هذه الخبرة الشاملة إلى استشارات الذكاء الاصطناعي المؤسسي ومشاريع التحول الرقمي."
+    },
+    "experience": {
+      "title": "المسار المهني",
+      "jobs": [
+        {
+          "title": "الرئيس التنفيذي والمؤسس",
+          "company": "ThinkerCafe",
+          "date": "2023 - الحاضر",
+          "points": [
+            "قيادة فريق موزع عبر تايوان والولايات المتحدة لتطوير منتجات تعليم الذكاء الاصطناعي والأتمتة",
+            "تصميم منهج شامل للذكاء الاصطناعي (نظام OS الشخصي، تواصل الذكاء الاصطناعي، سلسلة الهاكر البصري/النظامي)",
+            "بناء LINE Bot وأنظمة الأتمتة وأدوات الإنتاجية المدعومة بالذكاء الاصطناعي",
+            "تقديم استشارات مؤسسية حول تطبيق الذكاء الاصطناعي وتحسين سير العمل"
+          ]
+        },
+        {
+          "title": "مدير العمليات",
+          "company": "Topvan Group",
+          "date": "نوفمبر 2020 - ديسمبر 2023 · 3 سنوات و2 شهر",
+          "points": [
+            "قيادة مباشرة لفريق من 10-12 شخصًا، إدارة غير مباشرة لـ <strong>300+ عضو</strong> من الصين والفلبين وماليزيا وفيتنام",
+            "مهام خارجية: دبي بزنس باي (4 أشهر)، الفلبين كلارك (1.5 سنة)، ماكاتي/BGC (سنة واحدة)",
+            "تعزيز اتخاذ القرارات المستندة إلى البيانات باستخدام Python وTelegram Bot API",
+            "إدارة جميع العمليات باستثناء المالية والتجزئة، التقارير مباشرة إلى الرئيس"
+          ]
+        },
+        {
+          "title": "مدير البحث والتطوير",
+          "company": "ICS GAME",
+          "date": "يوليو 2019 - نوفمبر 2019 · 5 أشهر",
+          "points": [
+            "إعادة بناء الفريق: معالجة معدل دوران بنسبة 50%+، توظيف مواهب جديدة",
+            "تنفيذ Scrum وبيئات الاختبار",
+            "تطوير نظام الإبلاغ عن الحالات الشاذة التشغيلية مع أتمتة JIRA",
+            "حل مشاكل شهادة iOS وحظر IP"
+          ]
+        },
+        {
+          "title": "قائد علوم البيانات",
+          "company": "ICS GAME",
+          "date": "يونيو 2018 - يونيو 2019 · سنة و1 شهر",
+          "points": [
+            "بناء قسم علوم البيانات من الصفر",
+            "إنشاء بيئة كاملة في شهر واحد: Linux، Python، Docker، Jupyter، RStudio",
+            "التنبؤ بتوقف اللاعبين وتنفيذ استراتيجيات الاحتفاظ",
+            "اكتشاف لاعبي المراجحة وإعداد التقارير الفصلية"
+          ]
+        },
+        {
+          "title": "المؤسس",
+          "company": "Thinker Data Corporation",
+          "date": "سبتمبر 2016 - يونيو 2018 · سنة و10 أشهر",
+          "points": [
+            "استشارات قائمة على المشاريع مع فرق مجمعة",
+            "Vidol (SET TV): نظام توصية مسلسلات الويب",
+            "Chunghwa Telecom: استشارات Hadoop للبيانات الضخمة",
+            "بنك E.SUN: إسناد الأعضاء عبر الأجهزة",
+            "ITRI College: تقييم المواهب وتحليل بيانات وظائف الشركات الدولية"
+          ]
+        },
+        {
+          "title": "مهندس بحث وتطوير البيانات الضخمة",
+          "company": "Coretronic",
+          "date": "يوليو 2014 - نوفمبر 2015 · سنة و5 أشهر",
+          "points": [
+            "تصميم سير عمل جمع البيانات وهندسة ETL",
+            "تطبيق الأساليب الإحصائية للتحليل ودعم اتخاذ القرار",
+            "التحليل الدلالي للنظام الغذائي لمرضى الأمراض: بناء معجم المشاعر، تطوير نموذج التسجيل، إعداد تقارير تلقائية لأفضل 5 أطعمة موصى بها/يجب تجنبها لكل مرض"
+          ]
+        }
+      ]
+    }
+  }
+}

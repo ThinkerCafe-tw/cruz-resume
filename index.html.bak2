@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruz Tang - AI-Native Leader</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-accent: #2a2a2a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-primary: #00ff88;
+            --accent-secondary: #0088ff;
+            --accent-gradient: linear-gradient(135deg, #00ff88 0%, #0088ff 100%);
+            --border-color: #333;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        [data-theme="light"] {
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8f9fa;
+            --bg-accent: #e9ecef;
+            --text-primary: #1a1a1a;
+            --text-secondary: #6c757d;
+            --border-color: #dee2e6;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: var(--bg-primary);
+            transition: var(--transition);
+        }
+        
+        /* Theme Toggle */
+        .theme-toggle {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            z-index: 1000;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+        
+        .theme-toggle:hover {
+            background: var(--bg-accent);
+            transform: translateY(-2px);
+        }
+        
+        /* Language Selector */
+        .language-selector {
+            position: fixed;
+            top: 30px;
+            right: 180px;
+            z-index: 1000;
+        }
+        
+        .lang-toggle {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .lang-toggle:hover {
+            background: var(--bg-accent);
+            transform: translateY(-2px);
+        }
+        
+        .lang-toggle .arrow {
+            font-size: 0.7em;
+            transition: transform 0.3s;
+        }
+        
+        .lang-toggle.open .arrow {
+            transform: rotate(180deg);
+        }
+        
+        .lang-menu {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+            padding: 10px;
+            min-width: 180px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: var(--transition);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .lang-menu.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .lang-menu button {
+            width: 100%;
+            padding: 10px 15px;
+            background: transparent;
+            border: none;
+            border-radius: 8px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: left;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .lang-menu button:hover {
+            background: var(--bg-accent);
+            color: var(--text-primary);
+        }
+        
+        .lang-menu button.active {
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            font-weight: 600;
+        }
+        
+        /* RTL Support for Arabic */
+        [dir="rtl"] {
+            direction: rtl;
+        }
+        
+        [dir="rtl"] .timeline {
+            padding-right: 40px;
+            padding-left: 0;
+        }
+        
+        [dir="rtl"] .timeline::before {
+            right: 0;
+            left: auto;
+        }
+        
+        [dir="rtl"] .timeline-item::before {
+            right: -46px;
+            left: auto;
+        }
+        
+        [dir="rtl"] .timeline-content li {
+            padding-right: 25px;
+            padding-left: 0;
+        }
+        
+        [dir="rtl"] .timeline-content li::before {
+            right: 0;
+            left: auto;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 50%, rgba(0, 136, 255, 0.1) 0%, transparent 50%);
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .hero .tagline {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        .hero .subtitle {
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Stats Bar */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: var(--bg-secondary);
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Contact Bar */
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+        }
+        
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        
+        .contact-link:hover {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            border-color: var(--accent-primary);
+            transform: translateY(-2px);
+        }
+        
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+        
+        /* Section */
+        section {
+            margin-bottom: 100px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: var(--transition);
+        }
+        
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-gradient);
+            border-radius: 2px;
+        }
+        
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent-gradient);
+        }
+        
+        .timeline-item {
+            position: relative;
+            padding-bottom: 50px;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -46px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-primary);
+            border-radius: 50%;
+            border: 3px solid var(--bg-primary);
+            box-shadow: 0 0 0 3px var(--accent-primary);
+        }
+        
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .timeline-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .timeline-company {
+            font-size: 1.1rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+        }
+        
+        .timeline-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            padding: 5px 15px;
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+        
+        .timeline-content {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        .timeline-content ul {
+            list-style: none;
+            margin-top: 10px;
+        }
+        
+        .timeline-content li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+        
+        .timeline-content li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+        
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-card {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.15);
+        }
+        
+        .skill-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--accent-primary);
+        }
+        
+        .skill-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-secondary);
+            box-shadow: 0 10px 30px rgba(0, 136, 255, 0.15);
+        }
+        
+        .project-header {
+            padding: 30px;
+            background: var(--bg-accent);
+        }
+        
+        .project-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+        }
+        
+        .project-tag {
+            display: inline-block;
+            padding: 5px 15px;
+            background: var(--bg-primary);
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: var(--accent-secondary);
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        
+        .project-content {
+            padding: 25px 30px;
+        }
+        
+        .project-content ul {
+            list-style: none;
+        }
+        
+        .project-content li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+        }
+        
+        .project-content li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+        
+        /* CTA Section */
+        .cta {
+            text-align: center;
+            padding: 80px 40px;
+            background: var(--bg-secondary);
+            border-radius: 30px;
+            border: 1px solid var(--border-color);
+        }
+        
+        .cta h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 40px;
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+        }
+        
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+        }
+        
+        .cta-button.secondary:hover {
+            border-color: var(--accent-primary);
+            color: var(--accent-primary);
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Scroll Progress Bar */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--accent-gradient);
+            z-index: 9999;
+            transition: width 0.1s ease-out;
+        }
+        
+        /* Print Styles */
+        @media print {
+            .theme-toggle,
+            .progress-bar {
+                display: none;
+            }
+            
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .hero {
+                min-height: auto;
+                padding: 40px 0;
+            }
+            
+            section {
+                page-break-inside: avoid;
+                opacity: 1;
+                transform: none;
+            }
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .theme-toggle {
+                top: 20px;
+                right: 20px;
+                padding: 8px 16px;
+                font-size: 0.8em;
+            }
+            
+            .language-selector {
+                top: 70px;
+                right: 20px;
+            }
+            
+            .lang-toggle {
+                padding: 8px 16px;
+                font-size: 0.8em;
+            }
+            
+            .lang-menu {
+                top: 40px;
+            }
+            
+            .container {
+                padding: 40px 20px;
+            }
+            
+            .timeline {
+                padding-left: 30px;
+            }
+            
+            .timeline-item::before {
+                left: -36px;
+            }
+            
+            [dir="rtl"] .timeline {
+                padding-right: 30px;
+                padding-left: 0;
+            }
+            
+            [dir="rtl"] .timeline-item::before {
+                right: -36px;
+                left: auto;
+            }
+            
+            .skills-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta {
+                padding: 50px 30px;
+            }
+        }
+    </style>
+</head>
+<body data-theme="dark">
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <button class="theme-toggle" onclick="toggleTheme()">
+        <span id="themeIcon">☀️ Light Mode</span>
+    </button>
+    
+    <div class="language-selector">
+        <button class="lang-toggle" onclick="toggleLangMenu()">
+            <span id="currentLang">🇹🇼 中文</span>
+            <span class="arrow">▼</span>
+        </button>
+        <div class="lang-menu" id="langMenu">
+            <button onclick="changeLanguage('zh')" data-lang="zh">🇹🇼 繁體中文</button>
+            <button onclick="changeLanguage('en')" data-lang="en">🇺🇸 English</button>
+            <button onclick="changeLanguage('ja')" data-lang="ja">🇯🇵 日本語</button>
+            <button onclick="changeLanguage('ko')" data-lang="ko">🇰🇷 한국어</button>
+            <button onclick="changeLanguage('ar')" data-lang="ar">🇸🇦 العربية</button>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Cruz Tang</h1>
+            <p class="tagline">AI-Native Leader & System Architect</p>
+            <p class="subtitle">
+                Transforming enterprises through AI implementation · From managing 300+ international teams to building AI-first solutions
+            </p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">300+</span>
+                    <span class="stat-label">Team Managed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Companies Founded</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Problems Solved</span>
+                </div>
+            </div>
+            
+            <div class="contact-bar">
+                <a href="mailto:cruz@thinker.cafe" class="contact-link">
+                    📧 cruz@thinker.cafe
+                </a>
+                <a href="https://www.linkedin.com/in/sulaxd/" class="contact-link" target="_blank">
+                    💼 LinkedIn
+                </a>
+                <a href="https://thinker.cafe" class="contact-link" target="_blank">
+                    🌐 thinker.cafe
+                </a>
+                <a href="tel:+886937431998" class="contact-link">
+                    📱 +886 937 431 998
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="skill-card" style="max-width: 900px;">
+                <p style="font-size: 1.1rem; line-height: 2;">
+                    I bridge the gap between large-scale operations and cutting-edge AI implementation. After managing <strong>300+ team members</strong> at Topvan Group across China, Philippines, Malaysia, and Vietnam, I founded <strong>ThinkerCafe</strong> to democratize AI education and enterprise automation.
+                    <br><br>
+                    My unique background combines <strong>international team leadership</strong>, <strong>technical depth in AI/data science</strong>, and <strong>10+ years of teaching experience</strong>. I don't just implement AI solutions—I build systems that empower people to work smarter.
+                    <br><br>
+                    Currently seeking opportunities to bring this combined expertise to enterprise AI consulting and digital transformation projects.
+                </p>
+            </div>
+        </section>
+        
+        <section id="experience">
+            <h2 class="section-title">Career Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">CEO & Founder</div>
+                            <div class="timeline-company">ThinkerCafe 思考者咖啡</div>
+                        </div>
+                        <div class="timeline-date">2023 - Present</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Leading distributed team across Taiwan and US developing AI education and automation products</li>
+                            <li>Designed comprehensive AI curriculum (Personal OS, AI Communication, Visual/System Hacker series)</li>
+                            <li>Built LINE Bot, automation systems, and AI-powered productivity tools</li>
+                            <li>Delivering enterprise consulting on AI implementation and workflow optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">Operations Manager 運營經理</div>
+                            <div class="timeline-company">Topvan Group 拓凡集團</div>
+                        </div>
+                        <div class="timeline-date">Nov 2020 - Dec 2023 · 3 yrs 2 mos</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Directly led team of 10-12 people, indirectly managed <strong>300+ members</strong> from China, Philippines, Malaysia, and Vietnam</li>
+                            <li>Overseas assignments: Dubai Business Bay (4 months), Philippines Clark (1.5 years), Makati/BGC (1 year)</li>
+                            <li>Enhanced data-driven decision-making and automated processes using <strong>Python and Telegram Bot API</strong></li>
+                            <li>Conducted regular meetings with department heads to set and evaluate monthly goals and performance</li>
+                            <li>Managed all company operations except finance and retail, fostering inter-departmental communication</li>
+                            <li>Actively proposed problem-solving strategies in meetings, effectively resolving issues and improving organizational efficiency</li>
+                            <li>Presided over meetings and made critical decisions during emergencies</li>
+                            <li>Reported directly to the Chairman</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">R&D Manager 研發部門經理</div>
+                            <div class="timeline-company">ICS GAME</div>
+                        </div>
+                        <div class="timeline-date">Jul 2019 - Nov 2019 · 5 mos</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Team Rebuilding & Crisis Management:</strong> Addressed over 50% employee turnover, recruited new talent, implemented training and performance evaluation reforms</li>
+                            <li><strong>Cross-Departmental Collaboration:</strong> Separated operations from R&D, implemented Scrum development process and internal/external testing environments</li>
+                            <li>Established severity and emergency classification rules for operational incidents</li>
+                            <li>Developed operational anomaly reporting system with automated JIRA workflows</li>
+                            <li>Resolved iOS certificate issues and self-made app IP blocking problems</li>
+                            <li>Optimized communication between marketing and R&D, improving data team collaboration efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">Data Science Lead 資料科學部門主管</div>
+                            <div class="timeline-company">ICS GAME</div>
+                        </div>
+                        <div class="timeline-date">Jun 2018 - Jun 2019 · 1 yr 1 mo</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li><strong>Department Creation:</strong> Built data science department from scratch, promoted cross-departmental communication and data-driven decision making</li>
+                            <li><strong>Infrastructure Setup:</strong> Established complete data science environment within one month (Linux, Python, Docker, Jupyter, RStudio)</li>
+                            <li>Analyzed and optimized marketing campaign effectiveness</li>
+                            <li>Predicted player churn and implemented retention strategies</li>
+                            <li>Detected and prevented arbitrage player misconduct</li>
+                            <li>Compiled quarterly operational reports supporting strategic decision-making</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">Founder 創辦人</div>
+                            <div class="timeline-company">Thinker Data Corporation 析客數據</div>
+                        </div>
+                        <div class="timeline-date">Sep 2016 - Jun 2018 · 1 yr 10 mos · 1 yr 10 mos</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Founded and operated project-based consultancy, assembled part-time teams based on project needs</li>
+                            <li><strong>Vidol (SET TV):</strong> Developed web series recommendation system, handled planning and technical implementation</li>
+                            <li><strong>Chunghwa Telecom:</strong> Provided consulting and operational services for big data Hadoop cluster</li>
+                            <li><strong>E.SUN Bank:</strong> Implemented cross-device member attribution mechanism, improved customer service efficiency</li>
+                            <li><strong>Chunghwa Telecom Labs:</strong> Developed promotional pricing recommendation module</li>
+                            <li><strong>ITRI College:</strong> Conducted industry talent capability assessment and international enterprise job data extraction & analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <div class="timeline-title">Big Data R&D Engineer 巨量資料技術研發工程師</div>
+                            <div class="timeline-company">Coretronic 中強光電</div>
+                        </div>
+                        <div class="timeline-date">Jul 2014 - Nov 2015 · 1 yr 5 mos · 1 yr 5 mos</div>
+                    </div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Designed and developed application data collection workflows and systems, enhancing data capture efficiency and quality</li>
+                            <li>Executed multi-source data ETL engineering including filtering, cleaning, and integration</li>
+                            <li>Applied statistical methods for data analysis and presented research results to support decision-making</li>
+                            <li>Collaborated closely with management to explore business logic and analytical directions, identifying key opportunities</li>
+                            <li><strong>Project:</strong> Disease Patient Dietary Semantic Analysis - Built sentiment lexicon from multiple websites, developed Scoring-based article semantic analysis model, automated identification and reporting of top 5 recommended/avoided foods for each disease</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="expertise">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🎯 Operations Leadership</h3>
+                    <p>
+                        Proven track record managing 300+ international team members. Expert in building data-driven workflows, KPI systems, and process optimization. Comfortable leading cross-functional teams across multiple time zones.
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>🤖 AI Implementation</h3>
+                    <p>
+                        Hands-on experience with Claude API, OpenAI, LINE Bot development, and AI agent design. Specializing in rapid POC validation and translating AI capabilities into business value.
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>⚡ Enterprise Automation</h3>
+                    <p>
+                        Building automation systems that work. RPA, web scraping, workflow design, and process optimization. Focus on sustainable, maintainable solutions that scale.
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>🎓 Technical Training</h3>
+                    <p>
+                        10+ years teaching at 資策會, 文化大學, 金融研訓院. Expert at translating complex technical concepts into actionable knowledge for non-technical audiences.
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>🔧 Tech Stack</h3>
+                    <p>
+                        Python, R, JavaScript · Claude Code, OpenAI API · LINE Messaging API · Selenium, Puppeteer · Google Cloud, AWS · Docker, Git · Flask, FastAPI
+                    </p>
+                </div>
+                
+                <div class="skill-card">
+                    <h3>🏆 Recognition</h3>
+                    <p>
+                        iPAS AI Application Specialist Exam Committee Member (工研院) · Former Director, Chinese R Software Association · R Taiwan 2013 Conference Organizer · Hackathon Awards
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ThinkerCafe Education Platform</h3>
+                        <span class="project-tag">AI Education</span>
+                        <span class="project-tag">System Design</span>
+                    </div>
+                    <div class="project-content">
+                        <ul>
+                            <li>Comprehensive AI curriculum (Personal OS, 5+ course series)</li>
+                            <li>Serving non-technical professionals entering AI era</li>
+                            <li>Built complete ecosystem from content to delivery</li>
+                            <li>Emphasis on practical, implementable systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>LINE Bot Automation Systems</h3>
+                        <span class="project-tag">Enterprise</span>
+                        <span class="project-tag">Automation</span>
+                    </div>
+                    <div class="project-content">
+                        <ul>
+                            <li>Booking system for physical therapy clinic</li>
+                            <li>70% reduction in booking process time</li>
+                            <li>Google Calendar integration</li>
+                            <li>Improved customer satisfaction scores</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Thinker Kit</h3>
+                        <span class="project-tag">Productivity</span>
+                        <span class="project-tag">AI Agent</span>
+                    </div>
+                    <div class="project-content">
+                        <ul>
+                            <li>Personal AI enhancement system</li>
+                            <li>Integrated memory, prompt library, productivity tools</li>
+                            <li>Daily insights and goal tracking</li>
+                            <li>Gamified engagement system</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>ThreadsBot</h3>
+                        <span class="project-tag">Social Media</span>
+                        <span class="project-tag">AI Agent</span>
+                    </div>
+                    <div class="project-content">
+                        <ul>
+                            <li>AI-powered social media automation</li>
+                            <li>3x increase in engagement rate</li>
+                            <li>80% reduction in operation time</li>
+                            <li>Automatic content analysis and scheduling</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Ryan OS & Mary OS</h3>
+                        <span class="project-tag">Family Tech</span>
+                        <span class="project-tag">System</span>
+                    </div>
+                    <div class="project-content">
+                        <ul>
+                            <li>AI-driven family management systems</li>
+                            <li>Education tracking (Ryan OS)</li>
+                            <li>Elder care coordination (Mary OS)</li>
+                            <li>Data-driven family decisions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>300+ Team Operations</h3>
+                        <span class="project-tag">Leadership</span>
+                        <span class="project-tag">Scale</span>
+                    </div>
+                    <div class="project-content">
+                        <ul>
+                            <li>International team across Philippines</li>
+                            <li>24/7 operations coordination</li>
+                            <li>Data-driven KPI systems</li>
+                            <li>40% cost reduction through automation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cta">
+            <div class="cta">
+                <h2>Let's Build Something Together</h2>
+                <p>
+                    Currently seeking opportunities to work with enterprise clients on AI implementation, digital transformation, and solution architecture. 
+                    <br>
+                    Remote-friendly · Taipei/Taichung/Tainan · 70-100K TWD/month
+                </p>
+                <div class="cta-buttons">
+                    <a href="mailto:cruz@thinker.cafe" class="cta-button">
+                        📧 Get in Touch
+                    </a>
+                    <a href="https://thinker.cafe" class="cta-button secondary" target="_blank">
+                        🌐 Visit ThinkerCafe
+                    </a>
+                    <a href="https://www.linkedin.com/in/sulaxd/" class="cta-button secondary" target="_blank">
+                        💼 LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Built with intention · Designed to inspire · Updated January 2025</p>
+        <p style="margin-top: 10px; opacity: 0.6;">
+            "When technology returns to humanity, intelligence finds its warmth"
+        </p>
+    </footer>
+    
+    <script>
+        // Multilingual Content - Loaded from data.json
+        let translations = {};
+        let currentLang = 'zh';
+
+        // Load translations from JSON file
+        async function loadTranslations() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+
+                // Map language codes (JSON uses zh-TW, HTML uses zh)
+                translations = {
+                    zh: { dir: 'ltr', ...data['zh-TW'] },
+                    en: { dir: 'ltr', ...data.en },
+                    ja: { dir: 'ltr', ...data.ja },
+                    ko: { dir: 'ltr', ...data.ko },
+                    ar: { dir: 'rtl', ...data.ar }
+                };
+
+                // Initialize with default language after data is loaded
+                changeLanguage('zh');
+
+                console.log('Translations loaded successfully');
+            } catch (error) {
+                console.error('Error loading translations:', error);
+                alert('Error loading language data. Please refresh the page.');
+            }
+        }
+
+        // Original code continues below (changeLanguage function at line ~2030)
+        const translations_placeholder = {
+            zh: {
+                dir: 'ltr',
+                hero: {
+                    name: 'Cruz Tang',
+                    tagline: 'AI-Native Leader & System Architect',
+                    subtitle: '透過 AI 實現企業轉型 · 從管理 300+ 國際團隊到打造 AI 優先解決方案',
+                    stats: ['年經驗', '管理團隊', '創立公司', '解決問題']
+                },
+                nav: {
+                    about: '關於我',
+                    experience: '職涯歷程',
+                    expertise: '核心專長',
+                    projects: '精選專案',
+                    contact: '聯絡方式'
+                },
+                about: {
+                    title: '關於我',
+                    content: '我在大規模營運管理與尖端 AI 實作之間搭起橋樑。在菲律賓線上遊戲產業管理超過 <strong>300 名團隊成員</strong>後，我創辦了 <strong>ThinkerCafe 思考者咖啡</strong>，致力於 AI 教育普及化與企業自動化。<br><br>我的獨特背景結合了<strong>國際團隊領導力</strong>、<strong>AI/資料科學技術深度</strong>，以及<strong>10 年以上的教學經驗</strong>。我不只是實作 AI 解決方案—我打造的是能讓人們更聰明工作的系統。<br><br>目前尋求機會將這些綜合專長帶入企業 AI 顧問與數位轉型專案。'
+                },
+                experience: {
+                    title: '職涯歷程',
+                    jobs: [
+                        {
+                            title: '執行長暨創辦人',
+                            company: 'ThinkerCafe 思考者咖啡',
+                            date: '2023 - 現在',
+                            points: [
+                                '領導橫跨台灣與美國的分散式團隊，開發 AI 教育與自動化產品',
+                                '設計完整 AI 課程體系（Personal OS、AI 溝通術、視覺/系統駭客系列）',
+                                '打造 LINE Bot、自動化系統與 AI 驅動的生產力工具',
+                                '提供企業 AI 實作與工作流程優化顧問服務'
+                            ]
+                        },
+                        {
+                            title: '運營經理',
+                            company: '線上遊戲產業，菲律賓',
+                            date: '2020年3月 - 2023年12月',
+                            points: [
+                                '管理橫跨多部門的國際營運團隊，<strong>超過 300 名成員</strong>',
+                                '建立數據驅動的營運工作流程與 KPI 追蹤系統',
+                                '領導跨職能團隊優化流程並提升效率',
+                                '實作自動化解決方案，降低 40% 營運成本',
+                                '協調多時區營運，確保 24/7 服務交付'
+                            ]
+                        },
+                        {
+                            title: '創辦人',
+                            company: 'Thinker Data 析客數據',
+                            date: '2016 - 2020',
+                            points: [
+                                '創立資料分析顧問公司，服務金融、零售與製造業',
+                                '交付具可衡量投資報酬率的客製化分析專案',
+                                '建立可擴展的資料處理管線與視覺化儀表板',
+                                '培訓客戶團隊資料科學方法論'
+                            ]
+                        },
+                        {
+                            title: '資料科學部門主管',
+                            company: 'ICS 艾西斯資訊',
+                            date: '2014 - 2016',
+                            points: [
+                                '領導資料科學團隊執行企業分析專案',
+                                '建立資料處理 SOP 與最佳實務',
+                                '指導分析師並建立技術能力'
+                            ]
+                        },
+                        {
+                            title: '巨量資料技術研發工程師',
+                            company: 'Coretronic 中強光電',
+                            date: '2012 - 2014',
+                            points: [
+                                '開發大數據分析系統與基礎架構',
+                                '研究並原型化新興技術'
+                            ]
+                        }
+                    ]
+                },
+                expertise: {
+                    title: '核心專長',
+                    skills: [
+                        {
+                            icon: '🎯',
+                            title: '營運領導力',
+                            desc: '管理 300+ 國際團隊成員的實證記錄。專精於建立數據驅動的工作流程、KPI 系統與流程優化。熟悉領導跨時區的跨職能團隊。'
+                        },
+                        {
+                            icon: '🤖',
+                            title: 'AI 實作',
+                            desc: '實戰經驗包含 Claude API、OpenAI、LINE Bot 開發與 AI 代理設計。專精於快速 POC 驗證與將 AI 能力轉化為商業價值。'
+                        },
+                        {
+                            icon: '⚡',
+                            title: '企業自動化',
+                            desc: '打造真正能運作的自動化系統。RPA、網站爬蟲、工作流程設計與流程優化。專注於可持續、可維護且可擴展的解決方案。'
+                        },
+                        {
+                            icon: '🎓',
+                            title: '技術培訓',
+                            desc: '10+ 年於資策會、文化大學、金融研訓院授課經驗。專精於將複雜技術概念轉譯為非技術受眾可執行的知識。'
+                        },
+                        {
+                            icon: '🔧',
+                            title: '技術棧',
+                            desc: 'Python, R, JavaScript · Claude Code, OpenAI API · LINE Messaging API · Selenium, Puppeteer · Google Cloud, AWS · Docker, Git · Flask, FastAPI'
+                        },
+                        {
+                            icon: '🏆',
+                            title: '專業認可',
+                            desc: 'iPAS AI 應用規劃師認證命題委員（工研院）· 中華 R 軟體學會前理事 · R Taiwan 2013 研討會籌辦人 · Hackathon 獎項'
+                        }
+                    ]
+                },
+                projects: {
+                    title: '精選專案',
+                    items: [
+                        {
+                            title: 'ThinkerCafe 教育平台',
+                            tags: ['AI 教育', '系統設計'],
+                            points: [
+                                '完整 AI 課程體系（Personal OS、5+ 課程系列）',
+                                '服務進入 AI 時代的非技術專業人士',
+                                '建立從內容到交付的完整生態系',
+                                '強調實用、可執行的系統'
+                            ]
+                        },
+                        {
+                            title: 'LINE Bot 自動化系統',
+                            tags: ['企業應用', '自動化'],
+                            points: [
+                                '物理治療診所預約系統',
+                                '預約流程時間縮短 70%',
+                                'Google Calendar 整合',
+                                '客戶滿意度提升'
+                            ]
+                        },
+                        {
+                            title: 'Thinker Kit',
+                            tags: ['生產力', 'AI 代理'],
+                            points: [
+                                '個人 AI 增強系統',
+                                '整合記憶、提示詞庫、生產力工具',
+                                '每日洞察與目標追蹤',
+                                '遊戲化參與系統'
+                            ]
+                        },
+                        {
+                            title: 'ThreadsBot',
+                            tags: ['社群媒體', 'AI 代理'],
+                            points: [
+                                'AI 驅動的社群媒體自動化',
+                                '互動率提升 3 倍',
+                                '營運時間減少 80%',
+                                '自動內容分析與排程'
+                            ]
+                        },
+                        {
+                            title: 'Ryan OS & Mary OS',
+                            tags: ['家庭科技', '系統'],
+                            points: [
+                                'AI 驅動的家庭管理系統',
+                                '教育追蹤（Ryan OS）',
+                                '長者照護協調（Mary OS）',
+                                '數據驅動的家庭決策'
+                            ]
+                        },
+                        {
+                            title: '300+ 團隊營運',
+                            tags: ['領導力', '規模化'],
+                            points: [
+                                '橫跨菲律賓的國際團隊',
+                                '24/7 營運協調',
+                                '數據驅動的 KPI 系統',
+                                '透過自動化降低 40% 成本'
+                            ]
+                        }
+                    ]
+                },
+                cta: {
+                    title: '讓我們一起打造些什麼',
+                    subtitle: '目前尋求與企業客戶合作 AI 實作、數位轉型與解決方案架構的機會。',
+                    location: '遠端優先 · 台北/台中/台南 · 70-100K TWD/月',
+                    buttons: ['聯繫我', '訪問 ThinkerCafe', 'LinkedIn 個人檔案']
+                },
+                footer: {
+                    built: '用心打造 · 設計啟發 · 更新於 2025 年 1 月',
+                    quote: '當科技回歸人性，智慧便有了溫度'
+                }
+            },
+            en: {
+                dir: 'ltr',
+                hero: {
+                    name: 'Cruz Tang',
+                    tagline: 'AI-Native Leader & System Architect',
+                    subtitle: 'Transforming enterprises through AI implementation · From managing 300+ international teams to building AI-first solutions',
+                    stats: ['Years Experience', 'Team Managed', 'Companies Founded', 'Problems Solved']
+                },
+                nav: {
+                    about: 'About',
+                    experience: 'Experience',
+                    expertise: 'Expertise',
+                    projects: 'Projects',
+                    contact: 'Contact'
+                },
+                about: {
+                    title: 'About Me',
+                    content: 'I bridge the gap between large-scale operations and cutting-edge AI implementation. After managing <strong>300+ team members</strong> at Topvan Group across China, Philippines, Malaysia, and Vietnam, I founded <strong>ThinkerCafe</strong> to democratize AI education and enterprise automation.<br><br>My unique background combines <strong>international team leadership</strong>, <strong>technical depth in AI/data science</strong>, and <strong>10+ years of teaching experience</strong>. I don\'t just implement AI solutions—I build systems that empower people to work smarter.<br><br>Currently seeking opportunities to bring this combined expertise to enterprise AI consulting and digital transformation projects.'
+                },
+                experience: {
+                    title: 'Career Journey',
+                    jobs: [
+                        {
+                            title: 'CEO & Founder',
+                            company: 'ThinkerCafe',
+                            date: '2023 - Present',
+                            points: [
+                                'Leading distributed team across Taiwan and US developing AI education and automation products',
+                                'Designed comprehensive AI curriculum (Personal OS, AI Communication, Visual/System Hacker series)',
+                                'Built LINE Bot, automation systems, and AI-powered productivity tools',
+                                'Delivering enterprise consulting on AI implementation and workflow optimization'
+                            ]
+                        },
+                        {
+                            title: 'Operations Manager',
+                            company: 'Topvan Group',
+                            date: 'Nov 2020 - Dec 2023 · 3 yrs 2 mos',
+                            points: [
+                                'Managed international operations team of <strong>300+ members</strong> across multiple departments',
+                                'Established data-driven operational workflows and KPI tracking systems',
+                                'Led cross-functional teams to optimize processes and improve efficiency',
+                                'Implemented automation solutions reducing operational costs by 40%',
+                                'Coordinated multi-timezone operations ensuring 24/7 service delivery'
+                            ]
+                        },
+                        {
+                            title: 'Founder',
+                            company: 'Thinker Data',
+                            date: '2016 - 2020',
+                            points: [
+                                'Founded data analytics consultancy serving finance, retail, and manufacturing',
+                                'Delivered custom analytics projects with measurable ROI',
+                                'Built scalable data processing pipelines and visualization dashboards',
+                                'Trained client teams on data science methodologies'
+                            ]
+                        },
+                        {
+                            title: 'Data Science Lead',
+                            company: 'ICS',
+                            date: '2014 - 2016',
+                            points: [
+                                'Led data science team on enterprise analytics projects',
+                                'Established data processing SOPs and best practices',
+                                'Mentored analysts and built technical capabilities'
+                            ]
+                        },
+                        {
+                            title: 'Big Data R&D Engineer',
+                            company: 'Coretronic',
+                            date: '2012 - 2014',
+                            points: [
+                                'Developed big data analytics systems and infrastructure',
+                                'Researched and prototyped emerging technologies'
+                            ]
+                        }
+                    ]
+                },
+                expertise: {
+                    title: 'Core Expertise',
+                    skills: [
+                        {
+                            icon: '🎯',
+                            title: 'Operations Leadership',
+                            desc: 'Proven track record managing 300+ international team members. Expert in building data-driven workflows, KPI systems, and process optimization. Comfortable leading cross-functional teams across multiple time zones.'
+                        },
+                        {
+                            icon: '🤖',
+                            title: 'AI Implementation',
+                            desc: 'Hands-on experience with Claude API, OpenAI, LINE Bot development, and AI agent design. Specializing in rapid POC validation and translating AI capabilities into business value.'
+                        },
+                        {
+                            icon: '⚡',
+                            title: 'Enterprise Automation',
+                            desc: 'Building automation systems that work. RPA, web scraping, workflow design, and process optimization. Focus on sustainable, maintainable solutions that scale.'
+                        },
+                        {
+                            icon: '🎓',
+                            title: 'Technical Training',
+                            desc: '10+ years teaching experience. Expert at translating complex technical concepts into actionable knowledge for non-technical audiences.'
+                        },
+                        {
+                            icon: '🔧',
+                            title: 'Tech Stack',
+                            desc: 'Python, R, JavaScript · Claude Code, OpenAI API · LINE Messaging API · Selenium, Puppeteer · Google Cloud, AWS · Docker, Git · Flask, FastAPI'
+                        },
+                        {
+                            icon: '🏆',
+                            title: 'Recognition',
+                            desc: 'iPAS AI Application Specialist Exam Committee Member (ITRI) · Former Director, Chinese R Software Association · R Taiwan 2013 Conference Organizer · Hackathon Awards'
+                        }
+                    ]
+                },
+                projects: {
+                    title: 'Featured Projects',
+                    items: [
+                        {
+                            title: 'ThinkerCafe Education Platform',
+                            tags: ['AI Education', 'System Design'],
+                            points: [
+                                'Comprehensive AI curriculum (Personal OS, 5+ course series)',
+                                'Serving non-technical professionals entering AI era',
+                                'Built complete ecosystem from content to delivery',
+                                'Emphasis on practical, implementable systems'
+                            ]
+                        },
+                        {
+                            title: 'LINE Bot Automation Systems',
+                            tags: ['Enterprise', 'Automation'],
+                            points: [
+                                'Booking system for physical therapy clinic',
+                                '70% reduction in booking process time',
+                                'Google Calendar integration',
+                                'Improved customer satisfaction scores'
+                            ]
+                        },
+                        {
+                            title: 'Thinker Kit',
+                            tags: ['Productivity', 'AI Agent'],
+                            points: [
+                                'Personal AI enhancement system',
+                                'Integrated memory, prompt library, productivity tools',
+                                'Daily insights and goal tracking',
+                                'Gamified engagement system'
+                            ]
+                        },
+                        {
+                            title: 'ThreadsBot',
+                            tags: ['Social Media', 'AI Agent'],
+                            points: [
+                                'AI-powered social media automation',
+                                '3x increase in engagement rate',
+                                '80% reduction in operation time',
+                                'Automatic content analysis and scheduling'
+                            ]
+                        },
+                        {
+                            title: 'Ryan OS & Mary OS',
+                            tags: ['Family Tech', 'System'],
+                            points: [
+                                'AI-driven family management systems',
+                                'Education tracking (Ryan OS)',
+                                'Elder care coordination (Mary OS)',
+                                'Data-driven family decisions'
+                            ]
+                        },
+                        {
+                            title: '300+ Team Operations',
+                            tags: ['Leadership', 'Scale'],
+                            points: [
+                                'International team across Philippines',
+                                '24/7 operations coordination',
+                                'Data-driven KPI systems',
+                                '40% cost reduction through automation'
+                            ]
+                        }
+                    ]
+                },
+                cta: {
+                    title: 'Let\'s Build Something Together',
+                    subtitle: 'Currently seeking opportunities to work with enterprise clients on AI implementation, digital transformation, and solution architecture.',
+                    location: 'Remote-friendly · Taipei/Taichung/Tainan · 70-100K TWD/month',
+                    buttons: ['Get in Touch', 'Visit ThinkerCafe', 'LinkedIn Profile']
+                },
+                footer: {
+                    built: 'Built with intention · Designed to inspire · Updated January 2025',
+                    quote: 'When technology returns to humanity, intelligence finds its warmth'
+                }
+            },
+            ja: {
+                dir: 'ltr',
+                hero: {
+                    name: 'Cruz Tang',
+                    tagline: 'AI ネイティブリーダー＆システムアーキテクト',
+                    subtitle: 'AI 実装による企業変革 · 300+ 名の国際チーム管理から AI ファーストソリューション構築へ',
+                    stats: ['年の経験', 'チーム管理', '創業企業数', '解決済み課題']
+                },
+                nav: {
+                    about: '自己紹介',
+                    experience: '経歴',
+                    expertise: '専門分野',
+                    projects: 'プロジェクト',
+                    contact: '連絡先'
+                },
+                about: {
+                    title: '自己紹介',
+                    content: '大規模運営管理と最先端 AI 実装のギャップを埋めます。フィリピンのオンラインゲーム業界で<strong>300 名以上</strong>のチームメンバーを管理した後、<strong>ThinkerCafe</strong> を設立し、AI 教育の民主化と企業自動化に取り組んでいます。<br><br>私の独自の経歴は、<strong>国際チームリーダーシップ</strong>、<strong>AI/データサイエンスの技術的深さ</strong>、そして<strong>10 年以上の教育経験</strong>を組み合わせています。単に AI ソリューションを実装するだけでなく、人々がよりスマートに働けるシステムを構築します。<br><br>現在、この総合的な専門知識を企業 AI コンサルティングとデジタルトランスフォーメーションプロジェクトに活かす機会を探しています。'
+                },
+                experience: {
+                    title: 'キャリア',
+                    jobs: [
+                        {
+                            title: 'CEO・創業者',
+                            company: 'ThinkerCafe',
+                            date: '2023 - 現在',
+                            points: [
+                                '台湾と米国にまたがる分散チームを率い、AI 教育・自動化製品を開発',
+                                '包括的な AI カリキュラムを設計（Personal OS、AI コミュニケーション、Visual/System Hacker シリーズ）',
+                                'LINE Bot、自動化システム、AI 駆動の生産性ツールを構築',
+                                'AI 実装とワークフロー最適化に関する企業コンサルティングを提供'
+                            ]
+                        },
+                        {
+                            title: '運営マネージャー',
+                            company: 'オンラインゲーム業界、フィリピン',
+                            date: '2020年3月 - 2023年12月',
+                            points: [
+                                '複数部門にまたがる<strong>300 名以上</strong>の国際運営チームを管理',
+                                'データ駆動型の運営ワークフローと KPI 追跡システムを確立',
+                                'クロスファンクショナルチームを率いてプロセスを最適化し効率を改善',
+                                '運営コストを 40% 削減する自動化ソリューションを実装',
+                                'マルチタイムゾーンの運営を調整し、24/7 サービス提供を確保'
+                            ]
+                        },
+                        {
+                            title: '創業者',
+                            company: 'Thinker Data',
+                            date: '2016 - 2020',
+                            points: [
+                                '金融、小売、製造業向けデータ分析コンサルティング会社を設立',
+                                '測定可能な ROI を持つカスタム分析プロジェクトを提供',
+                                'スケーラブルなデータ処理パイプラインと可視化ダッシュボードを構築',
+                                'クライアントチームにデータサイエンス手法を指導'
+                            ]
+                        },
+                        {
+                            title: 'データサイエンスリード',
+                            company: 'ICS',
+                            date: '2014 - 2016',
+                            points: [
+                                '企業分析プロジェクトのデータサイエンスチームをリード',
+                                'データ処理の SOP とベストプラクティスを確立',
+                                'アナリストを指導し技術力を構築'
+                            ]
+                        },
+                        {
+                            title: 'ビッグデータ R&D エンジニア',
+                            company: 'Coretronic',
+                            date: '2012 - 2014',
+                            points: [
+                                'ビッグデータ分析システムとインフラを開発',
+                                '新興技術の研究とプロトタイプ化'
+                            ]
+                        }
+                    ]
+                },
+                expertise: {
+                    title: 'コア専門分野',
+                    skills: [
+                        {
+                            icon: '🎯',
+                            title: '運営リーダーシップ',
+                            desc: '300 名以上の国際チームメンバーを管理した実績。データ駆動型ワークフロー、KPI システム、プロセス最適化の構築に精通。複数のタイムゾーンにまたがるクロスファンクショナルチームのリードに長けています。'
+                        },
+                        {
+                            icon: '🤖',
+                            title: 'AI 実装',
+                            desc: 'Claude API、OpenAI、LINE Bot 開発、AI エージェント設計の実践経験。迅速な POC 検証と AI 機能のビジネス価値への変換を専門としています。'
+                        },
+                        {
+                            icon: '⚡',
+                            title: '企業自動化',
+                            desc: '実際に機能する自動化システムの構築。RPA、Web スクレイピング、ワークフロー設計、プロセス最適化。持続可能で保守可能でスケーラブルなソリューションに焦点を当てています。'
+                        },
+                        {
+                            icon: '🎓',
+                            title: '技術トレーニング',
+                            desc: '10 年以上の教育経験。複雑な技術概念を非技術者向けの実行可能な知識に翻訳することに長けています。'
+                        },
+                        {
+                            icon: '🔧',
+                            title: '技術スタック',
+                            desc: 'Python, R, JavaScript · Claude Code, OpenAI API · LINE Messaging API · Selenium, Puppeteer · Google Cloud, AWS · Docker, Git · Flask, FastAPI'
+                        },
+                        {
+                            icon: '🏆',
+                            title: '認定・表彰',
+                            desc: 'iPAS AI アプリケーションスペシャリスト試験委員（工研院）· 中華 R ソフトウェア協会前理事 · R Taiwan 2013 カンファレンス主催者 · ハッカソン受賞'
+                        }
+                    ]
+                },
+                projects: {
+                    title: '注目プロジェクト',
+                    items: [
+                        {
+                            title: 'ThinkerCafe 教育プラットフォーム',
+                            tags: ['AI 教育', 'システム設計'],
+                            points: [
+                                '包括的な AI カリキュラム（Personal OS、5+ コースシリーズ）',
+                                'AI 時代に入る非技術系専門家にサービス提供',
+                                'コンテンツから提供までの完全なエコシステムを構築',
+                                '実用的で実装可能なシステムに重点'
+                            ]
+                        },
+                        {
+                            title: 'LINE Bot 自動化システム',
+                            tags: ['企業向け', '自動化'],
+                            points: [
+                                '理学療法クリニック向け予約システム',
+                                '予約プロセス時間を 70% 削減',
+                                'Google カレンダー統合',
+                                '顧客満足度スコア向上'
+                            ]
+                        },
+                        {
+                            title: 'Thinker Kit',
+                            tags: ['生産性', 'AI エージェント'],
+                            points: [
+                                '個人 AI 強化システム',
+                                'メモリ、プロンプトライブラリ、生産性ツールを統合',
+                                '毎日のインサイトと目標追跡',
+                                'ゲーム化されたエンゲージメントシステム'
+                            ]
+                        },
+                        {
+                            title: 'ThreadsBot',
+                            tags: ['ソーシャルメディア', 'AI エージェント'],
+                            points: [
+                                'AI 駆動のソーシャルメディア自動化',
+                                'エンゲージメント率 3 倍増加',
+                                '運営時間 80% 削減',
+                                '自動コンテンツ分析とスケジューリング'
+                            ]
+                        },
+                        {
+                            title: 'Ryan OS & Mary OS',
+                            tags: ['家族向けテック', 'システム'],
+                            points: [
+                                'AI 駆動型家族管理システム',
+                                '教育追跡（Ryan OS）',
+                                '高齢者ケア調整（Mary OS）',
+                                'データ駆動型家族決定'
+                            ]
+                        },
+                        {
+                            title: '300+ チーム運営',
+                            tags: ['リーダーシップ', 'スケール'],
+                            points: [
+                                'フィリピン全体の国際チーム',
+                                '24/7 運営調整',
+                                'データ駆動型 KPI システム',
+                                '自動化による 40% コスト削減'
+                            ]
+                        }
+                    ]
+                },
+                cta: {
+                    title: '一緒に何かを構築しましょう',
+                    subtitle: 'AI 実装、デジタルトランスフォーメーション、ソリューションアーキテクチャに関する企業クライアントとの協働機会を探しています。',
+                    location: 'リモート優先 · 台北/台中/台南 · 70-100K TWD/月',
+                    buttons: ['お問い合わせ', 'ThinkerCafe を訪問', 'LinkedIn プロフィール']
+                },
+                footer: {
+                    built: '意図を持って構築 · インスピレーションを与えるデザイン · 2025年1月更新',
+                    quote: 'テクノロジーが人間性に戻るとき、知性は温もりを持つ'
+                }
+            },
+            ko: {
+                dir: 'ltr',
+                hero: {
+                    name: 'Cruz Tang',
+                    tagline: 'AI 네이티브 리더 & 시스템 아키텍트',
+                    subtitle: 'AI 구현을 통한 기업 혁신 · 300+ 국제 팀 관리에서 AI 우선 솔루션 구축까지',
+                    stats: ['년 경력', '팀 관리', '창업', '해결한 문제']
+                },
+                nav: {
+                    about: '소개',
+                    experience: '경력',
+                    expertise: '전문 분야',
+                    projects: '프로젝트',
+                    contact: '연락처'
+                },
+                about: {
+                    title: '소개',
+                    content: '저는 대규모 운영 관리와 최첨단 AI 구현 사이의 격차를 해소합니다. 필리핀 온라인 게임 업계에서 <strong>300명 이상</strong>의 팀원을 관리한 후, <strong>ThinkerCafe</strong>를 설립하여 AI 교육 민주화와 기업 자동화에 전념하고 있습니다.<br><br>저의 독특한 배경은 <strong>국제 팀 리더십</strong>, <strong>AI/데이터 과학의 기술적 깊이</strong>, 그리고 <strong>10년 이상의 교육 경험</strong>을 결합합니다. 단순히 AI 솔루션을 구현하는 것이 아니라 사람들이 더 스마트하게 일할 수 있도록 하는 시스템을 구축합니다.<br><br>현재 이러한 종합적인 전문성을 기업 AI 컨설팅 및 디지털 전환 프로젝트에 적용할 기회를 찾고 있습니다.'
+                },
+                experience: {
+                    title: '경력',
+                    jobs: [
+                        {
+                            title: 'CEO & 창업자',
+                            company: 'ThinkerCafe',
+                            date: '2023 - 현재',
+                            points: [
+                                '대만과 미국에 걸친 분산 팀을 이끌며 AI 교육 및 자동화 제품 개발',
+                                '포괄적인 AI 커리큘럼 설계(Personal OS, AI 커뮤니케이션, Visual/System Hacker 시리즈)',
+                                'LINE Bot, 자동화 시스템, AI 기반 생산성 도구 구축',
+                                'AI 구현 및 워크플로우 최적화에 대한 기업 컨설팅 제공'
+                            ]
+                        },
+                        {
+                            title: '운영 매니저',
+                            company: '온라인 게임 산업, 필리핀',
+                            date: '2020년 3월 - 2023년 12월',
+                            points: [
+                                '여러 부서에 걸친 <strong>300명 이상</strong>의 국제 운영 팀 관리',
+                                '데이터 기반 운영 워크플로우 및 KPI 추적 시스템 구축',
+                                '크로스 펑셔널 팀을 이끌어 프로세스 최적화 및 효율성 개선',
+                                '운영 비용을 40% 줄이는 자동화 솔루션 구현',
+                                '멀티 타임존 운영을 조정하여 24/7 서비스 제공 보장'
+                            ]
+                        },
+                        {
+                            title: '창업자',
+                            company: 'Thinker Data',
+                            date: '2016 - 2020',
+                            points: [
+                                '금융, 소매, 제조업을 대상으로 데이터 분석 컨설팅 회사 설립',
+                                '측정 가능한 ROI를 가진 맞춤형 분석 프로젝트 제공',
+                                '확장 가능한 데이터 처리 파이프라인 및 시각화 대시보드 구축',
+                                '클라이언트 팀에 데이터 과학 방법론 교육'
+                            ]
+                        },
+                        {
+                            title: '데이터 사이언스 리드',
+                            company: 'ICS',
+                            date: '2014 - 2016',
+                            points: [
+                                '기업 분석 프로젝트에서 데이터 과학 팀 리드',
+                                '데이터 처리 SOP 및 모범 사례 수립',
+                                '분석가 멘토링 및 기술 역량 구축'
+                            ]
+                        },
+                        {
+                            title: '빅데이터 R&D 엔지니어',
+                            company: 'Coretronic',
+                            date: '2012 - 2014',
+                            points: [
+                                '빅데이터 분석 시스템 및 인프라 개발',
+                                '신흥 기술 연구 및 프로토타입 제작'
+                            ]
+                        }
+                    ]
+                },
+                expertise: {
+                    title: '핵심 전문 분야',
+                    skills: [
+                        {
+                            icon: '🎯',
+                            title: '운영 리더십',
+                            desc: '300명 이상의 국제 팀원 관리 실적. 데이터 기반 워크플로우, KPI 시스템, 프로세스 최적화 구축 전문가. 여러 시간대에 걸친 크로스 펑셔널 팀 리드에 능숙합니다.'
+                        },
+                        {
+                            icon: '🤖',
+                            title: 'AI 구현',
+                            desc: 'Claude API, OpenAI, LINE Bot 개발, AI 에이전트 설계에 대한 실무 경험. 신속한 POC 검증 및 AI 기능을 비즈니스 가치로 전환하는 데 전문화되어 있습니다.'
+                        },
+                        {
+                            icon: '⚡',
+                            title: '기업 자동화',
+                            desc: '실제로 작동하는 자동화 시스템 구축. RPA, 웹 스크래핑, 워크플로우 설계, 프로세스 최적화. 지속 가능하고 유지 관리 가능하며 확장 가능한 솔루션에 중점을 둡니다.'
+                        },
+                        {
+                            icon: '🎓',
+                            title: '기술 교육',
+                            desc: '10년 이상의 교육 경험. 복잡한 기술 개념을 비기술 청중을 위한 실행 가능한 지식으로 번역하는 데 전문가입니다.'
+                        },
+                        {
+                            icon: '🔧',
+                            title: '기술 스택',
+                            desc: 'Python, R, JavaScript · Claude Code, OpenAI API · LINE Messaging API · Selenium, Puppeteer · Google Cloud, AWS · Docker, Git · Flask, FastAPI'
+                        },
+                        {
+                            icon: '🏆',
+                            title: '인정 및 수상',
+                            desc: 'iPAS AI 애플리케이션 전문가 시험 위원(공업기술연구원) · 중화 R 소프트웨어 협회 전 이사 · R Taiwan 2013 컨퍼런스 주최자 · 해커톤 수상'
+                        }
+                    ]
+                },
+                projects: {
+                    title: '주요 프로젝트',
+                    items: [
+                        {
+                            title: 'ThinkerCafe 교육 플랫폼',
+                            tags: ['AI 교육', '시스템 설계'],
+                            points: [
+                                '포괄적인 AI 커리큘럼(Personal OS, 5+ 코스 시리즈)',
+                                'AI 시대에 진입하는 비기술 전문가 대상 서비스',
+                                '콘텐츠에서 제공까지 완전한 생태계 구축',
+                                '실용적이고 구현 가능한 시스템 강조'
+                            ]
+                        },
+                        {
+                            title: 'LINE Bot 자동화 시스템',
+                            tags: ['기업', '자동화'],
+                            points: [
+                                '물리치료 클리닉 예약 시스템',
+                                '예약 프로세스 시간 70% 단축',
+                                'Google 캘린더 통합',
+                                '고객 만족도 점수 향상'
+                            ]
+                        },
+                        {
+                            title: 'Thinker Kit',
+                            tags: ['생산성', 'AI 에이전트'],
+                            points: [
+                                '개인 AI 강화 시스템',
+                                '메모리, 프롬프트 라이브러리, 생산성 도구 통합',
+                                '일일 인사이트 및 목표 추적',
+                                '게임화된 참여 시스템'
+                            ]
+                        },
+                        {
+                            title: 'ThreadsBot',
+                            tags: ['소셜 미디어', 'AI 에이전트'],
+                            points: [
+                                'AI 기반 소셜 미디어 자동화',
+                                '참여율 3배 증가',
+                                '운영 시간 80% 감소',
+                                '자동 콘텐츠 분석 및 스케줄링'
+                            ]
+                        },
+                        {
+                            title: 'Ryan OS & Mary OS',
+                            tags: ['가족 기술', '시스템'],
+                            points: [
+                                'AI 기반 가족 관리 시스템',
+                                '교육 추적(Ryan OS)',
+                                '노인 돌봄 조정(Mary OS)',
+                                '데이터 기반 가족 의사결정'
+                            ]
+                        },
+                        {
+                            title: '300+ 팀 운영',
+                            tags: ['리더십', '규모'],
+                            points: [
+                                '필리핀 전역의 국제 팀',
+                                '24/7 운영 조정',
+                                '데이터 기반 KPI 시스템',
+                                '자동화를 통한 40% 비용 절감'
+                            ]
+                        }
+                    ]
+                },
+                cta: {
+                    title: '함께 무언가를 만들어봅시다',
+                    subtitle: 'AI 구현, 디지털 전환, 솔루션 아키텍처에 대한 기업 고객과의 협력 기회를 찾고 있습니다.',
+                    location: '원격 우선 · 타이베이/타이중/타이난 · 70-100K TWD/월',
+                    buttons: ['문의하기', 'ThinkerCafe 방문', 'LinkedIn 프로필']
+                },
+                footer: {
+                    built: '의도를 가지고 구축 · 영감을 주기 위해 설계 · 2025년 1월 업데이트',
+                    quote: '기술이 인간성으로 돌아올 때, 지능은 따뜻함을 찾습니다'
+                }
+            },
+            ar: {
+                dir: 'rtl',
+                hero: {
+                    name: 'كروز تانغ',
+                    tagline: 'قائد أصلي للذكاء الاصطناعي ومهندس أنظمة',
+                    subtitle: 'تحويل المؤسسات من خلال تطبيق الذكاء الاصطناعي · من إدارة 300+ فريق دولي إلى بناء حلول الذكاء الاصطناعي أولاً',
+                    stats: ['سنوات الخبرة', 'إدارة الفريق', 'الشركات المؤسسة', 'المشاكل المحلولة']
+                },
+                nav: {
+                    about: 'نبذة',
+                    experience: 'الخبرة',
+                    expertise: 'التخصص',
+                    projects: 'المشاريع',
+                    contact: 'اتصل بنا'
+                },
+                about: {
+                    title: 'نبذة عني',
+                    content: 'أسد الفجوة بين العمليات واسعة النطاق وتطبيق الذكاء الاصطناعي المتطور. بعد إدارة <strong>أكثر من 300 عضو</strong> في فريق عمليات الألعاب عبر الإنترنت في الفلبين، أسست <strong>ThinkerCafe</strong> لإضفاء الطابع الديمقراطي على تعليم الذكاء الاصطناعي والأتمتة المؤسسية.<br><br>تجمع خلفيتي الفريدة بين <strong>قيادة الفريق الدولي</strong> و<strong>العمق التقني في الذكاء الاصطناعي/علوم البيانات</strong> و<strong>أكثر من 10 سنوات من الخبرة التدريسية</strong>. أنا لا أطبق حلول الذكاء الاصطناعي فقط—بل أبني أنظمة تمكن الناس من العمل بشكل أذكى.<br><br>أبحث حاليًا عن فرص لجلب هذه الخبرة المشتركة إلى استشارات الذكاء الاصطناعي المؤسسية ومشاريع التحول الرقمي.'
+                },
+                experience: {
+                    title: 'الرحلة المهنية',
+                    jobs: [
+                        {
+                            title: 'الرئيس التنفيذي والمؤسس',
+                            company: 'ThinkerCafe',
+                            date: '2023 - الحاضر',
+                            points: [
+                                'قيادة فريق موزع عبر تايوان والولايات المتحدة لتطوير منتجات التعليم والأتمتة بالذكاء الاصطناعي',
+                                'تصميم منهج شامل للذكاء الاصطناعي (Personal OS، التواصل بالذكاء الاصطناعي، سلسلة Visual/System Hacker)',
+                                'بناء LINE Bot وأنظمة الأتمتة وأدوات الإنتاجية المدعومة بالذكاء الاصطناعي',
+                                'تقديم استشارات مؤسسية حول تطبيق الذكاء الاصطناعي وتحسين سير العمل'
+                            ]
+                        },
+                        {
+                            title: 'مدير العمليات',
+                            company: 'صناعة الألعاب عبر الإنترنت، الفلبين',
+                            date: 'مارس 2020 - ديسمبر 2023',
+                            points: [
+                                'إدارة فريق عمليات دولي من <strong>أكثر من 300 عضو</strong> عبر أقسام متعددة',
+                                'إنشاء سير عمل تشغيلي قائم على البيانات وأنظمة تتبع مؤشرات الأداء الرئيسية',
+                                'قيادة فرق متعددة الوظائف لتحسين العمليات وتحسين الكفاءة',
+                                'تطبيق حلول أتمتة تقلل التكاليف التشغيلية بنسبة 40٪',
+                                'تنسيق عمليات متعددة المناطق الزمنية لضمان تقديم الخدمة على مدار الساعة'
+                            ]
+                        },
+                        {
+                            title: 'المؤسس',
+                            company: 'Thinker Data',
+                            date: '2016 - 2020',
+                            points: [
+                                'تأسيس شركة استشارات تحليل البيانات لخدمة التمويل والتجزئة والتصنيع',
+                                'تقديم مشاريع تحليلية مخصصة مع عائد استثمار قابل للقياس',
+                                'بناء خطوط أنابيب معالجة البيانات القابلة للتطوير ولوحات المعلومات المرئية',
+                                'تدريب فرق العملاء على منهجيات علوم البيانات'
+                            ]
+                        },
+                        {
+                            title: 'قائد علوم البيانات',
+                            company: 'ICS',
+                            date: '2014 - 2016',
+                            points: [
+                                'قيادة فريق علوم البيانات في مشاريع التحليلات المؤسسية',
+                                'إنشاء إجراءات التشغيل القياسية لمعالجة البيانات وأفضل الممارسات',
+                                'توجيه المحللين وبناء القدرات التقنية'
+                            ]
+                        },
+                        {
+                            title: 'مهندس البحث والتطوير للبيانات الضخمة',
+                            company: 'Coretronic',
+                            date: '2012 - 2014',
+                            points: [
+                                'تطوير أنظمة تحليل البيانات الضخمة والبنية التحتية',
+                                'البحث والنماذج الأولية للتقنيات الناشئة'
+                            ]
+                        }
+                    ]
+                },
+                expertise: {
+                    title: 'الخبرات الأساسية',
+                    skills: [
+                        {
+                            icon: '🎯',
+                            title: 'قيادة العمليات',
+                            desc: 'سجل حافل في إدارة أكثر من 300 عضو في الفريق الدولي. خبير في بناء سير عمل قائم على البيانات وأنظمة مؤشرات الأداء الرئيسية وتحسين العمليات. مريح في قيادة فرق متعددة الوظائف عبر مناطق زمنية متعددة.'
+                        },
+                        {
+                            icon: '🤖',
+                            title: 'تطبيق الذكاء الاصطناعي',
+                            desc: 'خبرة عملية مع Claude API وOpenAI وتطوير LINE Bot وتصميم وكيل الذكاء الاصطناعي. متخصص في التحقق السريع من إثبات المفهوم وترجمة قدرات الذكاء الاصطناعي إلى قيمة تجارية.'
+                        },
+                        {
+                            icon: '⚡',
+                            title: 'أتمتة المؤسسات',
+                            desc: 'بناء أنظمة أتمتة تعمل. RPA، استخراج الويب، تصميم سير العمل، وتحسين العملية. التركيز على الحلول المستدامة والقابلة للصيانة والتي يمكن توسيع نطاقها.'
+                        },
+                        {
+                            icon: '🎓',
+                            title: 'التدريب التقني',
+                            desc: 'خبرة تدريسية تزيد عن 10 سنوات. خبير في ترجمة المفاهيم التقنية المعقدة إلى معرفة قابلة للتنفيذ للجماهير غير التقنية.'
+                        },
+                        {
+                            icon: '🔧',
+                            title: 'مجموعة التقنيات',
+                            desc: 'Python, R, JavaScript · Claude Code, OpenAI API · LINE Messaging API · Selenium, Puppeteer · Google Cloud, AWS · Docker, Git · Flask, FastAPI'
+                        },
+                        {
+                            icon: '🏆',
+                            title: 'التقدير',
+                            desc: 'عضو لجنة امتحان متخصص تطبيقات الذكاء الاصطناعي iPAS (ITRI) · المدير السابق، جمعية البرمجيات الصينية R · منظم مؤتمر R Taiwan 2013 · جوائز هاكاثون'
+                        }
+                    ]
+                },
+                projects: {
+                    title: 'المشاريع المميزة',
+                    items: [
+                        {
+                            title: 'منصة تعليم ThinkerCafe',
+                            tags: ['تعليم الذكاء الاصطناعي', 'تصميم النظام'],
+                            points: [
+                                'منهج شامل للذكاء الاصطناعي (Personal OS، سلسلة من 5+ دورات)',
+                                'خدمة المهنيين غير التقنيين الذين يدخلون عصر الذكاء الاصطناعي',
+                                'بناء نظام بيئي كامل من المحتوى إلى التسليم',
+                                'التركيز على الأنظمة العملية القابلة للتنفيذ'
+                            ]
+                        },
+                        {
+                            title: 'أنظمة أتمتة LINE Bot',
+                            tags: ['المؤسسات', 'الأتمتة'],
+                            points: [
+                                'نظام حجز لعيادة العلاج الطبيعي',
+                                'تقليل وقت عملية الحجز بنسبة 70٪',
+                                'تكامل تقويم Google',
+                                'تحسين درجات رضا العملاء'
+                            ]
+                        },
+                        {
+                            title: 'Thinker Kit',
+                            tags: ['الإنتاجية', 'وكيل الذكاء الاصطناعي'],
+                            points: [
+                                'نظام تعزيز الذكاء الاصطناعي الشخصي',
+                                'ذاكرة متكاملة ومكتبة المطالبات وأدوات الإنتاجية',
+                                'رؤى يومية وتتبع الأهداف',
+                                'نظام مشاركة مبني على الألعاب'
+                            ]
+                        },
+                        {
+                            title: 'ThreadsBot',
+                            tags: ['وسائل التواصل الاجتماعي', 'وكيل الذكاء الاصطناعي'],
+                            points: [
+                                'أتمتة وسائل التواصل الاجتماعي المدعومة بالذكاء الاصطناعي',
+                                'زيادة معدل المشاركة 3 أضعاف',
+                                'تقليل وقت التشغيل بنسبة 80٪',
+                                'تحليل المحتوى التلقائي والجدولة'
+                            ]
+                        },
+                        {
+                            title: 'Ryan OS & Mary OS',
+                            tags: ['تقنية العائلة', 'النظام'],
+                            points: [
+                                'أنظمة إدارة عائلية مدفوعة بالذكاء الاصطناعي',
+                                'تتبع التعليم (Ryan OS)',
+                                'تنسيق رعاية المسنين (Mary OS)',
+                                'قرارات عائلية مدفوعة بالبيانات'
+                            ]
+                        },
+                        {
+                            title: 'عمليات فريق 300+',
+                            tags: ['القيادة', 'الحجم'],
+                            points: [
+                                'فريق دولي عبر الفلبين',
+                                'تنسيق العمليات على مدار الساعة',
+                                'أنظمة KPI مدفوعة بالبيانات',
+                                'تخفيض التكلفة بنسبة 40٪ من خلال الأتمتة'
+                            ]
+                        }
+                    ]
+                },
+                cta: {
+                    title: 'لنبني شيئًا معًا',
+                    subtitle: 'أبحث حاليًا عن فرص للعمل مع عملاء المؤسسات في تطبيق الذكاء الاصطناعي والتحول الرقمي وهندسة الحلول.',
+                    location: 'عمل عن بعد · تايبيه/تايتشونغ/تاينان · 70-100 ألف دولار تايواني/شهر',
+                    buttons: ['تواصل معنا', 'زيارة ThinkerCafe', 'ملف LinkedIn']
+                },
+                footer: {
+                    built: 'مبني بنية · مصمم للإلهام · محدث يناير 2025',
+                    quote: 'عندما تعود التكنولوجيا إلى الإنسانية، يجد الذكاء دفئه'
+                }
+            }
+        };
+        
+        let currentLang = 'zh';
+        
+        // Language switching
+        function changeLanguage(lang) {
+            currentLang = lang;
+            const t = translations[lang];
+            
+            // Set text direction
+            document.body.setAttribute('dir', t.dir);
+            
+            // Update language selector
+            const langFlags = {
+                zh: '🇹🇼 中文',
+                en: '🇺🇸 English',
+                ja: '🇯🇵 日本語',
+                ko: '🇰🇷 한국어',
+                ar: '🇸🇦 العربية'
+            };
+            document.getElementById('currentLang').textContent = langFlags[lang];
+            
+            // Update active state
+            document.querySelectorAll('.lang-menu button').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Update content
+            updateContent(t);
+            
+            // Close menu
+            document.getElementById('langMenu').classList.remove('show');
+            document.querySelector('.lang-toggle').classList.remove('open');
+        }
+        
+        function updateContent(t) {
+            // Hero
+            document.querySelector('.hero h1').textContent = t.hero.name;
+            document.querySelector('.hero .tagline').textContent = t.hero.tagline;
+            document.querySelector('.hero .subtitle').textContent = t.hero.subtitle;
+            
+            const statLabels = document.querySelectorAll('.stat-label');
+            t.hero.stats.forEach((stat, i) => {
+                if (statLabels[i]) statLabels[i].textContent = stat;
+            });
+            
+            // About
+            document.querySelector('#about .section-title').textContent = t.about.title;
+            document.querySelector('#about p').innerHTML = t.about.content;
+            
+            // Experience
+            document.querySelector('#experience .section-title').textContent = t.experience.title;
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            t.experience.jobs.forEach((job, i) => {
+                if (timelineItems[i]) {
+                    timelineItems[i].querySelector('.timeline-title').textContent = job.title;
+                    timelineItems[i].querySelector('.timeline-company').textContent = job.company;
+                    timelineItems[i].querySelector('.timeline-date').textContent = job.date;
+                    const ul = timelineItems[i].querySelector('ul');
+                    ul.innerHTML = job.points.map(p => `<li>${p}</li>`).join('');
+                }
+            });
+            
+            // Expertise
+            document.querySelector('#expertise .section-title').textContent = t.expertise.title;
+            const skillCards = document.querySelectorAll('.skill-card');
+            t.expertise.skills.forEach((skill, i) => {
+                if (skillCards[i]) {
+                    skillCards[i].querySelector('h3').textContent = skill.icon + ' ' + skill.title;
+                    skillCards[i].querySelector('p').textContent = skill.desc;
+                }
+            });
+            
+            // Projects
+            document.querySelector('#projects .section-title').textContent = t.projects.title;
+            const projectCards = document.querySelectorAll('.project-card');
+            t.projects.items.forEach((project, i) => {
+                if (projectCards[i]) {
+                    projectCards[i].querySelector('h3').textContent = project.title;
+                    const tags = projectCards[i].querySelectorAll('.project-tag');
+                    project.tags.forEach((tag, j) => {
+                        if (tags[j]) tags[j].textContent = tag;
+                    });
+                    const ul = projectCards[i].querySelector('ul');
+                    ul.innerHTML = project.points.map(p => `<li>${p}</li>`).join('');
+                }
+            });
+            
+            // CTA
+            document.querySelector('.cta h2').textContent = t.cta.title;
+            const ctaPs = document.querySelectorAll('.cta p');
+            ctaPs[0].innerHTML = t.cta.subtitle + '<br>' + t.cta.location;
+            
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons[0].innerHTML = '📧 ' + t.cta.buttons[0];
+            ctaButtons[1].innerHTML = '🌐 ' + t.cta.buttons[1];
+            ctaButtons[2].innerHTML = '💼 ' + t.cta.buttons[2];
+            
+            // Footer
+            const footerPs = document.querySelectorAll('footer p');
+            footerPs[0].textContent = t.footer.built;
+            footerPs[1].textContent = '"' + t.footer.quote + '"';
+        }
+        
+        function toggleLangMenu() {
+            const menu = document.getElementById('langMenu');
+            const toggle = document.querySelector('.lang-toggle');
+            menu.classList.toggle('show');
+            toggle.classList.toggle('open');
+        }
+        
+        // Close language menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.language-selector')) {
+                document.getElementById('langMenu').classList.remove('show');
+                document.querySelector('.lang-toggle').classList.remove('open');
+            }
+        });
+        
+        // Theme Toggle
+        function toggleTheme() {
+            const body = document.body;
+            const themeIcon = document.getElementById('themeIcon');
+            const currentTheme = body.getAttribute('data-theme');
+            
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                themeIcon.textContent = '🌙 Dark Mode';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️ Light Mode';
+            }
+        }
+        
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Initialize with default language
+        changeLanguage('zh');
+    </script>
+</body>
+</html>
