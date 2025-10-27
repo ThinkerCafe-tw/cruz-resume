@@ -540,7 +540,137 @@
             left: 0;
             color: var(--accent-primary);
         }
-        
+
+        /* Featured Portfolio Grid */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 35px;
+        }
+
+        .featured-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            border: 2px solid var(--border-color);
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.2);
+        }
+
+        .featured-emoji {
+            font-size: 4rem;
+            text-align: center;
+            padding: 30px 20px 10px;
+            background: var(--bg-accent);
+        }
+
+        .featured-content {
+            padding: 25px 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .featured-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .featured-tagline {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .featured-highlight {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1) 0%, rgba(0, 136, 255, 0.1) 100%);
+            border-left: 3px solid var(--accent-primary);
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: var(--accent-primary);
+            border-radius: 5px;
+        }
+
+        .featured-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .featured-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            display: inline-block;
+            padding: 6px 14px;
+            background: var(--bg-primary);
+            border: 1px solid var(--accent-primary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tech-tag:hover {
+            background: var(--accent-primary);
+            color: var(--bg-primary);
+            transform: scale(1.05);
+        }
+
+        .featured-links {
+            display: flex;
+            gap: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .featured-link {
+            flex: 1;
+            text-align: center;
+            padding: 10px 20px;
+            background: var(--bg-accent);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .featured-link:hover {
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            border-color: transparent;
+        }
+
+        .featured-link.disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .featured-link.disabled:hover {
+            background: var(--bg-accent);
+            color: var(--text-secondary);
+            transform: none;
+        }
+
         /* CTA Section */
         .cta {
             text-align: center;
@@ -906,22 +1036,254 @@
             padding-left: 15px;
             position: relative;
             transition: var(--transition);
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 5px 5px 5px 15px;
         }
 
         .skill-item::before {
             content: '•';
             position: absolute;
-            left: 0;
+            left: 5px;
             color: var(--accent-primary);
         }
 
         .skill-item:hover {
             color: var(--text-primary);
             padding-left: 20px;
+            background: rgba(0, 255, 136, 0.1);
+        }
+
+        /* View Toggle Buttons */
+        .view-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .toggle-btn {
+            padding: 12px 30px;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            color: var(--text-secondary);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+
+        .toggle-btn:hover {
+            border-color: var(--accent-primary);
+            color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+
+        .toggle-btn.active {
+            background: var(--accent-gradient);
+            border-color: transparent;
+            color: var(--bg-primary);
+            font-weight: 600;
+        }
+
+        /* Skills View Container */
+        .skills-view {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .skills-view.active {
+            display: block;
+            opacity: 1;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Visual Mode: Skills Galaxy (Concentric Circles) */
+        #skills-galaxy {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            height: 800px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-circle {
+            position: absolute;
+            border: 2px solid var(--border-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .skill-circle:hover {
+            border-color: var(--accent-primary);
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        }
+
+        /* Core Circle (Layer 1) */
+        .circle-core {
+            width: 240px;
+            height: 240px;
+            background: radial-gradient(circle, rgba(0, 255, 136, 0.15) 0%, transparent 70%);
+            z-index: 5;
+        }
+
+        /* Middle Circle (Layer 2-3) */
+        .circle-middle {
+            width: 450px;
+            height: 450px;
+            background: radial-gradient(circle, rgba(0, 136, 255, 0.1) 0%, transparent 70%);
+            z-index: 4;
+        }
+
+        /* Outer Circle (Layer 4-5) */
+        .circle-outer {
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(128, 0, 255, 0.05) 0%, transparent 70%);
+            z-index: 3;
+        }
+
+        .skill-node {
+            position: absolute;
+            padding: 10px 18px;
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-primary);
+            border-radius: 20px;
+            color: var(--accent-primary);
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        .skill-node:hover {
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            transform: scale(1.15);
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.4);
+            z-index: 20;
+        }
+
+        .skill-node.core {
+            border-color: #00ff88;
+            color: #00ff88;
+            font-size: 1rem;
+        }
+
+        .skill-node.middle {
+            border-color: #0088ff;
+            color: #0088ff;
+        }
+
+        .skill-node.outer {
+            border-color: #8800ff;
+            color: #8800ff;
+            font-size: 0.85rem;
+        }
+
+        .galaxy-center {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: var(--accent-gradient);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            z-index: 15;
+            box-shadow: 0 0 40px rgba(0, 255, 136, 0.6);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 40px rgba(0, 255, 136, 0.6);
+                transform: scale(1);
+            }
+            50% {
+                box-shadow: 0 0 60px rgba(0, 255, 136, 0.8);
+                transform: scale(1.05);
+            }
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
+            /* Skills Galaxy Mobile Adjustments */
+            #skills-galaxy {
+                height: 600px;
+                max-width: 100%;
+            }
+
+            .circle-core {
+                width: 180px;
+                height: 180px;
+            }
+
+            .circle-middle {
+                width: 320px;
+                height: 320px;
+            }
+
+            .circle-outer {
+                width: 500px;
+                height: 500px;
+            }
+
+            .galaxy-center {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+
+            .skill-node {
+                padding: 8px 12px;
+                font-size: 0.75rem;
+            }
+
+            .skill-node.core {
+                font-size: 0.85rem;
+            }
+
+            .skill-node.outer {
+                font-size: 0.7rem;
+            }
+
+            .view-toggle {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0 20px;
+            }
+
+            .toggle-btn {
+                width: 100%;
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+
             .theme-toggle {
                 top: 20px;
                 right: 20px;
@@ -1216,6 +1578,14 @@
             </div>
         </section>
 
+        <section id="featured">
+            <h2 class="section-title">Featured Portfolio</h2>
+            <p class="section-subtitle" style="text-align: center; color: var(--text-secondary); margin-bottom: 50px; font-size: 1.1rem;"></p>
+            <div class="featured-grid" id="featured-grid">
+                <!-- Populated by JS -->
+            </div>
+        </section>
+
         <section id="education">
             <h2 class="section-title">Education</h2>
             <div class="timeline" id="education-timeline">
@@ -1232,8 +1602,29 @@
 
         <section id="skills">
             <h2 class="section-title">Technical Skills</h2>
-            <div id="skills-container">
-                <!-- Populated by JS -->
+
+            <!-- View Mode Toggle -->
+            <div class="view-toggle">
+                <button class="toggle-btn active" onclick="switchSkillView('list')" data-mode="list">
+                    📋 List Mode
+                </button>
+                <button class="toggle-btn" onclick="switchSkillView('visual')" data-mode="visual">
+                    🌐 Visual Mode
+                </button>
+            </div>
+
+            <!-- List View (default) -->
+            <div id="skills-list-view" class="skills-view active">
+                <div id="skills-container">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+
+            <!-- Visual View (concentric circles) -->
+            <div id="skills-visual-view" class="skills-view">
+                <div id="skills-galaxy">
+                    <!-- Populated by JS -->
+                </div>
             </div>
         </section>
 
@@ -1633,6 +2024,31 @@ ${logText}
                         timelineItems[i].querySelector('.timeline-date').textContent = job.date;
                         const ul = timelineItems[i].querySelector('ul');
                         ul.innerHTML = job.points.map(p => `<li>${p}</li>`).join('');
+
+                        // Add tech tags if available
+                        const contentDiv = timelineItems[i].querySelector('.timeline-content');
+                        let existingTechDiv = contentDiv.querySelector('.experience-tech');
+
+                        if (job.tech && job.tech.length > 0) {
+                            const techHTML = `
+                                <div class="experience-tech" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px;">
+                                    <span style="color: var(--text-secondary); font-size: 0.9rem;">🛠️</span>
+                                    ${job.tech.map(tech => `
+                                        <span class="tech-tag" onclick="scrollToSkills('${tech.replace(/'/g, "\\'")}')">
+                                            ${tech}
+                                        </span>
+                                    `).join('')}
+                                </div>
+                            `;
+
+                            if (existingTechDiv) {
+                                existingTechDiv.outerHTML = techHTML;
+                            } else {
+                                contentDiv.insertAdjacentHTML('beforeend', techHTML);
+                            }
+                        } else if (existingTechDiv) {
+                            existingTechDiv.remove();
+                        }
                     }
                 });
                 logToPanel('✓ Experience section updated', 'success');
@@ -1653,6 +2069,34 @@ ${logText}
                     }
                 });
                 logToPanel('✓ Projects section updated', 'success');
+
+                // Featured Portfolio section
+                if (t.featured) {
+                    document.querySelector('#featured .section-title').textContent = t.featured.title;
+                    document.querySelector('#featured .section-subtitle').textContent = t.featured.subtitle;
+                    const featuredGrid = document.getElementById('featured-grid');
+                    featuredGrid.innerHTML = t.featured.projects.map(project => `
+                        <div class="featured-card">
+                            <div class="featured-emoji">${project.emoji}</div>
+                            <div class="featured-content">
+                                <div class="featured-name">${project.name}</div>
+                                <div class="featured-tagline">${project.tagline}</div>
+                                <div class="featured-highlight">💡 ${project.highlight}</div>
+                                <div class="featured-description">${project.description}</div>
+                                <div class="featured-tech">
+                                    ${project.tech.map(tech => `<span class="tech-tag" onclick="scrollToSkills('${tech}')">${tech}</span>`).join('')}
+                                </div>
+                                <div class="featured-links">
+                                    ${project.links.github ? `<a href="${project.links.github}" target="_blank" class="featured-link">GitHub ↗</a>` : '<span class="featured-link disabled">GitHub</span>'}
+                                    ${project.links.demo ? `<a href="${project.links.demo}" target="_blank" class="featured-link">Demo ↗</a>` : '<span class="featured-link disabled">Demo</span>'}
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                    logToPanel('✓ Featured portfolio section updated', 'success');
+                } else {
+                    logToPanel('⚠ Featured section skipped (optional)', 'warning');
+                }
 
                 // Education section
                 if (t.education) {
@@ -1729,7 +2173,9 @@ ${logText}
                                                     <div class="category-name">${cat.name}</div>
                                                     <div class="category-items">
                                                         ${cat.items.map(item => `
-                                                            <div class="skill-item">${item}</div>
+                                                            <div class="skill-item" onclick="scrollToRelatedProjects('${item.replace(/'/g, "\\'")}')">
+                                                                ${item}
+                                                            </div>
                                                         `).join('')}
                                                     </div>
                                                 </div>
@@ -1784,7 +2230,181 @@ ${logText}
                 throw error;
             }
         }
-        
+
+        // Scroll to skills section and highlight matching tech
+        function scrollToSkills(tech) {
+            const skillsSection = document.getElementById('skills');
+            skillsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            // Highlight matching skill items
+            setTimeout(() => {
+                const skillItems = document.querySelectorAll('.skill-item, .tech-tag');
+                skillItems.forEach(item => {
+                    if (item.textContent.toLowerCase().includes(tech.toLowerCase()) ||
+                        tech.toLowerCase().includes(item.textContent.toLowerCase().split(' ')[0])) {
+                        item.style.backgroundColor = 'var(--accent-primary)';
+                        item.style.color = 'var(--bg-primary)';
+                        item.style.transform = 'scale(1.1)';
+
+                        // Remove highlight after 2 seconds
+                        setTimeout(() => {
+                            item.style.backgroundColor = '';
+                            item.style.color = '';
+                            item.style.transform = '';
+                        }, 2000);
+                    }
+                });
+            }, 500);
+        }
+
+        // Switch between list and visual skill views
+        function switchSkillView(mode) {
+            const listView = document.getElementById('skills-list-view');
+            const visualView = document.getElementById('skills-visual-view');
+            const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+            // Update active states
+            toggleBtns.forEach(btn => {
+                if (btn.dataset.mode === mode) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Switch views
+            if (mode === 'list') {
+                listView.classList.add('active');
+                visualView.classList.remove('active');
+            } else {
+                listView.classList.remove('active');
+                visualView.classList.add('active');
+
+                // Generate visual view if not already done
+                if (!visualView.dataset.generated) {
+                    generateSkillsGalaxy();
+                    visualView.dataset.generated = 'true';
+                }
+            }
+        }
+
+        // Generate concentric circle visualization
+        function generateSkillsGalaxy() {
+            const galaxy = document.getElementById('skills-galaxy');
+            if (!galaxy) return;
+
+            // Define skills by layer (based on data.json structure)
+            const coreSkills = ['Claude Code', 'MCP', 'Claude API', 'n8n', 'OpenAI API'];
+            const middleSkills = ['Vercel', 'Supabase', 'Railway', 'Python', 'JavaScript', 'LINE Bot', 'Neon', 'Weaviate'];
+            const outerSkills = ['Apps Script', 'GitHub Actions', 'MySQL', 'R', 'JIRA', 'Docker', 'AWS EC2'];
+
+            // Clear existing content
+            galaxy.innerHTML = '';
+
+            // Create center AI icon
+            const center = document.createElement('div');
+            center.className = 'galaxy-center';
+            center.innerHTML = '🤖';
+            center.title = 'AI-Native Development';
+            galaxy.appendChild(center);
+
+            // Create concentric circles
+            const circles = [
+                { className: 'circle-core', layer: 'core' },
+                { className: 'circle-middle', layer: 'middle' },
+                { className: 'circle-outer', layer: 'outer' }
+            ];
+
+            circles.forEach(circle => {
+                const circleEl = document.createElement('div');
+                circleEl.className = `skill-circle ${circle.className}`;
+                galaxy.appendChild(circleEl);
+            });
+
+            // Position skills in circles
+            const positionSkills = (skills, radius, className) => {
+                const angleStep = (2 * Math.PI) / skills.length;
+                skills.forEach((skill, index) => {
+                    const angle = angleStep * index - Math.PI / 2; // Start from top
+                    const x = Math.cos(angle) * radius;
+                    const y = Math.sin(angle) * radius;
+
+                    const node = document.createElement('div');
+                    node.className = `skill-node ${className}`;
+                    node.textContent = skill;
+                    node.style.left = `calc(50% + ${x}px - ${node.offsetWidth / 2}px)`;
+                    node.style.top = `calc(50% + ${y}px)`;
+                    node.style.transform = 'translate(-50%, -50%)';
+                    node.onclick = () => scrollToRelatedProjects(skill);
+
+                    galaxy.appendChild(node);
+                });
+            };
+
+            // Position skills at different radii
+            setTimeout(() => {
+                positionSkills(coreSkills, 120, 'core');
+                positionSkills(middleSkills, 225, 'middle');
+                positionSkills(outerSkills, 350, 'outer');
+            }, 100);
+        }
+
+        // Scroll to projects/featured section and highlight related items
+        function scrollToRelatedProjects(skill) {
+            const featuredSection = document.getElementById('featured');
+            if (featuredSection) {
+                featuredSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            // Highlight related projects after scroll
+            setTimeout(() => {
+                const techTags = document.querySelectorAll('.tech-tag');
+                const featuredCards = document.querySelectorAll('.featured-card, .project-card');
+
+                // Reset all cards
+                featuredCards.forEach(card => {
+                    card.style.opacity = '0.4';
+                    card.style.transform = '';
+                });
+
+                // Highlight matching cards
+                techTags.forEach(tag => {
+                    const tagText = tag.textContent.trim();
+                    const skillText = skill.trim();
+
+                    if (tagText.toLowerCase().includes(skillText.toLowerCase()) ||
+                        skillText.toLowerCase().includes(tagText.toLowerCase().split(' ')[0]) ||
+                        tagText.toLowerCase().split(' ')[0] === skillText.toLowerCase().split(' ')[0]) {
+
+                        // Highlight the tag
+                        tag.style.backgroundColor = 'var(--accent-primary)';
+                        tag.style.color = 'var(--bg-primary)';
+                        tag.style.transform = 'scale(1.1)';
+
+                        // Highlight parent card
+                        let card = tag.closest('.featured-card, .project-card');
+                        if (card) {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1.02)';
+                        }
+                    }
+                });
+
+                // Remove highlights after 3 seconds
+                setTimeout(() => {
+                    techTags.forEach(tag => {
+                        tag.style.backgroundColor = '';
+                        tag.style.color = '';
+                        tag.style.transform = '';
+                    });
+                    featuredCards.forEach(card => {
+                        card.style.opacity = '';
+                        card.style.transform = '';
+                    });
+                }, 3000);
+            }, 600);
+        }
+
         function toggleLangMenu() {
             const menu = document.getElementById('langMenu');
             const toggle = document.querySelector('.lang-toggle');
