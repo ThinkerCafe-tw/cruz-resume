@@ -2403,22 +2403,8 @@ ${logText}
                 });
                 logToPanel('✓ Experience section updated', 'success');
 
-                // Projects section
-                if (!t.projects) throw new Error('Missing "projects" section in translation data');
-                document.querySelector('#projects .section-title').textContent = t.projects.title;
-                const projectCards = document.querySelectorAll('.project-card');
-                t.projects.items.forEach((project, i) => {
-                    if (projectCards[i]) {
-                        projectCards[i].querySelector('h3').textContent = project.title;
-                        const tags = projectCards[i].querySelectorAll('.project-tag');
-                        project.tags.forEach((tag, j) => {
-                            if (tags[j]) tags[j].textContent = tag;
-                        });
-                        const ul = projectCards[i].querySelector('ul');
-                        ul.innerHTML = project.points.map(p => `<li>${p}</li>`).join('');
-                    }
-                });
-                logToPanel('✓ Projects section updated', 'success');
+                // Portfolio section (dynamically generated from GitHub API - no translation needed)
+                logToPanel('✓ Portfolio section loaded from GitHub API', 'info');
 
                 // Education section
                 if (t.education) {
