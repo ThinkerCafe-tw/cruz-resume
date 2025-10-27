@@ -156,72 +156,160 @@
       ]
     },
     "skills": {
-      "title": "Technical Skills",
-      "categories": [
+      "title": "Technical Capability Map",
+      "philosophy": {
+        "title": "Technical Philosophy",
+        "content": "I don't chase \"how many languages I know\" — I chase \"how fast I can solve problems.\" In the AI collaboration era, the focus isn't on hand-coding every line, but on: <strong>1) Knowing what tool combinations to use</strong> <strong>2) Designing maintainable system architectures</strong> <strong>3) Making AI your development partner</strong>"
+      },
+      "layers": [
         {
-          "category": "Cloud Platform",
-          "items": [
-            "AWS EC2",
-            "Google Compute Engine"
+          "level": 1,
+          "name": "AI Collaboration Ecosystem",
+          "description": "Core competitive advantage in the AI-Native era",
+          "categories": [
+            {
+              "name": "AI Development Platforms",
+              "items": [
+                "Claude Code",
+                "MCP (Model Context Protocol)",
+                "Claude API",
+                "OpenAI API",
+                "Gemini API",
+                "Prompt Engineering",
+                "Agent Design"
+              ]
+            },
+            {
+              "name": "Automation Orchestration",
+              "items": [
+                "n8n (Workflow Automation)",
+                "GitHub Actions",
+                "Apps Script"
+              ]
+            }
           ]
         },
         {
-          "category": "Programming",
-          "items": [
-            "Python",
-            "R",
-            "PHP",
-            "Android"
+          "level": 2,
+          "name": "Modern Cloud Infrastructure",
+          "description": "Deployment and data foundations",
+          "categories": [
+            {
+              "name": "Deployment & Compute",
+              "items": [
+                "Vercel (Frontend)",
+                "Railway (Backend)",
+                "AWS EC2",
+                "Google Compute Engine"
+              ]
+            },
+            {
+              "name": "Database Ecosystem",
+              "items": [
+                "Supabase (PostgreSQL + Realtime)",
+                "Neon (Serverless PostgreSQL)",
+                "SQLite (Local/Edge)"
+              ]
+            },
+            {
+              "name": "Vector Databases",
+              "items": [
+                "Weaviate",
+                "Chroma (AI Semantic Search)"
+              ]
+            },
+            {
+              "name": "Traditional Databases",
+              "items": [
+                "MySQL",
+                "MSSQL",
+                "MongoDB"
+              ]
+            }
           ]
         },
         {
-          "category": "Database",
-          "items": [
-            "MySQL",
-            "MSSQL",
-            "MongoDB"
+          "level": 3,
+          "name": "Programming Languages & Frameworks",
+          "description": "Multi-paradigm development capabilities",
+          "categories": [
+            {
+              "name": "Primary Languages",
+              "items": [
+                "Python (AI Collaboration, Data Science, Automation)",
+                "JavaScript (Frontend, Apps Script)",
+                "R (Data Analysis & Visualization)"
+              ]
+            },
+            {
+              "name": "Project Experience",
+              "items": [
+                "PHP",
+                "C#",
+                "Android"
+              ]
+            },
+            {
+              "name": "Markup & Configuration",
+              "items": [
+                "Markdown",
+                "LaTeX"
+              ]
+            }
           ]
         },
         {
-          "category": "Version Control",
-          "items": [
-            "GitHub",
-            "GitLab"
+          "level": 4,
+          "name": "Data Science Toolchain",
+          "description": "Analytics and machine learning capabilities",
+          "categories": [
+            {
+              "name": "Machine Learning",
+              "items": [
+                "Regression Models",
+                "Decision Trees",
+                "Neural Networks",
+                "Clustering"
+              ]
+            },
+            {
+              "name": "Data Processing",
+              "items": [
+                "Text Mining",
+                "Semantic Analysis",
+                "Regular Expressions",
+                "Visualization (Shiny, Python Ecosystem)"
+              ]
+            }
           ]
         },
         {
-          "category": "Project Management",
-          "items": [
-            "JIRA",
-            "Scrum",
-            "Kanban"
-          ]
-        },
-        {
-          "category": "Data Science",
-          "items": [
-            "Data Processing",
-            "Regression Models",
-            "Decision Trees",
-            "Neural Network",
-            "Clustering",
-            "Visualization",
-            "Text Mining",
-            "Semantic Analysis",
-            "Regular Expression"
-          ]
-        },
-        {
-          "category": "Tools & Frameworks",
-          "items": [
-            "LaTeX",
-            "Markdown",
-            "Shiny",
-            "RESTful API",
-            "n8n",
-            "Claude API",
-            "OpenAI API",
-            "LINE Bot"
+          "level": 5,
+          "name": "Collaboration & Project Management",
+          "description": "Team coordination and delivery",
+          "categories": [
+            {
+              "name": "Version Control",
+              "items": [
+                "GitHub",
+                "GitLab"
+              ]
+            },
+            {
+              "name": "Project Management",
+              "items": [
+                "JIRA",
+                "Scrum",
+                "Kanban"
+              ]
+            },
+            {
+              "name": "Communication Integration",
+              "items": [
+                "LINE Bot",
+                "RESTful API"
+              ]
+            }
           ]
         }
       ]
@@ -481,72 +569,160 @@
       ]
     },
     "skills": {
-      "title": "技術能力",
-      "categories": [
+      "title": "技術能力地圖",
+      "philosophy": {
+        "title": "技術哲學",
+        "content": "我不追求「會多少種語言」，而是追求「能多快解決問題」。在 AI 協作時代，重點不是手寫每一行程式碼，而是：<strong>1) 知道該用什麼工具組合</strong> <strong>2) 能設計出可維護的系統架構</strong> <strong>3) 懂得讓 AI 成為你的開發夥伴</strong>"
+      },
+      "layers": [
         {
-          "category": "雲端平台",
-          "items": [
-            "AWS EC2",
-            "Google Compute Engine"
+          "level": 1,
+          "name": "AI 協作生態系統",
+          "description": "AI-Native 時代的核心競爭力",
+          "categories": [
+            {
+              "name": "AI 開發平台",
+              "items": [
+                "Claude Code",
+                "MCP (Model Context Protocol)",
+                "Claude API",
+                "OpenAI API",
+                "Gemini API",
+                "Prompt Engineering",
+                "Agent 設計"
+              ]
+            },
+            {
+              "name": "自動化編排",
+              "items": [
+                "n8n (工作流自動化)",
+                "GitHub Actions",
+                "Apps Script"
+              ]
+            }
           ]
         },
         {
-          "category": "程式語言",
-          "items": [
-            "Python",
-            "R",
-            "PHP",
-            "Android"
+          "level": 2,
+          "name": "現代雲端基礎設施",
+          "description": "部署與資料基礎",
+          "categories": [
+            {
+              "name": "部署與運算",
+              "items": [
+                "Vercel (前端部署)",
+                "Railway (後端服務)",
+                "AWS EC2",
+                "Google Compute Engine"
+              ]
+            },
+            {
+              "name": "資料庫生態",
+              "items": [
+                "Supabase (PostgreSQL + 即時功能)",
+                "Neon (Serverless PostgreSQL)",
+                "SQLite (本地/邊緣運算)"
+              ]
+            },
+            {
+              "name": "向量資料庫",
+              "items": [
+                "Weaviate",
+                "Chroma (AI 語意搜尋)"
+              ]
+            },
+            {
+              "name": "傳統資料庫",
+              "items": [
+                "MySQL",
+                "MSSQL",
+                "MongoDB"
+              ]
+            }
           ]
         },
         {
-          "category": "資料庫",
-          "items": [
-            "MySQL",
-            "MSSQL",
-            "MongoDB"
+          "level": 3,
+          "name": "程式語言與框架",
+          "description": "多範式開發能力",
+          "categories": [
+            {
+              "name": "主力語言",
+              "items": [
+                "Python (AI 協作、資料科學、自動化)",
+                "JavaScript (前端互動、Apps Script)",
+                "R (資料分析與視覺化)"
+              ]
+            },
+            {
+              "name": "專案經驗",
+              "items": [
+                "PHP",
+                "C#",
+                "Android"
+              ]
+            },
+            {
+              "name": "標記與配置",
+              "items": [
+                "Markdown",
+                "LaTeX"
+              ]
+            }
           ]
         },
         {
-          "category": "版本控制",
-          "items": [
-            "GitHub",
-            "GitLab"
+          "level": 4,
+          "name": "資料科學工具鏈",
+          "description": "分析與機器學習能力",
+          "categories": [
+            {
+              "name": "機器學習",
+              "items": [
+                "迴歸模型",
+                "決策樹",
+                "類神經網路",
+                "分群"
+              ]
+            },
+            {
+              "name": "資料處理",
+              "items": [
+                "文字探勘",
+                "語意分析",
+                "正規表達式",
+                "視覺化 (Shiny, Python 生態系)"
+              ]
+            }
           ]
         },
         {
-          "category": "專案管理",
-          "items": [
-            "JIRA",
-            "Scrum",
-            "Kanban"
-          ]
-        },
-        {
-          "category": "資料科學",
-          "items": [
-            "資料處理",
-            "迴歸模型",
-            "決策樹",
-            "類神經網路",
-            "分群",
-            "視覺化",
-            "文字探勘",
-            "語意分析",
-            "正規表達式"
-          ]
-        },
-        {
-          "category": "工具與框架",
-          "items": [
-            "LaTeX",
-            "Markdown",
-            "Shiny",
-            "RESTful API",
-            "n8n",
-            "Claude API",
-            "OpenAI API",
-            "LINE Bot"
+          "level": 5,
+          "name": "協作與專案管理",
+          "description": "團隊協調與交付",
+          "categories": [
+            {
+              "name": "版本控制",
+              "items": [
+                "GitHub",
+                "GitLab"
+              ]
+            },
+            {
+              "name": "專案管理",
+              "items": [
+                "JIRA",
+                "Scrum",
+                "Kanban"
+              ]
+            },
+            {
+              "name": "通訊整合",
+              "items": [
+                "LINE Bot",
+                "RESTful API"
+              ]
+            }
           ]
         }
       ]
@@ -806,72 +982,160 @@
       ]
     },
     "skills": {
-      "title": "技術スキル",
-      "categories": [
+      "title": "Technical Capability Map",
+      "philosophy": {
+        "title": "Technical Philosophy",
+        "content": "I don't chase \"how many languages I know\" — I chase \"how fast I can solve problems.\" In the AI collaboration era, the focus isn't on hand-coding every line, but on: <strong>1) Knowing what tool combinations to use</strong> <strong>2) Designing maintainable system architectures</strong> <strong>3) Making AI your development partner</strong>"
+      },
+      "layers": [
         {
-          "category": "クラウドプラットフォーム",
-          "items": [
-            "AWS EC2",
-            "Google Compute Engine"
+          "level": 1,
+          "name": "AI Collaboration Ecosystem",
+          "description": "Core competitive advantage in the AI-Native era",
+          "categories": [
+            {
+              "name": "AI Development Platforms",
+              "items": [
+                "Claude Code",
+                "MCP (Model Context Protocol)",
+                "Claude API",
+                "OpenAI API",
+                "Gemini API",
+                "Prompt Engineering",
+                "Agent Design"
+              ]
+            },
+            {
+              "name": "Automation Orchestration",
+              "items": [
+                "n8n (Workflow Automation)",
+                "GitHub Actions",
+                "Apps Script"
+              ]
+            }
           ]
         },
         {
-          "category": "プログラミング言語",
-          "items": [
-            "Python",
-            "R",
-            "PHP",
-            "Android"
+          "level": 2,
+          "name": "Modern Cloud Infrastructure",
+          "description": "Deployment and data foundations",
+          "categories": [
+            {
+              "name": "Deployment & Compute",
+              "items": [
+                "Vercel (Frontend)",
+                "Railway (Backend)",
+                "AWS EC2",
+                "Google Compute Engine"
+              ]
+            },
+            {
+              "name": "Database Ecosystem",
+              "items": [
+                "Supabase (PostgreSQL + Realtime)",
+                "Neon (Serverless PostgreSQL)",
+                "SQLite (Local/Edge)"
+              ]
+            },
+            {
+              "name": "Vector Databases",
+              "items": [
+                "Weaviate",
+                "Chroma (AI Semantic Search)"
+              ]
+            },
+            {
+              "name": "Traditional Databases",
+              "items": [
+                "MySQL",
+                "MSSQL",
+                "MongoDB"
+              ]
+            }
           ]
         },
         {
-          "category": "データベース",
-          "items": [
-            "MySQL",
-            "MSSQL",
-            "MongoDB"
+          "level": 3,
+          "name": "Programming Languages & Frameworks",
+          "description": "Multi-paradigm development capabilities",
+          "categories": [
+            {
+              "name": "Primary Languages",
+              "items": [
+                "Python (AI Collaboration, Data Science, Automation)",
+                "JavaScript (Frontend, Apps Script)",
+                "R (Data Analysis & Visualization)"
+              ]
+            },
+            {
+              "name": "Project Experience",
+              "items": [
+                "PHP",
+                "C#",
+                "Android"
+              ]
+            },
+            {
+              "name": "Markup & Configuration",
+              "items": [
+                "Markdown",
+                "LaTeX"
+              ]
+            }
           ]
         },
         {
-          "category": "バージョン管理",
-          "items": [
-            "GitHub",
-            "GitLab"
+          "level": 4,
+          "name": "Data Science Toolchain",
+          "description": "Analytics and machine learning capabilities",
+          "categories": [
+            {
+              "name": "Machine Learning",
+              "items": [
+                "Regression Models",
+                "Decision Trees",
+                "Neural Networks",
+                "Clustering"
+              ]
+            },
+            {
+              "name": "Data Processing",
+              "items": [
+                "Text Mining",
+                "Semantic Analysis",
+                "Regular Expressions",
+                "Visualization (Shiny, Python Ecosystem)"
+              ]
+            }
           ]
         },
         {
-          "category": "プロジェクト管理",
-          "items": [
-            "JIRA",
-            "Scrum",
-            "Kanban"
-          ]
-        },
-        {
-          "category": "データサイエンス",
-          "items": [
-            "データ処理",
-            "回帰モデル",
-            "決定木",
-            "ニューラルネットワーク",
-            "クラスタリング",
-            "可視化",
-            "テキストマイニング",
-            "意味解析",
-            "正規表現"
-          ]
-        },
-        {
-          "category": "ツール・フレームワーク",
-          "items": [
-            "LaTeX",
-            "Markdown",
-            "Shiny",
-            "RESTful API",
-            "n8n",
-            "Claude API",
-            "OpenAI API",
-            "LINE Bot"
+          "level": 5,
+          "name": "Collaboration & Project Management",
+          "description": "Team coordination and delivery",
+          "categories": [
+            {
+              "name": "Version Control",
+              "items": [
+                "GitHub",
+                "GitLab"
+              ]
+            },
+            {
+              "name": "Project Management",
+              "items": [
+                "JIRA",
+                "Scrum",
+                "Kanban"
+              ]
+            },
+            {
+              "name": "Communication Integration",
+              "items": [
+                "LINE Bot",
+                "RESTful API"
+              ]
+            }
           ]
         }
       ]
@@ -1131,72 +1395,160 @@
       ]
     },
     "skills": {
-      "title": "기술 역량",
-      "categories": [
+      "title": "Technical Capability Map",
+      "philosophy": {
+        "title": "Technical Philosophy",
+        "content": "I don't chase \"how many languages I know\" — I chase \"how fast I can solve problems.\" In the AI collaboration era, the focus isn't on hand-coding every line, but on: <strong>1) Knowing what tool combinations to use</strong> <strong>2) Designing maintainable system architectures</strong> <strong>3) Making AI your development partner</strong>"
+      },
+      "layers": [
         {
-          "category": "클라우드 플랫폼",
-          "items": [
-            "AWS EC2",
-            "Google Compute Engine"
+          "level": 1,
+          "name": "AI Collaboration Ecosystem",
+          "description": "Core competitive advantage in the AI-Native era",
+          "categories": [
+            {
+              "name": "AI Development Platforms",
+              "items": [
+                "Claude Code",
+                "MCP (Model Context Protocol)",
+                "Claude API",
+                "OpenAI API",
+                "Gemini API",
+                "Prompt Engineering",
+                "Agent Design"
+              ]
+            },
+            {
+              "name": "Automation Orchestration",
+              "items": [
+                "n8n (Workflow Automation)",
+                "GitHub Actions",
+                "Apps Script"
+              ]
+            }
           ]
         },
         {
-          "category": "프로그래밍 언어",
-          "items": [
-            "Python",
-            "R",
-            "PHP",
-            "Android"
+          "level": 2,
+          "name": "Modern Cloud Infrastructure",
+          "description": "Deployment and data foundations",
+          "categories": [
+            {
+              "name": "Deployment & Compute",
+              "items": [
+                "Vercel (Frontend)",
+                "Railway (Backend)",
+                "AWS EC2",
+                "Google Compute Engine"
+              ]
+            },
+            {
+              "name": "Database Ecosystem",
+              "items": [
+                "Supabase (PostgreSQL + Realtime)",
+                "Neon (Serverless PostgreSQL)",
+                "SQLite (Local/Edge)"
+              ]
+            },
+            {
+              "name": "Vector Databases",
+              "items": [
+                "Weaviate",
+                "Chroma (AI Semantic Search)"
+              ]
+            },
+            {
+              "name": "Traditional Databases",
+              "items": [
+                "MySQL",
+                "MSSQL",
+                "MongoDB"
+              ]
+            }
           ]
         },
         {
-          "category": "데이터베이스",
-          "items": [
-            "MySQL",
-            "MSSQL",
-            "MongoDB"
+          "level": 3,
+          "name": "Programming Languages & Frameworks",
+          "description": "Multi-paradigm development capabilities",
+          "categories": [
+            {
+              "name": "Primary Languages",
+              "items": [
+                "Python (AI Collaboration, Data Science, Automation)",
+                "JavaScript (Frontend, Apps Script)",
+                "R (Data Analysis & Visualization)"
+              ]
+            },
+            {
+              "name": "Project Experience",
+              "items": [
+                "PHP",
+                "C#",
+                "Android"
+              ]
+            },
+            {
+              "name": "Markup & Configuration",
+              "items": [
+                "Markdown",
+                "LaTeX"
+              ]
+            }
           ]
         },
         {
-          "category": "버전 관리",
-          "items": [
-            "GitHub",
-            "GitLab"
+          "level": 4,
+          "name": "Data Science Toolchain",
+          "description": "Analytics and machine learning capabilities",
+          "categories": [
+            {
+              "name": "Machine Learning",
+              "items": [
+                "Regression Models",
+                "Decision Trees",
+                "Neural Networks",
+                "Clustering"
+              ]
+            },
+            {
+              "name": "Data Processing",
+              "items": [
+                "Text Mining",
+                "Semantic Analysis",
+                "Regular Expressions",
+                "Visualization (Shiny, Python Ecosystem)"
+              ]
+            }
           ]
         },
         {
-          "category": "프로젝트 관리",
-          "items": [
-            "JIRA",
-            "Scrum",
-            "Kanban"
-          ]
-        },
-        {
-          "category": "데이터 과학",
-          "items": [
-            "데이터 처리",
-            "회귀 모델",
-            "의사결정 트리",
-            "신경망",
-            "클러스터링",
-            "시각화",
-            "텍스트 마이닝",
-            "의미 분석",
-            "정규 표현식"
-          ]
-        },
-        {
-          "category": "도구 및 프레임워크",
-          "items": [
-            "LaTeX",
-            "Markdown",
-            "Shiny",
-            "RESTful API",
-            "n8n",
-            "Claude API",
-            "OpenAI API",
-            "LINE Bot"
+          "level": 5,
+          "name": "Collaboration & Project Management",
+          "description": "Team coordination and delivery",
+          "categories": [
+            {
+              "name": "Version Control",
+              "items": [
+                "GitHub",
+                "GitLab"
+              ]
+            },
+            {
+              "name": "Project Management",
+              "items": [
+                "JIRA",
+                "Scrum",
+                "Kanban"
+              ]
+            },
+            {
+              "name": "Communication Integration",
+              "items": [
+                "LINE Bot",
+                "RESTful API"
+              ]
+            }
           ]
         }
       ]
@@ -1456,72 +1808,160 @@
       ]
     },
     "skills": {
-      "title": "المهارات التقنية",
-      "categories": [
+      "title": "Technical Capability Map",
+      "philosophy": {
+        "title": "Technical Philosophy",
+        "content": "I don't chase \"how many languages I know\" — I chase \"how fast I can solve problems.\" In the AI collaboration era, the focus isn't on hand-coding every line, but on: <strong>1) Knowing what tool combinations to use</strong> <strong>2) Designing maintainable system architectures</strong> <strong>3) Making AI your development partner</strong>"
+      },
+      "layers": [
         {
-          "category": "منصات السحابة",
-          "items": [
-            "AWS EC2",
-            "Google Compute Engine"
+          "level": 1,
+          "name": "AI Collaboration Ecosystem",
+          "description": "Core competitive advantage in the AI-Native era",
+          "categories": [
+            {
+              "name": "AI Development Platforms",
+              "items": [
+                "Claude Code",
+                "MCP (Model Context Protocol)",
+                "Claude API",
+                "OpenAI API",
+                "Gemini API",
+                "Prompt Engineering",
+                "Agent Design"
+              ]
+            },
+            {
+              "name": "Automation Orchestration",
+              "items": [
+                "n8n (Workflow Automation)",
+                "GitHub Actions",
+                "Apps Script"
+              ]
+            }
           ]
         },
         {
-          "category": "لغات البرمجة",
-          "items": [
-            "Python",
-            "R",
-            "PHP",
-            "Android"
+          "level": 2,
+          "name": "Modern Cloud Infrastructure",
+          "description": "Deployment and data foundations",
+          "categories": [
+            {
+              "name": "Deployment & Compute",
+              "items": [
+                "Vercel (Frontend)",
+                "Railway (Backend)",
+                "AWS EC2",
+                "Google Compute Engine"
+              ]
+            },
+            {
+              "name": "Database Ecosystem",
+              "items": [
+                "Supabase (PostgreSQL + Realtime)",
+                "Neon (Serverless PostgreSQL)",
+                "SQLite (Local/Edge)"
+              ]
+            },
+            {
+              "name": "Vector Databases",
+              "items": [
+                "Weaviate",
+                "Chroma (AI Semantic Search)"
+              ]
+            },
+            {
+              "name": "Traditional Databases",
+              "items": [
+                "MySQL",
+                "MSSQL",
+                "MongoDB"
+              ]
+            }
           ]
         },
         {
-          "category": "قواعد البيانات",
-          "items": [
-            "MySQL",
-            "MSSQL",
-            "MongoDB"
+          "level": 3,
+          "name": "Programming Languages & Frameworks",
+          "description": "Multi-paradigm development capabilities",
+          "categories": [
+            {
+              "name": "Primary Languages",
+              "items": [
+                "Python (AI Collaboration, Data Science, Automation)",
+                "JavaScript (Frontend, Apps Script)",
+                "R (Data Analysis & Visualization)"
+              ]
+            },
+            {
+              "name": "Project Experience",
+              "items": [
+                "PHP",
+                "C#",
+                "Android"
+              ]
+            },
+            {
+              "name": "Markup & Configuration",
+              "items": [
+                "Markdown",
+                "LaTeX"
+              ]
+            }
           ]
         },
         {
-          "category": "إدارة الإصدارات",
-          "items": [
-            "GitHub",
-            "GitLab"
+          "level": 4,
+          "name": "Data Science Toolchain",
+          "description": "Analytics and machine learning capabilities",
+          "categories": [
+            {
+              "name": "Machine Learning",
+              "items": [
+                "Regression Models",
+                "Decision Trees",
+                "Neural Networks",
+                "Clustering"
+              ]
+            },
+            {
+              "name": "Data Processing",
+              "items": [
+                "Text Mining",
+                "Semantic Analysis",
+                "Regular Expressions",
+                "Visualization (Shiny, Python Ecosystem)"
+              ]
+            }
           ]
         },
         {
-          "category": "إدارة المشاريع",
-          "items": [
-            "JIRA",
-            "Scrum",
-            "Kanban"
-          ]
-        },
-        {
-          "category": "علم البيانات",
-          "items": [
-            "معالجة البيانات",
-            "نماذج الانحدار",
-            "أشجار القرار",
-            "الشبكات العصبية",
-            "التجميع",
-            "التصور",
-            "التنقيب عن النصوص",
-            "التحليل الدلالي",
-            "التعبيرات النمطية"
-          ]
-        },
-        {
-          "category": "الأدوات والأطر",
-          "items": [
-            "LaTeX",
-            "Markdown",
-            "Shiny",
-            "RESTful API",
-            "n8n",
-            "Claude API",
-            "OpenAI API",
-            "LINE Bot"
+          "level": 5,
+          "name": "Collaboration & Project Management",
+          "description": "Team coordination and delivery",
+          "categories": [
+            {
+              "name": "Version Control",
+              "items": [
+                "GitHub",
+                "GitLab"
+              ]
+            },
+            {
+              "name": "Project Management",
+              "items": [
+                "JIRA",
+                "Scrum",
+                "Kanban"
+              ]
+            },
+            {
+              "name": "Communication Integration",
+              "items": [
+                "LINE Bot",
+                "RESTful API"
+              ]
+            }
           ]
         }
       ]
