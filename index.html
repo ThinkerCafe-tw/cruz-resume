@@ -146,7 +146,119 @@
             color: var(--bg-primary);
             font-weight: 600;
         }
-        
+
+        /* Version Switcher */
+        .version-switcher {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 1000;
+            display: flex;
+            gap: 10px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            padding: 6px;
+        }
+
+        .version-btn {
+            padding: 8px 20px;
+            background: transparent;
+            border: none;
+            border-radius: 50px;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .version-btn:hover {
+            color: var(--text-primary);
+            background: var(--bg-accent);
+        }
+
+        .version-btn.active {
+            background: var(--accent-gradient);
+            color: var(--bg-primary);
+            font-weight: 600;
+        }
+
+        /* Enterprise Sections */
+        .services-grid, .cases-grid, .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card, .case-card, .why-card {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover, .case-card:hover, .why-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-primary);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.15);
+        }
+
+        .service-icon, .why-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3, .case-card h3, .why-card h3 {
+            font-size: 1.3rem;
+            color: var(--text-primary);
+            margin-bottom: 15px;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-card li {
+            padding: 8px 0;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .service-card li::before {
+            content: "✓ ";
+            color: var(--accent-primary);
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .case-card p, .why-card p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .case-header {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* Cases Grid - 2 columns */
+        .cases-grid {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+
+        /* Why Grid - 4 columns on large screens */
+        @media (min-width: 1200px) {
+            .why-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
         /* RTL Support for Arabic */
         [dir="rtl"] {
             direction: rtl;
@@ -1569,15 +1681,26 @@
             <button onclick="changeLanguage('ar')" data-lang="ar">🇸🇦 العربية</button>
         </div>
     </div>
-    
+
+    <!-- Version Switcher -->
+    <div class="version-switcher">
+        <button class="version-btn active" data-version="personal" onclick="switchVersion('personal')">
+            個人履歷
+        </button>
+        <button class="version-btn" data-version="enterprise" onclick="switchVersion('enterprise')">
+            企業顧問
+        </button>
+    </div>
+
     <div class="hero">
-        <div class="hero-content">
+        <!-- Personal Version Hero -->
+        <div class="hero-content version-personal">
             <h1>Cruz Tang</h1>
             <p class="tagline">AI-Native Leader & System Architect</p>
             <p class="subtitle">
                 Transforming enterprises through AI implementation · From managing 300+ international teams to building AI-first solutions
             </p>
-            
+
             <div class="stats">
                 <div class="stat-item">
                     <span class="stat-number">10+</span>
@@ -1596,7 +1719,7 @@
                     <span class="stat-label">Problems Solved</span>
                 </div>
             </div>
-            
+
             <div class="contact-bar">
                 <a href="mailto:cruz@thinker.cafe" class="contact-link">
                     📧 cruz@thinker.cafe
@@ -1609,6 +1732,46 @@
                 </a>
                 <a href="tel:+886937431998" class="contact-link">
                     📱 +886 937 431 998
+                </a>
+            </div>
+        </div>
+
+        <!-- Enterprise Version Hero -->
+        <div class="hero-content version-enterprise" style="display: none;">
+            <h1>ThinkerCafe 企業 AI 解決方案</h1>
+            <p class="tagline">AI 協作開發 · 企業自動化 · 數位轉型顧問</p>
+            <p class="subtitle">
+                運用 AI 協作技術將傳統 2 週工作壓縮至 2 天，幫助企業快速實現數位轉型
+            </p>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">2天</span>
+                    <span class="stat-label">快速交付</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">300+</span>
+                    <span class="stat-label">國際團隊管理經驗</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">企業培訓經驗</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%+</span>
+                    <span class="stat-label">客戶滿意度</span>
+                </div>
+            </div>
+
+            <div class="contact-bar">
+                <a href="mailto:cruz@thinker.cafe" class="contact-link">
+                    📧 cruz@thinker.cafe
+                </a>
+                <a href="tel:+886937431998" class="contact-link">
+                    📱 +886 937 431 998
+                </a>
+                <a href="https://thinker.cafe" class="contact-link" target="_blank">
+                    🌐 thinker.cafe
                 </a>
             </div>
         </div>
@@ -1627,8 +1790,103 @@
                 </p>
             </div>
         </section>
-        
-        <section id="experience">
+
+        <!-- Enterprise Version Content -->
+        <div class="enterprise-content" style="display: none;">
+            <!-- Core Services Section -->
+            <section id="services">
+                <h2 class="section-title">核心服務</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🎯</div>
+                        <h3>AI 導入顧問</h3>
+                        <ul>
+                            <li>企業 AI 應用評估與策略規劃</li>
+                            <li>Claude Code、MCP 等前沿工具導入</li>
+                            <li>客製化 AI 工作流設計與實作</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📚</div>
+                        <h3>企業內訓課程</h3>
+                        <ul>
+                            <li>AI 協作實戰：從概念到落地</li>
+                            <li>Prompt Engineering 與 Agent 設計</li>
+                            <li>非技術人員的 AI 系統建構</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">⚙️</div>
+                        <h3>自動化系統開發</h3>
+                        <ul>
+                            <li>LINE Bot 與通訊系統整合</li>
+                            <li>業務流程自動化（預約、客服、資料處理）</li>
+                            <li>Google Calendar、Notion、Supabase 等工具串接</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Success Cases Section -->
+            <section id="cases">
+                <h2 class="section-title">成功案例</h2>
+                <div class="cases-grid">
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>✅ 成功大學林教授 - 學術研究加速</h3>
+                        </div>
+                        <p>開發網頁爬蟲自動化系統，將原本需人工處理的資料收集流程自動化，研究效率提升 <strong>60%</strong></p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>✅ 物理治療診所 - 智能預約系統</h3>
+                        </div>
+                        <p><strong>48 小時</strong>交付 LINE Bot 預約系統整合 Google Calendar，預約流程時間縮短 <strong>70%</strong>，客戶滿意度提升至 <strong>95%+</strong></p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>✅ 美髮沙龍 - 客戶管理優化</h3>
+                        </div>
+                        <p>開發客戶管理與預約自動化系統，降低人工排程錯誤，提升顧客體驗（進行中）</p>
+                    </div>
+                    <div class="case-card">
+                        <div class="case-header">
+                            <h3>✅ 律師事務所 - 智能行程助理</h3>
+                        </div>
+                        <p>Demo 智能行程管理系統，解決手動排程痛點，獲客戶高度評價</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Section -->
+            <section id="why-choose">
+                <h2 class="section-title">為什麼選擇 ThinkerCafe？</h2>
+                <div class="why-grid">
+                    <div class="why-card">
+                        <div class="why-icon">⚡</div>
+                        <h3>快速交付</h3>
+                        <p>運用 AI 協作大幅縮短開發週期</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🏆</div>
+                        <h3>實戰經驗</h3>
+                        <p>多個成功案例，橫跨不同產業</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🎓</div>
+                        <h3>教學能力</h3>
+                        <p>能將複雜技術轉化為可落地方案</p>
+                    </div>
+                    <div class="why-card">
+                        <div class="why-icon">🌍</div>
+                        <h3>國際視野</h3>
+                        <p>跨國團隊管理經驗，理解不同規模企業需求</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="experience" class="version-personal">
             <h2 class="section-title">Career Journey</h2>
             <div class="timeline">
                 <div class="timeline-item">
@@ -1774,21 +2032,21 @@
             </div>
         </section>
 
-        <section id="education">
+        <section id="education" class="version-personal">
             <h2 class="section-title">Education</h2>
             <div class="timeline" id="education-timeline">
                 <!-- Populated by JS -->
             </div>
         </section>
 
-        <section id="teaching">
+        <section id="teaching" class="version-personal">
             <h2 class="section-title">Teaching & Speaking</h2>
             <div class="skill-grid" id="teaching-grid">
                 <!-- Populated by JS -->
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="version-personal">
             <h2 class="section-title">Technical Skills</h2>
 
             <!-- View Mode Toggle -->
@@ -2006,6 +2264,84 @@
 
         // ========================================
         // End Portfolio Integration
+        // ========================================
+
+        // ========================================
+        // Version Switcher
+        // ========================================
+
+        let currentVersion = 'personal'; // default version
+
+        function switchVersion(version) {
+            currentVersion = version;
+
+            // Update URL without reload
+            const url = new URL(window.location);
+            if (version === 'enterprise') {
+                url.searchParams.set('version', 'enterprise');
+            } else {
+                url.searchParams.delete('version');
+            }
+            window.history.pushState({}, '', url);
+
+            // Update button states
+            document.querySelectorAll('.version-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.version === version) {
+                    btn.classList.add('active');
+                }
+            });
+
+            // Toggle content visibility
+            if (version === 'enterprise') {
+                // Hide personal version
+                document.querySelectorAll('.version-personal').forEach(el => {
+                    el.style.display = 'none';
+                });
+                // Show enterprise version
+                document.querySelectorAll('.version-enterprise').forEach(el => {
+                    el.style.display = 'block';
+                });
+                document.querySelectorAll('.enterprise-content').forEach(el => {
+                    el.style.display = 'block';
+                });
+
+                // Update page title
+                document.title = 'ThinkerCafe 企業 AI 解決方案';
+            } else {
+                // Show personal version
+                document.querySelectorAll('.version-personal').forEach(el => {
+                    el.style.display = 'block';
+                });
+                // Hide enterprise version
+                document.querySelectorAll('.version-enterprise').forEach(el => {
+                    el.style.display = 'none';
+                });
+                document.querySelectorAll('.enterprise-content').forEach(el => {
+                    el.style.display = 'none';
+                });
+
+                // Update page title
+                document.title = 'Cruz Tang - AI-Native Leader';
+            }
+
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Initialize version on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const version = urlParams.get('version');
+            if (version === 'enterprise') {
+                switchVersion('enterprise');
+            } else {
+                switchVersion('personal');
+            }
+        });
+
+        // ========================================
+        // End Version Switcher
         // ========================================
 
 
