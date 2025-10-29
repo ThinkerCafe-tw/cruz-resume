@@ -2227,13 +2227,13 @@
 
             heroContainer.innerHTML = `
                 <div style="text-align: center; max-width: 1000px; margin: 0 auto; padding: 80px 20px;">
-                    <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 20px;">
+                    <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 20px; color: var(--text-primary); -webkit-text-fill-color: var(--text-primary); background: none;">
                         ${data.title}
                     </h1>
-                    <p style="font-size: clamp(1.5rem, 3vw, 2rem); color: var(--text-secondary); margin-bottom: 40px;">
+                    <p style="font-size: clamp(1.5rem, 3vw, 2rem); color: var(--text-secondary); margin-bottom: 40px; -webkit-text-fill-color: var(--text-secondary);">
                         ${data.subtitle}
                     </p>
-                    <p style="font-size: clamp(1.2rem, 2.5vw, 2rem); line-height: 1.5; margin-bottom: 50px; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 600;">
+                    <p style="font-size: clamp(1.2rem, 2.5vw, 2rem); line-height: 1.5; margin-bottom: 50px; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; font-weight: 600;">
                         ${data.valueProposition}
                     </p>
                     <a href="#enterprise-contact-form"
