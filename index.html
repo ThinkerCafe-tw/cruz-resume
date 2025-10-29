@@ -2569,15 +2569,8 @@
         }
 
         // Initialize version on page load
-        window.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const version = urlParams.get('version');
-            if (version === 'enterprise') {
-                switchVersion('enterprise');
-            } else {
-                switchVersion('personal');
-            }
-        });
+        // Version switching is now handled in loadTranslations() after data is loaded
+        // This ensures translations object exists before switchVersion() is called
 
         // ========================================
         // End Version Switcher
@@ -2755,6 +2748,16 @@ ${logText}
                 logToPanel('Initializing default language (zh)...', 'info');
                 // Initialize with default language after data is loaded
                 changeLanguage('zh');
+
+                // Check URL parameters and switch version AFTER translations are loaded
+                const urlParams = new URLSearchParams(window.location.search);
+                const version = urlParams.get('version');
+                if (version === 'enterprise') {
+                    logToPanel('Switching to enterprise version...', 'info');
+                    switchVersion('enterprise');
+                } else {
+                    switchVersion('personal');
+                }
 
                 logToPanel('All translations loaded successfully!', 'success');
                 setLoadingComplete(true);
