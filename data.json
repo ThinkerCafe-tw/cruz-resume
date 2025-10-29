@@ -516,6 +516,109 @@
     "footer": {
       "built": "Built with intention · Designed to inspire · Updated January 2025",
       "quote": "When technology returns to humanity, intelligence finds its warmth"
+    },
+    "enterprise": {
+      "hero": {
+        "title": "ThinkerCafe Enterprise AI Solutions",
+        "tagline": "AI-Powered Development · Enterprise Automation · Digital Transformation",
+        "subtitle": "Leveraging AI collaboration to compress traditional 2-week projects into 2 days, accelerating your digital transformation",
+        "stats": [
+          {
+            "number": "2 Days",
+            "label": "Rapid Delivery"
+          },
+          {
+            "number": "300+",
+            "label": "International Team Experience"
+          },
+          {
+            "number": "10+",
+            "label": "Enterprise Training Experience"
+          },
+          {
+            "number": "95%+",
+            "label": "Client Satisfaction"
+          }
+        ]
+      },
+      "services": {
+        "title": "Core Services",
+        "items": [
+          {
+            "icon": "🎯",
+            "title": "AI Implementation Consulting",
+            "points": [
+              "Enterprise AI application assessment and strategic planning",
+              "Implementation of cutting-edge tools (Claude Code, MCP, etc.)",
+              "Custom AI workflow design and execution"
+            ]
+          },
+          {
+            "icon": "📚",
+            "title": "Enterprise Training",
+            "points": [
+              "AI Collaboration in Practice: From Concept to Implementation",
+              "Prompt Engineering and Agent Design",
+              "AI System Building for Non-Technical Staff"
+            ]
+          },
+          {
+            "icon": "⚙️",
+            "title": "Automation System Development",
+            "points": [
+              "LINE Bot and communication system integration",
+              "Business process automation (booking, customer service, data processing)",
+              "Integration with Google Calendar, Notion, Supabase, and other tools"
+            ]
+          }
+        ]
+      },
+      "cases": {
+        "title": "Success Stories",
+        "items": [
+          {
+            "title": "✅ Professor Lin, NCKU - Academic Research Acceleration",
+            "description": "Developed automated web scraping system, automating manual data collection processes and improving research efficiency by <strong>60%</strong>"
+          },
+          {
+            "title": "✅ Physical Therapy Clinic - Smart Booking System",
+            "description": "<strong>48-hour</strong> delivery of LINE Bot booking system integrated with Google Calendar, reducing booking time by <strong>70%</strong> and achieving <strong>95%+</strong> customer satisfaction"
+          },
+          {
+            "title": "✅ Hair Salon - Customer Management Optimization",
+            "description": "Developed customer management and booking automation system, reducing manual scheduling errors and enhancing customer experience (In Progress)"
+          },
+          {
+            "title": "✅ Law Firm - Intelligent Schedule Assistant",
+            "description": "Demonstrated intelligent schedule management system, solving manual scheduling pain points with highly positive client feedback"
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "Why Choose ThinkerCafe?",
+        "items": [
+          {
+            "icon": "⚡",
+            "title": "Rapid Delivery",
+            "description": "Dramatically shortened development cycles using AI collaboration"
+          },
+          {
+            "icon": "🏆",
+            "title": "Proven Experience",
+            "description": "Multiple successful cases across diverse industries"
+          },
+          {
+            "icon": "🎓",
+            "title": "Teaching Excellence",
+            "description": "Ability to transform complex technology into actionable solutions"
+          },
+          {
+            "icon": "🌍",
+            "title": "Global Perspective",
+            "description": "Cross-border team management experience, understanding needs of businesses at all scales"
+          }
+        ]
+      }
     }
   },
   "zh-TW": {
@@ -1021,6 +1124,109 @@
     "footer": {
       "built": "用心打造 · 啟發設計 · 更新於 2025 年 1 月",
       "quote": "當科技回歸人性，智慧找到溫度"
+    },
+    "enterprise": {
+      "hero": {
+        "title": "ThinkerCafe 企業 AI 解決方案",
+        "tagline": "AI 協作開發 · 企業自動化 · 數位轉型顧問",
+        "subtitle": "運用 AI 協作技術將傳統 2 週工作壓縮至 2 天，幫助企業快速實現數位轉型",
+        "stats": [
+          {
+            "number": "2天",
+            "label": "快速交付"
+          },
+          {
+            "number": "300+",
+            "label": "國際團隊管理經驗"
+          },
+          {
+            "number": "10+",
+            "label": "企業培訓經驗"
+          },
+          {
+            "number": "95%+",
+            "label": "客戶滿意度"
+          }
+        ]
+      },
+      "services": {
+        "title": "核心服務",
+        "items": [
+          {
+            "icon": "🎯",
+            "title": "AI 導入顧問",
+            "points": [
+              "企業 AI 應用評估與策略規劃",
+              "Claude Code、MCP 等前沿工具導入",
+              "客製化 AI 工作流設計與實作"
+            ]
+          },
+          {
+            "icon": "📚",
+            "title": "企業內訓課程",
+            "points": [
+              "AI 協作實戰：從概念到落地",
+              "Prompt Engineering 與 Agent 設計",
+              "非技術人員的 AI 系統建構"
+            ]
+          },
+          {
+            "icon": "⚙️",
+            "title": "自動化系統開發",
+            "points": [
+              "LINE Bot 與通訊系統整合",
+              "業務流程自動化（預約、客服、資料處理）",
+              "Google Calendar、Notion、Supabase 等工具串接"
+            ]
+          }
+        ]
+      },
+      "cases": {
+        "title": "成功案例",
+        "items": [
+          {
+            "title": "✅ 成功大學林教授 - 學術研究加速",
+            "description": "開發網頁爬蟲自動化系統，將原本需人工處理的資料收集流程自動化，研究效率提升 <strong>60%</strong>"
+          },
+          {
+            "title": "✅ 物理治療診所 - 智能預約系統",
+            "description": "<strong>48 小時</strong>交付 LINE Bot 預約系統整合 Google Calendar，預約流程時間縮短 <strong>70%</strong>，客戶滿意度提升至 <strong>95%+</strong>"
+          },
+          {
+            "title": "✅ 美髮沙龍 - 客戶管理優化",
+            "description": "開發客戶管理與預約自動化系統，降低人工排程錯誤，提升顧客體驗（進行中）"
+          },
+          {
+            "title": "✅ 律師事務所 - 智能行程助理",
+            "description": "Demo 智能行程管理系統，解決手動排程痛點，獲客戶高度評價"
+          }
+        ]
+      },
+      "whyChoose": {
+        "title": "為什麼選擇 ThinkerCafe？",
+        "items": [
+          {
+            "icon": "⚡",
+            "title": "快速交付",
+            "description": "運用 AI 協作大幅縮短開發週期"
+          },
+          {
+            "icon": "🏆",
+            "title": "實戰經驗",
+            "description": "多個成功案例，橫跨不同產業"
+          },
+          {
+            "icon": "🎓",
+            "title": "教學能力",
+            "description": "能將複雜技術轉化為可落地方案"
+          },
+          {
+            "icon": "🌍",
+            "title": "國際視野",
+            "description": "跨國團隊管理經驗，理解不同規模企業需求"
+          }
+        ]
+      }
     }
   },
   "ja": {
