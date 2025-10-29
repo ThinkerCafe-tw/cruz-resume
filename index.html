@@ -2547,6 +2547,7 @@
                 // Adjust .hero container for enterprise version
                 const heroContainer = document.querySelector('.hero');
                 if (heroContainer) {
+                    heroContainer.style.display = 'block'; // Disable flexbox
                     heroContainer.style.minHeight = 'auto';
                     heroContainer.style.paddingTop = '120px';
                     heroContainer.style.paddingBottom = '60px';
@@ -2571,6 +2572,7 @@
                 // Restore .hero container for personal version
                 const heroContainer = document.querySelector('.hero');
                 if (heroContainer) {
+                    heroContainer.style.display = 'flex'; // Re-enable flexbox
                     heroContainer.style.minHeight = '100vh';
                     heroContainer.style.paddingTop = '40px';
                     heroContainer.style.paddingBottom = '40px';
