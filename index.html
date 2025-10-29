@@ -2525,8 +2525,7 @@
             // Toggle content visibility
             if (version === 'enterprise') {
                 // Generate enterprise content from JSON
-                const langKey = currentLang === 'zh' ? 'zh-TW' : 'en';
-                const enterpriseData = translations[langKey]?.enterprise;
+                const enterpriseData = translations[currentLang]?.enterprise;
 
                 if (enterpriseData) {
                     generateEnterpriseHero(enterpriseData.hero);
