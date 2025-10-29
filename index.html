@@ -2544,6 +2544,14 @@
                     el.style.display = 'block';
                 });
 
+                // Adjust .hero container for enterprise version
+                const heroContainer = document.querySelector('.hero');
+                if (heroContainer) {
+                    heroContainer.style.minHeight = 'auto';
+                    heroContainer.style.paddingTop = '120px';
+                    heroContainer.style.paddingBottom = '60px';
+                }
+
                 // Update page title
                 const title = enterpriseData?.hero?.title || 'ThinkerCafe 企業 AI 解決方案';
                 document.title = title;
@@ -2559,6 +2567,14 @@
                 document.querySelectorAll('.enterprise-content').forEach(el => {
                     el.style.display = 'none';
                 });
+
+                // Restore .hero container for personal version
+                const heroContainer = document.querySelector('.hero');
+                if (heroContainer) {
+                    heroContainer.style.minHeight = '100vh';
+                    heroContainer.style.paddingTop = '40px';
+                    heroContainer.style.paddingBottom = '40px';
+                }
 
                 // Update page title
                 document.title = 'Cruz Tang - AI-Native Leader';
