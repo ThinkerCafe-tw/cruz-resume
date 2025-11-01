@@ -1625,10 +1625,10 @@
     },
     "portfolio": {
       "hero": {
-        "title": "企業 AI 轉型的最大瓶頸？<br>不是技術，是執行速度。",
-        "subtitle": "我用 AI 協作開發，3-7 天交付傳統團隊 3 個月的系統",
-        "role": "Cruz Tang · ThinkerCafe 創辦人 & CEO<br>AI-Native 開發者 · 系統架構師 · 教育者",
-        "cta": "預約免費 AI 診斷"
+        "title": "想用 AI 轉型，但不知道怎麼開始？<br>我教你方法，也能幫你做出來。",
+        "subtitle": "5 天開發上線的系統，傳統外包要等 3 個月<br>成大林佩珺教授推薦：精緻、快速、值得信賴",
+        "role": "Cruz Tang · AI 開發教練 & 系統架構師<br>工研院/資策會講師 · 教過 1200+ 業界學員",
+        "cta": "預約 30 分鐘免費諮詢"
       },
       "nav": {
         "about": "關於",
@@ -1640,48 +1640,48 @@
         "items": [
           {
             "icon": "🎓",
-            "title": "專業認證",
-            "description": "iPAS AI 應用規劃師<br>認證命題委員（工研院）"
-          },
-          {
-            "icon": "🌏",
-            "title": "實戰經驗",
-            "description": "曾管理 300+ 跨國團隊<br>Topvan Group 菲/中/馬/越"
+            "title": "專業認證 + 學術推薦",
+            "description": "iPAS AI 應用規劃師認證委員<br>成大林佩珺教授：「作品精緻，值得推薦」"
           },
           {
             "icon": "👨‍🏫",
-            "title": "教學資歷",
-            "description": "10+ 年教學經驗<br>工研院/資策會/文化大學"
+            "title": "1200+ 業界學員",
+            "description": "工研院/資策會講師 10+ 年<br>教過工程師、管理者、教授轉型 AI"
+          },
+          {
+            "icon": "⚡",
+            "title": "5 天上線實績",
+            "description": "物理治療所預約系統：5 天開發完成<br>台鐵災害復原研究：公開在 GitHub"
           }
         ]
       },
       "comparison": {
-        "title": "你是否也遇到這些問題？",
-        "subtitle": "還在用傳統方法開發嗎？看看我們如何在 <strong>7 天內完成傳統團隊 3 個月的工作</strong>。",
+        "title": "還在用傳統方法開發嗎？",
+        "subtitle": "看看 AI 協作開發如何在 <strong>5 天內</strong>完成傳統外包 3 個月的工作",
         "items": [
           {
-            "label": "舊時代開發",
-            "before": "開發週期 3-6 個月",
+            "label": "開發速度",
+            "before": "找廠商報價、簽約、等開發：3 個月",
             "afterLabel": "AI 協作",
-            "after": "3-7 天快速交付"
+            "after": "5 天系統上線，立刻開始用"
           },
           {
-            "label": "傳統成本",
-            "before": "30-100 萬投入",
+            "label": "開發成本",
+            "before": "外包報價 30-100 萬，預算吃不消",
             "afterLabel": "AI 協作",
-            "after": "成本降低 60-70%"
+            "after": "成本不到傳統的 1/3"
           },
           {
-            "label": "傳統團隊",
-            "before": "需要多人團隊協作",
+            "label": "團隊規模",
+            "before": "需要 PM、前端、後端、測試多人團隊",
             "afterLabel": "AI 協作",
-            "after": "1-2 人即可完成"
+            "after": "1 個懂 AI 的開發者搞定"
           },
           {
-            "label": "迭代困境",
-            "before": "修改慢、迭代難、文件缺",
+            "label": "修改彈性",
+            "before": "改需求要重新報價、等排程",
             "afterLabel": "AI 協作",
-            "after": "即改即測、自動文檔"
+            "after": "隨時調整，當天改當天測"
           }
         ]
       },
@@ -1690,57 +1690,69 @@
         "items": [
           {
             "title": "物理治療診所 LINE Bot 預約系統",
+            "context": "剛開業的診所，每天手動處理預約，電話接不完",
             "painPoints": [
-              "每天花 2 小時手動處理預約",
-              "客戶常打不通電話",
-              "沒有系統化管理"
+              "每天花 2 小時手動確認預約、打電話提醒",
+              "電話一直響，櫃檯忙不過來，客戶等到不耐煩",
+              "沒有系統化管理，常忘記提醒或重複預約時間"
             ],
             "deliverables": [
-              "全自動預約/取消/提醒",
-              "24/7 即時回應",
-              "整合 Google Calendar"
+              "LINE Bot 自動預約/取消/改期，24/7 不打烊",
+              "自動發送提醒通知，減少爽約率",
+              "整合 Google Calendar，櫃檯一目了然"
             ],
             "tech": [
               "LINE Messaging API",
               "Google Calendar API",
-              "Supabase 資料庫"
+              "Supabase 雲端資料庫"
             ],
             "results": {
               "timeline": {
-                "before": "3 個月",
-                "after": "3 天"
+                "label": "開發速度",
+                "before": "傳統外包：等 3 個月",
+                "after": "AI 協作：5 天上線"
               },
               "cost": {
-                "before": "30 萬",
-                "after": "10 萬"
+                "label": "開發成本",
+                "description": "不到傳統外包的 1/3"
               },
-              "efficiency": "節省 90% 人工時間"
+              "outcome": {
+                "label": "實際成果",
+                "description": "電話量大幅減少，預約全部線上化<br>櫃檯終於不用一直接電話了"
+              }
             }
           },
           {
-            "title": "教育機構課程管理自動化",
+            "title": "成大林教授研究專案：台鐵災害復原分析",
+            "context": "研究地震、颱風造成停駛後，台鐵需要多久恢復營運",
             "painPoints": [
-              "課程排程手動管理",
-              "學員數據分散各處",
-              "報表製作耗時費力"
+              "台鐵最新消息散落各處，人工整理太慢",
+              "需要長期追蹤停駛/復駛時間的歷史資料",
+              "研究需要精準、結構化的資料"
             ],
             "deliverables": [
-              "自動排課與通知系統",
-              "學員數據整合儀表板",
-              "一鍵生成分析報表"
+              "自動爬取台鐵最新消息，即時更新",
+              "結構化儲存：停駛時間、復駛時間、原因分類",
+              "提供 API 讓研究團隊直接取用資料"
             ],
             "tech": [
-              "Python + Flask",
-              "數據視覺化系統",
-              "自動化排程引擎"
+              "Python 爬蟲",
+              "自然語言處理（提取關鍵資訊）",
+              "定時排程自動執行"
             ],
             "results": {
-              "timeline": {
-                "before": "6 週",
-                "after": "7 天"
+              "professor_review": {
+                "label": "教授評價",
+                "quote": "作品精緻，資料品質很好，完全符合研究需求"
               },
-              "efficiency": "管理時間減少 80%",
-              "satisfaction": "4.8/5.0"
+              "open_source": {
+                "label": "開放原始碼",
+                "description": "程式碼公開在 GitHub，可供學術研究使用"
+              },
+              "recommendation": {
+                "label": "學術推薦",
+                "description": "林教授主動推薦給成大 EMBA 學生"
+              }
             }
           }
         ]
@@ -1749,47 +1761,49 @@
         "title": "合作方式",
         "items": [
           {
-            "title": "顧問諮詢",
-            "target": "適合：想建立 AI 轉型策略的企業",
+            "title": "AI 開發教練（推薦給 EMBA 學生）",
+            "target": "適合：想學 AI 開發，或需要畢業專題/公司專案指導",
             "features": [
-              "現況診斷",
-              "轉型路徑規劃",
-              "技術選型建議",
-              "執行指導"
+              "1 對 1 技術指導：教你用 AI 工具開發",
+              "專案從 0 到 1：陪你做出能用的原型",
+              "提供方法論：可以帶回公司複製使用",
+              "成大林教授推薦"
             ],
-            "duration": "⏱ 時程：2-4 週"
+            "duration": "⏱ 時程：4-8 週（依專案複雜度）"
           },
           {
-            "title": "內部培訓",
-            "target": "適合：想提升團隊 AI 協作能力",
+            "title": "快速原型開發（MVP / POC）",
+            "target": "適合：想試水溫，不想一開始投入太多預算",
             "features": [
-              "實戰工作坊",
-              "工具實作教學",
-              "流程 SOP",
-              "案例演練"
+              "5-7 天快速交付能用的原型",
+              "先驗證可行性，成功再擴大投資",
+              "包含需求訪談、開發、上線",
+              "提供程式碼，你可以自己維護或找人接手"
             ],
-            "duration": "⏱ 時程：1-2 天"
+            "duration": "⏱ 時程：1-2 週",
+            "case": "📍 案例：物理治療所預約系統"
           },
           {
-            "title": "專案開發",
-            "target": "適合：需要快速交付特定系統",
+            "title": "企業內訓 + 顧問",
+            "target": "適合：想建立 AI 開發能力的企業/團隊",
             "features": [
-              "完整系統開發",
-              "技術文檔",
-              "操作培訓",
-              "維護支援"
+              "工研院/資策會講師，10+ 年教學經驗",
+              "客製化課程：R、Python、AI 開發實戰",
+              "技術顧問：協助規劃 AI 轉型路徑",
+              "教過 1200+ 業界學員"
             ],
-            "duration": "⏱ 時程：3-7 天起"
+            "duration": "⏱ 時程：1-3 天（依需求）"
           }
         ]
       },
       "cta": {
-        "title": "免費 AI 診斷預約",
-        "description": "為了更好地了解您的需求，請透過以下方式與我聯繫：<br><small style=\"color: #94a3b8;\">您的資訊僅用於此次諮詢評估，我會在 24 小時內回覆您</small>",
+        "title": "預約 30 分鐘免費諮詢",
+        "subtitle": "不管你是想學 AI 開發，還是需要快速原型",
+        "description": "💬 <strong>免費、無壓力、不推銷</strong><br>我會根據你的情況，給你誠實的建議<br><small style=\"color: #94a3b8;\">成大林教授的學生，歡迎直接提林老師的名字</small>",
         "methods": [
           {
             "text": "📧 Email 預約診斷",
-            "link": "mailto:cruz@thinkercafe.com"
+            "link": "mailto:cruz@thinker.cafe"
           },
           {
             "text": "💬 LINE 直接聯繫",
@@ -1802,8 +1816,9 @@
         ]
       },
       "footer": {
-        "copyright": "© 2025 ThinkerCafe (思考者咖啡有限公司) · Cruz Tang · All Rights Reserved",
-        "tagline": "AI-Native 開發者 · 系統架構師 · 教育者"
+        "company": "ThinkerCafe (思考者咖啡有限公司)",
+        "copyright": "© 2025 ThinkerCafe · All Rights Reserved",
+        "tagline": "AI 開發教練 · 快速原型開發 · 企業內訓"
       }
     }
   },
