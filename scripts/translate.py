@@ -23,7 +23,7 @@ BACKUP_DIR = PROJECT_ROOT / "data" / "backups"
 TARGET_LANGUAGES = ["en", "ja", "ko", "ar"]
 
 # Gemini API Configuration
-GEMINI_MODEL = "gemini-2.0-flash-exp"
+GEMINI_MODEL = "gemini-2.5-flash"
 GENERATION_CONFIG = {
     "temperature": 0.3,
     "top_p": 0.95,
