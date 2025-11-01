@@ -27,7 +27,7 @@ GEMINI_MODEL = "gemini-2.5-flash"
 GENERATION_CONFIG = {
     "temperature": 0.3,
     "top_p": 0.95,
-    "max_output_tokens": 8192,
+    "max_output_tokens": 32768,  # Increased for larger content (portfolio section)
 }
 
 

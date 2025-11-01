@@ -1,12 +1,12 @@
 {
   "en": {
     "hero": {
-      "name": "湯明軒 Cruz Tang",
-      "tagline": "AI-Native Leader and Systems Architect",
-      "subtitle": "Transforming Businesses with Practical AI · From Managing 300+ Global Teams to Building AI-First Solutions",
+      "name": "Cruz Tang",
+      "tagline": "AI-Native Leader & System Architect",
+      "subtitle": "Transforming Businesses with Practical AI Solutions · From Leading 300+ International Teams to Building AI-First Solutions",
       "stats": [
         "Years of Experience",
-        "Team Members Managed",
+        "Teams Managed",
         "Companies Founded",
         "Problems Solved"
       ]
@@ -24,20 +24,20 @@
     },
     "about": {
       "title": "About Me",
-      "content": "I connect large-scale operations with advanced AI solutions. After managing <strong>300+ team members</strong> from China, the Philippines, Malaysia, and Vietnam at Topvan Group, I founded <strong>ThinkerCafe</strong> to democratize AI education and business automation.<br><br>My unique background combines <strong>international team leadership</strong>, <strong>deep AI/Data Science expertise</strong>, and <strong>10+ years of teaching experience</strong>. I don't just implement AI solutions—I build systems that empower people to work smarter.<br><br>Currently seeking opportunities to bring this combined expertise to enterprise AI consulting and digital transformation projects."
+      "content": "I connect large-scale operations with advanced AI solutions. After managing <strong>300+ team members</strong> from China, the Philippines, Malaysia, and Vietnam at Topvan Group, I founded <strong>ThinkerCafe</strong> to democratize AI education and enterprise automation.<br><br>My unique background combines <strong>international team leadership</strong>, <strong>deep AI/data science expertise</strong>, and <strong>10+ years of teaching experience</strong>. I don't just build AI solutions—I create systems that empower people to work smarter.<br><br>I'm currently seeking opportunities to bring this combined expertise to enterprise AI consulting and digital transformation projects."
     },
     "experience": {
-      "title": "Experience",
+      "title": "Professional Experience",
       "jobs": [
         {
           "title": "CEO & Founder",
-          "company": "ThinkerCafe 思考者咖啡",
+          "company": "ThinkerCafe",
           "date": "2023 - Present",
           "points": [
-            "Lead a distributed US-Taiwan team developing AI education and automation products",
-            "Designed comprehensive AI courses (Personal OS, AI Communication, Visual/System Hacking series)",
-            "Built LINE Bot, automation systems, and AI productivity tools",
-            "Provide AI solutions and workflow optimization consulting for businesses"
+            "Led distributed US-Taiwan teams to develop AI education and automation products.",
+            "Designed comprehensive AI courses (Personal OS, AI Communication Skills, Visual/System Hacking Series).",
+            "Built LINE Bots, automation systems, and AI productivity tools.",
+            "Provided enterprise AI solutions and workflow optimization consulting."
           ],
           "tech": [
             "Claude Code",
@@ -52,19 +52,19 @@
         },
         {
           "title": "Operations Manager",
-          "company": "Topvan Group 拓凡集團",
-          "date": "November 2020 - December 2023 · 3 years 2 months",
+          "company": "Topvan Group",
+          "date": "November 2020 - December 2023 · 3 years, 2 months",
           "points": [
-            "Directly led a team of 10-12, indirectly managed <strong>300+ members</strong> from China, the Philippines, Malaysia, and Vietnam",
-            "International assignments: Dubai Business Bay (4 months), Clark, Philippines (1.5 years), Makati/BGC (1 year)",
-            "Enhanced data-driven decision-making using Python and the Telegram Bot API",
-            "Managed all operations except finance and retail, reporting directly to the Chairman"
+            "Directly led a 10-12 person team, indirectly managed <strong>300+ members</strong> across China, the Philippines, Malaysia, and Vietnam.",
+            "Overseas assignments: Dubai Business Bay (4 months), Clark, Philippines (1.5 years), Makati/BGC (1 year).",
+            "Utilized Python and Telegram Bot API to enhance data-driven decision-making.",
+            "Managed all operations except finance and retail, reporting directly to the Chairman."
           ],
           "tech": [
             "Python",
             "Telegram Bot API",
             "MySQL",
-            "Data Analysis"
+            "數據分析"
           ]
         },
         {
@@ -72,71 +72,71 @@
           "company": "ICS GAME",
           "date": "July 2019 - November 2019 · 5 months",
           "points": [
-            "Rebuilt the team: recruited new talent and reformed performance evaluations after 50%+ employee turnover",
-            "Implemented Scrum development processes and internal/external testing environments",
-            "Developed an operations anomaly reporting system, automating processes using JIRA",
-            "Resolved iOS certificate issues and IP blocking issues for custom applications"
+            "Rebuilt team: Recruited new talent and reformed performance evaluations in response to 50%+ employee turnover.",
+            "Implemented Scrum development processes and internal/external testing environments.",
+            "Developed an operational anomaly reporting system, automating processes with JIRA.",
+            "Resolved iOS certificate issues and IP blocking problems for in-house applications."
           ]
         },
         {
-          "title": "Data Science Department Head",
+          "title": "Head of Data Science Department",
           "company": "ICS GAME",
-          "date": "June 2018 - June 2019 · 1 year 1 month",
+          "date": "June 2018 - June 2019 · 1 year, 1 month",
           "points": [
-            "Built the Data Science department from the ground up",
-            "Established a complete environment within one month: Linux, Python, Docker, Jupyter, RStudio",
-            "Predicted player churn and implemented retention strategies",
-            "Detected arbitrage players and compiled quarterly operations reports"
+            "Built the data science department from the ground up.",
+            "Established a complete environment within one month: Linux, Python, Docker, Jupyter, RStudio.",
+            "Predicted player churn and implemented retention strategies.",
+            "Detected arbitrage players and compiled quarterly operational reports."
           ]
         },
         {
           "title": "Founder",
-          "company": "Thinker Data Corporation 析客數據",
-          "date": "September 2016 - June 2018 · 1 year 10 months",
+          "company": "Thinker Data Corporation",
+          "date": "September 2016 - June 2018 · 1 year, 10 months",
           "points": [
-            "Freelance company that built part-time teams based on project needs",
-            "Sanlih E-Television Vidol: developed a web drama recommendation system",
-            "Chunghwa Telecom: provided big data Hadoop cluster consulting and maintenance",
-            "E.Sun Bank: implemented a cross-device member attribution mechanism",
-            "Industrial Technology Research Institute (ITRI): analyzed industry talent competency assessments and international corporate job postings"
+            "Founded a project-based company, assembling freelance teams based on project needs.",
+            "Sanlih E-Television Vidol: Developed a web drama recommendation system.",
+            "Chunghwa Telecom: Provided big data Hadoop cluster consulting and maintenance.",
+            "E.SUN Bank: Implemented a cross-device member attribution mechanism.",
+            "ITRI College of Industry: Analyzed industry talent competency assessments and international corporate job vacancy data."
           ],
           "tech": [
             "Big Data",
             "Hadoop",
             "Python",
             "R",
-            "Data Analysis"
+            "數據分析"
           ]
         },
         {
-          "title": "Big Data Technology R&D Engineer",
-          "company": "Coretronic 中強光電",
-          "date": "July 2014 - November 2015 · 1 year 5 months",
+          "title": "Big Data R&D Engineer",
+          "company": "Coretronic",
+          "date": "July 2014 - November 2015 · 1 year, 5 months",
           "points": [
-            "Designed data collection processes and ETL pipelines",
-            "Used statistical methods for data analysis and to support decision-making",
-            "Dietary semantic analysis for patients with diseases: built an emotion lexicon, developed a scoring model, and automatically reported the top 5 recommended/avoided foods for each disease"
+            "Designed data collection processes and ETL pipelines.",
+            "Performed data analysis using statistical methods to support decision-making.",
+            "Semantic analysis of diet for disease patients: Built an emotional lexicon, developed a scoring model, and automated reporting of top five recommended/avoided foods for various diseases."
           ],
           "tech": [
             "Python",
             "ETL",
-            "Statistical Analysis",
+            "統計分析",
             "NLP",
-            "Semantic Analysis"
+            "語意分析"
           ]
         }
       ]
     },
     "featured": {
       "title": "Featured Work",
-      "subtitle": "Demonstrating AI-Native Development and Rapid Delivery",
+      "subtitle": "Showcasing AI-Native Development & Rapid Delivery Capabilities",
       "projects": [
         {
-          "name": "LINE Bot Appointment System",
+          "name": "LINE Bot Booking System",
           "emoji": "🤖",
-          "tagline": "Clinic appointment management system delivered in 48 hours",
-          "highlight": "Delivered in 48 Hours | Fully Automated Process | 95%+ Customer Satisfaction",
-          "description": "Built a complete LINE Bot appointment system for a rehabilitation clinic, reducing appointment process time by 70% and significantly improving customer satisfaction. Integrated with Google Calendar for real-time availability checks.",
+          "tagline": "Clinic Appointment Management System Delivered in 48 Hours",
+          "highlight": "48-Hour Delivery | Fully Automated Process | 95%+ Client Satisfaction",
+          "description": "Developed a comprehensive LINE Bot booking system for a rehabilitation clinic, reducing appointment process time by 70% and significantly boosting client satisfaction. Integrated Google Calendar for real-time availability checks.",
           "tech": [
             "Claude Code",
             "Supabase",
@@ -152,9 +152,9 @@
         {
           "name": "ThreadsBot Automation",
           "emoji": "⚙️",
-          "tagline": "AI-Powered Social Media Automation System",
+          "tagline": "AI-Driven Social Media Automation System",
           "highlight": "Multi-Agent Collaboration | 300% Increase in Posting Frequency",
-          "description": "Developed an intelligent social media automation system using multiple AI Agents working together. Achieved a 3x increase in engagement and reduced manual operation time by 80%, optimizing social media management through automated content analysis and scheduling.",
+          "description": "Developed an intelligent social media automation system leveraging multiple AI Agents. Achieved a 3x increase in engagement rate and reduced manual operation time by 80% through automated content analysis and scheduling optimization.",
           "tech": [
             "Claude API",
             "MCP",
@@ -171,8 +171,8 @@
           "name": "Personal OS Course",
           "emoji": "📚",
           "tagline": "Personal Operating System Course for the AI Era",
-          "highlight": "100% of Students Successfully Build AI Systems | Hands-On Approach",
-          "description": "Designed and taught a comprehensive course series to help non-technical professionals build their own AI-powered personal operating systems. Students learn to use AI tools like Claude Code and MCP to automate workflows and increase productivity.",
+          "highlight": "100% Student Success in Building AI Systems | Hands-on Approach",
+          "description": "Designed and taught a comprehensive course series, helping non-technical professionals build their own AI-driven personal operating systems. Students learned to automate workflows and boost productivity using AI tools like Claude Code and MCP.",
           "tech": [
             "Claude Code",
             "MCP",
@@ -193,11 +193,11 @@
         {
           "school": "National Taipei University of Business",
           "degree": "Master's Degree",
-          "major": "Department of Data and Decision Sciences",
+          "major": "Data and Decision Sciences",
           "date": "June 2013",
           "location": "Taipei, Taiwan",
           "coursework": [
-            "Multiple Criteria Decision Making",
+            "Multi-Criteria Decision Making",
             "Business Intelligence",
             "Algorithms"
           ]
@@ -205,7 +205,7 @@
         {
           "school": "Shih Hsin University",
           "degree": "Bachelor's Degree",
-          "major": "Department of Finance",
+          "major": "Finance",
           "date": "June 2011",
           "location": "Taipei, Taiwan",
           "coursework": [
@@ -218,16 +218,16 @@
       ]
     },
     "teaching": {
-      "title": "Teaching & Speaking",
+      "title": "Teaching & Lectures",
       "lectures": [
         {
-          "title": "Hands-on Text Mining with R",
+          "title": "Practical Text Mining with R",
           "organization": "Institute for Information Industry (III)",
           "type": "Workshop"
         },
         {
           "title": "Data Visualization with R",
-          "organization": "Taipei Computer Association, Fubon Financial Holding Co.",
+          "organization": "Taipei Computer Association, Fubon Financial Holdings",
           "type": "Corporate Training"
         },
         {
@@ -236,9 +236,9 @@
           "type": "Conference Presentation"
         },
         {
-          "title": "Using Facebook Mining to Understand the People You Like",
+          "title": "Understanding People You Like Through Facebook Data Mining",
           "organization": "OpenFoundry",
-          "type": "Technical Sharing"
+          "type": "Tech Talk"
         },
         {
           "title": "Financial Data Mining: Machine Data Analysis",
@@ -248,16 +248,16 @@
       ]
     },
     "skills": {
-      "title": "Skills Map",
+      "title": "Technical Skills Map",
       "philosophy": {
         "title": "Technical Philosophy",
-        "content": "I don't focus on \"how many languages I know,\" but rather \"how quickly I can solve problems.\" In the age of AI collaboration, the key is not to hand-write every line of code, but to: <strong>1) Know which combination of tools to use</strong> <strong>2) Be able to design a maintainable system architecture</strong> <strong>3) Understand how to make AI your development partner</strong>"
+        "content": "I don't chase 'how many languages I know,' but rather 'how quickly I can solve problems.' In the era of AI collaboration, the focus isn't on writing every line of code by hand, but on: <strong>1) knowing which tool combinations to use</strong> <strong>2) designing maintainable system architectures</strong> <strong>3) understanding how to make AI your development partner</strong>"
       },
       "layers": [
         {
           "level": 1,
           "name": "AI Collaboration Ecosystem",
-          "description": "The core competitive advantage in the AI-Native era",
+          "description": "Core Competency in the AI-Native Era",
           "categories": [
             {
               "name": "AI Development Platforms",
@@ -268,7 +268,7 @@
                 "OpenAI API",
                 "Gemini API",
                 "Prompt Engineering",
-                "Agent Design"
+                "Agent 設計"
               ]
             },
             {
@@ -284,7 +284,7 @@
         {
           "level": 2,
           "name": "Modern Cloud Infrastructure",
-          "description": "Deployment and Data Foundation",
+          "description": "Deployment & Data Foundation",
           "categories": [
             {
               "name": "Deployment & Compute",
@@ -300,7 +300,7 @@
               "items": [
                 "Supabase (PostgreSQL + Realtime)",
                 "Neon (Serverless PostgreSQL)",
-                "SQLite (Local/Edge Computing)"
+                "SQLite (Local/Edge Compute)"
               ]
             },
             {
@@ -323,7 +323,7 @@
         {
           "level": 3,
           "name": "Programming Languages & Frameworks",
-          "description": "Multi-Paradigm Development Skills",
+          "description": "Multi-Paradigm Development Capabilities",
           "categories": [
             {
               "name": "Primary Languages",
@@ -353,7 +353,7 @@
         {
           "level": 4,
           "name": "Data Science Toolchain",
-          "description": "Analysis and Machine Learning Skills",
+          "description": "Analytics & Machine Learning Capabilities",
           "categories": [
             {
               "name": "Machine Learning",
@@ -378,7 +378,7 @@
         {
           "level": 5,
           "name": "Collaboration & Project Management",
-          "description": "Team Coordination and Delivery",
+          "description": "Team Coordination & Delivery",
           "categories": [
             {
               "name": "Version Control",
@@ -416,23 +416,23 @@
             "System Design"
           ],
           "points": [
-            "Complete AI course system (Personal OS, 5+ course series)",
-            "Serves non-technical professionals entering the AI era",
-            "Built a complete ecosystem from content to delivery",
-            "Emphasizes practical, implementable systems"
+            "Comprehensive AI curriculum (Personal OS, 5+ course series).",
+            "Serves non-technical professionals entering the AI era.",
+            "Built a complete ecosystem from content creation to delivery.",
+            "Emphasizes practical, implementable systems."
           ]
         },
         {
           "title": "LINE Bot Automation System",
           "tags": [
-            "Business Application",
+            "Enterprise Applications",
             "Automation"
           ],
           "points": [
-            "Appointment system for physical therapy clinics",
-            "Reduced appointment process time by 70%",
-            "Google Calendar integration",
-            "Improved customer satisfaction"
+            "Physical therapy clinic booking system.",
+            "Reduced booking process time by 70%.",
+            "Google Calendar integration.",
+            "Increased client satisfaction."
           ]
         },
         {
@@ -442,10 +442,10 @@
             "AI Agent"
           ],
           "points": [
-            "Personal AI augmentation system",
-            "Integrates memory, prompt library, and productivity tools",
-            "Daily insights and goal tracking",
-            "Gamified engagement system"
+            "Personal AI augmentation system.",
+            "Integrates memory, prompt library, and productivity tools.",
+            "Daily insights and goal tracking.",
+            "Gamified engagement system."
           ]
         },
         {
@@ -455,36 +455,36 @@
             "AI Agent"
           ],
           "points": [
-            "AI-powered social media automation",
-            "3x increase in engagement",
-            "80% reduction in operations time",
-            "Automated content analysis and scheduling"
+            "AI-driven social media automation.",
+            "3x increase in engagement.",
+            "80% reduction in operational time.",
+            "Automated content analysis and scheduling."
           ]
         },
         {
           "title": "Ryan OS & Mary OS",
           "tags": [
             "Home Technology",
-            "System"
+            "Systems"
           ],
           "points": [
-            "AI-powered home management system",
-            "Education tracking (Ryan OS)",
-            "Elder care coordination (Mary OS)",
-            "Data-driven family decision-making"
+            "AI-driven home management system.",
+            "Education tracking (Ryan OS).",
+            "Elder care coordination (Mary OS).",
+            "Data-driven family decision-making."
           ]
         },
         {
-          "title": "Operations for 300+ Person Team",
+          "title": "300+ Person Team Operations",
           "tags": [
             "Leadership",
             "Scaling"
           ],
           "points": [
-            "Multinational team in the Philippines",
-            "24/7 operations coordination",
-            "Data-driven KPI system",
-            "40% cost reduction through automation"
+            "Multinational team in the Philippines.",
+            "24/7 operational coordination.",
+            "Data-driven KPI system.",
+            "Reduced costs by 40% through automation."
           ]
         }
       ]
@@ -492,7 +492,7 @@
     "cta": {
       "title": "Let's Build Something Together",
       "subtitle": "Currently seeking opportunities to partner with enterprise clients on AI solutions, digital transformation, and solution architecture.",
-      "location": "Remote-Friendly · Taipei/Taichung/Tainan · 70-100K TWD/month",
+      "location": "Remote-friendly · Taipei/Taichung/Tainan · 70-100K TWD/month",
       "buttons": [
         "Contact Me",
         "Visit ThinkerCafe",
@@ -500,27 +500,27 @@
       ]
     },
     "footer": {
-      "built": "Built with Care · Inspired Design · Updated January 2025",
-      "quote": "When technology returns to humanity, intelligence finds warmth"
+      "built": "Built with care · Inspired design · Last updated January 2025",
+      "quote": "When technology returns to humanity, wisdom finds warmth."
     },
     "enterprise": {
       "hero": {
         "title": "The Biggest Bottleneck in Enterprise AI Transformation?",
-        "subtitle": "It's not technology, it's speed of execution.",
-        "valueProposition": "I use AI-assisted development to deliver in 3-7 days what traditional teams take 3 months to build.",
-        "ctaButton": "Schedule a Free AI Consultation",
+        "subtitle": "It's not technology, it's execution speed.",
+        "valueProposition": "I use AI-powered collaborative development to deliver systems in 3-7 days that would take traditional teams 3 months",
+        "ctaButton": "Book a Free AI Diagnostic Session",
         "authorInfo": {
           "name": "Cruz Tang",
-          "title": "Founder & CEO, ThinkerCafe",
+          "title": "ThinkerCafe Founder & CEO",
           "roles": [
             "AI-Native Developer",
-            "Systems Architect",
+            "System Architect",
             "Educator"
           ]
         }
       },
       "trustIndicators": {
-        "title": "Trusted By",
+        "title": "Trust Indicators",
         "items": [
           {
             "icon": "<i class=\"fas fa-graduation-cap\"></i>",
@@ -528,23 +528,23 @@
             "lines": [
               "iPAS AI",
               "Application Planner",
-              "Certification Question Writer",
+              "Certification Exam Committee Member",
               "(ITRI)"
             ]
           },
           {
             "icon": "<i class=\"fas fa-users\"></i>",
-            "title": "Real-World Experience",
+            "title": "Hands-on Experience",
             "lines": [
               "Managed 300+",
-              "Multinational Team",
+              "Multinational Teams",
               "Topvan Group",
               "PH/CN/MY/VN"
             ]
           },
           {
             "icon": "<i class=\"fas fa-trophy\"></i>",
-            "title": "Teaching Experience",
+            "title": "Teaching Credentials",
             "lines": [
               "10+ Years",
               "Teaching Experience",
@@ -561,7 +561,7 @@
           {
             "label": "<i class=\"fas fa-clock\"></i> Development Cycle",
             "traditional": "3-6 Months",
-            "aiNative": "3-7 Day Rapid Delivery"
+            "aiNative": "3-7 Days Rapid Delivery"
           },
           {
             "label": "<i class=\"fas fa-dollar-sign\"></i> Cost",
@@ -570,36 +570,36 @@
           },
           {
             "label": "<i class=\"fas fa-laptop-code\"></i> Team Size",
-            "traditional": "Requires a Large Team",
-            "aiNative": "Can Be Done with 1-2 People"
+            "traditional": "Requires Large Teams",
+            "aiNative": "Achieved with 1-2 People"
           },
           {
             "label": "<i class=\"fas fa-rotate\"></i> Iteration Speed",
-            "traditional": "Slow to Modify, Difficult to Iterate",
-            "aiNative": "Instant Testing, Rapid Iteration"
+            "traditional": "Slow Modifications, Difficult Iterations",
+            "aiNative": "Instant Changes & Testing, Rapid Iteration"
           },
           {
             "label": "<i class=\"fas fa-book\"></i> Maintainability",
-            "traditional": "Incomplete Documentation, Difficult to Maintain",
-            "aiNative": "Automatically Generated Complete Documentation"
+            "traditional": "Incomplete Documentation, Hard to Maintain",
+            "aiNative": "Automated Full Documentation"
           }
         ]
       },
       "caseStudies": {
         "title": "Case Studies",
         "ctaText": "If you have similar needs...",
-        "ctaButton": "Schedule a Free Consultation",
+        "ctaButton": "Book a Free Diagnostic Session",
         "featured": {
-          "title": "LINE Bot Appointment System for Physical Therapy Clinic",
+          "title": "Physical Therapy Clinic LINE Bot Booking System",
           "painPoints": [
-            "Spends 2 Hours Daily Manually Processing Appointments",
-            "Customers Often Can't Get Through by Phone",
-            "No Systematic Management"
+            "Spent 2 hours daily on manual bookings.",
+            "Clients often couldn't reach them by phone.",
+            "Lack of systematic management."
           ],
           "results": [
-            "Fully Automated Appointment/Cancellation/Reminders",
-            "24/7 Instant Response",
-            "Google Calendar Integration"
+            "Fully automated bookings, cancellations, and reminders.",
+            "24/7 instant responses.",
+            "Google Calendar integration."
           ],
           "timeline": {
             "traditional": "3 Months + 300K TWD",
@@ -612,29 +612,29 @@
         },
         "others": [
           {
-            "title": "Course Management Automation for Educational Institutions",
+            "title": "Educational Institution Course Management Automation",
             "traditional": "6 Weeks Development",
-            "actual": "Completed in 7 Days",
+            "actual": "7 Days Completion",
             "button": "Learn More"
           },
           {
-            "title": "Internal Training: Hands-on AI-Assisted Development",
-            "company": "XX Company All-Employee Training",
-            "rating": "Student Satisfaction: 4.8/5.0",
-            "button": "Student Feedback"
+            "title": "Corporate Training: Practical AI Collaborative Development",
+            "company": "Company XX All-Staff Training",
+            "rating": "Participant Satisfaction: 4.8/5.0",
+            "button": "Participant Feedback"
           }
         ]
       },
       "methodology": {
-        "title": "My Working Method",
-        "subtitle": "Not just \"do and run,\" but build sustainable systems",
+        "title": "My Working Methodology",
+        "subtitle": "Not 'build and run,' but building sustainable, operational systems",
         "steps": [
           {
             "number": "1",
             "title": "Diagnosis",
             "duration": "15-30 Minutes",
             "items": [
-              "In-Depth Interview",
+              "In-depth Interview",
               "Pain Point Analysis"
             ]
           },
@@ -668,7 +668,7 @@
         ],
         "support": [
           "Complete Technical Documentation",
-          "Operating SOPs",
+          "Operational SOPs",
           "Maintenance Guidelines",
           "Ongoing Support"
         ]
@@ -677,22 +677,22 @@
         "title": "Collaboration Models",
         "items": [
           {
-            "title": "Consulting",
-            "target": "Companies looking to establish an AI transformation strategy",
+            "title": "Consulting Services",
+            "target": "For enterprises looking to establish an AI transformation strategy.",
             "deliverables": [
               "Current State Diagnosis",
-              "Transformation Roadmap",
+              "Transformation Roadmap Planning",
               "Technology Selection Recommendations",
-              "Execution Guidance"
+              "Implementation Guidance"
             ],
             "timeline": "2-4 Weeks"
           },
           {
             "title": "Internal Training",
-            "target": "Teams looking to improve their AI collaboration skills",
+            "target": "For teams aiming to enhance AI collaboration skills.",
             "deliverables": [
               "Hands-on Workshops",
-              "Tool Implementation Training",
+              "Practical Tool Instruction",
               "Process SOPs",
               "Case Study Exercises"
             ],
@@ -700,11 +700,11 @@
           },
           {
             "title": "Project Development",
-            "target": "Need to quickly deliver a specific system",
+            "target": "For those needing rapid delivery of specific systems.",
             "deliverables": [
-              "Complete System Development",
+              "Full System Development",
               "Technical Documentation",
-              "User Training",
+              "Operational Training",
               "Maintenance Support"
             ],
             "timeline": "Starting from 3-7 Days"
@@ -712,19 +712,19 @@
         ]
       },
       "contactForm": {
-        "title": "Free AI Consultation",
-        "subtitle": "Takes approximately 3-5 minutes to complete",
-        "note": "Your information will only be used for this consultation assessment",
-        "submitButton": "Submit → I will reply to you within 24 hours",
+        "title": "Book a Free AI Diagnostic Session",
+        "subtitle": "Takes approximately 3-5 minutes to complete.",
+        "note": "Your information will only be used for this consultation assessment.",
+        "submitButton": "Submit → I will reply within 24 hours.",
         "googleFormUrl": ""
       }
     },
     "portfolio": {
       "hero": {
-        "title": "The Biggest Bottleneck in Enterprise AI Transformation?<br>It's not technology, it's speed of execution.",
-        "subtitle": "I use AI-assisted development to deliver in 3-7 days what traditional teams take 3 months to build.",
-        "role": "Cruz Tang · Founder & CEO, ThinkerCafe<br>AI-Native Developer · Systems Architect · Educator",
-        "cta": "Schedule a Free AI Consultation"
+        "title": "The Biggest Bottleneck in Enterprise AI Transformation?<br>It's not technology, it's execution speed.",
+        "subtitle": "I use AI-powered collaborative development to deliver systems in 3-7 days that would take traditional teams 3 months.",
+        "role": "Cruz Tang · ThinkerCafe Founder & CEO<br>AI-Native Developer · System Architect · Educator",
+        "cta": "Book a Free AI Diagnostic Session"
       },
       "nav": {
         "about": "About",
@@ -737,47 +737,47 @@
           {
             "icon": "🎓",
             "title": "Professional Certifications",
-            "description": "iPAS AI Application Planner<br>Certification Question Writer (ITRI)"
+            "description": "iPAS AI Application Planner<br>Certification Exam Committee Member (ITRI)"
           },
           {
             "icon": "🌏",
-            "title": "Real-World Experience",
-            "description": "Managed 300+ Multinational Team<br>Topvan Group PH/CN/MY/VN"
+            "title": "Hands-on Experience",
+            "description": "Managed 300+ Multinational Teams<br>Topvan Group PH/CN/MY/VN"
           },
           {
             "icon": "👨‍🏫",
-            "title": "Teaching Experience",
+            "title": "Teaching Credentials",
             "description": "10+ Years Teaching Experience<br>ITRI/III/Chinese Culture University"
           }
         ]
       },
       "comparison": {
         "title": "Are You Facing These Challenges?",
-        "subtitle": "Still developing with traditional methods? See how we <strong>complete 3 months of work for a traditional team in 7 days</strong>.",
+        "subtitle": "Still developing with traditional methods? See how we complete <strong>3 months of traditional team work in just 7 days</strong>.",
         "items": [
           {
-            "label": "Old-School Development",
-            "before": "Development Cycle 3-6 Months",
-            "afterLabel": "AI-Assisted",
-            "after": "3-7 Day Rapid Delivery"
+            "label": "Traditional Development",
+            "before": "Development Cycle: 3-6 Months",
+            "afterLabel": "AI Collaboration",
+            "after": "3-7 Days Rapid Delivery"
           },
           {
             "label": "Traditional Cost",
             "before": "300K-1M TWD Investment",
-            "afterLabel": "AI-Assisted",
+            "afterLabel": "AI Collaboration",
             "after": "60-70% Cost Reduction"
           },
           {
             "label": "Traditional Team",
-            "before": "Requires a Large Team Collaboration",
-            "afterLabel": "AI-Assisted",
-            "after": "Can Be Done with 1-2 People"
+            "before": "Requires Multiple Team Members",
+            "afterLabel": "AI Collaboration",
+            "after": "Achieved with 1-2 People"
           },
           {
-            "label": "Iteration Difficulties",
-            "before": "Slow to Modify, Difficult to Iterate, Missing Documentation",
-            "afterLabel": "AI-Assisted",
-            "after": "Instant Testing, Automatic Documentation"
+            "label": "Iteration Challenges",
+            "before": "Slow Modifications, Difficult Iterations, Missing Documentation",
+            "afterLabel": "AI Collaboration",
+            "after": "Instant Changes & Testing, Automated Documentation"
           }
         ]
       },
@@ -785,21 +785,21 @@
         "title": "Case Studies",
         "items": [
           {
-            "title": "LINE Bot Appointment System for Physical Therapy Clinic",
+            "title": "Physical Therapy Clinic LINE Bot Booking System",
             "painPoints": [
-              "Spends 2 Hours Daily Manually Processing Appointments",
-              "Customers Often Can't Get Through by Phone",
-              "No Systematic Management"
+              "Spent 2 hours daily on manual bookings.",
+              "Clients often couldn't reach them by phone.",
+              "Lack of systematic management."
             ],
             "deliverables": [
-              "Fully Automated Appointment/Cancellation/Reminders",
-              "24/7 Instant Response",
-              "Google Calendar Integration"
+              "Fully automated bookings, cancellations, and reminders.",
+              "24/7 instant responses.",
+              "Google Calendar integration."
             ],
             "tech": [
               "LINE Messaging API",
               "Google Calendar API",
-              "Supabase Database"
+              "Supabase 資料庫"
             ],
             "results": {
               "timeline": {
@@ -807,28 +807,28 @@
                 "after": "3 Days"
               },
               "cost": {
-                "before": "300K",
-                "after": "100K"
+                "before": "300K TWD",
+                "after": "100K TWD"
               },
               "efficiency": "90% Reduction in Manual Time"
             }
           },
           {
-            "title": "Course Management Automation for Educational Institutions",
+            "title": "Educational Institution Course Management Automation",
             "painPoints": [
-              "Course Scheduling Managed Manually",
-              "Student Data Scattered Everywhere",
-              "Report Generation Time-Consuming"
+              "Manual course scheduling.",
+              "Dispersed student data.",
+              "Time-consuming report generation."
             ],
             "deliverables": [
-              "Automated Scheduling and Notification System",
-              "Student Data Integration Dashboard",
-              "One-Click Generation of Analysis Reports"
+              "Automated scheduling and notification system.",
+              "Integrated student data dashboard.",
+              "One-click analytical report generation."
             ],
             "tech": [
               "Python + Flask",
-              "Data Visualization System",
-              "Automated Scheduling Engine"
+              "數據視覺化系統",
+              "自動化排程引擎"
             ],
             "results": {
               "timeline": {
@@ -845,50 +845,50 @@
         "title": "Collaboration Models",
         "items": [
           {
-            "title": "Consulting",
-            "target": "Suitable for: Companies looking to establish an AI transformation strategy",
+            "title": "Consulting Services",
+            "target": "Ideal for: Enterprises looking to establish an AI transformation strategy.",
             "features": [
               "Current State Diagnosis",
-              "Transformation Roadmap",
+              "Transformation Roadmap Planning",
               "Technology Selection Recommendations",
-              "Execution Guidance"
+              "Implementation Guidance"
             ],
-            "duration": "⏱ Timeline: 2-4 Weeks"
+            "duration": "⏱ Duration: 2-4 Weeks"
           },
           {
             "title": "Internal Training",
-            "target": "Suitable for: Teams looking to improve their AI collaboration skills",
+            "target": "Ideal for: Teams aiming to enhance AI collaboration skills.",
             "features": [
               "Hands-on Workshops",
-              "Tool Implementation Training",
+              "Practical Tool Instruction",
               "Process SOPs",
               "Case Study Exercises"
             ],
-            "duration": "⏱ Timeline: 1-2 Days"
+            "duration": "⏱ Duration: 1-2 Days"
           },
           {
             "title": "Project Development",
-            "target": "Suitable for: Need to quickly deliver a specific system",
+            "target": "Ideal for: Those needing rapid delivery of specific systems.",
             "features": [
-              "Complete System Development",
+              "Full System Development",
               "Technical Documentation",
-              "User Training",
+              "Operational Training",
               "Maintenance Support"
             ],
-            "duration": "⏱ Timeline: Starting from 3-7 Days"
+            "duration": "⏱ Duration: Starting from 3-7 Days"
           }
         ]
       },
       "cta": {
-        "title": "Free AI Consultation",
-        "description": "To better understand your needs, please contact me through the following methods:<br><small style=\"color: #94a3b8;\">Your information will only be used for this consultation assessment, and I will reply to you within 24 hours</small>",
+        "title": "Book a Free AI Diagnostic Session",
+        "description": "To better understand your needs, please contact me through the following methods:<br><small style=\"color: #94a3b8;\">Your information will only be used for this consultation assessment, and I will reply within 24 hours.</small>",
         "methods": [
           {
-            "text": "📧 Schedule a Consultation via Email",
+            "text": "📧 Email to Book a Diagnostic",
             "link": "mailto:cruz@thinkercafe.com"
           },
           {
-            "text": "💬 Contact me directly on LINE",
+            "text": "💬 Contact Directly via LINE",
             "link": "https://line.me/ti/p/~cruztang"
           },
           {
@@ -898,8 +898,8 @@
         ]
       },
       "footer": {
-        "copyright": "© 2025 ThinkerCafe (思考者咖啡有限公司) · Cruz Tang · All Rights Reserved",
-        "tagline": "AI-Native Developer · Systems Architect · Educator"
+        "copyright": "© 2025 ThinkerCafe (ThinkerCafe Co., Ltd.) · Cruz Tang · All Rights Reserved",
+        "tagline": "AI-Native Developer · System Architect · Educator"
       }
     }
   },
@@ -2714,19 +2714,19 @@
   "ko": {
     "hero": {
       "name": "탕밍쉬안 Cruz Tang",
-      "tagline": "AI 네이티브 리더 및 시스템 아키텍트",
-      "subtitle": "AI 도입을 통한 기업 혁신 · 300명 이상의 국제 팀 관리부터 AI 우선 솔루션 구축까지",
+      "tagline": "AI-Native 리더 및 시스템 아키텍트",
+      "subtitle": "AI 도입을 통한 기업 혁신 · 300명 이상의 글로벌 팀 관리부터 AI 우선 솔루션 구축까지",
       "stats": [
         "년 경력",
-        "관리 팀",
-        "설립 회사",
+        "팀 관리",
+        "창업 기업",
         "문제 해결"
       ]
     },
     "nav": {
       "about": "소개",
       "experience": "경력",
-      "featured": "주요 작품",
+      "featured": "주요 성과",
       "projects": "프로젝트",
       "contact": "연락처",
       "education": "학력",
@@ -2736,20 +2736,20 @@
     },
     "about": {
       "title": "소개",
-      "content": "저는 대규모 운영과 최첨단 AI 활용을 연결합니다. Topvan 그룹에서 중국, 필리핀, 말레이시아, 베트남 출신의 <strong>300명 이상의 팀원</strong>을 관리한 후, AI 교육과 기업 자동화를 확산시키기 위해 <strong>ThinkerCafe</strong>를 설립했습니다.<br><br>저는 <strong>국제 팀 리더십</strong>, <strong>AI/데이터 과학 기술 전문성</strong>, 그리고 <strong>10년 이상의 강의 경험</strong>을 결합한 독특한 배경을 가지고 있습니다. 저는 단순히 AI 솔루션을 적용하는 것을 넘어, 사람들이 더 스마트하게 일할 수 있도록 지원하는 시스템을 구축합니다.<br><br>현재 이러한 종합적인 전문성을 기업 AI 컨설팅 및 디지털 전환 프로젝트에 활용할 기회를 찾고 있습니다."
+      "content": "저는 대규모 사업 운영과 최신 AI 도입을 연결합니다. Topvan 그룹에서 중국, 필리핀, 말레이시아, 베트남 출신의 <strong>300명 이상 팀원</strong>들을 관리한 후, AI 교육과 기업 자동화를 보급하기 위해 <strong>ThinkerCafe</strong>를 설립했습니다.<br><br>저의 독특한 배경은 <strong>글로벌 팀 리더십</strong>, <strong>AI/데이터 과학 기술 전문성</strong>, 그리고 <strong>10년 이상의 강의 경력</strong>을 결합하고 있습니다. 저는 단순히 AI 솔루션을 도입하는 것을 넘어, 사람들이 더 스마트하게 일할 수 있도록 지원하는 시스템을 구축합니다.<br><br>현재 이러한 통합 전문성을 기업 AI 컨설팅 및 디지털 전환 프로젝트에 적용할 기회를 찾고 있습니다."
     },
     "experience": {
       "title": "경력",
       "jobs": [
         {
-          "title": "CEO & 창립자",
-          "company": "ThinkerCafe 思考者咖啡",
-          "date": "2023 - 현재",
+          "title": "대표이사 겸 창업자",
+          "company": "ThinkerCafe (싱커카페)",
+          "date": "2023년 - 현재",
           "points": [
-            "대만-미국 분산 팀을 이끌어 AI 교육 및 자동화 제품 개발",
-            "AI 커리큘럼 설계 (Personal OS, AI 커뮤니케이션, 비주얼/시스템 해킹 시리즈)",
+            "한국 및 미국 분산 팀을 이끌고 AI 교육 및 자동화 제품 개발",
+            "완전한 AI 교육 과정 설계 (Personal OS, AI 커뮤니케이션 기술, 시각/시스템 해커 시리즈)",
             "LINE Bot, 자동화 시스템 및 AI 생산성 도구 구축",
-            "기업 AI 도입 및 워크플로우 최적화 컨설팅 제공"
+            "기업 AI 도입 및 워크플로우 최적화 컨설팅 서비스 제공"
           ],
           "tech": [
             "Claude Code",
@@ -2764,13 +2764,13 @@
         },
         {
           "title": "운영 매니저",
-          "company": "Topvan Group 拓凡集團",
-          "date": "2020년 11월 - 2023년 12월 · 3년 2개월",
+          "company": "Topvan Group (토판 그룹)",
+          "date": "2020년 11월 - 2023년 12월 (3년 2개월)",
           "points": [
-            "10-12명으로 구성된 팀을 직접 리드하고, 중국, 필리핀, 말레이시아, 베트남 출신의 <strong>300명 이상의 팀원</strong>을 간접 관리",
-            "해외 파견: 두바이 Business Bay (4개월), 필리핀 클락 (1년 6개월), 마카티/BGC (1년)",
-            "Python 및 Telegram Bot API를 활용하여 데이터 기반 의사 결정 강화",
-            "재무 및 리테일 부서를 제외한 모든 운영 관리, 회장에게 직접 보고"
+            "10~12명으로 구성된 팀을 직접 이끌고, 중국, 필리핀, 말레이시아, 베트남 출신의 <strong>300명 이상 팀원</strong>들을 간접 관리했습니다.",
+            "해외 파견: 두바이 비즈니스 베이 (4개월), 필리핀 클라크 (1.5년), 마카티/BGC (1년)",
+            "Python과 Telegram Bot API를 활용하여 데이터 기반 의사결정 강화",
+            "재무 및 소매 부문을 제외한 모든 운영을 관리하며, 이사회 의장에게 직접 보고했습니다."
           ],
           "tech": [
             "Python",
@@ -2780,37 +2780,37 @@
           ]
         },
         {
-          "title": "R&D 부문 매니저",
+          "title": "연구 개발 부서 매니저",
           "company": "ICS GAME",
-          "date": "2019년 7월 - 2019년 11월 · 5개월",
+          "date": "2019년 7월 - 2019년 11월 (5개월)",
           "points": [
-            "팀 재건: 50% 이상의 직원 이탈에 직면하여 새로운 인재를 채용하고 성과 평가 시스템 개혁",
-            "Scrum 개발 프로세스 및 내부/외부 테스트 환경 도입",
-            "운영 이상 보고 시스템 개발, JIRA를 활용한 프로세스 자동화",
-            "iOS 인증서 문제 및 자체 제작 애플리케이션의 IP 차단 문제 해결"
+            "팀 재건: 50% 이상 직원 이탈에 직면하여 신규 인력 채용 및 성과 평가 시스템 개혁",
+            "Scrum 개발 프로세스 및 내외부 테스트 환경 구축",
+            "운영 이상 통보 시스템 개발 및 JIRA를 활용한 프로세스 자동화",
+            "iOS 인증서 문제 및 자체 개발 애플리케이션의 IP 차단 문제 해결"
           ]
         },
         {
-          "title": "데이터 과학 부문 리드",
+          "title": "데이터 과학 부서장",
           "company": "ICS GAME",
-          "date": "2018년 6월 - 2019년 6월 · 1년 1개월",
+          "date": "2018년 6월 - 2019년 6월 (1년 1개월)",
           "points": [
-            "데이터 과학 부문 신규 구축",
-            "한 달 이내에 Linux, Python, Docker, Jupyter, RStudio 기반의 완벽한 환경 구축",
-            "플레이어 이탈 예측 및 유지 전략 실행",
-            "어뷰징 플레이어 감지 및 분기별 운영 보고서 작성"
+            "데이터 과학 부서 신규 설립",
+            "한 달 이내에 Linux, Python, Docker, Jupyter, RStudio 등 완벽한 환경 구축",
+            "플레이어 이탈 예측 및 유지 전략 도입",
+            "차익 거래 플레이어 감지 및 분기별 운영 보고서 작성"
           ]
         },
         {
-          "title": "창립자",
-          "company": "Thinker Data Corporation 析客數據",
-          "date": "2016년 9월 - 2018년 6월 · 1년 10개월",
+          "title": "창업자",
+          "company": "Thinker Data Corporation (시커 데이터)",
+          "date": "2016년 9월 - 2018년 6월 (1년 10개월)",
           "points": [
-            "프로젝트 요구 사항에 따라 파트타임 팀을 구성하는 프리랜서 회사",
-            "Sanlih E-Television Vidol: 웹 드라마 추천 시스템 개발",
-            "Chunghwa Telecom: 빅데이터 Hadoop 클러스터 컨설팅 및 유지 관리 제공",
-            "E.SUN Bank: 크로스 디바이스 회원 계정 통합 메커니즘 구현",
-            "ITRI 산업 아카데미: 산업 인력 역량 평가 및 글로벌 기업 채용 데이터 분석"
+            "프로젝트 요구사항에 따라 파트타임 팀을 구성하는 프리랜서 회사 운영",
+            "산리 TV Vidol: 웹 드라마 추천 시스템 개발",
+            "중화텔레콤: 빅데이터 Hadoop 클러스터 컨설팅 및 운영 지원",
+            "위산 은행: 크로스 디바이스 회원 통합 메커니즘 도입",
+            "공업기술연구원 산업 아카데미: 산업 인력 역량 평가 및 글로벌 기업 채용 정보 데이터 분석"
           ],
           "tech": [
             "Big Data",
@@ -2821,13 +2821,13 @@
           ]
         },
         {
-          "title": "빅데이터 기술 개발 엔지니어",
-          "company": "Coretronic 中強光電",
-          "date": "2014년 7월 - 2015년 11월 · 1년 5개월",
+          "title": "빅데이터 기술 연구 개발 엔지니어",
+          "company": "Coretronic (중창광전)",
+          "date": "2014년 7월 - 2015년 11월 (1년 5개월)",
           "points": [
             "데이터 수집 프로세스 및 ETL 엔지니어링 설계",
-            "통계적 방법을 활용한 데이터 분석 및 의사 결정 지원",
-            "질병 환자 식단 의미 분석: 감정 어휘 데이터베이스 구축, 평가 모델 개발, 각 질병에 대한 상위 5개 권장/피해야 할 음식 자동 보고"
+            "통계적 방법을 활용한 데이터 분석 및 의사결정 지원",
+            "질병 환자 식단 의미 분석: 감성 사전 구축, 평점 모델 개발, 각 질병별 권장/회피 상위 5개 식단 자동 보고"
           ],
           "tech": [
             "Python",
@@ -2840,15 +2840,15 @@
       ]
     },
     "featured": {
-      "title": "주요 작품",
-      "subtitle": "AI-Native 개발 및 빠른 결과 도출 능력 입증",
+      "title": "주요 성과",
+      "subtitle": "AI-Native 개발 및 신속한 결과물 제공 능력 입증",
       "projects": [
         {
           "name": "LINE Bot 예약 시스템",
           "emoji": "🤖",
-          "tagline": "48시간 만에 구축된 병원 예약 관리 시스템",
-          "highlight": "48시간 만에 구축 | 완전 자동화 프로세스 | 고객 만족도 95% 이상",
-          "description": "재활 병원을 위한 완벽한 LINE Bot 예약 시스템을 구축하여 예약 프로세스 시간을 70% 단축하고 고객 만족도를 크게 향상시켰습니다. Google Calendar와 통합하여 실시간 예약 가능 시간 조회를 구현했습니다.",
+          "tagline": "48시간 만에 구축한 병원 예약 관리 시스템",
+          "highlight": "48시간 내 구축 | 완전 자동화 프로세스 | 고객 만족도 95% 이상",
+          "description": "재활 병원을 위한 완전한 LINE Bot 예약 시스템을 구축하여 예약 처리 시간을 70% 단축하고 고객 만족도를 크게 향상시켰습니다. Google Calendar를 통합하여 실시간 예약 가능 시간 조회를 구현했습니다.",
           "tech": [
             "Claude Code",
             "Supabase",
@@ -2865,8 +2865,8 @@
           "name": "ThreadsBot 자동화",
           "emoji": "⚙️",
           "tagline": "AI 기반 소셜 미디어 자동화 시스템",
-          "highlight": "다중 Agent 협업 | 게시 빈도 300% 향상",
-          "description": "지능형 소셜 미디어 자동화 시스템을 개발하여 여러 AI Agent가 협업하도록 했습니다. 그 결과 상호 작용률이 3배 향상되었고 수동 작업 시간이 80% 단축되었으며 자동 콘텐츠 분석 및 일정 관리를 통해 소셜 미디어 운영을 최적화했습니다.",
+          "highlight": "다중 Agent 협업 | 게시물 빈도 300% 증가",
+          "description": "여러 AI Agent가 협력하는 지능형 소셜 미디어 자동화 시스템을 개발했습니다. 상호작용률을 3배 높이고 수동 작업 시간을 80% 단축했으며, 자동 콘텐츠 분석 및 스케줄링을 통해 소셜 미디어 운영을 최적화했습니다.",
           "tech": [
             "Claude API",
             "MCP",
@@ -2880,11 +2880,11 @@
           }
         },
         {
-          "name": "Personal OS 과정",
+          "name": "Personal OS 교육 과정",
           "emoji": "📚",
-          "tagline": "AI 시대의 개인 운영 체제 과정",
-          "highlight": "100% 수강생이 AI 시스템 구축 성공 | 실전 중심",
-          "description": "비기술 분야 전문가가 자신만의 AI 기반 개인 운영 체제를 구축할 수 있도록 돕는 완벽한 과정 시리즈를 설계하고 강의합니다. 수강생은 Claude Code, MCP 등 AI 도구를 활용하여 워크플로우를 자동화하고 생산성을 향상시키는 방법을 배웁니다.",
+          "tagline": "AI 시대의 개인 운영 체제 교육 과정",
+          "highlight": "수강생 100% AI 시스템 구축 성공 | 실전 중심",
+          "description": "비기술 배경 전문가들이 AI 기반 개인 운영 체제를 구축할 수 있도록 돕는 완전한 교육 과정을 설계하고 가르쳤습니다. 수강생들은 Claude Code, MCP 등 AI 도구를 활용하여 워크플로우를 자동화하고 생산성을 향상시키는 방법을 학습합니다.",
           "tech": [
             "Claude Code",
             "MCP",
@@ -2905,19 +2905,19 @@
         {
           "school": "국립 타이베이 상업대학교",
           "degree": "석사",
-          "major": "데이터 및 의사 결정 과학",
+          "major": "데이터 및 의사결정 과학과",
           "date": "2013년 6월",
           "location": "타이베이, 대만",
           "coursework": [
-            "다기준 의사 결정",
+            "다기준 의사결정",
             "비즈니스 인텔리전스",
             "알고리즘"
           ]
         },
         {
-          "school": "스신대학교",
+          "school": "세신대학교",
           "degree": "학사",
-          "major": "재무 금융",
+          "major": "재무금융학과",
           "date": "2011년 6월",
           "location": "타이베이, 대만",
           "coursework": [
@@ -2934,7 +2934,7 @@
       "lectures": [
         {
           "title": "R 언어 텍스트 마이닝 실전",
-          "organization": "정보통신산업진흥원 (NIPA)",
+          "organization": "정보산업진흥회",
           "type": "워크숍"
         },
         {
@@ -2943,12 +2943,12 @@
           "type": "기업 교육"
         },
         {
-          "title": "데이터 객체, 객체 지향 프로그래밍 및 코딩 기술",
+          "title": "데이터 객체, 객체 지향 프로그래밍 및 코딩 기법",
           "organization": "2013 R Taiwan 컨퍼런스",
           "type": "컨퍼런스 강연"
         },
         {
-          "title": "Facebook 마이닝을 사용하여 좋아하는 사람 알아보기",
+          "title": "Facebook 데이터 마이닝을 통한 관심 인물 분석",
           "organization": "OpenFoundry",
           "type": "기술 공유"
         },
@@ -2963,7 +2963,7 @@
       "title": "기술 스택",
       "philosophy": {
         "title": "기술 철학",
-        "content": "저는 '얼마나 많은 언어를 구사하는가'가 아니라 '얼마나 빨리 문제를 해결할 수 있는가'를 추구합니다. AI 협업 시대에는 모든 코드를 직접 작성하는 것이 중요한 것이 아니라, <strong>1) 어떤 도구를 조합해야 하는지 알고</strong> <strong>2) 유지 관리 가능한 시스템 아키텍처를 설계하고</strong> <strong>3) AI를 개발 파트너로 활용하는 방법을 이해하는 것</strong>이 중요합니다."
+        "content": "저는 '얼마나 많은 언어를 아는지'보다 '얼마나 빠르게 문제를 해결할 수 있는지'를 추구합니다. AI 협업 시대에는 모든 코드를 직접 작성하는 것보다 다음 세 가지가 중요합니다. <strong>1) 어떤 도구 조합을 사용해야 하는지 아는 것</strong> <strong>2) 유지보수 가능한 시스템 아키텍처를 설계할 수 있는 것</strong> <strong>3) AI를 개발 파트너로 활용하는 방법을 이해하는 것</strong>"
       },
       "layers": [
         {
@@ -2995,7 +2995,7 @@
         },
         {
           "level": 2,
-          "name": "최신 클라우드 인프라",
+          "name": "현대 클라우드 인프라",
           "description": "배포 및 데이터 기반",
           "categories": [
             {
@@ -3035,13 +3035,13 @@
         {
           "level": 3,
           "name": "프로그래밍 언어 및 프레임워크",
-          "description": "다양한 패러다임 개발 능력",
+          "description": "다중 패러다임 개발 능력",
           "categories": [
             {
-              "name": "주력 언어",
+              "name": "주요 언어",
               "items": [
                 "Python (AI 협업, 데이터 과학, 자동화)",
-                "JavaScript (프론트엔드 상호 작용, Apps Script)",
+                "JavaScript (프론트엔드 인터랙션, Apps Script)",
                 "R (데이터 분석 및 시각화)"
               ]
             },
@@ -3064,15 +3064,15 @@
         },
         {
           "level": 4,
-          "name": "데이터 과학 도구 체인",
-          "description": "분석 및 머신 러닝 능력",
+          "name": "데이터 과학 툴체인",
+          "description": "분석 및 머신러닝 능력",
           "categories": [
             {
-              "name": "머신 러닝",
+              "name": "머신러닝",
               "items": [
                 "회귀 모델",
-                "의사 결정 트리",
-                "신경망",
+                "의사결정 트리",
+                "인공신경망",
                 "클러스터링"
               ]
             },
@@ -3090,7 +3090,7 @@
         {
           "level": 5,
           "name": "협업 및 프로젝트 관리",
-          "description": "팀 조정 및 결과 도출",
+          "description": "팀 조율 및 결과물 제공",
           "categories": [
             {
               "name": "버전 관리",
@@ -3128,21 +3128,21 @@
             "시스템 설계"
           ],
           "points": [
-            "완벽한 AI 커리큘럼 체계 (Personal OS, 5개 이상의 시리즈 과정)",
-            "AI 시대에 진입하는 비기술 전문가를 위한 서비스",
-            "콘텐츠에서 결과 도출까지 완벽한 생태계 구축",
-            "실용적이고 적용 가능한 시스템 강조"
+            "완전한 AI 교육 체계 (Personal OS, 5개 이상 시리즈 과정)",
+            "AI 시대를 맞이하는 비기술 전문직 종사자 지원",
+            "콘텐츠부터 결과물 제공까지 완전한 생태계 구축",
+            "실용적이고 실행 가능한 시스템 강조"
           ]
         },
         {
           "title": "LINE Bot 자동화 시스템",
           "tags": [
-            "기업 적용",
+            "기업 애플리케이션",
             "자동화"
           ],
           "points": [
-            "물리 치료 병원 예약 시스템",
-            "예약 프로세스 시간 70% 단축",
+            "물리치료 병원 예약 시스템",
+            "예약 처리 시간 70% 단축",
             "Google Calendar 통합",
             "고객 만족도 향상"
           ]
@@ -3156,8 +3156,8 @@
           "points": [
             "개인 AI 강화 시스템",
             "기억, 프롬프트 라이브러리, 생산성 도구 통합",
-            "매일 통찰력 및 목표 추적",
-            "게임화된 참여 시스템"
+            "일일 인사이트 및 목표 추적",
+            "게이미피케이션 참여 시스템"
           ]
         },
         {
@@ -3170,7 +3170,7 @@
             "AI 기반 소셜 미디어 자동화",
             "참여도 3배 향상",
             "운영 시간 80% 단축",
-            "자동 콘텐츠 분석 및 일정 관리"
+            "자동 콘텐츠 분석 및 스케줄링"
           ]
         },
         {
@@ -3182,8 +3182,8 @@
           "points": [
             "AI 기반 가정 관리 시스템",
             "교육 추적 (Ryan OS)",
-            "노인 간호 조정 (Mary OS)",
-            "데이터 기반 가정 의사 결정"
+            "고령자 돌봄 조율 (Mary OS)",
+            "데이터 기반 가정 의사결정"
           ]
         },
         {
@@ -3194,36 +3194,36 @@
           ],
           "points": [
             "필리핀 다국적 팀",
-            "24/7 운영 조정",
+            "24/7 운영 조율",
             "데이터 기반 KPI 시스템",
-            "자동화를 통해 40% 비용 절감"
+            "자동화를 통한 40% 비용 절감"
           ]
         }
       ]
     },
     "cta": {
-      "title": "함께 만들어갈 것을 구상해 봅시다",
-      "subtitle": "현재 기업 고객과 협력하여 AI 도입, 디지털 전환 및 솔루션 아키텍처를 구축할 기회를 모색하고 있습니다.",
+      "title": "함께 만들어 나갈 기회를 찾습니다.",
+      "subtitle": "현재 기업 고객과 AI 도입, 디지털 전환 및 솔루션 아키텍처 협력 기회를 모색하고 있습니다.",
       "location": "원격 근무 가능 · 타이베이/타이중/타이난 · 월 70-100K TWD",
       "buttons": [
-        "연락하기",
+        "문의하기",
         "ThinkerCafe 방문",
         "LinkedIn 프로필"
       ]
     },
     "footer": {
-      "built": "정성껏 제작 · 영감을 주는 디자인 · 2025년 1월 업데이트",
-      "quote": "기술이 인간성을 되찾을 때, 지혜는 따뜻함을 찾습니다."
+      "built": "정성을 담아 제작 · 영감을 주는 디자인 · 2025년 1월 업데이트",
+      "quote": "기술이 인간으로 회귀할 때, 지혜는 온기를 찾습니다."
     },
     "enterprise": {
       "hero": {
-        "title": "기업 AI 전환의 가장 큰 병목 현상은?",
-        "subtitle": "기술이 아닌 실행 속도입니다.",
-        "valueProposition": "저는 AI 협업 개발을 통해 기존 팀이 3개월 걸릴 시스템을 3-7일 만에 제공합니다.",
-        "ctaButton": "무료 AI 진단 예약",
+        "title": "기업 AI 전환의 가장 큰 병목 현상은 무엇일까요?",
+        "subtitle": "기술이 아니라 실행 속도입니다.",
+        "valueProposition": "저는 AI 협업 개발을 통해 기존 팀의 3개월치 시스템을 3~7일 만에 제공합니다.",
+        "ctaButton": "무료 AI 진단 예약하기",
         "authorInfo": {
           "name": "Cruz Tang",
-          "title": "ThinkerCafe 창립자 & CEO",
+          "title": "ThinkerCafe 창업자 & CEO",
           "roles": [
             "AI-Native 개발자",
             "시스템 아키텍트",
@@ -3236,20 +3236,20 @@
         "items": [
           {
             "icon": "<i class=\"fas fa-graduation-cap\"></i>",
-            "title": "전문 자격",
+            "title": "전문 인증",
             "lines": [
               "iPAS AI",
-              "응용 기획자",
+              "애플리케이션 플래너",
               "인증 출제 위원",
-              "(산업기술연구원)"
+              "(공업기술연구원)"
             ]
           },
           {
             "icon": "<i class=\"fas fa-users\"></i>",
             "title": "실전 경험",
             "lines": [
-              "300명 이상 관리",
-              "다국적 팀",
+              "300명 이상",
+              "글로벌 팀 관리",
               "Topvan Group",
               "필리핀/중국/말레이시아/베트남"
             ]
@@ -3260,53 +3260,53 @@
             "lines": [
               "10년 이상",
               "강의 경험",
-              "산업기술연구원/정보통신산업진흥원",
+              "공업기술연구원/정보산업진흥회",
               "/문화대학교"
             ]
           }
         ]
       },
       "problemStatement": {
-        "title": "다음과 같은 문제에 직면하고 있습니까?",
-        "ctaButton": "제가 어떻게 해결했는지 확인해 보세요 ↓",
+        "title": "귀사도 이러한 문제에 직면해 있습니까?",
+        "ctaButton": "제가 어떻게 해냈는지 확인하세요 ↓",
         "comparison": [
           {
             "label": "<i class=\"fas fa-clock\"></i> 개발 주기",
-            "traditional": "3-6개월",
-            "aiNative": "3-7일 빠른 결과 도출"
+            "traditional": "3~6개월",
+            "aiNative": "3~7일 내 신속한 결과물 제공"
           },
           {
             "label": "<i class=\"fas fa-dollar-sign\"></i> 비용",
-            "traditional": "3천만 - 1억원",
-            "aiNative": "비용 60-70% 절감"
+            "traditional": "30만~100만 TWD",
+            "aiNative": "비용 60~70% 절감"
           },
           {
             "label": "<i class=\"fas fa-laptop-code\"></i> 팀 규모",
-            "traditional": "다수의 팀 필요",
-            "aiNative": "1-2명으로 완료 가능"
+            "traditional": "다수 인력 필요",
+            "aiNative": "1~2명으로 완료 가능"
           },
           {
             "label": "<i class=\"fas fa-rotate\"></i> 반복 속도",
-            "traditional": "수정 느림, 반복 어려움",
-            "aiNative": "즉시 수정 및 테스트, 빠른 반복"
+            "traditional": "수정 및 반복 개발 어려움",
+            "aiNative": "즉시 수정 및 테스트, 빠른 반복 개발"
           },
           {
-            "label": "<i class=\"fas fa-book\"></i> 유지 관리",
-            "traditional": "문서 부족, 유지 관리 어려움",
-            "aiNative": "자동으로 완벽한 문서 생성"
+            "label": "<i class=\"fas fa-book\"></i> 유지보수성",
+            "traditional": "문서 부족, 유지보수 어려움",
+            "aiNative": "완전한 문서 자동 생성"
           }
         ]
       },
       "caseStudies": {
         "title": "실제 사례",
-        "ctaText": "유사한 요구 사항이 있으신가요?",
-        "ctaButton": "무료 진단 예약",
+        "ctaText": "유사한 요구사항이 있으시다면...",
+        "ctaButton": "무료 진단 예약하기",
         "featured": {
-          "title": "물리 치료 병원 LINE Bot 예약 시스템",
+          "title": "물리치료 병원 LINE Bot 예약 시스템",
           "painPoints": [
-            "매일 2시간 동안 수동으로 예약 처리",
-            "고객이 전화 연결에 어려움",
-            "체계적인 관리 시스템 부재"
+            "매일 2시간 수동 예약 처리",
+            "고객 전화 연결 어려움",
+            "체계적인 관리 부재"
           ],
           "results": [
             "완전 자동 예약/취소/알림",
@@ -3314,8 +3314,8 @@
             "Google Calendar 통합"
           ],
           "timeline": {
-            "traditional": "3개월 + 3천만원",
-            "actual": "3일 + 1천만원"
+            "traditional": "3개월 + 30만 TWD",
+            "actual": "3일 + 10만 TWD"
           },
           "buttons": [
             "데모 보기",
@@ -3324,153 +3324,336 @@
         },
         "others": [
           {
-            "title": "교육 기관 과정 관리 자동화",
+            "title": "교육 기관 강의 관리 자동화",
             "traditional": "6주 개발",
-            "actual": "7일 완료",
-            "button": "자세히 알아보기"
+            "actual": "7일 만에 완료",
+            "button": "더 알아보기"
           },
           {
             "title": "기업 내부 교육: AI 협업 개발 실전",
             "company": "XX 회사 전 직원 교육",
             "rating": "수강생 만족도: 4.8/5.0",
-            "button": "수강생 후기"
+            "button": "수강생 피드백"
           }
         ]
       },
       "methodology": {
-        "title": "저의 업무 방식",
-        "subtitle": "'끝나면 끝'이 아니라 지속 가능한 운영 시스템 구축",
+        "title": "저의 작업 방식",
+        "subtitle": "'일회성 작업'이 아닌, 지속 가능한 시스템 구축",
         "steps": [
           {
             "number": "1",
             "title": "진단",
-            "duration": "15-30분",
+            "duration": "15~30분",
             "items": [
               "심층 인터뷰",
-              "문제점 분석"
+              "페인 포인트 분석"
             ]
           },
           {
             "number": "2",
             "title": "설계",
-            "duration": "1-2일",
+            "duration": "1~2일",
             "items": [
               "시스템 아키텍처",
-              "기술 선택"
+              "기술 스택 선정"
             ]
           },
           {
             "number": "3",
             "title": "개발",
-            "duration": "3-5일",
+            "duration": "3~5일",
             "items": [
               "AI 협업",
-              "빠른 반복"
+              "빠른 반복 개발"
             ]
           },
           {
             "number": "4",
-            "title": "결과 도출",
+            "title": "제공",
             "duration": "당일",
             "items": [
-              "배포 및 문서화",
+              "배포 & 문서화",
               "사용 교육"
             ]
           }
         ],
         "support": [
-          "완벽한 기술 문서",
+          "완전한 기술 문서",
           "운영 SOP",
-          "유지 관리 지침",
-          "후속 지원"
+          "유지보수 가이드",
+          "사후 지원"
         ]
       },
       "collaborationModels": {
-        "title": "협업 방식",
+        "title": "협력 방식",
         "items": [
           {
             "title": "컨설팅",
-            "target": "AI 전환 전략을 수립하려는 기업",
+            "target": "AI 전환 전략 수립을 원하는 기업",
             "deliverables": [
-              "현재 상황 진단",
-              "전환 경로 계획",
-              "기술 선택 제안",
-              "실행 지도"
+              "현황 진단",
+              "전환 로드맵 기획",
+              "기술 스택 선정 제안",
+              "실행 가이드"
             ],
-            "timeline": "2-4주"
+            "timeline": "2~4주"
           },
           {
             "title": "내부 교육",
-            "target": "팀의 AI 협업 능력을 향상시키려는 기업",
+            "target": "팀의 AI 협업 능력 향상을 원하는 기업",
             "deliverables": [
               "실전 워크숍",
               "도구 실습 교육",
               "프로세스 SOP",
-              "사례 연습"
+              "사례 실습"
             ],
-            "timeline": "1-2일"
+            "timeline": "1~2일"
           },
           {
             "title": "프로젝트 개발",
-            "target": "특정 시스템을 빠르게 구축해야 하는 기업",
+            "target": "특정 시스템의 신속한 결과물 제공이 필요한 기업",
             "deliverables": [
-              "완벽한 시스템 개발",
+              "완전한 시스템 개발",
               "기술 문서",
               "운영 교육",
-              "유지 관리 지원"
+              "유지보수 지원"
             ],
-            "timeline": "3-7일 부터"
+            "timeline": "최소 3~7일"
           }
         ]
       },
       "contactForm": {
         "title": "무료 AI 진단 예약",
-        "subtitle": "약 3-5분 소요됩니다.",
+        "subtitle": "작성하는 데 약 3~5분 소요됩니다.",
         "note": "귀하의 정보는 이번 상담 평가에만 사용됩니다.",
-        "submitButton": "제출 → 24시간 이내에 답변드리겠습니다.",
+        "submitButton": "제출하기 → 24시간 이내에 회신드리겠습니다.",
         "googleFormUrl": ""
+      }
+    },
+    "portfolio": {
+      "hero": {
+        "title": "기업 AI 전환의 가장 큰 병목 현상은 무엇일까요?<br>기술이 아니라 실행 속도입니다.",
+        "subtitle": "저는 AI 협업 개발을 통해 기존 팀의 3개월치 시스템을 3~7일 만에 제공합니다.",
+        "role": "Cruz Tang · ThinkerCafe 창업자 & CEO<br>AI-Native 개발자 · 시스템 아키텍트 · 교육자",
+        "cta": "무료 AI 진단 예약하기"
+      },
+      "nav": {
+        "about": "소개",
+        "cases": "사례",
+        "services": "협력 방식",
+        "contact": "연락처"
+      },
+      "trust": {
+        "items": [
+          {
+            "icon": "🎓",
+            "title": "전문 인증",
+            "description": "iPAS AI 애플리케이션 플래너<br>인증 출제 위원 (공업기술연구원)"
+          },
+          {
+            "icon": "🌏",
+            "title": "실전 경험",
+            "description": "300명 이상 글로벌 팀 관리<br>Topvan Group 필리핀/중국/말레이시아/베트남"
+          },
+          {
+            "icon": "👨‍🏫",
+            "title": "강의 경력",
+            "description": "10년 이상 강의 경험<br>공업기술연구원/정보산업진흥회/문화대학교"
+          }
+        ]
+      },
+      "comparison": {
+        "title": "귀사도 이러한 문제에 직면해 있습니까?",
+        "subtitle": "아직도 기존 방식으로 개발하고 계신가요? <strong>기존 팀의 3개월치 작업을 7일 만에 완료한 방법</strong>을 확인해 보세요.",
+        "items": [
+          {
+            "label": "기존 개발 방식",
+            "before": "개발 주기 3~6개월",
+            "afterLabel": "AI 협업",
+            "after": "3~7일 내 신속한 결과물 제공"
+          },
+          {
+            "label": "기존 비용",
+            "before": "30만~100만 TWD 투자",
+            "afterLabel": "AI 협업",
+            "after": "비용 60~70% 절감"
+          },
+          {
+            "label": "기존 팀",
+            "before": "다수 인력 협업 필요",
+            "afterLabel": "AI 협업",
+            "after": "1~2명으로 완료 가능"
+          },
+          {
+            "label": "반복 개발의 어려움",
+            "before": "수정 및 반복 개발 어려움, 문서 부족",
+            "afterLabel": "AI 협업",
+            "after": "즉시 수정 및 테스트, 자동 문서화"
+          }
+        ]
+      },
+      "cases": {
+        "title": "실제 사례",
+        "items": [
+          {
+            "title": "물리치료 병원 LINE Bot 예약 시스템",
+            "painPoints": [
+              "매일 2시간 수동 예약 처리",
+              "고객 전화 연결 어려움",
+              "체계적인 관리 부재"
+            ],
+            "deliverables": [
+              "완전 자동 예약/취소/알림",
+              "24/7 실시간 응답",
+              "Google Calendar 통합"
+            ],
+            "tech": [
+              "LINE Messaging API",
+              "Google Calendar API",
+              "Supabase 데이터베이스"
+            ],
+            "results": {
+              "timeline": {
+                "before": "3개월",
+                "after": "3일"
+              },
+              "cost": {
+                "before": "30만 TWD",
+                "after": "10만 TWD"
+              },
+              "efficiency": "수동 작업 시간 90% 절감"
+            }
+          },
+          {
+            "title": "교육 기관 강의 관리 자동화",
+            "painPoints": [
+              "강의 스케줄 수동 관리",
+              "수강생 데이터 분산",
+              "보고서 작성 시간 및 노력 소모"
+            ],
+            "deliverables": [
+              "자동 강의 스케줄링 및 알림 시스템",
+              "수강생 데이터 통합 대시보드",
+              "원클릭 분석 보고서 생성"
+            ],
+            "tech": [
+              "Python + Flask",
+              "데이터 시각화 시스템",
+              "자동화 스케줄링 엔진"
+            ],
+            "results": {
+              "timeline": {
+                "before": "6주",
+                "after": "7일"
+              },
+              "efficiency": "관리 시간 80% 단축",
+              "satisfaction": "4.8/5.0"
+            }
+          }
+        ]
+      },
+      "services": {
+        "title": "협력 방식",
+        "items": [
+          {
+            "title": "컨설팅",
+            "target": "적합 대상: AI 전환 전략 수립을 원하는 기업",
+            "features": [
+              "현황 진단",
+              "전환 로드맵 기획",
+              "기술 스택 선정 제안",
+              "실행 가이드"
+            ],
+            "duration": "⏱ 소요 기간: 2~4주"
+          },
+          {
+            "title": "내부 교육",
+            "target": "적합 대상: 팀의 AI 협업 능력 향상을 원하는 기업",
+            "features": [
+              "실전 워크숍",
+              "도구 실습 교육",
+              "프로세스 SOP",
+              "사례 실습"
+            ],
+            "duration": "⏱ 소요 기간: 1~2일"
+          },
+          {
+            "title": "프로젝트 개발",
+            "target": "적합 대상: 특정 시스템의 신속한 결과물 제공이 필요한 기업",
+            "features": [
+              "완전한 시스템 개발",
+              "기술 문서",
+              "운영 교육",
+              "유지보수 지원"
+            ],
+            "duration": "⏱ 소요 기간: 최소 3~7일"
+          }
+        ]
+      },
+      "cta": {
+        "title": "무료 AI 진단 예약",
+        "description": "귀하의 요구사항을 더 잘 이해하기 위해 아래 방법으로 저에게 연락해 주십시오.<br><small style=\"color: #94a3b8;\">귀하의 정보는 이번 상담 평가에만 사용되며, 24시간 이내에 회신드리겠습니다.</small>",
+        "methods": [
+          {
+            "text": "📧 이메일로 진단 예약",
+            "link": "mailto:cruz@thinkercafe.com"
+          },
+          {
+            "text": "💬 LINE으로 직접 문의",
+            "link": "https://line.me/ti/p/~cruztang"
+          },
+          {
+            "text": "📞 전화: +886 937 431 998",
+            "link": "tel:+886937431998"
+          }
+        ]
+      },
+      "footer": {
+        "copyright": "© 2025 ThinkerCafe (싱커카페 유한회사) · Cruz Tang · All Rights Reserved",
+        "tagline": "AI-Native 개발자 · 시스템 아키텍트 · 교육자"
       }
     }
   },
   "ar": {
     "hero": {
-      "name": "تانغ مينغ شوان كروز تانغ",
-      "tagline": "رائد ومصمم أنظمة أصيل في مجال الذكاء الاصطناعي (AI-Native)",
-      "subtitle": "تحويل الشركات من خلال تطبيقات الذكاء الاصطناعي العملية · من إدارة أكثر من 300 فرد في فريق دولي إلى بناء حلول تعطي الأولوية للذكاء الاصطناعي",
+      "name": "تومينغ شوان كروز تانغ Cruz Tang",
+      "tagline": "قائد في مجال AI-Native ومهندس أنظمة",
+      "subtitle": "تحويل الشركات من خلال تطبيقات AI · من إدارة أكثر من 300 فريق دولي إلى بناء حلول تعتمد على AI أولاً",
       "stats": [
-        "سنوات الخبرة",
-        "فريق الإدارة",
-        "شركة مؤسسة",
-        "مشكلة تم حلها"
+        "سنوات خبرة",
+        "فرق مُدارة",
+        "شركات تأسست",
+        "مشكلات تم حلها"
       ]
     },
     "nav": {
-      "about": "نبذة عني",
-      "experience": "الخبرة العملية",
+      "about": "حول",
+      "experience": "الخبرة المهنية",
       "featured": "أعمال مميزة",
-      "projects": "مشاريع",
-      "contact": "معلومات الاتصال",
-      "education": "الخلفية التعليمية",
+      "projects": "المشاريع",
+      "contact": "اتصل بي",
+      "education": "التعليم",
       "teaching": "الخبرة التدريسية",
       "skills": "المهارات التقنية",
-      "portfolio": "أعمالي"
+      "portfolio": "معرض الأعمال"
     },
     "about": {
-      "title": "نبذة عني",
-      "content": "أربط بين العمليات واسعة النطاق والتطبيقات المتطورة للذكاء الاصطناعي. بعد إدارة <strong>فريق يضم أكثر من 300 عضو</strong> من الصين والفلبين وماليزيا وفيتنام في مجموعة Topvan، أسست <strong>ThinkerCafe</strong> لنشر ثقافة الذكاء الاصطناعي وأتمتة الشركات.<br><br>تجمع خلفيتي الفريدة بين <strong>قيادة الفرق الدولية</strong>، و<strong>العمق التقني في مجال الذكاء الاصطناعي/علم البيانات</strong>، و<strong>خبرة تدريسية تزيد عن 10 سنوات</strong>. أنا لا أقوم فقط بتطبيق حلول الذكاء الاصطناعي، بل أقوم ببناء أنظمة تمكن الأفراد من العمل بذكاء أكبر.<br><br>أسعى حاليًا إلى فرص للاستفادة من هذه الخبرة المتكاملة في مجال استشارات الذكاء الاصطناعي للشركات ومشاريع التحول الرقمي."
+      "title": "حول",
+      "content": "أربط العمليات التشغيلية واسعة النطاق بتطبيقات AI المتطورة. بعد إدارة <strong>أكثر من 300 عضو فريق</strong> من الصين والفلبين وماليزيا وفيتنام في مجموعة Topvan، أسست <strong>ThinkerCafe</strong> لنشر تعليم AI وأتمتة الشركات.<br><br>تجمع خلفيتي الفريدة بين <strong>قيادة الفرق الدولية</strong>، و<strong>العمق التقني في AI/علم البيانات</strong>، و<strong>أكثر من 10 سنوات من الخبرة التدريسية</strong>. أنا لا أطبق حلول AI فحسب، بل أبني أنظمة تمكّن الأفراد من العمل بذكاء أكبر.<br><br>أبحث حالياً عن فرص لتقديم هذه الخبرات المتكاملة في استشارات AI للشركات ومشاريع التحول الرقمي."
     },
     "experience": {
       "title": "المسيرة المهنية",
       "jobs": [
         {
           "title": "الرئيس التنفيذي والمؤسس",
-          "company": "ThinkerCafe 思考者咖啡",
+          "company": "ThinkerCafe",
           "date": "2023 - حتى الآن",
           "points": [
-            "قيادة فريق أمريكي تايواني موزع لتطوير منتجات تعليم الذكاء الاصطناعي والأتمتة",
-            "تصميم دورات متكاملة في مجال الذكاء الاصطناعي (نظام التشغيل الشخصي، فن التواصل بالذكاء الاصطناعي، سلسلة اختراق الأنظمة/المرئيات)",
-            "إنشاء LINE Bot وأنظمة أتمتة وأدوات إنتاجية تعتمد على الذكاء الاصطناعي",
-            "تقديم خدمات استشارية للشركات في مجال تطبيقات الذكاء الاصطناعي العملية وتحسين سير العمل"
+            "قيادة فرق موزعة بين تايوان والولايات المتحدة لتطوير منتجات تعليم AI والأتمتة.",
+            "تصميم مناهج AI متكاملة (Personal OS، مهارات التواصل عبر AI، سلسلة Visual/System Hacker).",
+            "بناء LINE Bot، أنظمة أتمتة، وأدوات إنتاجية تعتمد على AI.",
+            "تقديم خدمات استشارية للشركات في تطبيق AI وتحسين سير العمل."
           ],
           "tech": [
             "Claude Code",
@@ -3485,13 +3668,13 @@
         },
         {
           "title": "مدير العمليات",
-          "company": "Topvan Group 拓凡集團",
-          "date": "نوفمبر 2020 - ديسمبر 2023 · 3 سنوات وشهران",
+          "company": "Topvan Group",
+          "date": "نوفمبر 2020 - ديسمبر 2023 · سنتان وشهران",
           "points": [
-            "قيادة مباشرة لفريق مكون من 10-12 فردًا، وإدارة غير مباشرة لأكثر من <strong>300 عضو</strong> من الصين والفلبين وماليزيا وفيتنام",
-            "مهام خارجية: دبي Business Bay (4 أشهر)، كلارك، الفلبين (1.5 سنة)، ماكاتي/BGC (سنة واحدة)",
-            "استخدام Python و Telegram Bot API لتعزيز اتخاذ القرارات المستندة إلى البيانات",
-            "إدارة جميع العمليات باستثناء الشؤون المالية والتجزئة، وتقديم التقارير مباشرة إلى رئيس مجلس الإدارة"
+            "قيادة مباشرة لفريق مكون من 10-12 فردًا، وإدارة غير مباشرة <strong>لأكثر من 300 عضو</strong> من الصين والفلبين وماليزيا وفيتنام.",
+            "مهام خارجية: دبي، الخليج التجاري (4 أشهر)؛ كلارك، الفلبين (1.5 سنة)؛ ماكاتي/BGC (سنة واحدة).",
+            "تعزيز اتخاذ القرارات القائمة على البيانات باستخدام Python و Telegram Bot API.",
+            "إدارة جميع العمليات باستثناء الشؤون المالية والتجزئة، وتقديم التقارير مباشرة إلى رئيس مجلس الإدارة."
           ],
           "tech": [
             "Python",
@@ -3505,33 +3688,33 @@
           "company": "ICS GAME",
           "date": "يوليو 2019 - نوفمبر 2019 · 5 أشهر",
           "points": [
-            "إعادة بناء الفريق: مواجهة معدل دوران الموظفين الذي يزيد عن 50%، وتوظيف مواهب جديدة وإصلاح تقييم الأداء",
-            "تنفيذ عملية تطوير Scrum وبيئات اختبار داخلية وخارجية",
-            "تطوير نظام إخطار عن حالات التشغيل الشاذة، وأتمتة العمليات باستخدام JIRA",
-            "حل مشكلات شهادات iOS ومشكلات حظر IP للتطبيقات ذاتية الصنع"
+            "إعادة بناء الفريق: توظيف مواهب جديدة وإصلاح تقييم الأداء في مواجهة تسرب أكثر من 50% من الموظفين.",
+            "تطبيق منهجية تطوير Scrum وبيئات اختبار داخلية وخارجية.",
+            "تطوير نظام إبلاغ عن حالات التشغيل الشاذة، وأتمتة العمليات باستخدام JIRA.",
+            "حل مشكلات شهادات iOS وحظر IP للتطبيقات المطورة داخليًا."
           ]
         },
         {
           "title": "رئيس قسم علم البيانات",
           "company": "ICS GAME",
-          "date": "يونيو 2018 - يونيو 2019 · سنة واحدة وشهر واحد",
+          "date": "يونيو 2018 - يونيو 2019 · سنة وشهر واحد",
           "points": [
-            "إنشاء قسم علم البيانات من الصفر",
-            "إنشاء بيئة متكاملة في غضون شهر واحد: Linux و Python و Docker و Jupyter و RStudio",
-            "التنبؤ بتسرب اللاعبين وتنفيذ استراتيجيات الاحتفاظ بهم",
-            "اكتشاف اللاعبين الذين يقومون بالمراجحة وإعداد تقارير التشغيل الفصلية"
+            "تأسيس قسم علم البيانات من الصفر.",
+            "إنشاء بيئة عمل متكاملة في غضون شهر واحد: Linux، Python، Docker، Jupyter، RStudio.",
+            "التنبؤ بتسرب اللاعبين وتطبيق استراتيجيات الاحتفاظ بهم.",
+            "اكتشاف اللاعبين المستفيدين من المراجحة وإعداد تقارير تشغيل ربع سنوية."
           ]
         },
         {
-          "title": "المؤسس",
-          "company": "Thinker Data Corporation 析客數據",
-          "date": "سبتمبر 2016 - يونيو 2018 · سنة واحدة و 10 أشهر",
+          "title": "مؤسس",
+          "company": "Thinker Data Corporation",
+          "date": "سبتمبر 2016 - يونيو 2018 · سنة و10 أشهر",
           "points": [
-            "شركة مستقلة تقوم بتشكيل فرق بدوام جزئي بناءً على متطلبات المشروع",
-            "Sanlih E-Television Vidol: تطوير نظام توصية بالمسلسلات القصيرة على الإنترنت",
-            "Chunghwa Telecom: تقديم استشارات وصيانة لمجموعات Hadoop للبيانات الضخمة",
-            "E.SUN Bank: تطبيق آلية لتجميع حسابات الأعضاء عبر الأجهزة",
-            "معهد أبحاث التكنولوجيا الصناعية: تحديد قدرات المواهب الصناعية وتحليل بيانات الوظائف الشاغرة في الشركات الدولية"
+            "تأسيس شركة تعاقدية تعتمد على فرق عمل بدوام جزئي حسب متطلبات المشروع.",
+            "تلفزيون سانلي Vidol: تطوير نظام توصية للمسلسلات عبر الإنترنت.",
+            "تشونغوا تيليكوم: تقديم استشارات وتشغيل مجموعات Hadoop للبيانات الضخمة.",
+            "بنك يوشان: تنفيذ آلية ربط حسابات الأعضاء عبر الأجهزة المختلفة.",
+            "أكاديمية ITRI الصناعية: تحليل بيانات تقييم كفاءة المواهب الصناعية وفرص العمل في الشركات الدولية."
           ],
           "tech": [
             "Big Data",
@@ -3542,34 +3725,34 @@
           ]
         },
         {
-          "title": "مهندس تطوير تقنيات البيانات الضخمة",
-          "company": "Coretronic 中強光電",
-          "date": "يوليو 2014 - نوفمبر 2015 · سنة واحدة و 5 أشهر",
+          "title": "مهندس بحث وتطوير تقنيات البيانات الضخمة",
+          "company": "Coretronic",
+          "date": "يوليو 2014 - نوفمبر 2015 · سنة و5 أشهر",
           "points": [
-            "تصميم عملية جمع البيانات وهندسة ETL",
-            "استخدام الأساليب الإحصائية لتحليل البيانات ودعم اتخاذ القرارات",
-            "تحليل دلالات النظام الغذائي لمرضى الأمراض: إنشاء قاموس للمفردات العاطفية، وتطوير نموذج تسجيل، وإعداد تقارير تلقائية تتضمن أفضل 5 أطعمة موصى بها/يجب تجنبها لكل مرض"
+            "تصميم عمليات جمع البيانات وهندسة ETL.",
+            "إجراء تحليل البيانات باستخدام الأساليب الإحصائية ودعم اتخاذ القرارات.",
+            "التحليل الدلالي لأنماط التغذية لمرضى الأمراض: بناء قاموس للمشاعر، تطوير نموذج للتسجيل، وتقديم تقارير تلقائية لأفضل خمس توصيات/ممنوعات غذائية لكل مرض."
           ],
           "tech": [
             "Python",
             "ETL",
-            "التحليل الإحصائي",
+            "تحليل إحصائي",
             "NLP",
-            "التحليل الدلالي"
+            "تحليل دلالي"
           ]
         }
       ]
     },
     "featured": {
-      "title": "أعمال مميزة",
-      "subtitle": "عرض القدرة على التطوير الأصيل للذكاء الاصطناعي (AI-Native) والتسليم السريع",
+      "title": "معرض الأعمال المميزة",
+      "subtitle": "إظهار قدرات تطوير AI-Native والتسليم السريع",
       "projects": [
         {
           "name": "نظام حجز LINE Bot",
           "emoji": "🤖",
-          "tagline": "نظام إدارة حجز العيادات تم تسليمه في 48 ساعة",
-          "highlight": "تم التسليم في 48 ساعة | عملية مؤتمتة بالكامل | رضا العملاء +95%",
-          "description": "تم إنشاء نظام حجز LINE Bot متكامل لعيادة إعادة التأهيل، مما قلل وقت عملية الحجز بنسبة 70% وحسن بشكل كبير رضا العملاء. تم دمج تقويم Google لتوفير استعلام في الوقت الفعلي عن الفترات الزمنية المتاحة.",
+          "tagline": "نظام إدارة حجوزات العيادات تم تسليمه في 48 ساعة",
+          "highlight": "تم التسليم في 48 ساعة | عملية مؤتمتة بالكامل | رضا العملاء 95%+",
+          "description": "بناء نظام LINE Bot متكامل لحجوزات عيادة العلاج الطبيعي، مما أدى إلى تقليل وقت عملية الحجز بنسبة 70% وزيادة كبيرة في رضا العملاء. دمج Google Calendar لتوفير استعلام فوري عن المواعيد المتاحة.",
           "tech": [
             "Claude Code",
             "Supabase",
@@ -3585,9 +3768,9 @@
         {
           "name": "أتمتة ThreadsBot",
           "emoji": "⚙️",
-          "tagline": "نظام أتمتة مجتمعية مدعوم بالذكاء الاصطناعي",
-          "highlight": "تعاون متعدد الوكلاء | زيادة وتيرة النشر بنسبة 300%",
-          "description": "تم تطوير نظام أتمتة ذكي لوسائل التواصل الاجتماعي، باستخدام العديد من وكلاء الذكاء الاصطناعي للعمل بشكل تعاوني. تم تحقيق زيادة بنسبة 3 أضعاف في معدل التفاعل وتقليل وقت التشغيل اليدوي بنسبة 80%، وذلك من خلال التحليل التلقائي للمحتوى وتحسين جدولة إدارة المجتمع.",
+          "tagline": "نظام أتمتة اجتماعية مدعوم بـ AI",
+          "highlight": "تعاون متعدد الوكلاء (Agent) | زيادة وتيرة النشر بنسبة 300%",
+          "description": "تطوير نظام ذكي لأتمتة وسائل التواصل الاجتماعي، باستخدام العديد من AI Agent للعمل التعاوني. تحقيق زيادة في معدل التفاعل بمقدار 3 أضعاف، وتقليل وقت التشغيل اليدوي بنسبة 80%، وتحسين إدارة المجتمع من خلال تحليل المحتوى التلقائي والجدولة.",
           "tech": [
             "Claude API",
             "MCP",
@@ -3601,11 +3784,11 @@
           }
         },
         {
-          "name": "دورة نظام التشغيل الشخصي",
+          "name": "دورة Personal OS",
           "emoji": "📚",
-          "tagline": "دورة نظام التشغيل الشخصي في عصر الذكاء الاصطناعي",
-          "highlight": "نجاح 100% للمتدربين في إنشاء نظام الذكاء الاصطناعي | موجه نحو الممارسة",
-          "description": "تم تصميم وتدريس سلسلة دورات متكاملة لمساعدة المهنيين من غير الخلفيات التقنية على إنشاء نظام تشغيل شخصي خاص بهم مدعوم بالذكاء الاصطناعي. يتعلم المتدربون كيفية استخدام أدوات الذكاء الاصطناعي مثل Claude Code و MCP لأتمتة سير العمل وزيادة الإنتاجية.",
+          "tagline": "دورة نظام التشغيل الشخصي في عصر AI",
+          "highlight": "100% من المشاركين نجحوا في بناء أنظمة AI | موجهة نحو التطبيق العملي",
+          "description": "تصميم وتقديم سلسلة دورات متكاملة لمساعدة المحترفين من غير التقنيين على بناء نظام التشغيل الشخصي الخاص بهم المدعوم بـ AI. يتعلم المشاركون استخدام أدوات AI مثل Claude Code و MCP لأتمتة سير العمل وزيادة الإنتاجية.",
           "tech": [
             "Claude Code",
             "MCP",
@@ -3626,11 +3809,11 @@
         {
           "school": "جامعة تايبيه الوطنية للتجارة",
           "degree": "ماجستير",
-          "major": "قسم علوم البيانات واتخاذ القرارات",
+          "major": "علم البيانات واتخاذ القرار",
           "date": "يونيو 2013",
           "location": "تايبيه، تايوان",
           "coursework": [
-            "اتخاذ القرارات متعددة المعايير",
+            "اتخاذ القرار متعدد المعايير",
             "ذكاء الأعمال",
             "الخوارزميات"
           ]
@@ -3638,7 +3821,7 @@
         {
           "school": "جامعة شي هسين",
           "degree": "بكالوريوس",
-          "major": "قسم العلوم المالية",
+          "major": "المالية والمصرفية",
           "date": "يونيو 2011",
           "location": "تايبيه، تايوان",
           "coursework": [
@@ -3651,49 +3834,49 @@
       ]
     },
     "teaching": {
-      "title": "التدريس والمحاضرات",
+      "title": "الخبرة التدريسية والمحاضرات",
       "lectures": [
         {
-          "title": "التنقيب عن النصوص باستخدام لغة R: دراسة حالة عملية",
-          "organization": "معهد صناعة تكنولوجيا المعلومات (資策會)",
+          "title": "تطبيق عملي لتنقيب النصوص باستخدام لغة R",
+          "organization": "معهد صناعة المعلومات (III)",
           "type": "ورشة عمل"
         },
         {
-          "title": "تصور البيانات باستخدام لغة R",
-          "organization": "جمعية الكمبيوتر في مدينة تايبيه، Fubon Financial Holding",
+          "title": "تصوير البيانات باستخدام لغة R",
+          "organization": "جمعية تايبيه لصناعة الكمبيوتر، مجموعة فوبونغ المالية",
           "type": "تدريب الشركات"
         },
         {
-          "title": "كائنات البيانات والبرمجة الشيئية وتقنيات الترميز",
+          "title": "كائنات البيانات، البرمجة الشيئية، وتقنيات الترميز",
           "organization": "مؤتمر R Taiwan 2013",
-          "type": "محاضرة في المؤتمر"
+          "type": "محاضرة مؤتمر"
         },
         {
-          "title": "استخدام التنقيب عن البيانات في Facebook لفهم الأشخاص الذين تحبهم",
+          "title": "استكشاف فيسبوك لفهم الأشخاص الذين تهتم بهم",
           "organization": "OpenFoundry",
           "type": "مشاركة تقنية"
         },
         {
-          "title": "التنقيب عن البيانات المالية: تحليل بيانات الآلة",
-          "organization": "أكاديمية تايوان للتمويل",
-          "type": "دورة"
+          "title": "تنقيب البيانات المالية: تحليل بيانات الآلة",
+          "organization": "المعهد التايواني للتدريب المالي",
+          "type": "دورة تدريبية"
         }
       ]
     },
     "skills": {
-      "title": "خريطة المهارات التقنية",
+      "title": "خريطة القدرات التقنية",
       "philosophy": {
         "title": "الفلسفة التقنية",
-        "content": "أنا لا أسعى إلى \"معرفة عدد اللغات\"، بل أسعى إلى \"مدى السرعة التي يمكنني بها حل المشكلات\". في عصر التعاون مع الذكاء الاصطناعي، لا يكمن التركيز في كتابة كل سطر من التعليمات البرمجية يدويًا، بل في: <strong>1) معرفة مجموعة الأدوات التي يجب استخدامها</strong> <strong>2) القدرة على تصميم بنية نظام قابلة للصيانة</strong> <strong>3) فهم كيفية جعل الذكاء الاصطناعي شريكك في التطوير</strong>"
+        "content": "لا أسعى إلى «معرفة عدد كبير من اللغات»، بل إلى «مدى سرعة حل المشكلات». في عصر التعاون مع AI، لا يكمن التركيز في كتابة كل سطر من التعليمات البرمجية يدويًا، بل في: <strong>1) معرفة مجموعة الأدوات المناسبة للاستخدام</strong> <strong>2) القدرة على تصميم بنية نظام قابلة للصيانة</strong> <strong>3) فهم كيفية جعل AI شريكك في التطوير</strong>"
       },
       "layers": [
         {
           "level": 1,
-          "name": "نظام التعاون مع الذكاء الاصطناعي",
-          "description": "الميزة التنافسية الأساسية في عصر الذكاء الاصطناعي الأصيل (AI-Native)",
+          "name": "النظام البيئي للتعاون مع AI",
+          "description": "القدرة التنافسية الأساسية في عصر AI-Native",
           "categories": [
             {
-              "name": "منصات تطوير الذكاء الاصطناعي",
+              "name": "منصات تطوير AI",
               "items": [
                 "Claude Code",
                 "MCP (Model Context Protocol)",
@@ -3701,13 +3884,13 @@
                 "OpenAI API",
                 "Gemini API",
                 "Prompt Engineering",
-                "تصميم الوكيل (Agent)"
+                "Agent Design"
               ]
             },
             {
-              "name": "تنظيم الأتمتة",
+              "name": "تنسيق الأتمتة",
               "items": [
-                "n8n (أتمتة سير العمل)",
+                "n8n (Workflow Automation)",
                 "GitHub Actions",
                 "Apps Script"
               ]
@@ -3717,13 +3900,13 @@
         {
           "level": 2,
           "name": "البنية التحتية السحابية الحديثة",
-          "description": "النشر والبنية التحتية للبيانات",
+          "description": "النشر وأساس البيانات",
           "categories": [
             {
               "name": "النشر والحوسبة",
               "items": [
-                "Vercel (نشر الواجهة الأمامية)",
-                "Railway (خدمات الواجهة الخلفية)",
+                "Vercel (Frontend Deployment)",
+                "Railway (Backend Services)",
                 "AWS EC2",
                 "Google Compute Engine"
               ]
@@ -3731,20 +3914,20 @@
             {
               "name": "النظام البيئي لقواعد البيانات",
               "items": [
-                "Supabase (PostgreSQL + وظائف في الوقت الفعلي)",
-                "Neon (PostgreSQL بدون خادم)",
-                "SQLite (حوسبة محلية/حافة)"
+                "Supabase (PostgreSQL + Realtime Features)",
+                "Neon (Serverless PostgreSQL)",
+                "SQLite (Local/Edge Computing)"
               ]
             },
             {
-              "name": "قاعدة بيانات المتجهات",
+              "name": "قواعد بيانات المتجهات",
               "items": [
                 "Weaviate",
-                "Chroma (بحث دلالي بالذكاء الاصطناعي)"
+                "Chroma (AI Semantic Search)"
               ]
             },
             {
-              "name": "قاعدة البيانات التقليدية",
+              "name": "قواعد البيانات التقليدية",
               "items": [
                 "MySQL",
                 "MSSQL",
@@ -3755,19 +3938,19 @@
         },
         {
           "level": 3,
-          "name": "لغات وأطر البرمجة",
-          "description": "القدرة على التطوير متعدد النماذج",
+          "name": "لغات البرمجة والأطر",
+          "description": "قدرات التطوير متعددة الأنماط",
           "categories": [
             {
-              "name": "اللغات الرئيسية",
+              "name": "اللغات الأساسية",
               "items": [
-                "Python (التعاون مع الذكاء الاصطناعي، علم البيانات، الأتمتة)",
-                "JavaScript (تفاعل الواجهة الأمامية، Apps Script)",
-                "R (تحليل البيانات وتصورها)"
+                "Python (التعاون مع AI، علم البيانات، الأتمتة)",
+                "JavaScript (التفاعل الأمامي، Apps Script)",
+                "R (تحليل البيانات وتصويرها)"
               ]
             },
             {
-              "name": "خبرة في المشاريع",
+              "name": "خبرة المشاريع",
               "items": [
                 "PHP",
                 "C#",
@@ -3793,17 +3976,17 @@
               "items": [
                 "نماذج الانحدار",
                 "أشجار القرار",
-                "الشبكات العصبية",
-                "التجميع"
+                "الشبكات العصبية الاصطناعية",
+                "التجميع (Clustering)"
               ]
             },
             {
               "name": "معالجة البيانات",
               "items": [
-                "التنقيب عن النصوص",
+                "تنقيب النصوص",
                 "التحليل الدلالي",
                 "التعبيرات النمطية",
-                "التصور (Shiny، النظام البيئي لـ Python)"
+                "التصوير (Shiny، النظام البيئي لـ Python)"
               ]
             }
           ]
@@ -3811,10 +3994,10 @@
         {
           "level": 5,
           "name": "التعاون وإدارة المشاريع",
-          "description": "التنسيق والتسليم للفريق",
+          "description": "تنسيق الفريق والتسليم",
           "categories": [
             {
-              "name": "التحكم في الإصدار",
+              "name": "التحكم في الإصدارات",
               "items": [
                 "GitHub",
                 "GitLab"
@@ -3840,115 +4023,115 @@
       ]
     },
     "projects": {
-      "title": "مشاريع",
+      "title": "المشاريع",
       "items": [
         {
           "title": "منصة ThinkerCafe التعليمية",
           "tags": [
-            "تعليم الذكاء الاصطناعي",
-            "تصميم النظام"
+            "تعليم AI",
+            "تصميم الأنظمة"
           ],
           "points": [
-            "نظام دورات متكامل في مجال الذكاء الاصطناعي (نظام التشغيل الشخصي، 5+ سلسلة دورات)",
-            "خدمة المهنيين من غير التقنيين الذين يدخلون عصر الذكاء الاصطناعي",
-            "إنشاء نظام بيئي متكامل من المحتوى إلى التسليم",
-            "التأكيد على الأنظمة العملية والقابلة للتنفيذ"
+            "نظام متكامل لدورات AI (Personal OS، أكثر من 5 سلاسل دورات).",
+            "خدمة المحترفين من غير التقنيين في عصر AI.",
+            "بناء نظام بيئي متكامل من المحتوى إلى التسليم.",
+            "التركيز على الأنظمة العملية والقابلة للتطبيق."
           ]
         },
         {
           "title": "نظام أتمتة LINE Bot",
           "tags": [
-            "تطبيقات المؤسسات",
-            "الأتمتة"
+            "تطبيقات الشركات",
+            "أتمتة"
           ],
           "points": [
-            "نظام حجز عيادة العلاج الطبيعي",
-            "تقليل وقت عملية الحجز بنسبة 70%",
-            "تكامل تقويم Google",
-            "تحسين رضا العملاء"
+            "نظام حجز لعيادة علاج طبيعي.",
+            "تقليل وقت عملية الحجز بنسبة 70%.",
+            "تكامل Google Calendar.",
+            "تحسين رضا العملاء."
           ]
         },
         {
           "title": "Thinker Kit",
           "tags": [
             "الإنتاجية",
-            "وكيل الذكاء الاصطناعي (AI Agent)"
+            "AI Agent"
           ],
           "points": [
-            "نظام تعزيز الذكاء الاصطناعي الشخصي",
-            "تكامل الذاكرة ومكتبة المطالبات وأدوات الإنتاجية",
-            "رؤى يومية وتتبع الأهداف",
-            "نظام مشاركة قائم على التلعيب"
+            "نظام تعزيز AI شخصي.",
+            "تكامل الذاكرة، مكتبة المطالبات، وأدوات الإنتاجية.",
+            "رؤى يومية وتتبع الأهداف.",
+            "نظام مشاركة محفز (Gamified)."
           ]
         },
         {
           "title": "ThreadsBot",
           "tags": [
             "وسائل التواصل الاجتماعي",
-            "وكيل الذكاء الاصطناعي (AI Agent)"
+            "AI Agent"
           ],
           "points": [
-            "أتمتة وسائل التواصل الاجتماعي المدعومة بالذكاء الاصطناعي",
-            "زيادة المشاركة بمقدار 3 أضعاف",
-            "تقليل وقت التشغيل بنسبة 80%",
-            "تحليل وجدولة المحتوى تلقائيًا"
+            "أتمتة وسائل التواصل الاجتماعي المدعومة بـ AI.",
+            "زيادة المشاركة بمقدار 3 أضعاف.",
+            "تقليل وقت التشغيل بنسبة 80%.",
+            "تحليل المحتوى التلقائي والجدولة."
           ]
         },
         {
           "title": "Ryan OS & Mary OS",
           "tags": [
-            "تكنولوجيا منزلية",
-            "النظام"
+            "تكنولوجيا المنزل",
+            "أنظمة"
           ],
           "points": [
-            "نظام إدارة منزلية مدعوم بالذكاء الاصطناعي",
-            "تتبع التعليم (Ryan OS)",
-            "تنسيق رعاية المسنين (Mary OS)",
-            "اتخاذ قرارات منزلية مستندة إلى البيانات"
+            "نظام إدارة منزلية مدعوم بـ AI.",
+            "تتبع التعليم (Ryan OS).",
+            "تنسيق رعاية كبار السن (Mary OS).",
+            "اتخاذ القرارات المنزلية القائمة على البيانات."
           ]
         },
         {
-          "title": "تشغيل فريق يضم أكثر من 300 فرد",
+          "title": "إدارة فريق يضم أكثر من 300 فرد",
           "tags": [
             "القيادة",
             "التوسع"
           ],
           "points": [
-            "فريق فلبيني متعدد الجنسيات",
-            "تنسيق العمليات على مدار الساعة طوال أيام الأسبوع",
-            "نظام مؤشرات الأداء الرئيسية (KPI) المستند إلى البيانات",
-            "خفض التكاليف بنسبة 40% من خلال الأتمتة"
+            "فريق متعدد الجنسيات في الفلبين.",
+            "تنسيق العمليات على مدار الساعة طوال أيام الأسبوع.",
+            "نظام KPI قائم على البيانات.",
+            "خفض التكاليف بنسبة 40% من خلال الأتمتة."
           ]
         }
       ]
     },
     "cta": {
-      "title": "دعونا نبني شيئًا معًا",
-      "subtitle": "أسعى حاليًا إلى فرص للتعاون مع عملاء الشركات في مجال تطبيقات الذكاء الاصطناعي العملية والتحول الرقمي وهندسة الحلول.",
-      "location": "صديق للعمل عن بعد · تايبيه/تايتشونغ/تاينان · 70-100 ألف دولار تايواني جديد/شهر",
+      "title": "دعنا نبني شيئًا معًا",
+      "subtitle": "أبحث حالياً عن فرص للتعاون مع عملاء الشركات في تطبيقات AI، التحول الرقمي، وهندسة الحلول.",
+      "location": "مناسب للعمل عن بعد · تايبيه/تايتشونغ/تاينان · 70-100 ألف دولار تايواني جديد/شهر",
       "buttons": [
-        "اتصل بي",
+        "تواصل معي",
         "زيارة ThinkerCafe",
-        "ملف تعريف LinkedIn"
+        "ملف LinkedIn"
       ]
     },
     "footer": {
-      "built": "صنع بعناية · تصميم ملهم · تم التحديث في يناير 2025",
-      "quote": "عندما تعود التكنولوجيا إلى الإنسانية، تجد الحكمة الدفء"
+      "built": "بُني بعناية · تصميم مُلهم · آخر تحديث: يناير 2025",
+      "quote": "عندما تعود التكنولوجيا إلى الإنسانية، يجد الذكاء دفئًا"
     },
     "enterprise": {
       "hero": {
-        "title": "ما هي أكبر عقبة أمام تحول الشركات إلى الذكاء الاصطناعي؟",
-        "subtitle": "ليس التكنولوجيا، بل سرعة التنفيذ.",
-        "valueProposition": "أستخدم التطوير التعاوني للذكاء الاصطناعي لتسليم نظام يستغرق 3 أشهر من فريق تقليدي في غضون 3-7 أيام",
-        "ctaButton": "حجز تشخيص مجاني للذكاء الاصطناعي",
+        "title": "أكبر عقبة أمام تحول الشركات إلى AI؟",
+        "subtitle": "ليست التقنية، بل سرعة التنفيذ.",
+        "valueProposition": "أستخدم AI التعاوني في التطوير، وأسلم أنظمة في 3-7 أيام تستغرق الفرق التقليدية 3 أشهر",
+        "ctaButton": "احجز استشارة AI مجانية",
         "authorInfo": {
-          "name": "كروز تانغ",
-          "title": "المؤسس والرئيس التنفيذي لشركة ThinkerCafe",
+          "name": "Cruz Tang",
+          "title": "مؤسس ومدير تنفيذي لـ ThinkerCafe",
           "roles": [
-            "مطور أصيل في مجال الذكاء الاصطناعي (AI-Native)",
-            "مهندس معماري للنظام",
-            "مدرس"
+            "مطور AI-Native",
+            "مهندس أنظمة",
+            "معلم"
           ]
         }
       },
@@ -3957,19 +4140,18 @@
         "items": [
           {
             "icon": "<i class=\"fas fa-graduation-cap\"></i>",
-            "title": "شهادة احترافية",
+            "title": "شهادات احترافية",
             "lines": [
-              "iPAS AI",
-              "مخطط تطبيقات",
-              "عضو لجنة التصديق",
-              "(معهد أبحاث التكنولوجيا الصناعية)"
+              "مخطط تطبيقات iPAS AI",
+              "عضو لجنة وضع أسئلة الشهادة",
+              "(معهد ITRI)"
             ]
           },
           {
             "icon": "<i class=\"fas fa-users\"></i>",
             "title": "خبرة عملية",
             "lines": [
-              "أدار سابقًا +300",
+              "أدار سابقًا أكثر من 300",
               "فريق متعدد الجنسيات",
               "Topvan Group",
               "الفلبين/الصين/ماليزيا/فيتنام"
@@ -3977,19 +4159,19 @@
           },
           {
             "icon": "<i class=\"fas fa-trophy\"></i>",
-            "title": "مؤهلات التدريس",
+            "title": "خبرة تدريسية",
             "lines": [
-              "10+ سنوات",
-              "خبرة في التدريس",
-              "معهد أبحاث التكنولوجيا الصناعية/معهد صناعة تكنولوجيا المعلومات",
-              "/جامعة الثقافة الصينية"
+              "أكثر من 10 سنوات",
+              "خبرة تدريسية",
+              "معهد ITRI/III",
+              "/جامعة الثقافة"
             ]
           }
         ]
       },
       "problemStatement": {
-        "title": "هل تواجهك هذه المشكلات أيضًا؟",
-        "ctaButton": "اكتشف كيف فعلت ذلك ↓",
+        "title": "هل تواجه هذه المشكلات أيضًا؟",
+        "ctaButton": "شاهد كيف أقوم بذلك ↓",
         "comparison": [
           {
             "label": "<i class=\"fas fa-clock\"></i> دورة التطوير",
@@ -3998,69 +4180,69 @@
           },
           {
             "label": "<i class=\"fas fa-dollar-sign\"></i> التكلفة",
-            "traditional": "300-1 مليون",
+            "traditional": "300 ألف - 1 مليون",
             "aiNative": "تخفيض التكلفة بنسبة 60-70%"
           },
           {
             "label": "<i class=\"fas fa-laptop-code\"></i> حجم الفريق",
-            "traditional": "يتطلب فريقًا كبيرًا",
+            "traditional": "يتطلب فريقًا متعدد الأفراد",
             "aiNative": "يمكن إنجازه بواسطة 1-2 شخص"
           },
           {
             "label": "<i class=\"fas fa-rotate\"></i> سرعة التكرار",
-            "traditional": "تعديلات بطيئة، تكرار صعب",
-            "aiNative": "اختبار فوري، تكرار سريع"
+            "traditional": "تعديل بطيء، تكرار صعب",
+            "aiNative": "تعديل واختبار فوري، تكرار سريع"
           },
           {
-            "label": "<i class=\"fas fa-book\"></i> الصيانة",
-            "traditional": "وثائق غير كاملة، صيانة صعبة",
-            "aiNative": "إنشاء وثائق كاملة تلقائيًا"
+            "label": "<i class=\"fas fa-book\"></i> قابلية الصيانة",
+            "traditional": "وثائق غير مكتملة، صيانة صعبة",
+            "aiNative": "وثائق كاملة يتم إنشاؤها تلقائيًا"
           }
         ]
       },
       "caseStudies": {
-        "title": "دراسات الحالة",
-        "ctaText": "إذا كان لديك متطلبات مماثلة...",
-        "ctaButton": "حجز تشخيص مجاني",
+        "title": "دراسات حالة واقعية",
+        "ctaText": "إذا كانت لديك احتياجات مماثلة...",
+        "ctaButton": "احجز تشخيصًا مجانيًا",
         "featured": {
           "title": "نظام حجز LINE Bot لعيادة العلاج الطبيعي",
           "painPoints": [
             "قضاء ساعتين يوميًا في معالجة الحجوزات يدويًا",
-            "غالبًا ما يتعذر على العملاء الاتصال بالهاتف",
-            "عدم وجود إدارة منهجية"
+            "العملاء غالبًا لا يتمكنون من الاتصال",
+            "لا يوجد نظام إدارة منهجي"
           ],
           "results": [
             "حجز/إلغاء/تذكير مؤتمت بالكامل",
             "استجابة فورية على مدار الساعة طوال أيام الأسبوع",
-            "تكامل تقويم Google"
+            "تكامل Google Calendar"
           ],
           "timeline": {
             "traditional": "3 أشهر + 300 ألف",
             "actual": "3 أيام + 100 ألف"
           },
           "buttons": [
-            "عرض العرض التوضيحي",
+            "مشاهدة العرض التوضيحي",
             "التفاصيل التقنية"
           ]
         },
         "others": [
           {
-            "title": "أتمتة إدارة دورات المؤسسات التعليمية",
-            "traditional": "تطوير لمدة 6 أسابيع",
-            "actual": "اكتمل في 7 أيام",
+            "title": "أتمتة إدارة الدورات للمؤسسات التعليمية",
+            "traditional": "تطوير 6 أسابيع",
+            "actual": "إنجاز في 7 أيام",
             "button": "معرفة المزيد"
           },
           {
-            "title": "التدريب الداخلي للشركات: ممارسة التطوير التعاوني للذكاء الاصطناعي",
-            "company": "تدريب لجميع الموظفين في شركة XX",
-            "rating": "رضا المتدربين: 4.8/5.0",
-            "button": "ملاحظات المتدربين"
+            "title": "تدريب داخلي للشركات: تطبيق عملي لتطوير AI التعاوني",
+            "company": "تدريب شامل لشركة XX",
+            "rating": "رضا المشاركين: 4.8/5.0",
+            "button": "ملاحظات المشاركين"
           }
         ]
       },
       "methodology": {
         "title": "منهجية عملي",
-        "subtitle": "ليس \"الانتهاء والرحيل\"، بل بناء نظام مستدام",
+        "subtitle": "ليس «مجرد إنجاز والرحيل»، بل بناء نظام مستدام للتشغيل",
         "steps": [
           {
             "number": "1",
@@ -4068,16 +4250,16 @@
             "duration": "15-30 دقيقة",
             "items": [
               "مقابلة متعمقة",
-              "تحليل نقاط الضعف"
+              "تحليل نقاط الألم"
             ]
           },
           {
             "number": "2",
             "title": "التصميم",
-            "duration": "1-2 أيام",
+            "duration": "1-2 يوم",
             "items": [
               "هندسة النظام",
-              "اختيار التكنولوجيا"
+              "اختيار التقنيات"
             ]
           },
           {
@@ -4085,7 +4267,7 @@
             "title": "التطوير",
             "duration": "3-5 أيام",
             "items": [
-              "التعاون مع الذكاء الاصطناعي",
+              "التعاون مع AI",
               "التكرار السريع"
             ]
           },
@@ -4094,8 +4276,8 @@
             "title": "التسليم",
             "duration": "في نفس اليوم",
             "items": [
-              "النشر والوثائق",
-              "التدريب على الاستخدام"
+              "النشر والتوثيق",
+              "تدريب على الاستخدام"
             ]
           }
         ],
@@ -4103,53 +4285,236 @@
           "وثائق تقنية كاملة",
           "إجراءات التشغيل القياسية (SOP)",
           "إرشادات الصيانة",
-          "دعم لاحق"
+          "دعم ما بعد التسليم"
         ]
       },
       "collaborationModels": {
         "title": "نماذج التعاون",
         "items": [
           {
-            "title": "الاستشارات",
-            "target": "الشركات التي ترغب في إنشاء استراتيجية تحول إلى الذكاء الاصطناعي",
+            "title": "استشارات",
+            "target": "الشركات التي ترغب في بناء استراتيجية تحول AI",
             "deliverables": [
               "تشخيص الوضع الحالي",
               "تخطيط مسار التحول",
-              "توصيات بشأن اختيار التكنولوجيا",
+              "توصيات اختيار التقنيات",
               "إرشادات التنفيذ"
             ],
             "timeline": "2-4 أسابيع"
           },
           {
-            "title": "التدريب الداخلي",
-            "target": "الفرق التي ترغب في تحسين قدراتها على التعاون مع الذكاء الاصطناعي",
+            "title": "تدريب داخلي",
+            "target": "الشركات التي ترغب في تعزيز قدرات فريقها في التعاون مع AI",
             "deliverables": [
-              "ورشة عمل عملية",
-              "تعليمات عملية للأدوات",
+              "ورش عمل عملية",
+              "تدريب عملي على الأدوات",
               "إجراءات التشغيل القياسية (SOP)",
-              "دراسة حالة"
+              "تمارين على حالات عملية"
             ],
-            "timeline": "1-2 أيام"
+            "timeline": "1-2 يوم"
           },
           {
             "title": "تطوير المشاريع",
-            "target": "الشركات التي تحتاج إلى تسليم نظام معين بسرعة",
+            "target": "الشركات التي تحتاج إلى تسليم سريع لأنظمة محددة",
             "deliverables": [
               "تطوير نظام كامل",
               "وثائق تقنية",
-              "التدريب على التشغيل",
+              "تدريب على التشغيل",
               "دعم الصيانة"
             ],
-            "timeline": "تبدأ من 3-7 أيام"
+            "timeline": "من 3-7 أيام فصاعدًا"
           }
         ]
       },
       "contactForm": {
-        "title": "حجز تشخيص مجاني للذكاء الاصطناعي",
-        "subtitle": "يستغرق ملؤه حوالي 3-5 دقائق",
-        "note": "سيتم استخدام معلوماتك فقط لتقييم هذه الاستشارة",
+        "title": "حجز تشخيص AI مجاني",
+        "subtitle": "يستغرق التعبئة حوالي 3-5 دقائق",
+        "note": "تُستخدم معلوماتك فقط لتقييم هذه الاستشارة",
         "submitButton": "إرسال ← سأرد عليك في غضون 24 ساعة",
         "googleFormUrl": ""
+      }
+    },
+    "portfolio": {
+      "hero": {
+        "title": "أكبر عقبة أمام تحول الشركات إلى AI؟<br>ليست التقنية، بل سرعة التنفيذ.",
+        "subtitle": "أستخدم AI التعاوني في التطوير، وأسلم أنظمة في 3-7 أيام تستغرق الفرق التقليدية 3 أشهر",
+        "role": "كروز تانغ · مؤسس ومدير تنفيذي لـ ThinkerCafe<br>مطور AI-Native · مهندس أنظمة · معلم",
+        "cta": "احجز استشارة AI مجانية"
+      },
+      "nav": {
+        "about": "حول",
+        "cases": "حالات",
+        "services": "طرق التعاون",
+        "contact": "اتصال"
+      },
+      "trust": {
+        "items": [
+          {
+            "icon": "🎓",
+            "title": "شهادات احترافية",
+            "description": "مخطط تطبيقات iPAS AI<br>عضو لجنة وضع أسئلة الشهادة (معهد ITRI)"
+          },
+          {
+            "icon": "🌏",
+            "title": "خبرة عملية",
+            "description": "أدار سابقًا أكثر من 300 فريق متعدد الجنسيات<br>Topvan Group الفلبين/الصين/ماليزيا/فيتنام"
+          },
+          {
+            "icon": "👨‍🏫",
+            "title": "خبرة تدريسية",
+            "description": "أكثر من 10 سنوات خبرة تدريسية<br>معهد ITRI/III/جامعة الثقافة"
+          }
+        ]
+      },
+      "comparison": {
+        "title": "هل تواجه هذه المشكلات أيضًا؟",
+        "subtitle": "هل ما زلت تستخدم الأساليب التقليدية في التطوير؟ شاهد كيف ننجز <strong>عمل فريق تقليدي يستغرق 3 أشهر في 7 أيام</strong>.",
+        "items": [
+          {
+            "label": "التطوير بالطرق القديمة",
+            "before": "دورة التطوير 3-6 أشهر",
+            "afterLabel": "التعاون مع AI",
+            "after": "تسليم سريع في 3-7 أيام"
+          },
+          {
+            "label": "التكلفة التقليدية",
+            "before": "استثمار 300 ألف - 1 مليون",
+            "afterLabel": "التعاون مع AI",
+            "after": "تخفيض التكلفة بنسبة 60-70%"
+          },
+          {
+            "label": "الفريق التقليدي",
+            "before": "يتطلب تعاون فريق متعدد الأفراد",
+            "afterLabel": "التعاون مع AI",
+            "after": "يمكن إنجازه بواسطة 1-2 شخص"
+          },
+          {
+            "label": "صعوبات التكرار",
+            "before": "تعديل بطيء، تكرار صعب، وثائق ناقصة",
+            "afterLabel": "التعاون مع AI",
+            "after": "تعديل واختبار فوري، توثيق تلقائي"
+          }
+        ]
+      },
+      "cases": {
+        "title": "دراسات حالة واقعية",
+        "items": [
+          {
+            "title": "نظام حجز LINE Bot لعيادة العلاج الطبيعي",
+            "painPoints": [
+              "قضاء ساعتين يوميًا في معالجة الحجوزات يدويًا",
+              "العملاء غالبًا لا يتمكنون من الاتصال",
+              "لا يوجد نظام إدارة منهجي"
+            ],
+            "deliverables": [
+              "حجز/إلغاء/تذكير مؤتمت بالكامل",
+              "استجابة فورية على مدار الساعة طوال أيام الأسبوع",
+              "تكامل Google Calendar"
+            ],
+            "tech": [
+              "LINE Messaging API",
+              "Google Calendar API",
+              "قاعدة بيانات Supabase"
+            ],
+            "results": {
+              "timeline": {
+                "before": "3 أشهر",
+                "after": "3 أيام"
+              },
+              "cost": {
+                "before": "300 ألف",
+                "after": "100 ألف"
+              },
+              "efficiency": "توفير 90% من الوقت اليدوي"
+            }
+          },
+          {
+            "title": "أتمتة إدارة الدورات للمؤسسات التعليمية",
+            "painPoints": [
+              "إدارة جدول الدورات يدويًا",
+              "بيانات الطلاب مبعثرة في أماكن مختلفة",
+              "إعداد التقارير يستغرق وقتًا طويلاً ومجهدًا"
+            ],
+            "deliverables": [
+              "نظام جدولة الدورات والإشعارات التلقائي",
+              "لوحة تحكم موحدة لبيانات الطلاب",
+              "إنشاء تقارير تحليلية بنقرة واحدة"
+            ],
+            "tech": [
+              "Python + Flask",
+              "نظام تصوير البيانات",
+              "محرك جدولة تلقائي"
+            ],
+            "results": {
+              "timeline": {
+                "before": "6 أسابيع",
+                "after": "7 أيام"
+              },
+              "efficiency": "تقليل وقت الإدارة بنسبة 80%",
+              "satisfaction": "4.8/5.0"
+            }
+          }
+        ]
+      },
+      "services": {
+        "title": "طرق التعاون",
+        "items": [
+          {
+            "title": "استشارات",
+            "target": "مناسب لـ: الشركات التي ترغب في بناء استراتيجية تحول AI",
+            "features": [
+              "تشخيص الوضع الحالي",
+              "تخطيط مسار التحول",
+              "توصيات اختيار التقنيات",
+              "إرشادات التنفيذ"
+            ],
+            "duration": "⏱ المدة: 2-4 أسابيع"
+          },
+          {
+            "title": "تدريب داخلي",
+            "target": "مناسب لـ: الشركات التي ترغب في تعزيز قدرات فريقها في التعاون مع AI",
+            "features": [
+              "ورش عمل عملية",
+              "أدوات تطبيقية",
+              "إجراءات التشغيل القياسية (SOP)",
+              "تمارين على حالات عملية"
+            ],
+            "duration": "⏱ المدة: 1-2 يوم"
+          },
+          {
+            "title": "تطوير المشاريع",
+            "target": "مناسب لـ: الشركات التي تحتاج إلى تسليم سريع لأنظمة محددة",
+            "features": [
+              "تطوير نظام كامل",
+              "وثائق تقنية",
+              "تدريب على التشغيل",
+              "دعم الصيانة"
+            ],
+            "duration": "⏱ المدة: من 3-7 أيام فصاعدًا"
+          }
+        ]
+      },
+      "cta": {
+        "title": "حجز تشخيص AI مجاني",
+        "description": "لفهم احتياجاتك بشكل أفضل، يرجى التواصل معي عبر الطرق التالية:<br><small style=\"color: #94a3b8;\">تُستخدم معلوماتك فقط لتقييم هذه الاستشارة، وسأرد عليك في غضون 24 ساعة</small>",
+        "methods": [
+          {
+            "text": "📧 احجز تشخيصًا عبر البريد الإلكتروني",
+            "link": "mailto:cruz@thinkercafe.com"
+          },
+          {
+            "text": "💬 تواصل مباشرة عبر LINE",
+            "link": "https://line.me/ti/p/~cruztang"
+          },
+          {
+            "text": "📞 هاتف: +886 937 431 998",
+            "link": "tel:+886937431998"
+          }
+        ]
+      },
+      "footer": {
+        "copyright": "© 2025 ThinkerCafe (شركة ثينكر كافيه المحدودة) · كروز تانغ · جميع الحقوق محفوظة",
+        "tagline": "مطور AI-Native · مهندس أنظمة · معلم"
       }
     }
   }
