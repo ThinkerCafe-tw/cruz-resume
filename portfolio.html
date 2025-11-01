@@ -716,7 +716,6 @@
                 height: 160px;
                 transition: transform 0.8s;
                 transform-style: preserve-3d;
-                cursor: pointer;
             }
             
             .flip-container.flipped {
@@ -915,28 +914,50 @@
     </section>
 
     <script>
-        // 手機版自動翻面展示
-        if (window.innerWidth <= 768) {
-            const flipContainers = document.querySelectorAll('.flip-container');
-            let currentIndex = 0;
-            
-            // 初始自動翻面演示
-            function autoFlipDemo() {
-                if (currentIndex < flipContainers.length) {
-                    flipContainers[currentIndex].classList.add('flipped');
-                    setTimeout(() => {
-                        flipContainers[currentIndex].classList.remove('flipped');
-                        currentIndex++;
-                        autoFlipDemo();
-                    }, 2500);
-                } else {
-                    // 演示結束後，每張卡片獨立控制
-                    currentIndex = 0;
-                }
+        // 滾動觸發翻面效果
+        let scrollFlipObserver = null;
+
+        function initScrollFlip() {
+            const flipContainers = document.querySelectorAll('[data-scroll-flip]');
+
+            // 如果已經有 observer，先清理
+            if (scrollFlipObserver) {
+                scrollFlipObserver.disconnect();
             }
-            
-            // 頁面載入 2 秒後開始自動演示
-            setTimeout(autoFlipDemo, 2000);
+
+            // 為每個容器添加索引屬性
+            flipContainers.forEach((container, index) => {
+                container.dataset.flipIndex = index;
+            });
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.3  // 當元素 30% 可見時觸發
+            };
+
+            scrollFlipObserver = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !entry.target.classList.contains('flipped')) {
+                        const index = parseInt(entry.target.dataset.flipIndex) || 0;
+                        // 添加延遲效果，讓翻面更自然
+                        setTimeout(() => {
+                            entry.target.classList.add('flipped');
+                        }, index * 150);  // 每個卡片延遲 150ms
+                    }
+                });
+            }, observerOptions);
+
+            flipContainers.forEach(container => {
+                scrollFlipObserver.observe(container);
+            });
+        }
+
+        // 頁面載入後初始化
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initScrollFlip);
+        } else {
+            initScrollFlip();
         }
     </script>
 
@@ -1232,7 +1253,7 @@
 
                         return `
                         <div class="comparison-row">
-                            <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                            <div class="flip-container" data-scroll-flip>
                                 <div class="before">
                                     <div class="comparison-label">${item.icon || ''} ${item.label || ''}</div>
                                     <div class="comparison-value">
@@ -1252,6 +1273,11 @@
                         </div>
                         `;
                     }).join('');
+
+                    // 重新初始化滾動翻面效果
+                    if (typeof initScrollFlip === 'function') {
+                        initScrollFlip();
+                    }
                 }
             }
         }
