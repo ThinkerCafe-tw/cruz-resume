@@ -103,14 +103,84 @@ Opportunities to work with enterprise clients on:
 
 ---
 
-## 🚀 Future Enhancements
+## 🤖 AI Translation Workflow
 
-Potential additions:
-- [ ] Analytics integration
+This project uses **AI-powered automatic translation** to maintain 5 language versions from a single source.
+
+### How It Works
+
+1. **Single Source of Truth**: Maintain only Traditional Chinese (zh-TW) content in `data.json`
+2. **AI Translation**: Use Gemini 2.5 Flash API to translate to 4 other languages
+3. **Cultural Adaptation**: Each language has custom localization prompts
+4. **Automatic Deployment**: GitHub Actions workflow handles translation + commit
+
+### Translation Pipeline
+
+```
+zh-TW (original) → Gemini API → en, ja, ko, ar → Auto-commit → Deploy
+```
+
+### Usage
+
+#### Local Translation
+
+```bash
+# Install dependencies
+cd scripts
+pip install -r requirements.txt
+
+# Set up API key
+cp ../.env.example ../.env
+# Edit .env and add your GEMINI_API_KEY
+
+# Run translation
+python translate.py
+```
+
+#### GitHub Actions (Automated)
+
+1. Go to **Actions** tab
+2. Select "🌐 Auto-Translate Resume"
+3. Click "Run workflow"
+4. Results are automatically committed
+
+**Setup Guide**: See [.github/SETUP.md](.github/SETUP.md)
+
+### Features
+
+- ✅ **Localization Prompts**: Custom cultural adaptation for each language
+- ✅ **Structure Validation**: Ensures translated JSON matches original structure
+- ✅ **Auto Backup**: Creates timestamped backups before translation
+- ✅ **Error Handling**: Individual language failures don't block others
+- ✅ **Dry Run Mode**: Test translations without saving changes
+
+### Technical Details
+
+- **Model**: Gemini 2.5 Flash (`gemini-2.0-flash-exp`)
+- **Temperature**: 0.3 (for consistency)
+- **Max Tokens**: 8192
+- **Cost**: Free tier (15 requests/minute)
+
+For more details, see [scripts/README.md](scripts/README.md)
+
+---
+
+## 🚀 Development Roadmap
+
+### Completed
+- [x] Multi-language support (5 languages)
+- [x] AI-powered auto-translation workflow
+- [x] Dark/Light mode toggle
+- [x] Responsive design (mobile/tablet/desktop)
+- [x] Print-optimized layout
+
+### Planned
+- [ ] Analytics integration (track language/version usage)
 - [ ] SEO optimization
 - [ ] Open Graph tags for social sharing
 - [ ] Custom domain (resume.thinker.cafe)
 - [ ] Download PDF button
+- [ ] Additional persona modes (Teaching, Proposal, Speaker)
 
 ---
 

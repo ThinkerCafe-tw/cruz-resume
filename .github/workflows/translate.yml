@@ -1,0 +1,129 @@
+name: 🌐 Auto-Translate Resume
+
+on:
+  workflow_dispatch:  # 手動觸發
+    inputs:
+      dry_run:
+        description: 'Dry run (不儲存結果)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+jobs:
+  translate:
+    name: Translate to Multiple Languages
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # 需要寫入權限以 commit 更改
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 完整歷史記錄
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'  # 快取 pip 依賴
+
+      - name: 📦 Install Dependencies
+        run: |
+          cd scripts
+          pip install -r requirements.txt
+
+      - name: 🔍 Check Environment
+        run: |
+          echo "Python version: $(python --version)"
+          echo "Working directory: $(pwd)"
+          echo "Files in scripts/:"
+          ls -la scripts/
+          echo "Prompts available:"
+          ls -la scripts/prompts/
+
+      - name: 🤖 Run Translation Script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            echo "🔍 Running in DRY RUN mode (no changes will be saved)"
+            # TODO: Add --dry-run flag to translate.py
+            python scripts/translate.py
+            echo "⚠️  Dry run completed. No changes saved."
+          else
+            echo "🚀 Running translation..."
+            python scripts/translate.py
+          fi
+
+      - name: 📊 Check for Changes
+        id: check_changes
+        run: |
+          if git diff --quiet data.json; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️  No changes detected in data.json"
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "✅ Changes detected in data.json"
+            git diff --stat data.json
+          fi
+
+      - name: 💾 Commit and Push Changes
+        if: steps.check_changes.outputs.changes == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config user.name "Translation Bot"
+          git config user.email "bot@thinker.cafe"
+          git add data.json
+
+          # 生成詳細的 commit message
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          git commit -m "🌐 Auto-translate: Update all languages
+
+          - Translated from zh-TW to en, ja, ko, ar
+          - Using Gemini 2.5 Flash API
+          - Timestamp: $TIMESTAMP
+
+          🤖 Generated with [Cruz Resume Translation Workflow]"
+
+          git push
+
+      - name: 📝 Summary
+        if: always()
+        run: |
+          echo "## 🌐 Translation Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            echo "**Mode**: 🔍 Dry Run (no changes saved)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "**Mode**: 🚀 Production" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_changes.outputs.changes }}" == "true" ]; then
+            echo "**Result**: ✅ Translations updated successfully" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Changes" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+            git diff --stat data.json >> $GITHUB_STEP_SUMMARY || echo "No diff available" >> $GITHUB_STEP_SUMMARY
+            echo "\`\`\`" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "**Result**: ℹ️  No changes needed" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Target Languages**: en, ja, ko, ar" >> $GITHUB_STEP_SUMMARY
+          echo "**Timestamp**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")" >> $GITHUB_STEP_SUMMARY
+
+      - name: ❌ Handle Errors
+        if: failure()
+        run: |
+          echo "## ❌ Translation Failed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Please check the logs above for error details." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Common issues:" >> $GITHUB_STEP_SUMMARY
+          echo "- Missing GEMINI_API_KEY secret" >> $GITHUB_STEP_SUMMARY
+          echo "- API quota exceeded" >> $GITHUB_STEP_SUMMARY
+          echo "- Invalid JSON structure in data.json" >> $GITHUB_STEP_SUMMARY

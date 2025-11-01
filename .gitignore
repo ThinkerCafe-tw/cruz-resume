@@ -50,3 +50,23 @@ build/
 node_modules/
 package-lock.json
 yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Translation backups
+data/backups/
+
+# Test files
+**/test-*.html
+**/debug-*.html
+**/diagnose-*.html
+**/quick-test.*

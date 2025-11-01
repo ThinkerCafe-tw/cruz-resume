@@ -1,0 +1,22 @@
+{
+  "feature_name": "-original-description-5-htmlcssjavascript-github-p",
+  "created_at": "2025-10-31T23:44:22.495Z",
+  "updated_at": "2025-10-31T23:44:58.568Z",
+  "language": "en",
+  "phase": "tasks-generated",
+  "approvals": {
+    "requirements": {
+      "generated": true,
+      "approved": false
+    },
+    "design": {
+      "generated": true,
+      "approved": false
+    },
+    "tasks": {
+      "generated": true,
+      "approved": false
+    }
+  },
+  "ready_for_implementation": true
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cruz Tang - AI-Native Leader</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         :root {
             --bg-primary: #0a0a0a;
@@ -1793,16 +1795,16 @@
 
             <div class="contact-bar">
                 <a href="mailto:cruz@thinker.cafe" class="contact-link">
-                    📧 cruz@thinker.cafe
+                    <i class="fas fa-envelope"></i> cruz@thinker.cafe
                 </a>
                 <a href="https://www.linkedin.com/in/sulaxd/" class="contact-link" target="_blank">
-                    💼 LinkedIn
+                    <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
                 <a href="https://thinker.cafe" class="contact-link" target="_blank">
-                    🌐 thinker.cafe
+                    <i class="fas fa-globe"></i> thinker.cafe
                 </a>
                 <a href="tel:+886937431998" class="contact-link">
-                    📱 +886 937 431 998
+                    <i class="fas fa-phone"></i> +886 937 431 998
                 </a>
             </div>
         </div>
@@ -1812,9 +1814,14 @@
             <!-- Content will be generated from data.json -->
         </div>
     </div>
-    
-    <div class="container">
-        <section id="about" class="version-personal">
+
+    <!-- 🔥 Enterprise Version Content (MOVED outside .container) -->
+    <div class="enterprise-content" id="enterprise-sections" style="display: none;">
+        <!-- Content will be generated from data.json -->
+    </div>
+
+    <div class="container version-personal">
+        <section id="about">
             <h2 class="section-title">About Me</h2>
             <div class="skill-card" style="max-width: 900px;">
                 <p style="font-size: 1.1rem; line-height: 2;">
@@ -1826,11 +1833,6 @@
                 </p>
             </div>
         </section>
-
-        <!-- Enterprise Version Content (Dynamically Generated) -->
-        <div class="enterprise-content" id="enterprise-sections" style="display: none;">
-            <!-- Content will be generated from data.json -->
-        </div>
 
         <section id="experience" class="version-personal">
             <h2 class="section-title">Career Journey</h2>
@@ -2031,20 +2033,20 @@
                 </p>
                 <div class="cta-buttons">
                     <a href="mailto:cruz@thinker.cafe" class="cta-button">
-                        📧 Get in Touch
+                        <i class="fas fa-envelope"></i> Get in Touch
                     </a>
                     <a href="https://thinker.cafe" class="cta-button secondary" target="_blank">
-                        🌐 Visit ThinkerCafe
+                        <i class="fas fa-globe"></i> Visit ThinkerCafe
                     </a>
                     <a href="https://www.linkedin.com/in/sulaxd/" class="cta-button secondary" target="_blank">
-                        💼 LinkedIn Profile
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
                     </a>
                 </div>
             </div>
         </section>
     </div>
-    
-    <footer>
+
+    <footer class="version-personal">
         <p>Built with intention · Designed to inspire · Updated January 2025</p>
         <p style="margin-top: 10px; opacity: 0.6;">
             "When technology returns to humanity, intelligence finds its warmth"
@@ -2060,7 +2062,7 @@
         const FEATURED_PROJECTS_DATA = [
             {
                 id: 'thinker-kit',
-                emoji: '🧠',
+                emoji: '<i class="fas fa-brain"></i>',
                 name: 'thinker-kit',
                 title: '遊戲化 AI 提示詞平台',
                 subtitle: '收藏、複製、升級你的 Prompt 庫',
@@ -2074,7 +2076,7 @@
             },
             {
                 id: 'paomateng',
-                emoji: '🚂',
+                emoji: '<i class="fas fa-train"></i>',
                 name: 'paomateng',
                 title: '台鐵公告智能監控系統',
                 subtitle: '自動追蹤列車停駛、復駛時間',
@@ -2088,7 +2090,7 @@
             },
             {
                 id: 'thinker-news',
-                emoji: '📰',
+                emoji: '<i class="fas fa-newspaper"></i>',
                 name: 'thinker-news',
                 title: 'AI 驅動科技日報',
                 subtitle: '專為資料科學初學者打造',
@@ -2102,7 +2104,7 @@
             },
             {
                 id: 'pt-liff-app',
-                emoji: '💆',
+                emoji: '<i class="fas fa-spa"></i>',
                 name: 'pt-liff-app',
                 title: 'LINE 物理治療預約系統',
                 subtitle: '整合排班、床位、通知的完整方案',
@@ -2116,7 +2118,7 @@
             },
             {
                 id: 'flipflop-travel',
-                emoji: '🩴',
+                emoji: '<i class="fas fa-umbrella-beach"></i>',
                 name: 'flipflop-travel',
                 title: '旅行團公積金管理平台',
                 subtitle: 'LINE LIFF 整合的團務協作系統',
@@ -2130,7 +2132,7 @@
             },
             {
                 id: 'italian_brainrot',
-                emoji: '🎮',
+                emoji: '<i class="fas fa-gamepad"></i>',
                 name: 'italian-brainrot',
                 title: '義大利腦腐任務遊戲',
                 subtitle: '完成任務收集 45 張角色卡片',
@@ -2226,14 +2228,14 @@
             const rolesHtml = data.authorInfo ? data.authorInfo.roles.join(' · ') : '';
 
             heroContainer.innerHTML = `
-                <div style="text-align: center; max-width: 1000px; margin: 0 auto; padding: 80px 20px;">
+                <div style="text-align: center; max-width: 1000px; margin: 0 auto; padding: 20px 20px 40px;">
                     <h1 style="font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; line-height: 1.2; margin-bottom: 20px; color: var(--text-primary); -webkit-text-fill-color: var(--text-primary); background: none;">
                         ${data.title}
                     </h1>
                     <p style="font-size: clamp(1.5rem, 3vw, 2rem); color: var(--text-secondary); margin-bottom: 40px; -webkit-text-fill-color: var(--text-secondary);">
                         ${data.subtitle}
                     </p>
-                    <p style="font-size: clamp(1.2rem, 2.5vw, 2rem); line-height: 1.5; margin-bottom: 50px; background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; color: transparent; font-weight: 600;">
+                    <p style="font-size: clamp(1.2rem, 2.5vw, 2rem); line-height: 1.5; margin-bottom: 50px; background: linear-gradient(135deg, #00ff88 0%, #0088ff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 600;">
                         ${data.valueProposition}
                     </p>
                     <a href="#enterprise-contact-form"
@@ -2253,7 +2255,20 @@
         // Generate Enterprise Sections (Complete 8-Section Sales Page)
         function generateEnterpriseSections(data) {
             const sectionsContainer = document.getElementById('enterprise-sections');
-            if (!sectionsContainer || !data) return;
+
+            console.log('=== generateEnterpriseSections ===');
+            console.log('sectionsContainer:', sectionsContainer);
+            console.log('data:', data);
+            console.log('data.trustIndicators:', data?.trustIndicators);
+
+            if (!sectionsContainer) {
+                console.error('✗ sectionsContainer not found!');
+                return;
+            }
+            if (!data) {
+                console.error('✗ No data provided!');
+                return;
+            }
 
             let html = '';
 
@@ -2277,41 +2292,96 @@
                 `;
             }
 
-            // 2. Problem Statement (問題對比) - 左右對比
+            // 2. Problem Statement (問題對比) - Tailwind 风格卡片设计
             if (data.problemStatement) {
                 html += `
-                    <section class="enterprise-section" style="padding: 80px 0;">
-                        <div class="container">
-                            <h2 class="section-title" style="text-align: center; margin-bottom: 50px;">${data.problemStatement.title}</h2>
-                            <div style="max-width: 1100px; margin: 0 auto;">
-                                <div style="display: grid; grid-template-columns: 1fr 80px 1fr; gap: 0; background: var(--bg-secondary); border-radius: 20px; padding: 40px; margin-bottom: 50px;">
-                                    <div style="text-align: center; padding: 0 20px;">
-                                        <h3 style="font-size: 1.3rem; margin-bottom: 30px; color: #EF4444;">傳統開發方式</h3>
-                                    </div>
-                                    <div style="display: flex; align-items: center; justify-content: center;">
-                                        <div style="font-size: 2rem;">→</div>
-                                    </div>
-                                    <div style="text-align: center; padding: 0 20px;">
-                                        <h3 style="font-size: 1.3rem; margin-bottom: 30px; color: var(--accent-primary);">AI-Native 協作開發</h3>
-                                    </div>
-                                </div>
-                                ${data.problemStatement.comparison.map(item => `
-                                    <div style="display: grid; grid-template-columns: 1fr 80px 1fr; gap: 0; margin-bottom: 20px; background: var(--bg-secondary); border-radius: 12px; padding: 20px;">
-                                        <div style="padding: 0 20px;">
-                                            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 8px;">${item.label}</p>
-                                            <p style="font-size: 1.1rem; color: #EF4444;">${item.traditional}</p>
+                    <section class="enterprise-section" style="padding: 96px 0; background: #0a0a0a;">
+                        <div class="container" style="max-width: 1280px; margin: 0 auto; padding: 0 24px;">
+                            <h2 style="text-align: center; margin-bottom: 64px; font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 700; letter-spacing: -0.02em; background: linear-gradient(to right, #ffffff, #a0a0a0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                ${data.problemStatement.title}
+                            </h2>
+                            <div style="max-width: 1100px; margin: 0 auto; display: grid; gap: 24px;">
+                                ${data.problemStatement.comparison.map((item, index) => `
+                                    <div class="comparison-row" style="display: grid; grid-template-columns: 1fr 64px 1fr; gap: 24px; align-items: center;">
+                                        <!-- 傳統方式卡片 -->
+                                        <div class="traditional-card" style="
+                                            position: relative;
+                                            background: rgba(26, 26, 26, 0.6);
+                                            backdrop-filter: blur(12px);
+                                            border: 1px solid rgba(239, 68, 68, 0.2);
+                                            border-radius: 16px;
+                                            padding: 24px;
+                                            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                                            overflow: hidden;
+                                        " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 24px -8px rgba(239, 68, 68, 0.25)'; this.style.borderColor='rgba(239, 68, 68, 0.4)';"
+                                           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px -4px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(239, 68, 68, 0.2)';">
+                                            <!-- 背景光晕 -->
+                                            <div style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, transparent 70%); pointer-events: none;"></div>
+
+                                            <div style="position: relative; z-index: 1;">
+                                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: #a0a0a0; font-size: 0.875rem; font-weight: 500;">
+                                                    ${item.label}
+                                                </div>
+                                                <p style="font-size: 1.25rem; color: #EF4444; font-weight: 600; line-height: 1.5; margin: 0;">
+                                                    ${item.traditional}
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div style="display: flex; align-items: center; justify-content: center; color: var(--accent-primary); font-size: 1.5rem;">→</div>
-                                        <div style="padding: 0 20px;">
-                                            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 8px;">${item.label}</p>
-                                            <p style="font-size: 1.1rem; color: var(--accent-primary); font-weight: 600;">${item.aiNative}</p>
+
+                                        <!-- 箭頭 -->
+                                        <div style="display: flex; align-items: center; justify-content: center; position: relative;">
+                                            <div style="
+                                                font-size: 2rem;
+                                                color: #00ff88;
+                                                filter: drop-shadow(0 0 8px rgba(0, 255, 136, 0.4));
+                                            ">→</div>
+                                        </div>
+
+                                        <!-- AI-Native 卡片 -->
+                                        <div class="ai-native-card" style="
+                                            position: relative;
+                                            background: rgba(26, 26, 26, 0.6);
+                                            backdrop-filter: blur(12px);
+                                            border: 1px solid rgba(0, 255, 136, 0.3);
+                                            border-radius: 16px;
+                                            padding: 24px;
+                                            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                                            overflow: hidden;
+                                        " onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 12px 24px -8px rgba(0, 255, 136, 0.3)'; this.style.borderColor='rgba(0, 255, 136, 0.5)';"
+                                           onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px -4px rgba(0, 0, 0, 0.1)'; this.style.borderColor='rgba(0, 255, 136, 0.3)';">
+                                            <!-- 背景光晕 -->
+                                            <div style="position: absolute; top: -50%; right: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(0, 255, 136, 0.12) 0%, transparent 70%); pointer-events: none;"></div>
+
+                                            <div style="position: relative; z-index: 1;">
+                                                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; color: #a0a0a0; font-size: 0.875rem; font-weight: 500;">
+                                                    ${item.label}
+                                                </div>
+                                                <p style="font-size: 1.25rem; color: #00ff88; font-weight: 700; line-height: 1.5; margin: 0;">
+                                                    ${item.aiNative}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 `).join('')}
                             </div>
-                            <div style="text-align: center; margin-top: 50px;">
+                            <div style="text-align: center; margin-top: 80px;">
                                 <a href="#enterprise-case-studies" onclick="document.getElementById('enterprise-case-studies').scrollIntoView({behavior: 'smooth'}); return false;"
-                                   class="enterprise-secondary-cta" style="display: inline-block; padding: 15px 35px; font-size: 1.1rem; border: 2px solid var(--accent-primary); color: var(--accent-primary); border-radius: 50px; text-decoration: none; transition: all 0.3s ease;">
+                                   style="
+                                       display: inline-flex;
+                                       align-items: center;
+                                       gap: 8px;
+                                       padding: 16px 40px;
+                                       font-size: 1.125rem;
+                                       font-weight: 600;
+                                       background: linear-gradient(135deg, #00ff88 0%, #0088ff 100%);
+                                       color: #0a0a0a;
+                                       border-radius: 12px;
+                                       text-decoration: none;
+                                       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                                       box-shadow: 0 4px 16px rgba(0, 255, 136, 0.25);
+                                   "
+                                   onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 24px rgba(0, 255, 136, 0.35)';"
+                                   onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0, 255, 136, 0.25)';">
                                     ${data.problemStatement.ctaButton}
                                 </a>
                             </div>
@@ -2477,15 +2547,15 @@
                                     <div style="display: grid; gap: 20px; max-width: 500px; margin: 0 auto 40px;">
                                         <a href="mailto:cruz@thinker.cafe?subject=預約免費%20AI%20診斷&body=您好，我想預約免費AI診斷。%0D%0A%0D%0A我的基本資訊：%0D%0A姓名：%0D%0A公司/單位：%0D%0A職位：%0D%0A%0D%0A我目前遇到的挑戰：%0D%0A%0D%0A期望達成的目標：%0D%0A%0D%0A聯絡電話：%0D%0A最佳聯絡時間："
                                            style="display: block; padding: 18px; background: linear-gradient(135deg, #F59E0B, #EF4444); color: white; text-decoration: none; border-radius: 12px; font-size: 1.2rem; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);">
-                                            📧 Email 預約診斷
+                                            <i class="fas fa-envelope"></i> Email 預約診斷
                                         </a>
                                         <a href="https://line.me/ti/p/YOUR_LINE_ID" target="_blank"
                                            style="display: block; padding: 18px; background: #06C755; color: white; text-decoration: none; border-radius: 12px; font-size: 1.2rem; font-weight: 600; transition: all 0.3s ease;">
-                                            💬 LINE 直接聯繫
+                                            <i class="fab fa-line"></i> LINE 直接聯繫
                                         </a>
                                         <a href="tel:+886937431998"
                                            style="display: block; padding: 18px; background: var(--accent-gradient); color: var(--bg-primary); text-decoration: none; border-radius: 12px; font-size: 1.2rem; font-weight: 600; transition: all 0.3s ease;">
-                                            📱 電話預約：+886 937 431 998
+                                            <i class="fas fa-phone"></i> 電話預約：+886 937 431 998
                                         </a>
                                     </div>
                                     <p style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 30px;">${data.contactForm.note}</p>
@@ -2500,6 +2570,147 @@
             }
 
             sectionsContainer.innerHTML = html;
+
+            // DEBUG: 強制顯示檢查
+            console.log('=== Final Check ===');
+            console.log('sectionsContainer.innerHTML length:', html.length);
+            console.log('sectionsContainer.style.display:', sectionsContainer.style.display);
+            console.log('sectionsContainer.offsetHeight:', sectionsContainer.offsetHeight);
+            console.log('sectionsContainer.children.length:', sectionsContainer.children.length);
+
+            // 強制設定顯示（避免任何 CSS 覆蓋）
+            sectionsContainer.style.display = 'block';
+            sectionsContainer.style.visibility = 'visible';
+            sectionsContainer.style.opacity = '1';
+            sectionsContainer.style.position = 'relative';
+            sectionsContainer.style.zIndex = '1';
+
+            // 🔥 強制設定文字顏色（解決透明問題）
+            sectionsContainer.style.color = '#ffffff';  // 強制白色文字
+
+            // 檢查所有子元素的顏色
+            const allText = sectionsContainer.querySelectorAll('h2, h3, h4, p, li, div');
+            console.log('=== Checking text colors ===');
+            console.log('Total text elements:', allText.length);
+
+            // 強制設定所有文字元素的顏色
+            allText.forEach(el => {
+                const computedColor = window.getComputedStyle(el).color;
+                if (computedColor === 'rgba(0, 0, 0, 0)' || computedColor === 'transparent') {
+                    console.warn('Found transparent text:', el.tagName, el.textContent.substring(0, 50));
+                    el.style.color = '#ffffff';
+                }
+            });
+
+            console.log('✅ Forced display and color settings applied');
+
+            // 🔥 最終診斷：檢查位置
+            const rect = sectionsContainer.getBoundingClientRect();
+            console.log('=== Position Check ===');
+            console.log('top:', rect.top);
+            console.log('left:', rect.left);
+            console.log('width:', rect.width);
+            console.log('height:', rect.height);
+            console.log('是否在可視區域內:', rect.top < window.innerHeight && rect.bottom > 0);
+
+            // 如果在螢幕外，強制移到正確位置
+            if (rect.top > window.innerHeight || rect.top < -rect.height) {
+                console.warn('⚠️ Container is outside viewport! Forcing position...');
+                sectionsContainer.style.position = 'relative';
+                sectionsContainer.style.top = '0';
+                sectionsContainer.style.left = '0';
+                sectionsContainer.style.transform = 'none';
+            }
+
+            // 🔥 終極方法：完全繞過現有容器，在 body 中直接創建新區塊
+            console.log('🔥 ULTIMATE FIX: Creating completely new container...');
+
+            // 1. 隱藏所有 Personal 內容和原始 enterprise 容器
+            const personalContainer = document.querySelector('.container.version-personal');
+            if (personalContainer) {
+                personalContainer.style.display = 'none';
+                console.log('✓ Hidden personal container');
+            }
+
+            // 🔥 隐藏原始的 enterprise-sections（避免重复显示）
+            sectionsContainer.style.display = 'none';
+            console.log('✓ Hidden original enterprise-sections');
+
+            // 2. 創建或清空企業內容包裝器
+            let ultimateEnterpriseWrapper = document.getElementById('ultimate-enterprise-wrapper');
+            if (!ultimateEnterpriseWrapper) {
+                ultimateEnterpriseWrapper = document.createElement('div');
+                ultimateEnterpriseWrapper.id = 'ultimate-enterprise-wrapper';
+                ultimateEnterpriseWrapper.style.cssText = `
+                    position: absolute !important;
+                    top: 80px !important;
+                    left: 0 !important;
+                    right: 0 !important;
+                    width: 100% !important;
+                    background: #0a0a0a !important;
+                    color: #ffffff !important;
+                    z-index: 999 !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                `;
+                document.body.appendChild(ultimateEnterpriseWrapper);
+                console.log('✓ Created ultimate enterprise wrapper with FIXED positioning');
+            } else {
+                // 清空现有内容（避免重复）
+                ultimateEnterpriseWrapper.innerHTML = '';
+                console.log('✓ Cleared existing wrapper content');
+            }
+
+            // 3. 將企業內容移動到新包裝器（包含 Hero）
+            const enterpriseHero = document.getElementById('enterprise-hero');
+            const heroHTML = enterpriseHero ? enterpriseHero.innerHTML : '';
+
+            ultimateEnterpriseWrapper.innerHTML = `
+                <section style="padding: 80px 20px; background: var(--bg-primary);">
+                    ${heroHTML}
+                </section>
+            ` + sectionsContainer.innerHTML;
+
+            // 4. 🔥 先替换 CSS 变量为实际颜色值
+            const wrapperHTML = ultimateEnterpriseWrapper.innerHTML;
+            const fixedHTML = wrapperHTML
+                .replace(/var\(--bg-primary\)/g, '#0a0a0a')
+                .replace(/var\(--bg-secondary\)/g, '#1a1a1a')
+                .replace(/var\(--bg-accent\)/g, '#2a2a2a')
+                .replace(/var\(--text-primary\)/g, '#ffffff')
+                .replace(/var\(--text-secondary\)/g, '#a0a0a0')
+                .replace(/var\(--accent-primary\)/g, '#00ff88')
+                .replace(/var\(--accent-secondary\)/g, '#0088ff')
+                .replace(/var\(--accent-gradient\)/g, 'linear-gradient(135deg, #00ff88 0%, #0088ff 100%)')
+                .replace(/var\(--border-color\)/g, '#333');
+
+            ultimateEnterpriseWrapper.innerHTML = fixedHTML;
+            console.log('🔥 Replaced CSS variables with actual colors');
+
+            // 5. 強制樣式 - 超級暴力版（替换后重新设置）
+            ultimateEnterpriseWrapper.querySelectorAll('section').forEach(section => {
+                section.style.cssText = `
+                    padding: 80px 20px !important;
+                    background: #1a1a1a !important;
+                    color: #ffffff !important;
+                    width: 100% !important;
+                    min-height: 200px !important;
+                `;
+            });
+
+            // 6. 🔥 暴力修改所有元素的颜色（确保可见）
+            ultimateEnterpriseWrapper.querySelectorAll('*').forEach(el => {
+                el.style.setProperty('visibility', 'visible', 'important');
+                el.style.setProperty('opacity', '1', 'important');
+            });
+
+            console.log('🔥 Applied forced styles to all elements');
+
+            console.log('🔥 ULTIMATE FIX applied:', {
+                wrapperHeight: ultimateEnterpriseWrapper.offsetHeight,
+                innerHTML: ultimateEnterpriseWrapper.innerHTML.length,
+                position: ultimateEnterpriseWrapper.getBoundingClientRect()
+            });
         }
 
         function switchVersion(version) {
@@ -2524,55 +2735,66 @@
 
             // Toggle content visibility
             if (version === 'enterprise') {
-                // Generate enterprise content from JSON
+                console.log('=== Enterprise Version Switch ===');
+
+                // 🔥 隱藏所有 Personal 內容
+                document.querySelectorAll('.version-personal').forEach(el => {
+                    el.style.display = 'none';
+                });
+
+                // 隱藏原本的 enterprise-content（我們不再使用它）
+                document.querySelectorAll('.enterprise-content').forEach(el => {
+                    el.style.display = 'none';
+                });
+
+                // 🔥 生成企業內容
+                console.log('Step: Generating enterprise content...');
                 const enterpriseData = translations[currentLang]?.enterprise;
 
                 if (enterpriseData) {
                     generateEnterpriseHero(enterpriseData.hero);
                     generateEnterpriseSections(enterpriseData);
+                    console.log('✓ Enterprise content generated!');
+
+                    // 🔥 顯示 ultimate wrapper
+                    const ultimateWrapper = document.getElementById('ultimate-enterprise-wrapper');
+                    if (ultimateWrapper) {
+                        ultimateWrapper.style.display = 'block';
+                        console.log('✓ Showing ultimate enterprise wrapper');
+                    }
+                } else {
+                    console.error('✗ No enterprise data found!');
                 }
 
-                // Hide personal version
-                document.querySelectorAll('.version-personal').forEach(el => {
-                    el.style.display = 'none';
-                });
-                // Show enterprise version
-                document.querySelectorAll('.version-enterprise').forEach(el => {
-                    el.style.display = 'block';
-                });
-                document.querySelectorAll('.enterprise-content').forEach(el => {
-                    el.style.display = 'block';
-                });
-
-                // Adjust .hero container for enterprise version
+                // 隱藏原本的 hero 容器（企業版有自己的 hero）
                 const heroContainer = document.querySelector('.hero');
                 if (heroContainer) {
-                    heroContainer.style.display = 'block'; // Disable flexbox
-                    heroContainer.style.minHeight = 'auto';
-                    heroContainer.style.paddingTop = '120px';
-                    heroContainer.style.paddingBottom = '60px';
+                    heroContainer.style.display = 'none';
                 }
+
+                // 確保 body 可以滾動
+                document.body.style.overflow = 'auto';
+                document.body.style.minHeight = '100vh';
 
                 // Update page title
                 const title = enterpriseData?.hero?.title || 'ThinkerCafe 企業 AI 解決方案';
                 document.title = title;
             } else {
+                // 🔥 隱藏 ultimate wrapper
+                const ultimateWrapper = document.getElementById('ultimate-enterprise-wrapper');
+                if (ultimateWrapper) {
+                    ultimateWrapper.style.display = 'none';
+                }
+
                 // Show personal version
                 document.querySelectorAll('.version-personal').forEach(el => {
                     el.style.display = 'block';
                 });
-                // Hide enterprise version
-                document.querySelectorAll('.version-enterprise').forEach(el => {
-                    el.style.display = 'none';
-                });
-                document.querySelectorAll('.enterprise-content').forEach(el => {
-                    el.style.display = 'none';
-                });
 
-                // Restore .hero container for personal version
+                // Restore .hero container
                 const heroContainer = document.querySelector('.hero');
                 if (heroContainer) {
-                    heroContainer.style.display = 'flex'; // Re-enable flexbox
+                    heroContainer.style.display = 'flex';
                     heroContainer.style.minHeight = '100vh';
                     heroContainer.style.paddingTop = '40px';
                     heroContainer.style.paddingBottom = '40px';
@@ -3015,9 +3237,9 @@ ${logText}
                 ctaPs[0].innerHTML = t.cta.subtitle + '<br>' + t.cta.location;
 
                 const ctaButtons = document.querySelectorAll('.cta-button');
-                ctaButtons[0].innerHTML = '📧 ' + t.cta.buttons[0];
-                ctaButtons[1].innerHTML = '🌐 ' + t.cta.buttons[1];
-                ctaButtons[2].innerHTML = '💼 ' + t.cta.buttons[2];
+                ctaButtons[0].innerHTML = '<i class="fas fa-envelope"></i> ' + t.cta.buttons[0];
+                ctaButtons[1].innerHTML = '<i class="fas fa-globe"></i> ' + t.cta.buttons[1];
+                ctaButtons[2].innerHTML = '<i class="fab fa-linkedin"></i> ' + t.cta.buttons[2];
                 logToPanel('✓ CTA section updated', 'success');
 
                 // Footer section
