@@ -714,12 +714,8 @@
                 position: relative;
                 width: 100%;
                 height: 160px;
-                transition: transform 0.8s;
                 transform-style: preserve-3d;
-            }
-            
-            .flip-container.flipped {
-                transform: rotateY(180deg);
+                will-change: transform;
             }
             
             .before, .after {
@@ -914,43 +910,59 @@
     </section>
 
     <script>
-        // 滾動觸發翻面效果
-        let scrollFlipObserver = null;
-
-        function initScrollFlip() {
+        // 滾動觸發翻面效果 - 隨滾動進度翻轉
+        function updateFlipProgress() {
+            // 每次都重新查詢，以支援動態載入的內容
             const flipContainers = document.querySelectorAll('[data-scroll-flip]');
 
-            // 如果已經有 observer，先清理
-            if (scrollFlipObserver) {
-                scrollFlipObserver.disconnect();
-            }
+            flipContainers.forEach((container) => {
+                const rect = container.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
 
-            // 為每個容器添加索引屬性
-            flipContainers.forEach((container, index) => {
-                container.dataset.flipIndex = index;
+                // 計算元素在視窗中的位置
+                // 當元素完全在下方時 progress = 0
+                // 當元素進入視窗 70% 時 progress = 1
+                const elementTop = rect.top;
+
+                // 計算進度：從元素開始進入視窗到進入 70%
+                const startPoint = windowHeight;  // 元素頂部開始進入視窗
+                const endPoint = windowHeight * 0.3;  // 元素進入視窗 70% 的位置
+
+                let progress = 0;
+
+                if (elementTop <= startPoint && elementTop >= endPoint) {
+                    // 元素正在從下往上進入視窗
+                    progress = (startPoint - elementTop) / (startPoint - endPoint);
+                    progress = Math.max(0, Math.min(1, progress));
+                } else if (elementTop < endPoint) {
+                    // 元素已經完全進入
+                    progress = 1;
+                }
+
+                // 根據進度計算旋轉角度 (0-180度)
+                const rotateY = progress * 180;
+
+                // 直接設置 transform，不使用 class
+                container.style.transform = `rotateY(${rotateY}deg)`;
             });
+        }
 
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.3  // 當元素 30% 可見時觸發
-            };
-
-            scrollFlipObserver = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting && !entry.target.classList.contains('flipped')) {
-                        const index = parseInt(entry.target.dataset.flipIndex) || 0;
-                        // 添加延遲效果，讓翻面更自然
-                        setTimeout(() => {
-                            entry.target.classList.add('flipped');
-                        }, index * 150);  // 每個卡片延遲 150ms
-                    }
+        // 監聽滾動事件
+        let ticking = false;
+        function onScroll() {
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    updateFlipProgress();
+                    ticking = false;
                 });
-            }, observerOptions);
+                ticking = true;
+            }
+        }
 
-            flipContainers.forEach(container => {
-                scrollFlipObserver.observe(container);
-            });
+        function initScrollFlip() {
+            window.addEventListener('scroll', onScroll);
+            // 初始化時執行一次
+            updateFlipProgress();
         }
 
         // 頁面載入後初始化
@@ -1273,11 +1285,6 @@
                         </div>
                         `;
                     }).join('');
-
-                    // 重新初始化滾動翻面效果
-                    if (typeof initScrollFlip === 'function') {
-                        initScrollFlip();
-                    }
                 }
             }
         }
