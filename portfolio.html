@@ -426,6 +426,25 @@
             background-clip: text;
         }
 
+        .highlight-metric {
+            font-size: 24px;
+            font-weight: 800;
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 6px;
+            margin-left: 4px;
+        }
+
+        .before .highlight-metric {
+            color: #dc2626;
+            background: rgba(239, 68, 68, 0.08);
+        }
+
+        .after .highlight-metric {
+            color: #059669;
+            background: rgba(16, 185, 129, 0.1);
+        }
+
         /* Case Study Section */
         .cases-section {
             padding: 80px 40px;
@@ -1205,26 +1224,34 @@
 
                 const grid = comparisonSection.querySelector('.comparison-grid');
                 if (grid && comparisonData.items) {
-                    grid.innerHTML = comparisonData.items.map(item => `
-                        <div class="comparison-card">
-                            <div class="comparison-inner">
-                                <div class="comparison-front">
-                                    <div class="label">${item.label || ''}</div>
-                                    <div class="content-before">
-                                        <span class="before-label">❌</span>
-                                        ${item.before || ''}
+                    grid.innerHTML = comparisonData.items.map((item, index) => {
+                        const beforeText = item.before || '';
+                        const beforeHighlight = item.beforeHighlight || '';
+                        const afterText = item.after || '';
+                        const afterHighlight = item.afterHighlight || '';
+
+                        return `
+                        <div class="comparison-row">
+                            <div class="flip-container" onclick="this.classList.toggle('flipped')">
+                                <div class="before">
+                                    <div class="comparison-label">${item.icon || ''} ${item.label || ''}</div>
+                                    <div class="comparison-value">
+                                        ${beforeText}${beforeText && beforeHighlight ? '：' : ''}<span class="highlight-metric">${beforeHighlight}</span>
                                     </div>
+                                    <div class="flip-hint"></div>
                                 </div>
-                                <div class="comparison-back">
-                                    <div class="label">${item.afterLabel || ''}</div>
-                                    <div class="content-after">
-                                        <span class="after-label">✅</span>
-                                        ${item.after || ''}
+                                <div class="after">
+                                    <div class="comparison-label">${item.afterLabel || 'AI 協作'}</div>
+                                    <div class="comparison-value">
+                                        ${afterText}${afterText && afterHighlight ? ' ' : ''}<span class="highlight-metric">${afterHighlight}</span>
                                     </div>
+                                    <div class="flip-hint"></div>
                                 </div>
                             </div>
+                            <div class="arrow">→</div>
                         </div>
-                    `).join('');
+                        `;
+                    }).join('');
                 }
             }
         }
