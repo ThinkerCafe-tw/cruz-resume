@@ -65,8 +65,8 @@ ENV/
 # Translation backups
 data/backups/
 
-# Test files
-**/test-*.html
-**/debug-*.html
-**/diagnose-*.html
-**/quick-test.*
+# Test files (now in tests/ directory)
+tests/
+
+# Documentation drafts
+docs/
