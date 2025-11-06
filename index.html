@@ -398,7 +398,6 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="portfolio.html" style="color: #3b82f6;">Portfolio →</a></li>
                 </ul>
                 <div class="lang-switcher">
                     <button onclick="switchLanguage('zh-TW')" data-lang="zh-TW" class="active">中</button>
@@ -547,7 +546,6 @@
                         <li><a href="#skills">${data.nav.skills || 'Skills'}</a></li>
                         <li><a href="#education">${data.nav.education || 'Education'}</a></li>
                         <li><a href="#contact">${data.nav.contact || 'Contact'}</a></li>
-                        <li><a href="portfolio.html" style="color: #3b82f6;">${data.nav.portfolio || 'Portfolio'} →</a></li>
                     `;
                 }
             }
@@ -613,15 +611,111 @@
             if (data.teaching) {
                 document.getElementById('teaching-title').textContent = data.teaching.title || 'Teaching';
 
-                // Handle both positions and lectures structure
-                const teachingData = data.teaching.positions || data.teaching.lectures || [];
-                document.getElementById('teaching-list').innerHTML = teachingData.map(item => `
-                    <div class="info-card">
-                        <h3>${item.title || ''}</h3>
-                        <div class="meta">${item.institution || item.organization || ''} · ${item.date || item.type || ''}</div>
-                        ${item.description ? `<p>${item.description}</p>` : ''}
-                    </div>
-                `).join('');
+                let teachingHTML = '';
+
+                // Stats section
+                if (data.teaching.stats) {
+                    teachingHTML += `
+                        <div class="stats" style="margin-bottom: 40px;">
+                            <div class="stat-item">
+                                <span class="stat-number">${data.teaching.stats.years}</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">${data.teaching.stats.students}</span>
+                                <span class="stat-label">Students Trained</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">${data.teaching.stats.hours}</span>
+                                <span class="stat-label">Teaching Hours</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">${data.teaching.stats.institutions}</span>
+                                <span class="stat-label">Partner Institutions</span>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // Certifications
+                if (data.teaching.certifications && data.teaching.certifications.length > 0) {
+                    teachingHTML += '<h3 style="font-size: 24px; margin: 40px 0 20px 0;">Official Certifications</h3>';
+                    teachingHTML += data.teaching.certifications.map(cert => `
+                        <div class="info-card">
+                            <h3>${cert.title}</h3>
+                            <div class="meta">${cert.organization} · ${cert.period}</div>
+                            ${cert.description ? `<p>${cert.description}</p>` : ''}
+                        </div>
+                    `).join('');
+                }
+
+                // Featured course
+                if (data.teaching.featured) {
+                    teachingHTML += `
+                        <h3 style="font-size: 24px; margin: 40px 0 20px 0; color: #3b82f6;">🔥 Currently Enrolling</h3>
+                        <div class="info-card" style="border: 2px solid #3b82f6;">
+                            <h3>${data.teaching.featured.title}</h3>
+                            <p style="font-size: 16px; color: #64748b;">${data.teaching.featured.subtitle}</p>
+                            <div class="meta">
+                                📅 ${data.teaching.featured.dates}<br>
+                                📍 ${data.teaching.featured.location}<br>
+                                💰 ${data.teaching.featured.price} | 👥 ${data.teaching.featured.capacity}<br>
+                                ⏰ Deadline: ${data.teaching.featured.deadline}
+                            </div>
+                            ${data.teaching.featured.highlights ? `
+                                <ul style="margin-top: 16px;">
+                                    ${data.teaching.featured.highlights.map(h => `<li>${h}</li>`).join('')}
+                                </ul>
+                            ` : ''}
+                        </div>
+                    `;
+                }
+
+                // Recent courses
+                if (data.teaching.recent && data.teaching.recent.length > 0) {
+                    teachingHTML += '<h3 style="font-size: 24px; margin: 40px 0 20px 0;">Recent Courses</h3>';
+                    teachingHTML += data.teaching.recent.map(course => `
+                        <div class="info-card">
+                            <h3>${course.title}</h3>
+                            <div class="meta">
+                                ${course.organization || ''} ${course.organization ? '·' : ''} ${course.date}<br>
+                                ${course.duration} | ${course.students ? course.students + ' students' : ''}
+                                ${course.satisfaction ? ' | ' + course.satisfaction + ' satisfaction' : ''}
+                            </div>
+                            ${course.feedback && course.feedback.length > 0 ? `
+                                <p style="margin-top: 12px; font-style: italic;">
+                                    "${course.feedback[0]}"
+                                </p>
+                            ` : ''}
+                        </div>
+                    `).join('');
+                }
+
+                // Testimonials
+                if (data.teaching.testimonials && data.teaching.testimonials.length > 0) {
+                    teachingHTML += '<h3 style="font-size: 24px; margin: 40px 0 20px 0;">Student Feedback</h3>';
+                    teachingHTML += '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">';
+                    teachingHTML += data.teaching.testimonials.map(test => `
+                        <div class="info-card">
+                            <p style="font-style: italic; margin-bottom: 12px;">"${test.text}"</p>
+                            <div class="meta">— ${test.author}, ${test.course}</div>
+                        </div>
+                    `).join('');
+                    teachingHTML += '</div>';
+                }
+
+                // Institutions
+                if (data.teaching.institutions && data.teaching.institutions.length > 0) {
+                    teachingHTML += '<h3 style="font-size: 24px; margin: 40px 0 20px 0;">Partner Institutions</h3>';
+                    teachingHTML += data.teaching.institutions.map(cat => `
+                        <div class="info-card">
+                            <h3>${cat.category}</h3>
+                            <p>${cat.list.join(' · ')}</p>
+                        </div>
+                    `).join('');
+                }
+
+                document.getElementById('teaching-list').innerHTML = teachingHTML;
             }
 
             // Update education

@@ -218,32 +218,134 @@
       ]
     },
     "teaching": {
-      "title": "Teaching & Lectures",
-      "lectures": [
+      "title": "Teaching Experience",
+      "stats": {
+        "years": "11+",
+        "students": "500+",
+        "hours": "1000+",
+        "institutions": "14+"
+      },
+      "certifications": [
         {
-          "title": "Practical R Language Text Mining",
-          "organization": "Institute for Information Industry (III)",
-          "type": "Workshop"
+          "title": "iPAS Expert Committee Member",
+          "organization": "Ministry of Economic Affairs, Taiwan",
+          "period": "2014 - Present",
+          "description": "Expert committee member for iPAS Big Data Analytics (2014-2024) and AI Application Planning (2025-present) certification programs"
         },
         {
-          "title": "R Language Data Visualization",
-          "organization": "Taipei Computer Association, Fubon Financial Holdings",
-          "type": "Corporate Training"
+          "title": "Adjunct Lecturer",
+          "organization": "Soochow University",
+          "period": "2019",
+          "description": "School of Big Data Management"
         },
         {
-          "title": "Data Objects, Object-Oriented Programming, and Coding Techniques",
-          "organization": "2013 R Taiwan Conference",
-          "type": "Conference Presentation"
+          "title": "Industry Expert Lecturer",
+          "organization": "Chinese Culture University",
+          "period": "2016",
+          "description": "Department of Computer Science and Information Engineering"
+        }
+      ],
+      "featured": {
+        "title": "AI Self-Media Workflow Bootcamp [006]",
+        "subtitle": "3-Day Mobile-Friendly Course - Currently Enrolling",
+        "dates": "Nov 29, Dec 6, Dec 13, 2025",
+        "location": "Banqiao Fuzhong MRT Station, 5 min walk",
+        "price": "NT$ 10,000",
+        "capacity": "12 students (small class)",
+        "deadline": "Nov 24, 2025",
+        "highlights": [
+          "100% mobile-friendly (no laptop needed)",
+          "3 practical outcomes: weekly content, auto-reply system, AI toolkit",
+          "Small group hands-on practice",
+          "Certificate of completion"
+        ],
+        "url": "https://www.thinker.cafe/courses/006"
+      },
+      "recent": [
+        {
+          "title": "AI Collaboration Thinking Bootcamp",
+          "date": "September 2025",
+          "duration": "6 hours",
+          "price": "NT$ 3,980",
+          "students": 2,
+          "satisfaction": "100%",
+          "feedback": [
+            "Great value for money",
+            "Unlocked my technical potential",
+            "Much more practical than expected"
+          ]
         },
         {
-          "title": "Understanding People You Like Through Facebook Data Mining",
-          "organization": "OpenFoundry",
-          "type": "Tech Talk"
+          "title": "Industrial New Talent Program - R Language Data Analytics",
+          "date": "August 2024",
+          "duration": "380 hours",
+          "organization": "Huafan University Extension Center",
+          "students": 30,
+          "type": "Government-sponsored program"
+        }
+      ],
+      "institutions": [
+        {
+          "category": "Government & Certification",
+          "list": [
+            "Ministry of Economic Affairs iPAS Program",
+            "Computer Skills Foundation",
+            "Industrial Technology Research Institute (ITRI)"
+          ]
         },
         {
-          "title": "Financial Data Mining: Machine Data Analysis",
-          "organization": "Taiwan Academy of Banking and Finance (TABF)",
-          "type": "Course"
+          "category": "Financial Institutions",
+          "list": [
+            "Securities & Futures Institute",
+            "Taiwan Academy of Banking and Finance (TABF)"
+          ]
+        },
+        {
+          "category": "Academic Institutions",
+          "list": [
+            "Institute for Information Industry (10-year partnership)",
+            "Chinese Culture University",
+            "Soochow University",
+            "Feng Chia University",
+            "Huafan University"
+          ]
+        },
+        {
+          "category": "Corporate Training",
+          "list": [
+            "104 Learn Platform",
+            "TibaMe",
+            "Asia Analytics",
+            "Fubon Financial Holdings",
+            "Taipei Computer Association"
+          ]
+        }
+      ],
+      "testimonials": [
+        {
+          "text": "Great value for money - Teacher Tang's course",
+          "author": "Student",
+          "course": "AI Collaboration Bootcamp",
+          "date": "September 2025"
+        },
+        {
+          "text": "Unlocked my technical potential - like opening any-duo meridians",
+          "author": "Student",
+          "course": "AI Collaboration Bootcamp",
+          "date": "September 2025"
+        },
+        {
+          "text": "Much more practical than expected",
+          "author": "Student",
+          "course": "AI Collaboration Bootcamp",
+          "date": "September 2025"
+        }
+      ],
+      "achievements": [
+        {
+          "year": "2018",
+          "title": "Taoyuan Open Data Hackathon - Champion",
+          "description": "First place in open data application competition"
         }
       ]
     },
@@ -1149,32 +1251,134 @@
       ]
     },
     "teaching": {
-      "title": "教學與演講",
-      "lectures": [
+      "title": "教學經歷",
+      "stats": {
+        "years": "11+",
+        "students": "500+",
+        "hours": "1000+",
+        "institutions": "14+"
+      },
+      "certifications": [
         {
-          "title": "R 語言文字探勘實戰",
-          "organization": "資策會",
-          "type": "工作坊"
+          "title": "iPAS 能力鑑定專家委員",
+          "organization": "經濟部",
+          "period": "2014 - 現在",
+          "description": "擔任 iPAS 巨量資料分析師（2014-2024）與 AI 應用規劃師（2025-現在）能力鑑定專家委員"
         },
         {
-          "title": "R 語言資料視覺化",
-          "organization": "台北市電腦公會、富邦金控",
-          "type": "企業培訓"
+          "title": "兼任講師",
+          "organization": "東吳大學",
+          "period": "2019",
+          "description": "巨量資料管理學院"
         },
         {
-          "title": "資料物件、物件導向程式設計與編碼技巧",
-          "organization": "2013 R Taiwan 研討會",
-          "type": "研討會演講"
+          "title": "業師",
+          "organization": "中國文化大學",
+          "period": "2016",
+          "description": "資訊工程學系"
+        }
+      ],
+      "featured": {
+        "title": "【006】AI 自媒體工作流實戰營",
+        "subtitle": "三天手機課程 - 正在招生中",
+        "dates": "2025/11/29, 12/6, 12/13",
+        "location": "板橋府中站 5 分鐘",
+        "price": "NT$ 10,000",
+        "capacity": "限額 12 人（小班制）",
+        "deadline": "2025/11/24",
+        "highlights": [
+          "100% 手機友善（不需筆電）",
+          "三樣成果：一週社群素材、自動化私訊機制、專屬 AI 工具包",
+          "小班制手把手實作",
+          "課程研習證書"
+        ],
+        "url": "https://www.thinker.cafe/courses/006"
+      },
+      "recent": [
+        {
+          "title": "AI 協作思維破冰課程",
+          "date": "2025年9月",
+          "duration": "6 小時",
+          "price": "NT$ 3,980",
+          "students": 2,
+          "satisfaction": "100%",
+          "feedback": [
+            "湯老師的課物超所值",
+            "好像打通一條工具人任督二脈",
+            "這比我想像的還實用太多"
+          ]
         },
         {
-          "title": "用 Facebook 探勘了解你喜歡的人",
-          "organization": "OpenFoundry",
-          "type": "技術分享"
+          "title": "產業新尖兵 - R 語言數據分析工程師養成班",
+          "date": "2024年8月",
+          "duration": "380 小時",
+          "organization": "華梵大學推廣中心",
+          "students": 30,
+          "type": "政府計畫"
+        }
+      ],
+      "institutions": [
+        {
+          "category": "政府與認證機構",
+          "list": [
+            "經濟部 iPAS 計畫",
+            "電腦技能基金會",
+            "工業技術研究院"
+          ]
         },
         {
-          "title": "金融資料探勘：機器資料分析",
-          "organization": "台灣金融研訓院",
-          "type": "課程"
+          "category": "金融機構",
+          "list": [
+            "證券暨期貨市場發展基金會",
+            "台灣金融研訓院"
+          ]
+        },
+        {
+          "category": "學術機構",
+          "list": [
+            "資策會（10年合作）",
+            "中國文化大學",
+            "東吳大學",
+            "逢甲大學",
+            "華梵大學"
+          ]
+        },
+        {
+          "category": "企業培訓",
+          "list": [
+            "104教室",
+            "TibaMe",
+            "台灣析數資訊",
+            "富邦金控",
+            "台北市電腦公會"
+          ]
+        }
+      ],
+      "testimonials": [
+        {
+          "text": "湯老師的課物超所值",
+          "author": "學員",
+          "course": "AI 協作思維破冰",
+          "date": "2025年9月"
+        },
+        {
+          "text": "好像打通一條工具人任督二脈",
+          "author": "學員",
+          "course": "AI 協作思維破冰",
+          "date": "2025年9月"
+        },
+        {
+          "text": "這比我想像的還實用太多",
+          "author": "學員",
+          "course": "AI 協作思維破冰",
+          "date": "2025年9月"
+        }
+      ],
+      "achievements": [
+        {
+          "year": "2018",
+          "title": "桃園 Open Data 黑客松 - 冠軍",
+          "description": "開放資料應用競賽第一名"
         }
       ]
     },
