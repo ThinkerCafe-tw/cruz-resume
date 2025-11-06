@@ -573,7 +573,31 @@
             // Update skills
             if (data.skills) {
                 document.getElementById('skills-title').textContent = data.skills.title || 'Skills';
-                if (data.skills.categories) {
+
+                // Handle both legacy categories and new layers structure
+                if (data.skills.layers) {
+                    // New structure with layers
+                    const allCategories = [];
+                    data.skills.layers.forEach(layer => {
+                        if (layer.categories) {
+                            layer.categories.forEach(cat => {
+                                allCategories.push({
+                                    title: cat.name || cat.title,
+                                    items: cat.items || []
+                                });
+                            });
+                        }
+                    });
+                    document.getElementById('skills-grid').innerHTML = allCategories.map(cat => `
+                        <div class="skill-category">
+                            <h3>${cat.title || ''}</h3>
+                            <div class="skill-items">
+                                ${cat.items ? cat.items.map(item => `<span class="skill-item">${item}</span>`).join('') : ''}
+                            </div>
+                        </div>
+                    `).join('');
+                } else if (data.skills.categories) {
+                    // Legacy structure with categories
                     document.getElementById('skills-grid').innerHTML = data.skills.categories.map(cat => `
                         <div class="skill-category">
                             <h3>${cat.title || ''}</h3>
@@ -588,29 +612,32 @@
             // Update teaching
             if (data.teaching) {
                 document.getElementById('teaching-title').textContent = data.teaching.title || 'Teaching';
-                if (data.teaching.positions) {
-                    document.getElementById('teaching-list').innerHTML = data.teaching.positions.map(pos => `
-                        <div class="info-card">
-                            <h3>${pos.title || ''}</h3>
-                            <div class="meta">${pos.institution || ''} · ${pos.date || ''}</div>
-                            ${pos.description ? `<p>${pos.description}</p>` : ''}
-                        </div>
-                    `).join('');
-                }
+
+                // Handle both positions and lectures structure
+                const teachingData = data.teaching.positions || data.teaching.lectures || [];
+                document.getElementById('teaching-list').innerHTML = teachingData.map(item => `
+                    <div class="info-card">
+                        <h3>${item.title || ''}</h3>
+                        <div class="meta">${item.institution || item.organization || ''} · ${item.date || item.type || ''}</div>
+                        ${item.description ? `<p>${item.description}</p>` : ''}
+                    </div>
+                `).join('');
             }
 
             // Update education
             if (data.education) {
                 document.getElementById('education-title').textContent = data.education.title || 'Education';
-                if (data.education.degrees) {
-                    document.getElementById('education-list').innerHTML = data.education.degrees.map(deg => `
-                        <div class="info-card">
-                            <h3>${deg.degree || ''}</h3>
-                            <div class="meta">${deg.school || ''} · ${deg.date || ''}</div>
-                            ${deg.details ? `<p>${deg.details}</p>` : ''}
-                        </div>
-                    `).join('');
-                }
+
+                // Handle both degrees and schools structure
+                const educationData = data.education.degrees || data.education.schools || [];
+                document.getElementById('education-list').innerHTML = educationData.map(item => `
+                    <div class="info-card">
+                        <h3>${item.degree || ''} ${item.major ? '- ' + item.major : ''}</h3>
+                        <div class="meta">${item.school || ''} · ${item.date || ''}</div>
+                        ${item.details ? `<p>${item.details}</p>` : ''}
+                        ${item.location ? `<p>${item.location}</p>` : ''}
+                    </div>
+                `).join('');
             }
         }
 
